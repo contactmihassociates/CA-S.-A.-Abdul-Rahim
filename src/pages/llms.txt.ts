@@ -19,6 +19,7 @@ ${SERVICES.map((s) => `- [${s.label}](${SITE_URL}${s.href}): ${s.blurb}`).join('
 ${GUIDES.map((g) => `- [${g.title}](${SITE_URL}${g.href})`).join('\n')}
 
 ## Calculators
+- [Income tax calculator, old vs new regime](${SITE_URL}/tools/income-tax-calculator/): full statement of income and tax with every head of income, capital gains at special rates, deductions, 87A rebate, surcharge with marginal relief and cess.
 - [All calculators](${SITE_URL}/tools/): ${TOOLS.length} tax, GST, TDS and finance calculators. Results are estimates for the figures entered.
 ${CATEGORIES.map((c) => `\n### ${c.label}\n` + c.tools.map((k) => TOOLS.find((t) => t.key === k)!).map((t) => `- [${t.copy.h1}](${SITE_URL}/tools/${t.key}/): ${t.copy.description}`).join('\n')).join('\n')}
 

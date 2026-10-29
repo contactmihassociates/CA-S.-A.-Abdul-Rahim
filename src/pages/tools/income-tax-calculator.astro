@@ -1,0 +1,184 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import SideContact from '../../components/SideContact.astro';
+import { SITE_URL, REVIEWED_TEXT, SRC } from '../../data/site';
+import { faqPage } from '../../data/schema';
+
+const path = '/tools/income-tax-calculator/';
+const crumbs = [{ name: 'Calculators', path: '/tools/' }, { name: 'Income tax calculator', path }];
+const faqs = [
+  { q: 'Which regime applies if I do not choose one?', a: 'The new regime is the default for individuals and HUFs. Salaried taxpayers and pensioners without business income can choose the old regime each year when filing the return. Those with business income can switch back to the old regime only once, so compare both regimes carefully before choosing.' },
+  { q: 'Why is my tax nil under the new regime up to Rs 12 lakh?', a: 'Resident individuals get a rebate of up to Rs 60,000 when total income does not exceed Rs 12 lakh, which cancels the slab tax. Salaried people also get a standard deduction of Rs 75,000, so salary up to Rs 12.75 lakh can be tax free. The rebate does not cover capital gains taxed at special rates.' },
+  { q: 'How are capital gains on shares taxed in this calculator?', a: 'Short-term gains on listed equity shares and equity funds are taxed at 20 percent. Long-term gains on them are taxed at 12.5 percent after an annual exemption of Rs 1.25 lakh. Other long-term gains are taxed at 12.5 percent, or at 20 percent with indexation where that option applies to older property.' },
+  { q: 'Is the result the same as the tax in my return?', a: 'The calculator follows the rates and main rules for the year, but the return also depends on details such as carried forward losses, exact deduction conditions and the AIS data reported for you. Treat the result as an estimate and check the computation in the income tax return before filing.' },
+];
+const app = {
+  '@type': 'WebApplication',
+  '@id': `${SITE_URL}${path}#app`,
+  name: 'Income tax calculator FY 2026-27, old vs new regime',
+  url: `${SITE_URL}${path}`,
+  applicationCategory: 'FinanceApplication',
+  operatingSystem: 'Any (web browser)',
+  inLanguage: 'en-IN',
+  isAccessibleForFree: true,
+  provider: { '@id': `${SITE_URL}/#accountingservice` },
+};
+const field = (k: string, label: string, hint = '') => ({ k, label, hint });
+const sections = [
+  { id: 'salary', title: 'Salary and pension', fields: [
+    field('salary', 'Gross salary', 'Total salary before any exemption or deduction'),
+    field('salaryExempt', 'Exempt allowances (old regime)', 'HRA, LTA and other exemptions'),
+    field('profTax', 'Professional tax paid (old regime)'),
+    field('familyPension', 'Family pension received', 'Deduction of one third, up to Rs 25,000 new / Rs 15,000 old'),
+  ] },
+  { id: 'hp', title: 'House property', fields: [
+    field('hpRent', 'Annual rent of let-out property'),
+    field('hpMunicipalTax', 'Municipal tax paid'),
+    field('hpInterestLetOut', 'Home loan interest, let-out property'),
+    field('hpInterestSelf', 'Home loan interest, self-occupied (old regime)', 'Allowed up to Rs 2,00,000'),
+  ] },
+  { id: 'bus', title: 'Business or profession', fields: [
+    field('business', 'Net profit from business or profession', 'After expenses, or presumptive income'),
+  ] },
+  { id: 'cg', title: 'Capital gains', fields: [
+    field('stcg111A', 'Short-term gains on listed shares and equity funds (20%)'),
+    field('stcgOther', 'Other short-term gains (slab rates)'),
+    field('ltcg112A', 'Long-term gains on listed shares and equity funds (12.5% above Rs 1.25 lakh)'),
+    field('ltcg112', 'Other long-term gains (12.5%)', 'Property, gold, unlisted shares'),
+    field('ltcg20', 'Long-term gains with indexation (20%)', 'Option for land or building bought before 23 July 2024'),
+  ] },
+  { id: 'os', title: 'Other sources', fields: [
+    field('interest', 'Interest income', 'Savings, fixed deposits, post office'),
+    field('savingsInterest', 'of which savings bank interest', 'For section 80TTA'),
+    field('dividend', 'Dividend income'),
+    field('otherIncome', 'Other income'),
+    field('lottery', 'Lottery, game show or online game winnings (30%)'),
+    field('agriculture', 'Agricultural income', 'Exempt, but counted for the rate of tax'),
+  ] },
+  { id: 'ded', title: 'Deductions', fields: [
+    field('d80C', '80C, 80CCC, 80CCD(1) (old regime)', 'PF, PPF, LIC, ELSS, tuition fees, home loan principal; limit Rs 1,50,000'),
+    field('d80CCD1B', '80CCD(1B) own NPS (old regime)', 'Limit Rs 50,000'),
+    field('d80D', '80D health insurance (old regime)'),
+    field('d80G', '80G donations, qualifying amount (old regime)'),
+    field('d80E', '80E education loan interest (old regime)'),
+    field('dOther', 'Other deductions (old regime)'),
+    field('d80CCD2', '80CCD(2) employer NPS contribution (both regimes)'),
+  ] },
+  { id: 'paid', title: 'Taxes already paid', fields: [
+    field('tds', 'TDS and TCS'),
+    field('advanceTax', 'Advance tax and self-assessment tax'),
+  ] },
+];
+---
+<Base title="Income Tax Calculator FY 2026-27: Old vs New Regime" description="Income tax calculator for FY 2026-27: salary, house property, business, capital gains, other income, deductions, rebate, surcharge and cess, old vs new." path={path} crumbs={crumbs} schema={[app, faqPage(faqs)]}>
+  <Fragment slot="head">
+    <script src="/js/itcalc-core.js" defer></script>
+    <script src="/js/itcalc-ui.js" defer></script>
+  </Fragment>
+
+  <PageHero crumbs={crumbs} eyebrow="Calculator · Direct tax" h1="Income tax calculator: old vs new regime" lead="Enter income under each head, deductions and taxes paid. The statement below works out total income and tax under both regimes side by side, with the 87A rebate, surcharge with marginal relief, 4% cess and the balance payable or refundable." chips={['Tax year 2026-27', 'FY 2025-26 (AY 2026-27)', 'Individuals and HUFs']} />
+
+  <div class="wrap itc">
+    <form class="itc-form" id="itc-form" autocomplete="off">
+      <section class="itc-card">
+        <h2>Taxpayer</h2>
+        <div class="itc-grid">
+          <label>Year
+            <select data-k="year">
+              <option value="ty2026">Tax year 2026-27 (Income-tax Act, 2025)</option>
+              <option value="fy2025">FY 2025-26 (AY 2026-27)</option>
+            </select>
+          </label>
+          <label>Status
+            <select data-k="status"><option value="individual">Individual</option><option value="huf">HUF</option></select>
+          </label>
+          <label>Age
+            <select data-k="age"><option value="below60">Below 60</option><option value="60to80">60 to 79 (senior citizen)</option><option value="80plus">80 or more (super senior)</option></select>
+          </label>
+          <label>Residential status
+            <select data-k="residency"><option value="resident">Resident</option><option value="nonresident">Non-resident</option></select>
+          </label>
+        </div>
+      </section>
+
+      {sections.map((s) => (
+        <section class="itc-card" id={`itc-${s.id}`}>
+          <h2>{s.title}</h2>
+          <div class="itc-grid">
+            {s.fields.map((f) => (
+              <label>{f.label}
+                <span class="itc-input"><span aria-hidden="true">Rs</span><input type="text" inputmode="numeric" data-k={f.k} placeholder="0" /></span>
+                {f.hint && <small>{f.hint}</small>}
+              </label>
+            ))}
+          </div>
+        </section>
+      ))}
+      <div class="btn-row">
+        <button class="btn alt" type="reset">Clear all</button>
+        <button class="btn" type="button" id="itc-print">Print or save as PDF</button>
+      </div>
+    </form>
+
+    <aside class="itc-summary" aria-live="polite">
+      <div class="itc-sum-card">
+        <p class="eyebrow light">Total tax payable</p>
+        <div class="itc-regimes">
+          <div data-regime="new"><span>New regime</span><b id="itc-new">Rs 0</b><small id="itc-new-sub"></small></div>
+          <div data-regime="old"><span>Old regime</span><b id="itc-old">Rs 0</b><small id="itc-old-sub"></small></div>
+        </div>
+        <p class="itc-verdict" id="itc-verdict">Enter your income to compare the two regimes.</p>
+        <a class="btn gold small" href="#itc-statement">See full statement</a>
+      </div>
+    </aside>
+  </div>
+
+  <section class="wrap itc-statement-wrap" id="itc-statement" aria-labelledby="itc-st-h">
+    <h2 id="itc-st-h">Statement of income and tax</h2>
+    <div class="table-wrap"><table class="itc-table"><thead><tr><th>Particulars</th><th>Old regime (Rs)</th><th>New regime (Rs)</th></tr></thead><tbody id="itc-rows"><tr><td colspan="3">Loading…</td></tr></tbody></table></div>
+    <noscript><p>This calculator needs JavaScript.</p></noscript>
+  </section>
+
+  <div class="wrap layout">
+    <article class="prose">
+      <h2>Rates used</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>New regime (default)</th><th>Rate</th><th>Old regime</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>Up to Rs 4,00,000</td><td>Nil</td><td>Up to Rs 2,50,000 (Rs 3,00,000 at 60+, Rs 5,00,000 at 80+)</td><td>Nil</td></tr>
+          <tr><td>Rs 4,00,001 to 8,00,000</td><td>5%</td><td>Up to Rs 5,00,000</td><td>5%</td></tr>
+          <tr><td>Rs 8,00,001 to 12,00,000</td><td>10%</td><td>Rs 5,00,001 to 10,00,000</td><td>20%</td></tr>
+          <tr><td>Rs 12,00,001 to 16,00,000</td><td>15%</td><td>Above Rs 10,00,000</td><td>30%</td></tr>
+          <tr><td>Rs 16,00,001 to 20,00,000</td><td>20%</td><td></td><td></td></tr>
+          <tr><td>Rs 20,00,001 to 24,00,000</td><td>25%</td><td></td><td></td></tr>
+          <tr><td>Above Rs 24,00,000</td><td>30%</td><td></td><td></td></tr>
+        </tbody>
+      </table></div>
+      <ul>
+        <li>Standard deduction on salary: Rs 75,000 (new) and Rs 50,000 (old).</li>
+        <li>Rebate for resident individuals: up to Rs 60,000 where total income is up to Rs 12 lakh (new), with marginal relief just above; up to Rs 12,500 where total income is up to Rs 5 lakh (old).</li>
+        <li>Surcharge: 10% above Rs 50 lakh, 15% above Rs 1 crore, 25% above Rs 2 crore, and 37% above Rs 5 crore in the old regime only; capped at 15% on capital gains taxed at special rates; marginal relief applied.</li>
+        <li>Health and education cess: 4% of tax and surcharge. Total income and tax are rounded to the nearest Rs 10.</li>
+      </ul>
+      <p>Not covered: carried forward losses, set-off rules beyond house property, alternate minimum tax, special rates for non-residents under a tax treaty, and the conditions attached to each deduction. For a return computation, see <a href="/income-tax-return-filing-chennai/">income tax return filing</a>, or the <a href="/tools/it/">quick income tax calculator</a>.</p>
+
+      <section class="faq" aria-labelledby="faq-h">
+        <h2 id="faq-h">Frequently asked questions</h2>
+        <div class="faq-list">
+          {faqs.map((f, i) => (<details open={i === 0}><summary><h3>{f.q}</h3></summary><p>{f.a}</p></details>))}
+        </div>
+      </section>
+
+      <section class="sources" aria-labelledby="src-h">
+        <h2 id="src-h">Sources</h2>
+        <ul>
+          <li><a href={SRC.itPortal.href} rel="noopener">{SRC.itPortal.label}</a></li>
+          <li><a href={SRC.itIndia.href} rel="noopener">{SRC.itIndia.label}</a></li>
+        </ul>
+        <p class="meta">Last reviewed: <time datetime="2026-10-29">{REVIEWED_TEXT}</time>. General information only. The result is an estimate for the figures entered, not a return or professional advice.</p>
+      </section>
+    </article>
+    <div class="sidebar"><SideContact /></div>
+  </div>
+</Base>

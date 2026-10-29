@@ -89,7 +89,7 @@ const years = 2026 - NAP.sinceYear;
         <h2 id="tools-h">{TOOLS.length} calculators for income tax, GST, TDS and more</h2>
         <p>Work out income tax under both regimes, HRA, capital gains, TDS on property, advance tax interest, GST, EMI, gratuity and more. Each calculator shows its working and the year it applies to. Results are estimates for the figures you enter.</p>
         <div class="pills">{popular.map((t) => <a href={`/tools/${t.key}/`}>{t.copy.h1}</a>)}</div>
-        <a class="btn gold" href="/tools/"><Icon name="search" /> Browse all calculators</a>
+        <div class="btn-row"><a class="btn gold" href="/tools/income-tax-calculator/"><Icon name="calc" /> Income tax calculator</a><a class="btn ghost-light" href="/tools/"><Icon name="search" /> Browse all calculators</a></div>
       </div>
       <div class="tool-cats">
         {CATEGORIES.map((c) => <a href={`/tools/#${c.k}`}>{c.label}<span>{c.tools.length}</span></a>)}
