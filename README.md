@@ -1,6 +1,6 @@
 # casaabdulrahim.in
 
-Static website for CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai. Built with Astro (static output), plain CSS, self-hosted fonts and one small script for the ICAI disclaimer. Hosted on Vercel.
+Static website for CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai. Built with Astro (static output), plain CSS, self-hosted fonts and one small script. Hosted on Vercel.
 
 ## Commands
 
@@ -17,7 +17,7 @@ Static website for CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai. B
 
 - `src/data/site.ts`: name, address, phones, hours, areas, services, guides, official source links, review date. Change NAP only here.
 - `src/data/schema.ts`: JSON-LD (AccountingService, Person, BreadcrumbList, Service, FAQPage, Article).
-- `src/layouts/Base.astro`: head tags, header, footer, mobile Call/WhatsApp bar, disclaimer dialog.
+- `src/layouts/Base.astro`: head tags, header, footer, mobile Call/WhatsApp bar.
 - `src/layouts/Service.astro`: shared layout for service pages and guides (FAQ, contact block, related links, sources, last reviewed).
 - `src/pages/`: one file per page. `[VERIFY]` and `[CONFIRM]` markers use `src/components/V.astro`.
 - `vercel.json`: security headers (CSP, HSTS, X-Frame-Options and others), cache rules, www redirect.

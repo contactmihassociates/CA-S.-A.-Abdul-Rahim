@@ -20,7 +20,6 @@ for (const f of htmlFiles()) {
   if (!/Last reviewed/.test(vis)) probs.push('no Last reviewed');
   if (!/Content reviewed on/.test(vis)) probs.push('no footer disclaimer');
   if (!OFFICIAL.test(h)) probs.push('no official source link');
-  if (!h.includes('id="disclaimer"')) probs.push('no disclaimer dialog');
   const isGuide = p.startsWith('/guides/') && p !== '/guides/';
   const isService = h.includes('"@type":"Service"');
   if (isService && words < 600) probs.push(`only ${words} words`);
