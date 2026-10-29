@@ -27,6 +27,7 @@ ${CATEGORIES.map((c) => `\n### ${c.label}\n` + c.tools.map((k) => TOOLS.find((t)
 - [Areas and directions](${SITE_URL}/areas/)
 - [Contact](${SITE_URL}/contact/)
 - [Google Maps listing](${NAP.mapsUrl})
+- [LinkedIn profile](${NAP.linkedin})
 - [Disclaimer](${SITE_URL}/disclaimer/)
 `;
   return new Response(body, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });

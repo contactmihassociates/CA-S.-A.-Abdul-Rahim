@@ -32,6 +32,7 @@ export const NAP = {
   directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=13.0003461%2C80.2571196',
   mapEmbed: 'https://www.google.com/maps?cid=16323173430388216385&output=embed',
   gbpUrl: 'https://g.page/r/CUFSYkXAj4fiEBM',
+  linkedin: 'https://www.linkedin.com/in/casaabdulrahim',
   blog: 'https://casaabdulrahim-notes.blogspot.com/',
   foundingDate: '1985-04-12',
   sinceYear: 1985,
