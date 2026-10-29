@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "search-console": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "C:/Users/HP/Desktop/seo-tools/node_modules/search-console-mcp/dist/index.js"
+      ],
+      "env": {}
+    }
+  }
+}
