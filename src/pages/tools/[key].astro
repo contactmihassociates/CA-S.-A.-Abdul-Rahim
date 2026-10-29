@@ -5,6 +5,8 @@ import SideContact from '../../components/SideContact.astro';
 import { TOOLS, CATEGORIES, CATEGORY_SERVICE, CATEGORY_SOURCES, TOOLKIT, type Tool } from '../../data/tools';
 import { SERVICES, SITE_URL, REVIEWED_TEXT } from '../../data/site';
 import { TOOL_FAQS } from '../../data/tool-faqs';
+import { TOOL_GUIDES } from '../../data/links';
+import { GUIDES } from '../../data/site';
 import { faqPage } from '../../data/schema';
 
 export function getStaticPaths() {
@@ -22,6 +24,7 @@ const related = [...siblings.slice(start), ...siblings.slice(0, start)].slice(0,
 const service = SERVICES.find((s) => s.href === CATEGORY_SERVICE[tool.cat]);
 const sources = CATEGORY_SOURCES[tool.cat] ?? [];
 const faqs = TOOL_FAQS[tool.key] ?? [];
+const toolGuides = (TOOL_GUIDES[tool.key] ?? []).map((h) => GUIDES.find((x) => x.href === h)).filter(Boolean) as { href: string; title: string }[];
 const app = {
   '@type': 'WebApplication',
   '@id': `${SITE_URL}${path}#app`,
@@ -63,6 +66,7 @@ const app = {
       <p>{c.note}</p>
       <p>The result is an estimate for the figures you enter. It is not a filed return, a certificate or professional advice. Rates, thresholds and section numbers change with each Finance Act, and the Income-tax Act, 2025 applies from 1 April 2026 with new section and form numbers.</p>
       {service && <p>For the related work, see <a href={service.href}>{service.label}</a>.</p>}
+      {toolGuides.length > 0 && (<><h2>Guides on this topic</h2><ul>{toolGuides.map((gd) => <li><a href={gd.href}>{gd.title}</a></li>)}</ul></>)}
 
       {faqs.length > 0 && (
         <section class="faq" aria-labelledby="faq-h">

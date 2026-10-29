@@ -1,0 +1,105 @@
+---
+import Service from '../../layouts/Service.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'Is the exemption available if I buy the new house before selling the old one?', a: 'Yes. The new house may be bought within one year before the date of transfer of the old house, or within two years after it. A house bought earlier than one year before the transfer does not qualify. Keep the purchase deed and the sale deed together to show the dates.' },
+  { q: 'Does the exemption cover the whole sale consideration or only the gain?', a: 'Only the long-term capital gain needs to be invested, not the whole sale consideration. If the cost of the new house is equal to or more than the gain, the gain is not charged. If the cost is lower, the shortfall is taxed as capital gain for the year of sale.' },
+  { q: 'What if I cannot buy or build the new house before filing my return?', a: 'Deposit the unused gain in an account under the Capital Gains Account Scheme with a specified bank before filing the return, and not later than the due date for filing it. Attach the deposit proof to the return. The amount is then used for the house within the three years.' },
+  { q: 'Can I sell the new house soon after buying it?', a: 'If the new house is sold within three years of purchase or construction, the exemption is effectively reversed. Its cost is taken as nil, or reduced by the gain that was exempted, when the gain on the new house is worked out. The earlier exemption is therefore recovered through a higher gain.' },
+];
+const pub = '2026-10-29';
+---
+<Service
+  title="Capital Gains on House Sale: New House and CGAS"
+  description="Capital gains exemption on selling a house by buying another: who qualifies, time limits, the Rs 10 crore cap and the Capital Gains Account Scheme."
+  path="/guides/capital-gains-exemption-new-house-cgas/"
+  h1="Capital gains on a house sale: exemption by buying another house, and the Capital Gains Account Scheme"
+  name="Capital gains exemption on a new house and the Capital Gains Account Scheme"
+  topic="your capital gains exemption"
+  lead="You can avoid tax on the long-term capital gain from selling a residential house if you are an individual or HUF and you buy or build another residential house in India within the time allowed. Gain not spent by the return due date must be deposited in the Capital Gains Account Scheme. Under the Income-tax Act, 2025 this relief is in section 82, earlier section 54."
+  faqs={faqs}
+  related={['/capital-gains-tax-property-sale/', '/guides/advance-tax-due-dates-interest/', '/income-tax-return-filing-chennai/']}
+  sources={[SRC.itIndia, SRC.itPortal, SRC.tnreginet]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>Old law and new law in one paragraph</h2>
+  <p>This relief was in section 54 of the Income-tax Act, 1961. The Income-tax Act, 2025 came into force on 1 April 2026 and carries it in section 82, as published on the Income Tax Department website. A house sold in the financial year 2025-26 or earlier is dealt with under the 1961 Act. A house sold from 1 April 2026 falls under the 2025 Act. The time limits described below are the same in both Acts.</p>
+
+  <h2>Who qualifies</h2>
+  <p>The relief is for an individual or a Hindu undivided family. A company, a firm or an LLP cannot claim it. Three conditions apply to the house you sold, which the Act calls the original asset:</p>
+  <ul class="checklist">
+    <li>It is a building, or a building with the land appurtenant to it, and it is a residential house.</li>
+    <li>The income from it is chargeable under the head "Income from house property".</li>
+    <li>The gain on its transfer is long-term. Land or a building held for more than 24 months is generally long-term.</li>
+  </ul>
+  <p>If you sold a plot of land, shares or any other long-term asset, this section does not apply. A separate relief exists for those, earlier section 54F, which is outside this guide.</p>
+
+  <h2>Time limits for the new house</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Action</th><th scope="col">Time allowed</th></tr></thead>
+      <tbody>
+        <tr><td>Buy the new house</td><td>Within one year before, or two years after, the date of transfer of the old house</td></tr>
+        <tr><td>Build the new house</td><td>Completed within three years after the date of transfer</td></tr>
+        <tr><td>Deposit unused gain in the scheme</td><td>Before filing the return, and not later than the due date for filing it</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The new asset must be one residential house in India. A house outside India does not qualify. All the periods are counted from the date of transfer of the old house, so the dates in your sale documents matter.</p>
+
+  <h2>How much is exempt</h2>
+  <p>You do not have to invest the whole sale consideration. You have to invest the capital gain.</p>
+  <ul>
+    <li>If the cost of the new house is equal to or more than the capital gain, no capital gains tax is charged on that gain.</li>
+    <li>If the cost of the new house is less than the capital gain, the excess is taxed as capital gain for the tax year of the sale.</li>
+  </ul>
+  <p><strong>Example.</strong> You sell a house and the long-term capital gain is Rs 80 lakh. You buy another house for Rs 60 lakh. The gain of Rs 20 lakh not invested is taxed, and the Rs 60 lakh is exempt.</p>
+  <p><strong>Cap of Rs 10 crore.</strong> If the cost of the new house is more than Rs 10 crore, the excess is not counted. Likewise, if the gain is more than Rs 10 crore, the excess is not counted for the purpose of the deposit rule.</p>
+  <p><strong>Two houses.</strong> If the capital gain is Rs 2 crore or less, you may choose to buy or build two residential houses in India instead of one. This option can be used only once. It cannot be used again in the same tax year or in any other tax year.</p>
+
+  <h2>The Capital Gains Account Scheme</h2>
+  <p>You may not have bought or built the new house by the time you file your return. If so, deposit the unused gain in a specified bank under the scheme notified by the Central Government. Banks that offer it usually have a separate form for this account. The rules are:</p>
+  <ol>
+    <li>Work out the capital gain on the sale and the amount you have already spent on the new house.</li>
+    <li>Deposit the balance in the scheme account before filing the return and not later than the due date for filing it.</li>
+    <li>Attach the proof of deposit to the return when you file it.</li>
+    <li>Withdraw from the account only for buying or building the house, within three years from the date of transfer of the old house.</li>
+  </ol>
+  <p>The amount already spent on the new house, together with the amount deposited, is treated as the cost of the new house.</p>
+  <p>If any part of the deposit is not used within the three years, the unused amount is taxed as capital gain of the tax year in which the three years end. You can then withdraw it from the account. Note the date on which the three years end as soon as you make the deposit.</p>
+
+  <h2>If the new house is sold early</h2>
+  <p>The exemption is intended for a house you keep. If you sell the new house within three years of buying or completing it, the exemption is recovered when the gain on the new house is worked out:</p>
+  <ul>
+    <li>Where the original gain was more than the cost of the new house, the cost of the new house is taken as nil.</li>
+    <li>Where the original gain was equal to or less than the cost, the cost is reduced by the amount of the original gain.</li>
+  </ul>
+  <p>Since the cost is lower, the gain on the second sale is higher. Whether that gain is short-term or long-term depends on how long you held the new house.</p>
+
+  <h2>Documents to keep</h2>
+  <ul class="checklist">
+    <li>Sale deed of the old house and its purchase deed or proof of cost</li>
+    <li>Computation of the long-term capital gain</li>
+    <li>Purchase deed or builder agreement of the new house, with registration receipts</li>
+    <li>Payment proofs, bank statements and loan sanction letter for the new house</li>
+    <li>For construction, the approved plan, contractor bills and completion proof</li>
+    <li>Deposit slip and passbook of the Capital Gains Account Scheme account</li>
+    <li>TDS certificate for the sale and the Form 26AS and AIS entries</li>
+  </ul>
+  <p>The sale and the exemption have to be reported in the return for the year of sale, even if no tax is payable after the exemption.</p>
+
+  <h2>Key points and official sources</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Point</th><th scope="col">Rule</th><th scope="col">Source</th></tr></thead>
+      <tbody>
+        <tr><td>Relief for sale of a residential house</td><td>Section 82, Income-tax Act, 2025 (earlier section 54)</td><td><a href="https://www.incometaxindia.gov.in/w/section-82-59" rel="noopener">Section 82, incometaxindia.gov.in</a></td></tr>
+        <tr><td>Purchase or construction</td><td>One year before or two years after; construction within three years</td><td><a href="https://www.incometaxindia.gov.in/w/section-82-59" rel="noopener">Section 82</a></td></tr>
+        <tr><td>Cap</td><td>Cost of new house and gain counted only up to Rs 10 crore</td><td><a href="https://www.incometaxindia.gov.in/w/section-82-59" rel="noopener">Section 82</a></td></tr>
+        <tr><td>Deposit</td><td>Before filing the return and by the due date; proof to be attached</td><td><a href="https://www.incometaxindia.gov.in/w/section-82-59" rel="noopener">Section 82</a></td></tr>
+        <tr><td>Filing the return</td><td>Report the sale and the exemption claimed</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>For the wider position on the tax on a property sale, see <a href="/capital-gains-tax-property-sale/">capital gains tax on property sale</a>. If the gain also leads to advance tax, see <a href="/guides/advance-tax-due-dates-interest/">advance tax due dates and interest</a>.</p>
+</Service>

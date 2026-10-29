@@ -1,0 +1,75 @@
+---
+import Service from '../../layouts/Service.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'Can the buyer deduct 1 percent if the seller promises to link PAN with Aadhaar later?', a: 'Not safely. The rate is decided by the seller\'s PAN status when TDS is deducted. A promise to link later does not change that. Ask the seller to link first and show the operative status, or deduct at the higher rate and check the Department\'s current relief circular.' },
+  { q: 'Who bears the extra TDS when the PAN is inoperative?', a: 'The buyer deducts it from the payment, so the seller receives less in hand. The extra amount is not a cost to the buyer or a penalty on the buyer. It is the seller\'s tax already paid, and the seller can claim it in the return for the year of sale.' },
+  { q: 'Will the seller get credit for TDS deducted at the higher rate?', a: 'Credit is given against the seller\'s PAN in Form 26AS and AIS once the buyer\'s statement is processed and the PAN details match. The seller claims it in the return and gets a refund of any excess. A wrong or missing PAN is the common reason credit does not appear.' },
+  { q: 'Does a seller without any PAN need to get one before the sale?', a: 'Yes, it is practical to get one. The buyer needs the PAN to report the deduction, and the seller needs it to file the return, claim credit and report the capital gain. Without a PAN, the buyer must deduct at the higher rate and the seller faces delay in credit.' },
+];
+const pub = '2026-10-29';
+---
+<Service
+  title="TDS on Property: Seller With No PAN or Inoperative PAN"
+  description="Seller has no PAN or an inoperative PAN? The buyer deducts TDS at a higher rate. What to do, how to fix PAN-Aadhaar linking, and the effect on credit."
+  path="/guides/tds-property-seller-no-pan-inoperative-pan/"
+  h1="TDS on property when the seller has no PAN or an inoperative PAN"
+  name="TDS on property, seller without PAN"
+  topic="TDS where the property seller has no operative PAN"
+  lead="If the seller has no PAN, or the PAN is inoperative because it is not linked with Aadhaar, the buyer must deduct TDS at the higher rate that applies when PAN is not available, not the usual 1 percent. The extra amount comes out of the seller's payment, so the safest course is to check the PAN status before the first payment and have the seller fix it early."
+  faqs={faqs}
+  related={['/tds-on-property-purchase-26qb/', '/guides/tds-on-property-purchase-50-lakh-step-by-step/', '/guides/correct-mistake-tds-on-property-form-141-26qb/']}
+  sources={[SRC.form141, SRC.itForms2026, SRC.itPortal, SRC.itIndia, SRC.traces]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>The rule in short</h2>
+  <p>Where the seller is a resident and the sale consideration or the stamp duty value is Rs 50 lakh or more, the buyer deducts TDS at 1 percent. This is section 393(1) of the Income-tax Act, 2025, reported in Form 141, Schedule B. That rate assumes the seller has furnished a PAN that is operative.</p>
+  <p>Section 397(2) of the Income-tax Act, 2025 provides a higher rate where the person receiving the payment does not furnish a PAN. It took over from section 206AA of the earlier Act. According to the Income Tax Department's FAQs on section 397, the deduction is at the highest of the normal rate, the rate in force and 20 percent, and a PAN that is invalid is treated as not furnished. For a property sale, this means 20 percent in place of 1 percent. The Department's guidance has also treated a PAN that is inoperative because it is not linked with Aadhaar as attracting the higher rate. Check the current FAQ on <a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a> before you deduct, because the rate and the relief conditions are set by the Department and can change.</p>
+
+  <h2>What the higher rate does to the payment</h2>
+  <p><strong>Example.</strong> A flat is sold for Rs 80 lakh. At 1 percent the TDS is Rs 80,000. If the seller's PAN is inoperative and the higher rate of 20 percent applies, the TDS is Rs 16 lakh and the seller receives Rs 64 lakh in hand. The difference of Rs 15.2 lakh is not lost. It is the seller's tax paid in advance, and it is adjusted against the tax on the capital gain when the seller files the return. Any excess is refunded. But the seller waits for that refund, and it can strain a plan to buy another house.</p>
+
+  <h2>What the buyer must do</h2>
+  <ul class="checklist">
+    <li>Collect the PAN of every seller before the agreement, and again before each payment.</li>
+    <li>Check the PAN status. The seller can see whether the PAN is operative on the income tax portal, and the buyer should ask for a screenshot or printout.</li>
+    <li>If the PAN is not available or is inoperative on the date of deduction, deduct at the higher rate and not at 1 percent.</li>
+    <li>Deduct on every payment, including the advance, in the share of each seller.</li>
+    <li>File Form 141, Schedule B, pay the challan within the usual time, and record the seller's PAN exactly as it appears on the PAN card.</li>
+    <li>After processing, download the TDS certificate (Form 132, earlier Form 16B) from TRACES and give it to the seller within 15 days from the due date of Form 141.</li>
+  </ul>
+  <p>If the buyer deducts only 1 percent when the higher rate applied, the shortfall is a default by the buyer. Interest and a late fee can follow. See <a href="/guides/late-tds-on-property-interest-late-fee/">late TDS on property: interest and late fee</a>.</p>
+
+  <h2>How the seller fixes an inoperative PAN</h2>
+  <ol>
+    <li>Log in to <a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a> and use the Link Aadhaar service to check the current status of the PAN.</li>
+    <li>If the PAN is not linked, submit the link request. The portal shows whether a fee is payable and generates a challan. Pay it through e-Pay Tax.</li>
+    <li>After payment, submit the link request again, as the portal directs, and wait for the status to change to operative.</li>
+    <li>Check that the name, date of birth and gender on the PAN and on Aadhaar match. A mismatch is the usual reason a link request fails. A correction in either record may be needed first.</li>
+    <li>Give the buyer the updated status before the next payment.</li>
+  </ol>
+  <p>A seller with no PAN applies for one on the portal. A non-resident seller follows different rules; see <a href="/guides/buying-property-from-nri-tds-tan-rates/">buying property from an NRI</a>.</p>
+
+  <h2>Relief if the PAN becomes operative later</h2>
+  <p>The Department has issued circulars under the earlier Act saying that the higher rate need not be applied for transactions where the PAN became operative within a stated period. The wording, the period and whether the relief carries over to the Income-tax Act, 2025 must be checked on the Department's website for the date of your payment. Do not assume that relief applies. If the higher rate has already been deducted, a later relief does not automatically reverse the deduction; discuss the position with your Chartered Accountant before filing a correction.</p>
+
+  <h2>Effect on the TDS certificate and the seller's credit</h2>
+  <p>The TDS certificate and the credit are tied to the PAN reported in Form 141. If the PAN is wrong, missing or does not match the seller's name, the statement may be processed with errors and the credit may not appear in Form 26AS or AIS. The seller then cannot claim it in the return without a correction. Two points follow:</p>
+  <ul>
+    <li>The buyer should enter the PAN carefully and, if an error is found, correct the statement on TRACES. See <a href="/guides/correct-mistake-tds-on-property-form-141-26qb/">correcting a mistake in TDS on property</a>.</li>
+    <li>The seller should check Form 26AS and AIS after the buyer files, confirm the amount is the higher-rate amount, and claim it in the return for the year of sale, where the capital gain is also reported.</li>
+  </ul>
+
+  <h2>Key points and official sources</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Point</th><th>Position</th><th>Official source</th></tr></thead>
+    <tbody>
+      <tr><td>Normal TDS, resident seller</td><td>1 percent, section 393(1), Form 141 Schedule B</td><td><a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/form-141-faqs" rel="noopener">Form 141 FAQs</a></td></tr>
+      <tr><td>Higher rate when PAN is not furnished</td><td>Section 397(2); 20 percent fallback for most entries</td><td><a href="https://www.incometaxindia.gov.in/documents/d/guest/faqs-on-higher-rate-of-tds-under-section-397" rel="noopener">FAQs on section 397</a></td></tr>
+      <tr><td>Earlier law</td><td>Section 206AA, 20 percent; invalid PAN treated as not furnished</td><td><a href="https://wm.incometaxindia.gov.in/w/tds-purchase-of-immovable-property" rel="noopener">TDS on purchase of immovable property</a></td></tr>
+      <tr><td>TDS certificate</td><td>Form 132, within 15 days from the due date of Form 141</td><td><a href="https://www.incometaxindia.gov.in/faqs-and-guidance-notes-on-forms-as-per-income-tax-rules-2026" rel="noopener">FAQs on forms, Rules 2026</a></td></tr>
+      <tr><td>Certificate download</td><td>Buyer, on TRACES</td><td><a href="https://www.tdscpc.gov.in/" rel="noopener">tdscpc.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+  <p>For help with the filing, see <a href="/tds-on-property-purchase-26qb/">TDS on property purchase</a>.</p>
+</Service>
