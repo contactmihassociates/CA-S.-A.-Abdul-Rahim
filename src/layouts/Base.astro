@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import Icon from '../components/Icon.astro';
 import { NAP, SITE_URL, REVIEWED_TEXT, SERVICES, GUIDES } from '../data/site';
-import { accountingService, person, breadcrumb } from '../data/schema';
+import { accountingService, person, website, breadcrumb } from '../data/schema';
 
 interface Props {
   title: string;
@@ -17,7 +17,7 @@ const canonical = `${SITE_URL}${path}`;
 const allCrumbs = [{ name: 'Home', path: '/' }, ...crumbs];
 const graph = {
   '@context': 'https://schema.org',
-  '@graph': [accountingService, person, breadcrumb(allCrumbs), ...schema],
+  '@graph': [website, accountingService, person, breadcrumb(allCrumbs), ...schema],
 };
 const groups = [...new Set(SERVICES.map((s) => s.group))];
 const nav = [

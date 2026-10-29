@@ -1464,10 +1464,10 @@
     "note": "The tax is deducted once in the year or at the end of tenancy; file the challan on time."
   },
   "sec194ia": {
-    "h1": "Property purchase TDS, Section 194IA",
-    "title": "Property purchase TDS estimate",
+    "h1": "Property purchase TDS (Form 141, earlier section 194-IA)",
+    "title": "TDS on property purchase calculator",
     "description": "Estimate TDS on the purchase of immovable property from a resident seller, on the higher of the consideration and stamp duty value.",
-    "summary": "This tool estimates the tax deducted by a buyer on purchasing property from a resident seller, using the higher of the consideration and the stamp duty value. It is used by buyers of immovable property. You need to enter the consideration, the stamp duty value and the number of buyers and sellers, and the result shows whether tax applies, the base value and the TDS.",
+    "summary": "TDS applies when you buy property other than agricultural land from a resident seller and the higher of the sale consideration and the stamp duty value is Rs 50 lakh or more. It is deducted at 1 percent on each payment and reported in Form 141 (earlier Form 26QB). The calculator shows the base value and the TDS.",
     "steps": [
       "Enter the consideration, the stamp duty value and the number of buyers and sellers.",
       "Choose the number of buyers and sellers to match your situation.",

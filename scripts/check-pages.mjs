@@ -21,7 +21,7 @@ for (const f of htmlFiles()) {
   if (!/Content reviewed on/.test(vis)) probs.push('no footer disclaimer');
   if (!OFFICIAL.test(h)) probs.push('no official source link');
   const isGuide = p.startsWith('/guides/') && p !== '/guides/';
-  const isService = h.includes('"@type":"Service"');
+  const isService = h.includes('"serviceType":');
   if (isService && words < 600) probs.push(`only ${words} words`);
   if (isGuide && (words < 900 || words > 1700)) probs.push(`guide ${words} words`);
   const faqs = [...h.matchAll(/<h3[^>]*>([^<]*\?)<\/h3>(?:<\/summary>)?<p>([^<]*)<\/p>/g)];

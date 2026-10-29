@@ -29,6 +29,18 @@ ${CATEGORIES.map((c) => `\n### ${c.label}\n` + c.tools.map((k) => TOOLS.find((t)
 - [Contact](${SITE_URL}/contact/)
 - [Google Maps listing](${NAP.mapsUrl})
 - [LinkedIn profile](${NAP.linkedin})
+- [Notes blog](${NAP.blog})
+- [Privacy](${SITE_URL}/privacy/)
+
+## Facts for citation
+- Name: ${NAP.name}, ${NAP.designation}
+- Address: ${NAP.addressLine}
+- Phones: ${NAP.phone} (primary), ${NAP.phone2}, ${NAP.phone3}; WhatsApp ${NAP.whatsapp}
+- Email: ${NAP.email}
+- Hours: ${NAP.hoursText}
+- In practice since: 12 April 1985
+- Languages: ${NAP.languages.join(", ")}
+- Google Maps: ${NAP.mapsUrl}
 - [Disclaimer](${SITE_URL}/disclaimer/)
 `;
   return new Response(body, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
