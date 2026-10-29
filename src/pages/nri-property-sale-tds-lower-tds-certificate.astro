@@ -1,6 +1,5 @@
 ---
 import Service from '../layouts/Service.astro';
-import V from '../components/V.astro';
 import { SRC } from '../data/site';
 const faqs = [
   { q: 'Why is TDS so high when an NRI sells property?', a: 'When the seller is a non-resident, the buyer must deduct tax on the capital gain portion at the rates in force plus surcharge and cess, and in practice deducts on the whole sale value unless a lower deduction certificate is produced. This is often far more than the actual tax payable on the gain.' },
@@ -30,7 +29,7 @@ const faqs = [
   </ul>
 
   <h2>The rules in brief</h2>
-  <p>Under the Income-tax Act, 1961, TDS on payments to non-residents was under section 195, and buyers needed a TAN and filed Form 27Q. Under the Income-tax Act, 2025, which applies from 1 April 2026, the Income Tax Department's Form 141 FAQs say a Schedule E has been introduced, with effect from 1 October 2026, for resident individual or HUF buyers purchasing property from a non-resident seller. Check whether TAN and quarterly statements are still needed in your case before payment <V />.</p>
+  <p>Under the Income-tax Act, 1961, TDS on payments to non-residents was under section 195, and buyers needed a TAN and filed Form 27Q. Under the Income-tax Act, 2025, which applies from 1 April 2026, the Income Tax Department's Form 141 FAQs say a Schedule E has been introduced, with effect from 1 October 2026, for resident individual or HUF buyers purchasing property from a non-resident seller. The department's help page for Schedule E states that obtaining a TAN is no longer mandatory for such transactions from 1 October 2026, and the deduction is reported using the buyer's PAN. Before that date the buyer had to obtain a TAN, deduct tax and file Form 144 through TRACES. For any other kind of buyer, check the requirement on the e-filing portal before payment.</p>
   <p>The lower or nil deduction certificate is applied for by the seller. Under the Income-tax Rules, 2026 the application is made in Form 128 (earlier Form 13), as stated in the department's guidance on new forms. The officer issues the certificate if satisfied that the seller's income justifies a lower rate.</p>
 
   <h2>Documents usually needed</h2>
@@ -51,7 +50,7 @@ const faqs = [
     <li>Queries from the officer are answered; the certificate, once issued, is given to the buyer.</li>
     <li>The buyer deducts TDS at the certificate rate and files the statement; the NRI checks the credit in Form 26AS.</li>
     <li>After the year ends, the NRI's income tax return is filed, reporting the capital gain and claiming any refund.</li>
-    <li>For remittance abroad, the CA certificate and remittance form on the portal are prepared (earlier Forms 15CB and 15CA) <V />.</li>
+    <li>For remittance abroad, the remittance declaration in Form 145 (earlier Form 15CA) is filed on the portal before the money is sent, and the Chartered Accountant's certificate in Form 146 (earlier Form 15CB) is obtained where the remittance is taxable and exceeds Rs 5 lakh in the tax year.</li>
   </ol>
 
   <h2>Key dates</h2>
@@ -60,7 +59,7 @@ const faqs = [
     <tbody>
       <tr><td>Apply for lower TDS certificate</td><td>Before the payment from the buyer; no fixed date</td><td><a href={SRC.itForms2026.href} rel="noopener">Income-tax forms 2026</a></td></tr>
       <tr><td>Buyer pays TDS and files Form 141</td><td>Within 30 days / one month from the end of the month of deduction</td><td><a href={SRC.form141.href} rel="noopener">Form 141 FAQs</a></td></tr>
-      <tr><td>NRI's income tax return for the year of sale</td><td>Usually 31 July after the end of the tax year <V /></td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>NRI's income tax return for the year of sale</td><td>As prescribed under section 263 of the Income-tax Act, 2025; check the due date for the year on the portal</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
     </tbody>
   </table></div>
 </Service>

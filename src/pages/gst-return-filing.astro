@@ -1,6 +1,5 @@
 ---
 import Service from '../layouts/Service.astro';
-import V from '../components/V.astro';
 import { SRC } from '../data/site';
 const faqs = [
   { q: 'What is the difference between GSTR-1 and GSTR-3B?', a: 'GSTR-1 is the statement of outward supplies, listing invoices issued to customers. GSTR-3B is the summary return in which you declare total sales, input tax credit claimed and the tax paid. Both must be filed for each period, and the figures in both should agree with your books.' },
@@ -57,8 +56,8 @@ const faqs = [
       <tr><td>GSTR-1 (monthly)</td><td>11th of the next month</td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
       <tr><td>GSTR-1 (quarterly, QRMP)</td><td>13th of the month after the quarter</td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
       <tr><td>GSTR-3B (monthly)</td><td>20th of the next month</td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
-      <tr><td>GSTR-3B (quarterly, QRMP, Tamil Nadu)</td><td>22nd of the month after the quarter <V /></td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
-      <tr><td>GSTR-9 annual return for 2025-26</td><td>31 December 2026 <V /></td><td><a href="https://cbic-gst.gov.in/" rel="noopener">cbic-gst.gov.in</a></td></tr>
+      <tr><td>GSTR-3B (quarterly, QRMP, Tamil Nadu)</td><td>22nd of the month after the quarter, unless extended by notification</td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
+      <tr><td>GSTR-9 annual return for 2025-26</td><td>31 December 2026, unless extended by notification</td><td><a href="https://cbic-gst.gov.in/" rel="noopener">cbic-gst.gov.in</a></td></tr>
     </tbody>
   </table></div>
   <p>Due dates are sometimes extended by notification. Check the GST portal for the current period.</p>

@@ -1,6 +1,5 @@
 ---
 import Service from '../layouts/Service.astro';
-import V from '../components/V.astro';
 import { SRC } from '../data/site';
 const faqs = [
   { q: 'Does an NRI have to file an income tax return in India?', a: 'An NRI must file if their income taxable in India is above the basic exemption limit, and should file to claim a refund of excess TDS, to report capital gains on sale of property or shares, or to carry forward losses. Income earned and received outside India is generally not taxable for a non-resident.' },
@@ -32,7 +31,7 @@ const faqs = [
   </ul>
 
   <h2>Points specific to NRIs</h2>
-  <p>TDS on payments to NRIs is deducted at higher rates and without the basic exemption limit, so many NRIs pay more tax through TDS than they owe and need to file a return to get a refund. NRIs are not eligible for some deductions and rebates available to residents. Tenants paying rent to an NRI landlord must deduct TDS on the rent, which is a common area of default. From 1 April 2026 the Income-tax Act, 2025 applies, with the old section on payments to non-residents replaced by provisions in section 393(2) <V />.</p>
+  <p>TDS on payments to NRIs is deducted at higher rates and without the basic exemption limit, so many NRIs pay more tax through TDS than they owe and need to file a return to get a refund. NRIs are not eligible for some deductions and rebates available to residents. Tenants paying rent to an NRI landlord must deduct TDS on the rent, which is a common area of default. From 1 April 2026 the Income-tax Act, 2025 applies, with tax deduction on payments to non-residents now covered by section 393(2).</p>
 
   <h2>Documents usually needed</h2>
   <ul class="checklist">
@@ -59,8 +58,8 @@ const faqs = [
     <thead><tr><th>What</th><th>Date</th><th>Source</th></tr></thead>
     <tbody>
       <tr><td>Return for assessment year 2026-27 (no audit)</td><td>31 July 2026</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
-      <tr><td>Belated or revised return for assessment year 2026-27</td><td>31 December 2026 or later date if extended <V /></td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
-      <tr><td>Advance tax on Indian income for tax year 2026-27</td><td>15 June, 15 September, 15 December, 15 March <V /></td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+      <tr><td>Belated or revised return for assessment year 2026-27</td><td>31 December 2026, or any later date notified on the e-filing portal</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>Advance tax on Indian income for tax year 2026-27</td><td>15 June, 15 September, 15 December, 15 March</td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
     </tbody>
   </table></div>
 </Service>
