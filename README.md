@@ -1,6 +1,6 @@
 # casaabdulrahim.in
 
-Static website for CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai. Built with Astro (static output), plain CSS, self-hosted fonts and one small script for the ICAI disclaimer. Hosted on Cloudflare Pages.
+Static website for CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai. Built with Astro (static output), plain CSS, self-hosted fonts and one small script for the ICAI disclaimer. Hosted on Vercel.
 
 ## Commands
 
@@ -20,7 +20,7 @@ Static website for CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai. B
 - `src/layouts/Base.astro`: head tags, header, footer, mobile Call/WhatsApp bar, disclaimer dialog.
 - `src/layouts/Service.astro`: shared layout for service pages and guides (FAQ, contact block, related links, sources, last reviewed).
 - `src/pages/`: one file per page. `[VERIFY]` and `[CONFIRM]` markers use `src/components/V.astro`.
-- `public/_headers`: security headers (CSP, HSTS, X-Frame-Options and others) applied by Cloudflare Pages.
+- `vercel.json`: security headers (CSP, HSTS, X-Frame-Options and others), cache rules, www redirect.
 - `public/robots.txt`, `src/pages/sitemap.xml.ts`, `src/pages/llms.txt.ts`.
 
 ## Checks (`scripts/`)
@@ -36,10 +36,11 @@ Static website for CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai. B
 1. Edit the page in `src/pages/`.
 2. When the content is checked again, update `REVIEWED_ISO` and `REVIEWED_TEXT` in `src/data/site.ts`.
 3. `npm run build && npm run check:all`
-4. Commit and push; Cloudflare Pages rebuilds automatically.
+4. Commit and push; Vercel rebuilds automatically.
 
-## Deployment (Cloudflare Pages)
+## Deployment (Vercel)
 
-- Framework preset: Astro. Build command: `npm run build`. Output directory: `dist`. Environment variable: `NODE_VERSION` = `22`.
-- Custom domain: `casaabdulrahim.in` and `www.casaabdulrahim.in`, with a redirect rule from `www` to the apex.
-- SSL/TLS: Full (strict); Always Use HTTPS on.
+- `vercel.json` sets the build (`npm run build`, output `dist`), trailing slashes, security headers (CSP, HSTS, X-Frame-Options and others), cache rules and the `www` to apex redirect.
+- Node.js version: 22.x, set by `engines` in `package.json`.
+- Custom domains: `casaabdulrahim.in` (primary) and `www.casaabdulrahim.in`. At GoDaddy, add the A and CNAME records Vercel shows under Project Settings, Domains.
+- Every push to `main` deploys automatically.
