@@ -1,0 +1,1700 @@
+{
+ "app": "/toolkit/app.f9333180156f.js",
+ "css": "/toolkit/toolkit.78efe9c2bf23.css",
+ "categories": [
+  {
+   "k": "tax",
+   "label": "Direct Tax",
+   "tools": [
+    "it",
+    "optimizer",
+    "scencompare",
+    "revtax",
+    "sec87a",
+    "surcharge",
+    "capgains",
+    "sec112a",
+    "ltcgharvest",
+    "sec111a",
+    "sec50aa",
+    "cii",
+    "sec50c",
+    "sec43ca",
+    "hra",
+    "hravsgg",
+    "advtax",
+    "ctc",
+    "gratuity",
+    "p10a",
+    "itrpicker",
+    "homeloan",
+    "hp",
+    "sec80eea",
+    "sec80ee",
+    "stampduty",
+    "chvia",
+    "sec80d",
+    "sec80g",
+    "sec80gga",
+    "sec80tta",
+    "pol80gg",
+    "esop",
+    "buyback",
+    "dividend",
+    "cgreinvest",
+    "sec54ec",
+    "sec54gb",
+    "sec54b",
+    "slumpsale",
+    "sec80iac",
+    "sec10aa",
+    "sec89",
+    "sec80gg",
+    "sec80u",
+    "sec80ddb",
+    "sec80jjaa",
+    "sec80cch",
+    "mat",
+    "vda",
+    "fno",
+    "gift56",
+    "angel",
+    "corp115",
+    "coop115",
+    "partner",
+    "huf",
+    "setoff",
+    "sec79",
+    "sec72a",
+    "sec40a",
+    "sec14a",
+    "ulip",
+    "sec10d",
+    "gaming"
+   ]
+  },
+  {
+   "k": "indirect",
+   "label": "GST",
+   "tools": [
+    "gst",
+    "invoice",
+    "hsn",
+    "gst2b",
+    "gstrefund",
+    "gstr9",
+    "gstrlf",
+    "gstint",
+    "qrmp",
+    "einvoice",
+    "gstcndn",
+    "gta",
+    "importsvc",
+    "regst",
+    "customs",
+    "gstcomp",
+    "rcm",
+    "ewb",
+    "pos"
+   ]
+  },
+  {
+   "k": "tds",
+   "label": "TDS / TCS",
+   "tools": [
+    "tds",
+    "tcs",
+    "tdslate",
+    "sec192",
+    "sec192a",
+    "form16",
+    "panaadhaar",
+    "sec194c",
+    "sec194i",
+    "sec194j",
+    "sec194h",
+    "sec194q",
+    "sec194o",
+    "sec194b",
+    "sec194m",
+    "sec194la",
+    "sec194lbb",
+    "sec194lbc",
+    "sec194t",
+    "sec194n",
+    "sec194ib",
+    "sec194ia",
+    "f15gh"
+   ]
+  },
+  {
+   "k": "compliance",
+   "label": "Compliance",
+   "tools": [
+    "cal",
+    "audit",
+    "presumptive",
+    "p44ada",
+    "p44ae",
+    "ptax",
+    "bonus",
+    "esi",
+    "epfdmg",
+    "depreciation",
+    "udyam",
+    "sec43bh",
+    "sec43b",
+    "sec269su",
+    "sec94b",
+    "sec234f",
+    "sec234d",
+    "sec244a",
+    "penalty",
+    "sec115bbe",
+    "sec270a",
+    "cash269",
+    "cash40a",
+    "ais",
+    "itru",
+    "tp3ceb",
+    "trustreg",
+    "trustapp"
+   ]
+  },
+  {
+   "k": "finance",
+   "label": "Money & Loans",
+   "tools": [
+    "emi",
+    "nps",
+    "eps",
+    "ppf",
+    "pfint",
+    "ssy",
+    "scss",
+    "retirement",
+    "childedu",
+    "hlv",
+    "networth",
+    "investments",
+    "sipelss",
+    "sgb",
+    "reit",
+    "fdtax",
+    "loandeduct"
+   ]
+  },
+  {
+   "k": "nri",
+   "label": "NRI / Cross-border",
+   "tools": [
+    "nri",
+    "nrirepat",
+    "dtaa",
+    "sec195",
+    "form10f",
+    "schedfa",
+    "sec115ad",
+    "ftc",
+    "lrs",
+    "sec89a",
+    "equalisation"
+   ]
+  },
+  {
+   "k": "utilities",
+   "label": "Generators & Utils",
+   "tools": [
+    "rentreceipt",
+    "validator"
+   ]
+  }
+ ],
+ "tools": [
+  {
+   "key": "it",
+   "label": "Income Tax",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Income Tax Calculator",
+   "em": "",
+   "sub": ""
+  },
+  {
+   "key": "capgains",
+   "label": "Capital Gains",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Capital Gains Calculator",
+   "em": "",
+   "sub": ""
+  },
+  {
+   "key": "sec50aa",
+   "label": "Sec 50AA Debt MF · MLD",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 50AA · Specified MF & MLD",
+   "em": "No indexation · slab rate",
+   "sub": "FA 2023 Sec 50AA treats gains on debt-oriented mutual funds (equity ≤ 35%) acquired on/after 1-Apr-2023, and on market-linked debentures, as short-term regardless of holding period — taxed at full slab with no indexation. Killed the historic 20%-with-indexation benefit on debt MF."
+  },
+  {
+   "key": "hra",
+   "label": "HRA Exemption",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "HRA Exemption",
+   "em": "year-specific rules",
+   "sub": ""
+  },
+  {
+   "key": "advtax",
+   "label": "Advance Tax 234A/B/C",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Advance Tax + 234A/B/C",
+   "em": "interest",
+   "sub": ""
+  },
+  {
+   "key": "ctc",
+   "label": "CTC Structure",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "CTC Structuring",
+   "em": "take-home",
+   "sub": "Slice your CTC into components, see monthly in-hand, compare regimes, and pick the best structure."
+  },
+  {
+   "key": "gratuity",
+   "label": "Gratuity / Leave",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Gratuity / Leave / VRS / Pension",
+   "em": "exemptions",
+   "sub": "Sec 10(10) gratuity, 10(10AA) leave, 10(10C) VRS, and 10(10A) pension commutation — all in one place."
+  },
+  {
+   "key": "itrpicker",
+   "label": "ITR Form Picker",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "ITR Form Picker",
+   "em": "which return do I file?",
+   "sub": "Answers the most common pre-filing question: which of ITR-1 through ITR-7 applies to your profile."
+  },
+  {
+   "key": "homeloan",
+   "label": "Home Loan · Sec 24",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Home Loan",
+   "em": "Sec 24(b) interest",
+   "sub": "Self-occupied vs let-out. Rs 2L cap (self), pre-construction interest in 5 equal instalments, and Rs 2L cross-head set-off limit u/s 71(3A)."
+  },
+  {
+   "key": "chvia",
+   "label": "Chapter VI-A · 80C/D",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Chapter VI-A",
+   "em": "deduction optimiser",
+   "sub": "80C, 80CCD(1B), 80D, 80E, 80G, 80TTA/TTB — see your shortfall to maximum and saving suggestions."
+  },
+  {
+   "key": "esop",
+   "label": "ESOP / RSU Tax",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "ESOP / RSU / Sweat Equity",
+   "em": "two-stage tax",
+   "sub": "(1) Perquisite at exercise (FMV − exercise price) taxed as salary. (2) Capital gain at sale (Sale − FMV at exercise)."
+  },
+  {
+   "key": "buyback",
+   "label": "Sec 115QA Buyback",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Buyback Tax",
+   "em": "",
+   "sub": "Buyback taxation has moved three times. Until 30-Sep-2024 the company paid 23.296% under Sec 115QA on distributed income. From 1-Oct-2024 the FA 2024 taxed the entire consideration as deemed dividend in the shareholder's hands, with acquisition cost becoming a deemed capital loss. From 1-Apr-2026 the Finance Act 2026 moves it back into capital gains — tax on the net gain only, at 12.5% long-term / 20% short-term, with a higher effective rate for promoters."
+  },
+  {
+   "key": "dividend",
+   "label": "Dividend · Sec 194 · Sec 80M",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Dividend · Sec 194 + Sec 80M",
+   "em": "Slab rate · 10% TDS over Rs 10K",
+   "sub": "DDT abolished from FY 2020-21 — dividends are now taxable in the shareholder's hands at slab/applicable rate. Sec 194 requires 10% TDS by the company if annual dividend exceeds Rs 10,000 (FA 2025 raised from Rs 5,000 w.e.f. 1-Apr-2025). Domestic companies receiving and re-paying dividends can claim Sec 80M deduction."
+  },
+  {
+   "key": "cgreinvest",
+   "label": "54 / 54F / 54EC",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 54 / 54F / 54EC",
+   "em": "reinvestment planner",
+   "sub": "Visualises the reinvestment exemption available against your LTCG, with cap and deadline."
+  },
+  {
+   "key": "sec54ec",
+   "label": "Sec 54EC Cap-Gain Bonds",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 54EC · Capital Gain Bonds",
+   "em": "NHAI · REC · PFC · IRFC",
+   "sub": "Park land/building LTCG in specified bonds within 6 months of transfer for an exemption capped at Rs 50L per FY (across both FYs straddling the 6-month window — FA 2014 clarification). 5-year lock-in. Coupon ~5.25% p.a. taxable as Other Sources. Premature sale or loan against bonds reverses the exemption."
+  },
+  {
+   "key": "sec80iac",
+   "label": "Sec 80IAC Startup Ded.",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 80IAC · Eligible Startup Deduction",
+   "em": "100% × 3 AYs out of 10",
+   "sub": "DPIIT-recognised eligible startup gets a 100% profits-deduction for any 3 consecutive AYs out of the first 10 AYs from incorporation (FA 2024 extended from 7 → 10). Incorporation between 1-Apr-2016 and 31-Mar-2030, turnover ≤ Rs 100 crore in the deduction year, and the entity must be a company or LLP. MAT/AMT still applies."
+  },
+  {
+   "key": "sec54gb",
+   "label": "Sec 54GB Property→Startup",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 54GB · Property → Startup",
+   "em": "Pty LTCG into eligible startup equity",
+   "sub": "Individual/HUF can shelter LTCG on residential property by subscribing to equity shares of an eligible startup that uses ≥ 75% of proceeds (proportional) for new plant & machinery within 1 year. Holding requirement: 25% for DPIIT startup (50% for MSME). Lock-in: shares 5 years; new asset 5 years (3 for computers)."
+  },
+  {
+   "key": "sec54b",
+   "label": "Sec 54B Agricultural Land",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 54B · Agricultural Land Exemption",
+   "em": "Reinvest in new agri land · 2 yrs",
+   "sub": "Individual / HUF can claim exemption on capital gain from transfer of agricultural land used by self/parent for ≥ 2 yrs preceding transfer, IF the gain is reinvested in another agricultural land (urban or rural) within 2 years. Rural agricultural land is not a capital asset under Sec 2(14)(iii) — no gain to begin with. Lock-in 3 years post acquisition; sale earlier reverses."
+  },
+  {
+   "key": "slumpsale",
+   "label": "Sec 50B Slump Sale",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 50B · Slump Sale",
+   "em": "Consideration − Net worth · slab tax",
+   "sub": "Transfer of an undertaking as a going concern for a lump-sum without assigning individual values. Capital gain = lump-sum consideration (or FMV per Rule 11UAE, whichever higher post FA 2021) minus net worth. Taxed at applicable slab / corporate rate — NOT the 12.5% LTCG rate. Long-term if undertaking held &gt; 36 months."
+  },
+  {
+   "key": "sec43ca",
+   "label": "Sec 43CA Builder SDV",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 43CA · Builder SDV Deeming",
+   "em": "10% safe harbour · stock-in-trade",
+   "sub": "Builder/developer selling immovable property held as stock-in-trade. If actual consideration is below the stamp-duty value (SDV) by more than 10% (safe harbour), SDV is deemed the consideration. Buyer concurrently faces Sec 56(2)(x) deemed-gift on the same gap. Pre-booking with full online payment can lock in the agreement-date SDV."
+  },
+  {
+   "key": "sec40a",
+   "label": "Sec 40(a) TDS Disallow.",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 40(a)(i) / (ia) · TDS Disallowance",
+   "em": "100% NR / 30% resident",
+   "sub": "Expense is disallowed if TDS was not deducted or not deposited by the Sec 139(1) due date. Sec 40(a)(i): payments to non-resident — 100% disallowed. Sec 40(a)(ia): payments to resident — 30% disallowed (FA 2014 reduced from 100% to 30%). Re-allowed in the year of actual TDS deposit."
+  },
+  {
+   "key": "sec10aa",
+   "label": "Sec 10AA SEZ Holiday",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 10AA · SEZ Unit Tax Holiday",
+   "em": "100% × 5 + 50% × 5 + 50% × 5",
+   "sub": "Deduction available to a unit set up in a SEZ. Years 1-5: 100% of export profits. Years 6-10: 50%. Years 11-15: 50% of export profits OR amount transferred to SEZ Re-investment Reserve, whichever is lower. Sunset clause: new units after 31-Mar-2020 don't qualify. MAT/AMT @ 15% still applies on book profits."
+  },
+  {
+   "key": "sec14a",
+   "label": "Sec 14A Exempt-Income",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 14A · Exempt-Income Disallowance",
+   "em": "Rule 8D · 1% of avg investment",
+   "sub": "Expenditure incurred in relation to exempt income is not deductible. Rule 8D quantifies: (i) direct expenditure traceable to the exempt income, PLUS (ii) 1% of average value of investments yielding exempt income (computed on opening + closing values). FA 2022 amendment confirms Sec 14A applies even if no exempt income is earned in the year."
+  },
+  {
+   "key": "surcharge",
+   "label": "Surcharge & Margin Relief",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Surcharge & Marginal Relief",
+   "em": "10 / 15 / 25 / 37% bands",
+   "sub": "Surcharge on income-tax kicks in at Rs 50L total income. Bands: 10% (Rs 50L-Rs 1Cr), 15% (Rs 1Cr-Rs 2Cr), 25% (Rs 2Cr-Rs 5Cr), 37% (above Rs 5Cr — capped at 25% in new regime per FA 2023). Special-rate income (Sec 111A, Sec 112A, Sec 112) capped at 15% surcharge. Marginal relief prevents the surcharge from clawing back more than the income excess."
+  },
+  {
+   "key": "sec115ad",
+   "label": "Sec 115AD FPI Tax",
+   "cat": "nri",
+   "catLabel": "NRI / Cross-border",
+   "title": "Sec 115AD · FPI Taxation",
+   "em": "Special rates · gross basis",
+   "sub": "Foreign Portfolio Investors (FPIs) registered under SEBI taxed at concessional flat rates: Sec 112A LTCG 12.5% (post 23-Jul-2024) / 10% pre, Sec 111A STCG 20% / 15% pre, other LTCG 12.5%, other STCG 30%, interest 20% (5% on notified RDB/government securities), other income 20%. Special-rate surcharge capped at 15%."
+  },
+  {
+   "key": "sec94b",
+   "label": "Sec 94B Thin-Cap",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 94B · Thin-Cap Interest Limitation",
+   "em": "30% of EBITDA · NR-AE debt",
+   "sub": "Interest paid to non-resident associated enterprises (or to non-AE under AE guarantee) is deductible only up to 30% of EBITDA. Applies only if interest exceeds Rs 1 crore. Disallowed interest carries forward 8 years for set-off against EBITDA in future years. Banks and insurance companies are excluded."
+  },
+  {
+   "key": "sec43b",
+   "label": "Sec 43B Statutory Dues",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 43B · Statutory Dues",
+   "em": "Allowable only on actual payment",
+   "sub": "Certain statutory and labour-related expenses are deductible only in the year of actual payment, NOT accrual. If paid on/before Sec 139(1) due date, allowed in the year of accrual. Otherwise allowed only in the year of payment. Covers tax/cess/duty, PF/gratuity, bonus, interest on PFI/bank loans, railway use charges, and leave encashment."
+  },
+  {
+   "key": "sec234f",
+   "label": "Sec 234F Belated Filing",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 234F · Belated Filing Fee",
+   "em": "Rs 1,000 / Rs 5,000 · plus Sec 234A",
+   "sub": "Late-filing fee under Sec 234F: Rs 5,000 if return is filed after the Sec 139(1) due date but before 31-December of the AY (Rs 1,000 if total income ≤ Rs 5L). Plus Sec 234A simple interest @ 1% per month on tax outstanding. Refund returns escape Sec 234A but Sec 234F still applies."
+  },
+  {
+   "key": "sec234d",
+   "label": "Sec 234D Excess Refund",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 234D · Excess Refund Interest",
+   "em": "0.5%/month payable BACK by taxpayer",
+   "sub": "When a refund granted at intimation (Sec 143(1)) is later found excessive at regular assessment (Sec 143(3)), the assessee pays 0.5% per month interest on the excess from the date of refund to the date of assessment. Mirrors Sec 244A which pays the taxpayer 0.5% per month for delayed refunds."
+  },
+  {
+   "key": "sec244a",
+   "label": "Sec 244A Refund Interest",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 244A · Refund Interest by Govt",
+   "em": "0.5%/month TO taxpayer",
+   "sub": "Interest payable by the Department on excess TDS / advance-tax / self-assessment refunds. Rate: 0.5% per month = 6% p.a. simple. Different start dates by source: TDS/advance-tax refunds — from 1-April of AY; self-assessment / regular-assessment — from date of payment. Capped at the date of refund grant."
+  },
+  {
+   "key": "p10a",
+   "label": "Sec 10(10A) Commutation",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 10(10A) · Pension Commutation",
+   "em": "Govt fully exempt · others fractional",
+   "sub": "Lump-sum received in exchange for foregoing part of your future pension. Govt employees (incl. defence, civil, statutory body) get 100% exemption. Non-govt employees: 1/3 of total commutable pension if gratuity was received, 1/2 otherwise. Uncommuted (monthly) pension is always taxable as salary."
+  },
+  {
+   "key": "sec112a",
+   "label": "Sec 112A LTCG Equity",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 112A · LTCG on Listed Equity",
+   "em": "",
+   "sub": ""
+  },
+  {
+   "key": "ltcgharvest",
+   "label": "Equity LTCG Harvest",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Equity LTCG Harvest",
+   "em": "Annual Rs 1.25L exemption",
+   "sub": "The Sec 112A LTCG exemption of Rs 1.25L on listed equity is per-year, per-PAN — unused exemption lapses each 31-March. Periodically sell-and-rebuy to crystallise gains up to Rs 1.25L each year for free, stepping up your cost basis. Set off any banked long-term capital loss before applying the exemption."
+  },
+  {
+   "key": "sec111a",
+   "label": "Sec 111A STCG Equity",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 111A · STCG on Listed Equity",
+   "em": "",
+   "sub": ""
+  },
+  {
+   "key": "sec89",
+   "label": "Sec 89(1) Arrears Relief",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 89(1) Relief",
+   "em": "salary arrears",
+   "sub": "Spread arrears back to relevant years and claim the difference as relief. Requires Form 10E filing before ITR."
+  },
+  {
+   "key": "sec80gg",
+   "label": "Sec 80GG Rent (no HRA)",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "",
+   "em": "",
+   "sub": ""
+  },
+  {
+   "key": "sec80u",
+   "label": "Sec 80U / 80DD Disability",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 80U / 80DD",
+   "em": "disability deduction",
+   "sub": "Flat deduction for taxpayer with disability (80U) or for maintenance of disabled dependent (80DD)."
+  },
+  {
+   "key": "sec80ddb",
+   "label": "Sec 80D / 80DDB Medical",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 80D / 80DDB",
+   "em": "medical deductions",
+   "sub": "Health insurance premium (80D) and specified medical treatment for self/dependent (80DDB). Conditions vary."
+  },
+  {
+   "key": "sec80d",
+   "label": "Sec 80D Health (Detailed)",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 80D · Health Insurance (Detailed)",
+   "em": "Self + parents + senior cap + preventive",
+   "sub": "Self/family: Rs 25,000 (≤59) or Rs 50,000 (60+). Parents: Rs 25,000 (≤59) or Rs 50,000 (60+) — separate cap. Preventive health checkup Rs 5,000 included <em>within</em> the overall cap (not extra). Multi-year lump-sum premium prorated. Old regime only — new regime ignores Sec 80D."
+  },
+  {
+   "key": "hravsgg",
+   "label": "HRA vs Sec 80GG",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "",
+   "em": "",
+   "sub": ""
+  },
+  {
+   "key": "sec87a",
+   "label": "Sec 87A Rebate Analyzer",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 87A Rebate",
+   "em": "",
+   "sub": ""
+  },
+  {
+   "key": "sec80jjaa",
+   "label": "Sec 80JJAA Employment",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 80JJAA",
+   "em": "new employment incentive",
+   "sub": "30% deduction on additional employee cost for 3 consecutive years. Salary cap Rs 25K/month, EPF mandatory, employee for ≥240 days."
+  },
+  {
+   "key": "sec80cch",
+   "label": "Sec 80CCH Agniveer",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 80CCH · Agniveer Corpus Fund",
+   "em": "FA 2023 · both regimes",
+   "sub": "Inserted by FA 2023 for personnel enrolled under the Agnipath Scheme. Sec 80CCH(1) gives full deduction for Agniveer's own contribution to the Agniveer Corpus Fund. Sec 80CCH(2) makes the Govt contribution taxable as salary but immediately deductible — net zero impact. Maturity (Seva Nidhi) payment after 4 years of service is fully exempt under Sec 10(12C)."
+  },
+  {
+   "key": "mat",
+   "label": "MAT / AMT",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "MAT / AMT",
+   "em": "",
+   "sub": ""
+  },
+  {
+   "key": "vda",
+   "label": "Crypto / VDA · Sec 115BBH",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Crypto / VDA transfer tax",
+   "em": "",
+   "sub": "For individuals and HUFs: enter each disposal separately. The ledger totals positive transfer gains, keeps losses separate and reconciles the TDS you enter. It estimates transfer tax before surcharge, rebate and tax on other income; it does not determine your final return liability or refund."
+  },
+  {
+   "key": "gift56",
+   "label": "Sec 56(2)(x) Gift Tax",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 56(2)(x) · Gift Tax",
+   "em": "gifts from non-relatives",
+   "sub": "Money, immovable or movable property received without (or for inadequate) consideration is taxable as 'Income from Other Sources' if it exceeds the Sec 56(2)(x) thresholds. Gifts from relatives, on marriage, or via will/inheritance are exempt regardless of amount."
+  },
+  {
+   "key": "angel",
+   "label": "Sec 56(2)(viib) Angel Tax",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 56(2)(viib) · Angel Tax",
+   "em": "Abolished by FA 2025 for new issues",
+   "sub": "Closely-held (unlisted) companies issuing shares at a price above FMV pay tax under Sec 56(2)(viib) on the excess — at 30% + cess. FA 2023 extended to NR investors. DPIIT-recognised startups with CBDT exemption are excluded. FA 2025 abolished Sec 56(2)(viib) entirely w.e.f. 1-Apr-2025."
+  },
+  {
+   "key": "partner",
+   "label": "Sec 40(b) Partnership Firm",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 40(b) · Partnership / LLP",
+   "em": "Interest 12% · Remuneration limits",
+   "sub": "Partnership firm / LLP can deduct partner interest @ max 12% simple interest, and working-partner remuneration capped under FA 2024 revised limits: Rs 3L or 90% of first Rs 6L book profit (higher) + 60% of balance. Remuneration must be authorised by deed. Firm taxed at 30% flat + cess; surcharge if total income > Rs 1Cr."
+  },
+  {
+   "key": "fno",
+   "label": "F&O / Derivatives",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "F&O / Derivatives Tax",
+   "em": "non-speculative business income",
+   "sub": "Futures & Options income is treated as 'Non-Speculative Business Income' u/s 43(5)(d) — taxed at slab rates, NOT as capital gains. Intraday equity is 'Speculative'. Turnover for audit = absolute sum of profits and losses. Reported in ITR-3, Sch BP."
+  },
+  {
+   "key": "corp115",
+   "label": "Corporate · Sec 115BAA/BAB",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Corporate Tax Regime Decider",
+   "em": "normal vs Sec 115BAA vs Sec 115BAB",
+   "sub": "For domestic companies, the concessional regimes give up deductions/incentives for a lower flat rate. Sec 115BAA: 22% (effective 25.17%). Sec 115BAB: 15% (effective 17.16%) — new manufacturing only. Once opted, cannot be reversed. MAT does not apply."
+  },
+  {
+   "key": "coop115",
+   "label": "Sec 115BAD/BAE Co-op",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 115BAD / BAE · Co-op Society",
+   "em": "22% / 15% mfg concessional",
+   "sub": "FA 2020 Sec 115BAD allows co-operative societies to opt for a 22% concessional rate (+ 10% surcharge + 4% cess = 25.17% effective) in lieu of normal 30%, forfeiting most exemptions/deductions including Sec 80P. FA 2023 Sec 115BAE further concessionalises new manufacturing co-ops at 15%. AMT does not apply to either."
+  },
+  {
+   "key": "sec79",
+   "label": "Sec 79 Share-change Loss",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 79 · Change-of-Shareholding Loss Bar",
+   "em": "51% test · DPIIT carve-out",
+   "sub": "In a closely-held company, accumulated losses cannot be carried forward and set off unless at least 51% of voting power continues with the original shareholders. DPIIT-recognised eligible startups (FA 2018) get a relaxed rule: losses survive as long as original promoter group retains its holding. Doesn't affect amalgamation under Sec 72A."
+  },
+  {
+   "key": "sec72a",
+   "label": "Sec 72A Amalgamation Loss",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 72A · Amalgamation Loss Inherit",
+   "em": "Loss + dep transfers if conditions met",
+   "sub": "Accumulated business loss & unabsorbed depreciation of the amalgamating company transfer to the amalgamated company under Sec 72A — provided 5-year holding by amalgamated entity, business continuity for 5 years, & specified conditions. Demerger and conversion of firm/LLP to company also covered. NCLT approval required."
+  },
+  {
+   "key": "huf",
+   "label": "HUF Tax Planner",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "HUF Tax Planner",
+   "em": "split family income across two PANs",
+   "sub": "Hindu Undivided Family is a separate taxable entity with its own PAN and basic exemption. Ancestral assets, joint family gifts (via will from parents/grandparents), and family business income can be parked in HUF. Karta files individual return + HUF files separately."
+  },
+  {
+   "key": "sec80g",
+   "label": "Sec 80G Donations",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 80G · Donations",
+   "em": "charity / approved funds",
+   "sub": "Old-regime-only deduction for donations. Four buckets: 100% without limit (PM CARES, NDF), 50% without limit (PM Drought Relief), 100% with limit (Govt family planning), 50% with limit (most charitable trusts). The 'limit' = 10% of Adjusted GTI."
+  },
+  {
+   "key": "revtax",
+   "label": "Reverse Tax (target net)",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Reverse Tax",
+   "em": "target take-home → required gross",
+   "sub": "Back-solves the gross salary needed to land a specific in-hand figure after income tax. Useful when negotiating offers, structuring an LOI, or quoting a client a net contractor rate. Uses binary search against the full Sec 115BAC/Sec 115BAB tax engine — accurate to Rs 100."
+  },
+  {
+   "key": "stampduty",
+   "label": "Stamp Duty & Reg.",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Stamp Duty & Registration",
+   "em": "state-wise property cost",
+   "sub": "Stamp duty and registration are state levies, varying from 4.9% (Gujarat) to 8% (Kerala). Many states offer rebates for female and joint owners — often saving Rs 1-3L on a typical urban purchase. Registration is generally 1% (capped in some states)."
+  },
+  {
+   "key": "sec194q",
+   "label": "Sec 194Q / Sec 206C(1H)",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194Q / Sec 206C(1H) Decider",
+   "em": "goods purchase TDS vs sale TCS",
+   "sub": "From 01-July-2021, both Sec 194Q (1% TDS on goods purchase by buyer with &gt;Rs 10Cr TO) and Sec 206C(1H) (0.1% TCS on goods sale by seller with &gt;Rs 10Cr TO) coexist. Where both apply on the same transaction, Sec 194Q overrides — only buyer deducts."
+  },
+  {
+   "key": "setoff",
+   "label": "Loss Setoff & C/F",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Loss Setoff & Carry Forward",
+   "em": "cross-head + multi-year planner",
+   "sub": "Indian tax law has strict rules on which losses can offset which incomes (intra-head Sec 70, inter-head Sec 71) and which can be carried forward how long (Sec 71B, Sec 72, Sec 73, Sec 74). This tool runs the cascade for FY {currentFY()}, capping HP loss at Rs 2L vs other heads and ring-fencing speculative/capital losses."
+  },
+  {
+   "key": "lrs",
+   "label": "LRS / Sec 206C(1G) TCS",
+   "cat": "nri",
+   "catLabel": "NRI / Cross-border",
+   "title": "LRS & Sec 206C(1G) TCS",
+   "em": "foreign remittance TCS",
+   "sub": "From 01-Oct-2023, TCS on outward remittances under the Liberalised Remittance Scheme jumped to 20% (from 5%) on most purposes. Education funded by Sec 80E loan still attracts only 0.5%. Tour packages: 5% up to Rs 7L, 20% beyond. Threshold Rs 7L per FY, per remitter."
+  },
+  {
+   "key": "customs",
+   "label": "Customs Duty",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "Customs Duty",
+   "em": "BCD + SWS + IGST stack",
+   "sub": "Import duty cascades: Basic Customs Duty on assessable value → Social Welfare Surcharge 10% on (BCD + AIDC) → IGST on the entire stack. Anti-dumping (ADV) and Agriculture Infra Cess (AIDC) apply on specific HSN codes. IGST is refundable as ITC by registered importers."
+  },
+  {
+   "key": "ulip",
+   "label": "ULIP · Sec 10(10D)",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "ULIP Tax · Sec 10(10D)",
+   "em": "post Feb-2021 Rs 2.5L cap",
+   "sub": "Until Feb-2021, ULIP maturity was fully exempt u/s Sec 10(10D) if annual premium ≤10% of sum assured. The Finance Act 2021 added a second condition: for policies issued on/after 01-Feb-2021, aggregate annual premium across all ULIPs must also be ≤Rs 2.5L. Above that, maturity is taxed like equity MF capital gains."
+  },
+  {
+   "key": "sec10d",
+   "label": "Sec 10(10D) Life Insurance",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 10(10D) · Life Insurance Maturity",
+   "em": "Premium-to-SA test + FA 2023 Rs 5L cap",
+   "sub": "Maturity proceeds from a life-insurance policy are exempt if (a) annual premium ≤ 10% of sum assured (15% for disability cover; 20% for pre-2012 policies), AND (b) for FA 2023+, aggregate non-ULIP premium across all policies on the same life is ≤ Rs 5L per year. ULIPs have a separate Rs 2.5L cap (Feb 2021)."
+  },
+  {
+   "key": "fdtax",
+   "label": "FD / RD Tax Yield",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "FD / RD Tax Planner",
+   "em": "post-tax yield + TDS",
+   "sub": "Bank/post office FD interest is taxed at your slab rate. TDS @10% kicks in once annual interest crosses Rs 40K (Rs 50K for seniors). Senior citizens get Sec 80TTB deduction up to Rs 50K on FD/SB interest combined. Post-tax yield can be materially below quoted rate for 30% slab investors."
+  },
+  {
+   "key": "sec80eea",
+   "label": "Sec 80EEA First Home",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 80EEA · First-time Home Buyer",
+   "em": "extra Rs 1.5L interest deduction",
+   "sub": "Over and above the Sec 24(b) Rs 2L cap on home loan interest, Sec 80EEA allows an additional Rs 1.5L deduction for first-time buyers. Conditions: property SDV ≤ Rs 45L, loan sanctioned between 01-Apr-2019 and 31-Mar-2022, individual must not own any other residential property at the time of sanction. Old regime only."
+  },
+  {
+   "key": "gaming",
+   "label": "Gaming / Lottery Sec 115BBJ",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Lottery / Online Gaming Tax",
+   "em": "Sec 115BB / Sec 115BBJ flat 30%",
+   "sub": "Winnings from lottery, crossword, gambling, horse racing, card games and TV game shows are taxed at a flat 30% u/s Sec 115BB. From FY 2023-24, Sec 115BBJ specifically governs online gaming with a 30% rate on 'net winnings' (withdrawals minus deposits) — no Rs 10,000 threshold like Sec 194B/BB."
+  },
+  {
+   "key": "gstcomp",
+   "label": "GST Composition",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GST Composition Scheme",
+   "em": "eligibility + 1/5/6% decider",
+   "sub": "The Composition Scheme (Sec 10) lets small taxpayers pay GST as a flat % of turnover with quarterly returns (CMP-08) and an annual return (GSTR-4) instead of monthly GSTR-1/3B. No ITC. No interstate sales. Cap: Rs 1.5 Cr for goods/restaurants, Rs 50L for services."
+  },
+  {
+   "key": "cii",
+   "label": "CII Indexation",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "CII Indexation",
+   "em": "cost inflation + LTCG Sec 112",
+   "sub": "Cost Inflation Index adjusts the purchase cost for inflation between FY 2001-02 (base 100) and FY 2024-25 (363). Post Finance Act 2024, most LTCG is 12.5% without indexation. Property purchased before 23-July-2024 gets a grandfathered choice — 12.5% un-indexed or 20% with indexation, whichever is lower."
+  },
+  {
+   "key": "pol80gg",
+   "label": "Political Sec 80GGB/GGC",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Political Donations · Sec 80GGB / Sec 80GGC",
+   "em": "100% deduction, conditions apply",
+   "sub": "Donations to political parties (registered u/s 29A of RP Act) and electoral trusts are 100% deductible u/s Sec 80GGB (companies) or Sec 80GGC (individuals/HUF/firms). Strict rules: no cash, party must be registered, deduction capped at taxable income. Old regime only."
+  },
+  {
+   "key": "sec50c",
+   "label": "Sec 50C Property Sale",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 50C · Property Sale",
+   "em": "SDV vs agreement value",
+   "sub": "Sec 50C ensures that the capital gain on sale of land/building cannot be less than the Stamp Duty Value. If the agreement value exceeds 90% of SDV (or Rs 50K diff, whichever higher), the agreement value stands. Otherwise the SDV is the 'deemed consideration' for computing LTCG."
+  },
+  {
+   "key": "itru",
+   "label": "ITR-U · Updated Return",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "ITR-U · Updated Return + Sec 234F",
+   "em": "late / belated / revised filing cost",
+   "sub": "From FA 2022, you can file an Updated Return u/s Sec 139(8A) up to 24 months after the relevant AY ends, with an additional 25% or 50% tax. Belated returns u/s Sec 139(4) attract Sec 234F fee (Rs 1K if income ≤Rs 5L, else Rs 5K) + Sec 234A interest. Revised returns u/s Sec 139(5) have no fee but must be before assessment."
+  },
+  {
+   "key": "hp",
+   "label": "House Property AV",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Income from House Property",
+   "em": "GAV → NAV → Sec 24 deductions",
+   "sub": "The full Sec 22-Sec 27 computation chain for rented or self-occupied property. Picks the higher of Municipal Value, Fair Rent and Actual Rent (capped at Standard Rent if rent-controlled), adjusts for vacancy and unrealised rent, then applies the 30% standard deduction and Sec 24(b) interest cap. New regime forfeits self-occupied interest but allows full let-out interest."
+  },
+  {
+   "key": "rcm",
+   "label": "GST RCM Decider",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GST Reverse Charge Mechanism",
+   "em": "Sec 9(3) / Sec 9(4) decider",
+   "sub": "Under RCM, the recipient (not the supplier) pays GST. Sec 9(3) covers notified categories (GTA, legal, director, etc.). Sec 9(4) for unregistered-supplier purchases was largely suspended post 01-Feb-2019. The recipient self-invoices and pays via GSTR-3B, then claims ITC if eligible."
+  },
+  {
+   "key": "ewb",
+   "label": "E-way Bill Decider",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "E-way Bill",
+   "em": "Rule 138 CGST requirement",
+   "sub": "E-way Bill is mandatory for inter-state movement of goods &gt;Rs 50K and for intra-state movements above the state-notified threshold. Bill validity is 1 day per 200 km (1 day per 20 km for over-dimensional cargo). Generate via ewaybillgst.gov.in by transporter, supplier, or recipient."
+  },
+  {
+   "key": "pos",
+   "label": "Place of Supply",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GST Place of Supply",
+   "em": "intra vs inter state decider",
+   "sub": "POS rules (Sec 10-Sec 13 IGST Act) determine whether a transaction is intra-state (CGST+SGST) or inter-state (IGST). Goods: where movement terminates. Services: depends on category — immovable property (location), training (performance), telecom (billing) all have specific rules."
+  },
+  {
+   "key": "optimizer",
+   "label": "Tax Saving Optimizer",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Tax Saving Optimizer",
+   "em": "suggests optimal deduction mix",
+   "sub": "A planning aide that allocates the standard Rs 1.5L Sec 80C across ELSS / PPF / insurance based on your risk appetite, layers Sec 80D health insurance for self + parents, adds Sec 80CCD(1B) NPS, Sec 24(b) home loan, and Sec 80TTA savings interest. Then computes whether your situation favours old or new regime."
+  },
+  {
+   "key": "sec80tta",
+   "label": "Sec 80TTA / 80TTB",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 80TTA / 80TTB",
+   "em": "savings & FD interest deduction",
+   "sub": "Sec 80TTA: Rs 10,000 deduction for non-seniors on SB + post office savings interest only (FD/RD not covered). Sec 80TTB: Rs 50,000 deduction for senior citizens (60+) covering SB + FD + RD + post office. Old regime only."
+  },
+  {
+   "key": "equalisation",
+   "label": "Equalisation Levy",
+   "cat": "nri",
+   "catLabel": "NRI / Cross-border",
+   "title": "Equalisation Levy",
+   "em": "2% / 6% on non-resident digital services",
+   "sub": "Levied OUTSIDE Income Tax Act. 6% (Sec 165 FA 2016) on online ads paid to non-residents by Indian businesses, deducted by payer if &gt;Rs 1L/yr. 2% (Sec 165A FA 2020) on e-commerce supplies of goods/services by non-resident operators to Indian users, paid by the operator if &gt;Rs 2Cr/yr."
+  },
+  {
+   "key": "sec89a",
+   "label": "Sec 89A Foreign Pension",
+   "cat": "nri",
+   "catLabel": "NRI / Cross-border",
+   "title": "Sec 89A · Foreign Retirement Relief",
+   "em": "US 401K / UK pension deferral",
+   "sub": "Sec 89A (Finance Act 2021) lets resident Indians defer tax on annual accruals in notified foreign retirement accounts (US 401K/IRA, UK pension, Canada RRSP). Tax is levied only on withdrawal, matching the source country's regime and avoiding the timing mismatch that previously caused double taxation. File Form 10-EE."
+  },
+  {
+   "key": "sec80gga",
+   "label": "Sec 80GGA Research",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 80GGA · Research / Rural Donations",
+   "em": "100% deduction (non-business)",
+   "sub": "Available to taxpayers WITHOUT business income — gives 100% deduction (no qualifying limit) for donations to approved scientific research associations, statistical research, rural development, agricultural extension projects. Business income taxpayers claim under Sec 35 directly. Old regime only."
+  },
+  {
+   "key": "sec80ee",
+   "label": "Sec 80EE Legacy Home",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Sec 80EE · Legacy First-Home",
+   "em": "FY 2016-17 Rs 50K extra interest",
+   "sub": "The original first-time-buyer benefit: additional Rs 50K interest deduction over Sec 24(b) Rs 2L. Sanction window: 01-Apr-2016 to 31-Mar-2017. Loan ≤Rs 35L, property value ≤Rs 50L. Continues lifetime once eligibility met. Superseded by Sec 80EEA for post-2019 loans. Old regime only."
+  },
+  {
+   "key": "p44ada",
+   "label": "Sec 44ADA Presumptive",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 44ADA · Professional Presumptive",
+   "em": "50% deemed income for specified professionals",
+   "sub": "Available to CAs, doctors, lawyers, architects, engineers, technical consultants, interior designers, accountants and film artists. Limit Rs 50L gross receipts — raised to Rs 75L if cash receipts are ≤5% of total (Finance Act 2023). No books, no audit. Advance tax due in one instalment by 15 March."
+  },
+  {
+   "key": "p44ae",
+   "label": "Sec 44AE Goods Transport",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 44AE · Goods Transport Presumptive",
+   "em": "≤ 10 vehicles · deemed income",
+   "sub": "Owner of ≤ 10 goods vehicles can opt for presumptive taxation. Heavy goods vehicle (HGV, gross weight &gt; 12,000 kg): Rs 1,000 per ton per month per vehicle. Other goods vehicles: Rs 7,500 per vehicle per month. No books or tax audit (Sec 44AB exclusion). Higher actual income can be declared."
+  },
+  {
+   "key": "ptax",
+   "label": "Professional Tax",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Professional Tax",
+   "em": "state-wise employer deduction",
+   "sub": "Levied by 17 states under their respective State Tax on Professions Acts. Maximum Rs 2,500/year (Article 276 of Constitution). Employer deducts and remits. Deductible from salary as 'less: Professional Tax' u/s 16(iii)."
+  },
+  {
+   "key": "bonus",
+   "label": "POB Act · Statutory Bonus",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Payment of Bonus Act 1965",
+   "em": "8.33% min · 20% max · Rs 21K ceiling",
+   "sub": "Statutory bonus payable to all employees drawing Basic + DA ≤ Rs 21,000 per month and having worked ≥ 30 days in the accounting year. Calculation base is lower of (actual Basic+DA, Rs 7,000 OR minimum wage notified by state govt — whichever higher). Min 8.33%, max 20% — depends on allocable surplus."
+  },
+  {
+   "key": "esi",
+   "label": "ESI Contribution",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "ESI · Employees State Insurance",
+   "em": "Employer 3.25% + Employee 0.75%",
+   "sub": "ESI Act 1948 covers employees in factories & establishments earning ≤ Rs 21,000 per month (Rs 25,000 for disability). Employer contributes 3.25% of gross wages, employee 0.75%. Provides medical care, sickness benefit, disability benefit, maternity, dependants' benefit. Contributions remitted by 15th of the next month via ESIC portal."
+  },
+  {
+   "key": "epfdmg",
+   "label": "Sec 14B EPF/ESI Damages",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "EPF / ESI Late-Deposit Damages",
+   "em": "Sec 14B EPF / Sec 85B ESI · 5-25%",
+   "sub": "EPFO levies graded damages on employers who deposit PF (or ESI under Sec 85B) late. Bands: ≤ 2 months — 5%, 2-4 months — 10%, 4-6 months — 15%, &gt; 6 months — 25% of the defaulted contribution. Plus 12% p.a. simple interest under Sec 7Q. Both are statutory liabilities — no waiver, no condonation."
+  },
+  {
+   "key": "scencompare",
+   "label": "Multi-Scenario Compare",
+   "cat": "tax",
+   "catLabel": "Direct Tax",
+   "title": "Multi-Scenario Comparator",
+   "em": "side-by-side tax planner",
+   "sub": "Compare up to 4 tax scenarios with different regime / deduction / income mixes. Identifies the lowest-tax option and quantifies the saving vs the worst."
+  },
+  {
+   "key": "gst",
+   "label": "GST",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GST Calculator",
+   "em": "splitter · composition · ITC",
+   "sub": "CGST/SGST/IGST splitter, Composition scheme, Sec 17(5) blocked ITC checker."
+  },
+  {
+   "key": "invoice",
+   "label": "GST Invoice",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GST Tax Invoice",
+   "em": "generator",
+   "sub": "Section 31-compliant invoice with auto-numbering, place-of-supply from GSTIN, per-row discount/cess, and demo QR."
+  },
+  {
+   "key": "hsn",
+   "label": "HSN Lookup",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "HSN / SAC Lookup",
+   "em": "GST rate finder",
+   "sub": "~200 curated codes from CBIC Notifications 1/2017 & 11/2017. Filter by rate, click code to copy."
+  },
+  {
+   "key": "gst2b",
+   "label": "GSTR-2B Reconciler",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GSTR-2A / 2B Reconciler",
+   "em": "ITC mismatch check",
+   "sub": "Paste 2B (GST portal) and your purchase register side-by-side. We flag missing invoices and tax-amount mismatches before you claim ITC."
+  },
+  {
+   "key": "gstrefund",
+   "label": "GST Refund Calculator",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GST Refund · Exports & Inverted Duty",
+   "em": "Rule 89 + Rule 96 routes",
+   "sub": "Three refund channels: zero-rated supply without IGST payment under LUT (formula refund of unused ITC); export with IGST payment (auto-refund via shipping bill); and inverted-duty structure where input GST &gt; output GST. Application via Form RFD-01 within 2 years of relevant date."
+  },
+  {
+   "key": "gstr9",
+   "label": "GSTR-9 / 9C Annual",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GSTR-9 / 9C · Annual Return",
+   "em": "Rs 2cr threshold · self-certified 9C ≥ Rs 5cr",
+   "sub": "GSTR-9 is the annual GST return. Mandatory for regular taxpayers with aggregate turnover &gt; Rs 2 crore, optional otherwise. GSTR-9C (reconciliation statement) self-certified by the taxpayer if turnover &gt; Rs 5 crore (post FY 2020-21 amendment — earlier needed a CA certificate). Due date typically 31-Dec following the FY."
+  },
+  {
+   "key": "gstrlf",
+   "label": "GSTR-3B/1 Late Fee",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GST late fee & payment interest",
+   "em": "separate the two delays",
+   "sub": "Late filing and late tax payment need separate calculations. This tool estimates the CGST late fee for an ordinary GSTR-1 or GSTR-3B filing, with a separately verified State/UTGST amount if available. Payment interest uses a reviewed base and delay; annual returns and special relief need individual review."
+  },
+  {
+   "key": "gstint",
+   "label": "GST Interest Sec 50",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GST Interest · Sec 50(1) / Sec 50(3)",
+   "em": "18% tax · 24% excess ITC",
+   "sub": "Sec 50(1) levies 18% p.a. simple interest on tax not paid by the due date. Sec 50(3) levies 24% p.a. on input tax credit availed but later reversed — punishes mismatched ITC. Both apply per day from the due date till actual payment."
+  },
+  {
+   "key": "qrmp",
+   "label": "QRMP Quarterly",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "QRMP · Quarterly Return / Monthly Payment",
+   "em": "≤ Rs 5cr AATO · file 4 + pay 12",
+   "sub": "Optional scheme for taxpayers with aggregate turnover ≤ Rs 5 crore. File GSTR-3B and GSTR-1 quarterly, but pay GST monthly via PMT-06 for the first two months. Two payment methods: (a) Fixed-Sum — 35% of last quarter's tax each month, (b) Self-Assessment — actual liability."
+  },
+  {
+   "key": "regst",
+   "label": "GST on Real Estate",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GST on Real Estate",
+   "em": "1% / 5% / 12% · ITC reversed for housing",
+   "sub": "Post 1-Apr-2019: under-construction residential is 1% (affordable: SP ≤ Rs 45L & carpet area ≤ 60 sqm metro / 90 sqm elsewhere) or 5% (other). Commercial under-construction: 12% with ITC. Completion-certificate (OC) received? Outside GST. JDA developer service: 18%. Builder must reverse / not claim ITC for the 1%/5% schemes."
+  },
+  {
+   "key": "einvoice",
+   "label": "GST e-Invoice Decider",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GST e-Invoice Decider",
+   "em": "Rs 5cr threshold · B2B IRN",
+   "sub": "Mandatory IRN generation from IRP for B2B + export invoices when aggregate turnover crossed Rs 5 crore in any previous FY (since 1-Aug-2023). B2C invoices need dynamic QR code at Rs 500cr+ threshold. SEZ units, banks, insurers, GTA, cinema and govt depts are exempt. Time-of-supply is keyed to IRN generation."
+  },
+  {
+   "key": "gstcndn",
+   "label": "GST CN/DN Time Limits",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GST CN / DN · Sec 34 Time Limits",
+   "em": "CN by 30-Nov next FY · DN open",
+   "sub": "Credit Note (CN) under Sec 34(1)/(2): issuable by supplier when taxable value/tax of an earlier supply needs adjustment downward. Time limit: 30-November of the FY following the original supply year, OR before annual return filing — whichever earlier. Debit Note (DN) under Sec 34(3)/(4): no time limit. ITC reversal by recipient required against CN."
+  },
+  {
+   "key": "gta",
+   "label": "GTA Transport",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "GTA · Goods Transport Agency",
+   "em": "5% / 12% / RCM matrix",
+   "sub": "Goods Transport Agency outward supply of road-transport service. Default mechanism: reverse charge (RCM) at 5% — recipient (if registered) pays. From 1-Aug-2023, GTA can opt for forward charge (FCM) at 5% (no ITC) or 12% (with ITC) by filing Annexure-V on portal once per FY."
+  },
+  {
+   "key": "importsvc",
+   "label": "Import of Services RCM",
+   "cat": "indirect",
+   "catLabel": "GST",
+   "title": "Import of Services · Sec 5(3) IGST RCM",
+   "em": "18% IGST · ITC recoverable",
+   "sub": "Import of services into India is a supply under IGST. Where recipient is registered, RCM applies — recipient self-invoices and pays 18% IGST. Where service is OIDAR (online information / database access / retrieval — Netflix, Spotify, Adobe etc.) and recipient is non-taxable, the overseas supplier registers under simplified scheme and charges IGST. ITC available to registered recipient if used for taxable supply."
+  },
+  {
+   "key": "tds",
+   "label": "TDS Rate Finder",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "TDS Calculator",
+   "em": "",
+   "sub": ""
+  },
+  {
+   "key": "tcs",
+   "label": "TCS · Sec 206C",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "TCS Calculator",
+   "em": "Sec 206C",
+   "sub": "Tax Collected at Source on specified transactions. Reflects in 26AS; claim as credit in ITR."
+  },
+  {
+   "key": "tdslate",
+   "label": "TDS Late-Filing Fee",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "TDS Late-Filing",
+   "em": "Sec 234E / 271H / 201(1A)",
+   "sub": "Late-fee, penalty range, and interest on delayed deposit — all in one shot."
+  },
+  {
+   "key": "sec192",
+   "label": "Sec 192 Salary TDS",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 192 · Monthly Salary TDS",
+   "em": "Average-rate basis · Form 12BB",
+   "sub": "Employer deducts monthly TDS at the average rate of income-tax for the FY. Employee files Form 10-IEA to elect old regime (new is default). Investment proofs (Form 12BB) lower estimated tax mid-year. Use this to compute the remaining-month TDS after earlier deductions."
+  },
+  {
+   "key": "sec192a",
+   "label": "Sec 192A EPF Withdrawal",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "EPF withdrawal TDS",
+   "em": "",
+   "sub": ""
+  },
+  {
+   "key": "panaadhaar",
+   "label": "PAN-Aadhaar Link",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "PAN–Aadhaar status guide",
+   "em": "check, review, follow up",
+   "sub": "Check PAN–Aadhaar linkage on the Income Tax Department portal. This guide explains the next step for the message you report; it cannot verify your PAN, determine exemption or choose a withholding rate. Keep your portal confirmation and review any tax consequence for the transaction and year concerned."
+  },
+  {
+   "key": "sec194la",
+   "label": "Sec 194LA Land Acquisition",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194LA · Compulsory Acquisition",
+   "em": "10% on compensation &gt; Rs 2.5L",
+   "sub": "Government / local authority deducts 10% TDS on compensation or enhanced compensation paid for compulsory acquisition of immovable property (other than rural agricultural land). Threshold Rs 2,50,000 per transaction. Awards under RFCTLAA 2013 are fully exempt under Sec 96 of that Act and Sec 10(37) for individuals."
+  },
+  {
+   "key": "sec194m",
+   "label": "Sec 194M Personal (Indiv)",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194M · Personal Payments TDS",
+   "em": "2% over Rs 50L · indiv/HUF · no TAN",
+   "sub": "Inserted by FA 2019. Individual / HUF who is NOT subject to tax audit deducts 2% TDS on personal contractor / commission / professional payments exceeding Rs 50,00,000 to one person in a FY. Filed via Form 26QD; no TAN required. Certificate Form 16D within 15 days of the Form 26QD due date."
+  },
+  {
+   "key": "sec194o",
+   "label": "Sec 194O E-commerce",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "E-commerce TDS",
+   "em": "check the year, then the payment",
+   "sub": "Estimate withholding on a reviewed e-commerce payment or credit to a resident seller. Annual gross sales determine threshold eligibility; the separate deduction base determines this estimate. Choose the correct year and identity status, and review exceptional cases before relying on an amount. This is not the seller’s final income tax."
+  },
+  {
+   "key": "sec194b",
+   "label": "Sec 194B/BA Winnings",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194B / Sec 194BA · Winnings TDS",
+   "em": "30% flat · games & online gaming",
+   "sub": "Sec 194B: 30% on winnings from lotteries, crossword puzzles, card games, TV shows etc., threshold Rs 10,000 aggregate p.a. (FA 2023). Sec 194BB: 30% on horse race winnings. Sec 194BA: 30% on net winnings from online gaming — no threshold, computed on net (withdrawals over deposits), TDS at withdrawal and FY-end (FA 2023)."
+  },
+  {
+   "key": "sec194lbb",
+   "label": "Sec 194LBB AIF Cat I/II",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194LBB · AIF Cat I/II Distribution",
+   "em": "10% resident · treaty NR",
+   "sub": "Investment fund registered under SEBI AIF Regulations as Category-I or Category-II deducts TDS on income paid or credited to unit-holders. 10% if unit-holder is resident, treaty rate for NR with PAN/TRC, 30% (or higher under Sec 206AA) otherwise. Cat-III AIFs are taxed at the fund level — Sec 194LBB does not apply."
+  },
+  {
+   "key": "sec194t",
+   "label": "Sec 194T Firm to Partner",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194T · Firm-to-Partner TDS",
+   "em": "FA 2024 · 10% over Rs 20K p.a.",
+   "sub": "Inserted by Finance (No. 2) Act 2024 w.e.f. 1-Apr-2025. Partnership firms (incl. LLPs) must deduct 10% TDS on aggregate annual payments to a partner exceeding Rs 20,000 — covering salary, remuneration, commission, bonus, and interest. Share of profit (Sec 10(2A) exempt) is outside this section."
+  },
+  {
+   "key": "sec194lbc",
+   "label": "Sec 194LBC Securitization",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194LBC · Securitization Trust",
+   "em": "25% indiv · 30% co. · treaty NR",
+   "sub": "Securitization trust (SPV under SEBI Securitised Debt Instruments Regulations) deducts TDS on income paid to investors. 25% if recipient is resident individual / HUF, 30% if resident company / firm, treaty rate (with TRC + Form 10F) for NR. Income passes through with original character; investor pays final tax in own slab."
+  },
+  {
+   "key": "form16",
+   "label": "Form 16 Generator",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Form 16 · TDS Certificate",
+   "em": "Part B preview",
+   "sub": "Employer-issued TDS certificate for salary income. Part A (auto-generated from TRACES) shows TDS deposited; Part B is the salary computation. Enter the salary and exemption fields below to preview the Part B summary your employer must compile before issuing Form 16 by 15-June."
+  },
+  {
+   "key": "sec194c",
+   "label": "Sec 194C Contractor",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194C · Contractor / Sub-contractor",
+   "em": "1% / 2% · Rs 30K single · Rs 1L aggregate",
+   "sub": "Any sum paid for carrying out any work (including supply of labour) in pursuance of a contract. 1% if payee is individual / HUF, 2% otherwise. Threshold: Rs 30,000 per single payment OR Rs 1,00,000 aggregate in a FY — either trigger means TDS. Transporter ≤10 vehicles with declaration is exempt."
+  },
+  {
+   "key": "sec194i",
+   "label": "Sec 194I Rent (audit)",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194I · Rent (Audit-side)",
+   "em": "10% land/bldg · 2% P&M · Rs 50K/month (FA 2025)",
+   "sub": "TDS by businesses subject to tax audit on rent paid for land, building (incl. factory), furniture/fittings (10%), and plant/machinery/equipment (2%). FA 2025 amended the threshold from Rs 2,40,000 p.a. to Rs 50,000 per month w.e.f. 1-Apr-2025 — applies prospectively. Individual tenants below audit use Sec 194IB (separate tool)."
+  },
+  {
+   "key": "sec194j",
+   "label": "Sec 194J Professional Fees",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194J · Professional & Technical Fees",
+   "em": "10% pro · 2% tech · Rs 50K threshold (FA 2025)",
+   "sub": "TDS on fees for professional services (legal, medical, engineering, architectural, accountancy, technical consultancy, interior decoration etc.) at 10%, fees for technical services at 2% (FA 2020 reduced), director's sitting fees / non-compete / royalty at 10%. Threshold raised to Rs 50,000 from 1-Apr-2025 (FA 2025). No threshold for director fees."
+  },
+  {
+   "key": "sec194h",
+   "label": "Sec 194H Commission",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194H · Commission & Brokerage",
+   "em": "2% post-Oct-2024 · Rs 20K (FA 2025)",
+   "sub": "TDS on any payment for services rendered in the course of buying or selling goods or in relation to a transaction. Rate dropped 5% → 2% from 1-Oct-2024 (FA 2024). Threshold lifted Rs 15K → Rs 20K from 1-Apr-2025 (FA 2025). Insurance commission is under Sec 194D, LIC pension commission under Sec 194DA — separate sections."
+  },
+  {
+   "key": "sec194n",
+   "label": "Sec 194N Cash Withdrawal",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194N · Cash Withdrawal TDS",
+   "em": "Rs 1Cr filer · Rs 20L non-filer",
+   "sub": "Bank, co-op bank or post office deducts TDS on aggregate cash withdrawals from your account in a financial year. Filer: 2% over Rs 1cr (Rs 3cr for co-op per FA 2023). Non-filer (no ITR for last 3 AYs): 2% over Rs 20L, 5% over Rs 1cr. Govt entities and RBI are exempt. Credit via Form 26AS — not allowed as expense or capital gain offset."
+  },
+  {
+   "key": "sec194ib",
+   "label": "Sec 194IB Rent (individual)",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Sec 194IB · Rent TDS by Individual",
+   "em": "> Rs 50K/month, no TAN needed",
+   "sub": "Individual / HUF tenants (not subject to tax audit) paying rent above Rs 50,000 per month must deduct TDS on the annual rent. Rate dropped from 5% → 2% w.e.f. 1-Oct-2024 (FA 2024). Deducted in March or when vacating, deposited via Form 26QC within 30 days, certificate Form 16C."
+  },
+  {
+   "key": "sec194ia",
+   "label": "Sec 194IA Property Purchase",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Property Purchase TDS",
+   "em": "resident-seller estimate",
+   "sub": "Check the seller’s tax residence before using this estimate. For an ordinary resident-property purchase, the estimate uses the higher of total consideration and stamp-duty value. Payment timing, instalments, ownership shares and filing forms need a separate review."
+  },
+  {
+   "key": "f15gh",
+   "label": "Form 15G / 15H",
+   "cat": "tds",
+   "catLabel": "TDS / TCS",
+   "title": "Form 15G / 15H",
+   "em": "eligibility wizard",
+   "sub": "Yes/no answer on whether you may submit Form 15G or 15H to your bank to suppress TDS u/s 197A."
+  },
+  {
+   "key": "cal",
+   "label": "Compliance Calendar",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Compliance",
+   "em": "calendar",
+   "sub": "Countdown to statutory filing dates. Add a date to your own calendar with one click."
+  },
+  {
+   "key": "audit",
+   "label": "Tax Audit 44AB",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Tax Audit · 44AB",
+   "em": "applicability",
+   "sub": "Audit trigger, books-of-account flag, 271B penalty, and Sep-30 countdown."
+  },
+  {
+   "key": "presumptive",
+   "label": "Presumptive 44AD",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Presumptive Taxation",
+   "em": "44AD · 44ADA · 44AE",
+   "sub": "Eligibility, deemed-profit vs normal-computation comparison, and per-vehicle 44AE breakdown."
+  },
+  {
+   "key": "depreciation",
+   "label": "Depreciation",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Depreciation",
+   "em": "multi-block",
+   "sub": "IT Act Sec 32 WDV for up to 10 asset blocks, including Sec 32(1)(iia) additional 20% for new P&M, alongside Schedule II SLM."
+  },
+  {
+   "key": "udyam",
+   "label": "MSME / Udyam",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "MSME / Udyam",
+   "em": "classifier + Sec 43B(h)",
+   "sub": "Udyam classification (Budget 2025 thresholds) and Sec 43B(h) supplier-payment tracker with disallowance and MSMED interest."
+  },
+  {
+   "key": "sec43bh",
+   "label": "Sec 43B(h) MSME 45-day",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 43B(h) · MSME 45-day Rule",
+   "em": "FA 2023 · disallow if late",
+   "sub": "Inserted by FA 2023 w.e.f. FY 2023-24. Payments to MSME (micro/small) suppliers must be made within the MSMED Act window — 45 days (with written agreement) or 15 days (without). Otherwise the expense is disallowed in the year of incurrence and re-allowed only in the year of actual payment. Medium enterprises are excluded."
+  },
+  {
+   "key": "sec269su",
+   "label": "Sec 269SU Digital Modes",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 269SU · Mandatory Digital Modes",
+   "em": "Rs 50cr+ business · Rs 5,000/day",
+   "sub": "Businesses with sales/turnover/receipts &gt; Rs 50 crore in the preceding FY must mandatorily accept payment through prescribed electronic modes — BHIM-UPI, UPI QR, RuPay debit card (Rule 119AA). No surcharge can be levied on customers using these modes. Sec 271DB imposes Rs 5,000 per day of non-compliance."
+  },
+  {
+   "key": "penalty",
+   "label": "Late Fee & Penalty",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Late Fee & Penalty",
+   "em": "234F · 234E · 271H · GST · Sec 50",
+   "sub": "Income tax late-filing fees, TDS penalties, GST late fees (GSTR-1/3B/9), Sec 50 interest and Sec 271C."
+  },
+  {
+   "key": "sec115bbe",
+   "label": "Sec 115BBE Unexplained",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 115BBE · Unexplained Income",
+   "em": "60% tax + 25% SC + 4% cess",
+   "sub": "Special rate on income additions under Sec 68 (cash credits), Sec 69 (unexplained investments), Sec 69A (unexplained money/bullion), Sec 69B (excess investment), Sec 69C (unexplained expenditure), Sec 69D (hundi). Flat 60% + 25% surcharge + 4% cess = ~78%, plus Sec 271AAC 10% penalty if not voluntarily disclosed = ~84% effective. No deduction, no setoff."
+  },
+  {
+   "key": "sec270a",
+   "label": "Sec 270A Under-reporting",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 270A · Under/Misreporting Penalty",
+   "em": "50% or 200% of incremental tax",
+   "sub": "Replaced Sec 271(1)(c) from AY 2017-18. Under-reporting (math errors, missed income): 50% of additional tax payable. Misreporting (false claim, fictitious deduction, willful understatement): 200%. Sec 270AA gives immunity in cases of mere under-reporting if assessee pays tax + interest and doesn't appeal."
+  },
+  {
+   "key": "cash269",
+   "label": "Cash Sec 269ST/SS/T",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Cash Limits · Sec 269ST / SS / T",
+   "em": "Rs 2L receipt · Rs 20K loan rules",
+   "sub": "Sec 269ST bars receiving ≥ Rs 2,00,000 in cash from one person in a day / single transaction / single event. Sec 269SS bars accepting loan/deposit/specified advance ≥ Rs 20,000 in cash. Sec 269T mirrors the same for repayment. Penalty under Sec 271DA/D/E equals 100% of the violating amount."
+  },
+  {
+   "key": "cash40a",
+   "label": "Sec 40A(3) Cash Expense",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 40A(3) Cash Expense",
+   "em": "Rs 10K / Rs 35K disallowance",
+   "sub": "Cash payments above Rs 10,000 (Rs 35,000 for transporters) to a single person in a single day are entirely disallowed as a business expense under Sec 40A(3). Sec 40A(3A) deems such payments income if the related expense was claimed in an earlier year. Rule 6DD lists narrow exemptions."
+  },
+  {
+   "key": "ais",
+   "label": "AIS / 26AS Reconciler",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "AIS / 26AS Reconciler",
+   "em": "spot the mismatch",
+   "sub": "Paste rows from AIS or 26AS alongside your declared amounts. We flag mismatches before notice u/s 143(1)."
+  },
+  {
+   "key": "tp3ceb",
+   "label": "Transfer Pricing 3CEB",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Transfer Pricing 3CEB",
+   "em": "applicability",
+   "sub": "3CEB filing required for international transactions with AEs (any amount) or SDTs > Rs 20 Cr. Due 31 October."
+  },
+  {
+   "key": "trustreg",
+   "label": "Sec 12AB Trust Registration",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 12AB · Sec 80G(5) Trust Registration",
+   "em": "Form 10A / 10AB · 5-year cycle",
+   "sub": "From 1-Apr-2021 the regime moved to a 5-year cyclical model. Form 10A for new (provisional 3 yrs) or migrating trusts (final 5 yrs). Form 10AB for renewal, conversion of provisional → final, or after substantial modification. Sec 80G donor-side approval follows the same lifecycle."
+  },
+  {
+   "key": "trustapp",
+   "label": "Sec 11 Trust Application",
+   "cat": "compliance",
+   "catLabel": "Compliance",
+   "title": "Sec 11 · Trust Application of Income",
+   "em": "85% application · 15% retention",
+   "sub": "A Sec 12AB-registered trust must apply at least 85% of its income towards charitable/religious objects during the year. Up to 15% may be retained automatically. Larger accumulation requires Form 10 (specific purpose, 5-year window). Shortfall is taxed at 30% under Sec 115BBI (FA 2022)."
+  },
+  {
+   "key": "emi",
+   "label": "EMI & Loan",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "EMI & Amortization",
+   "em": "with prepayment",
+   "sub": "Compute EMI, amortization schedule, prepayment savings, and balance-transfer break-even."
+  },
+  {
+   "key": "investments",
+   "label": "Investments",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "Investment Returns",
+   "em": "SIP · PPF · FD · NPS",
+   "sub": "Step-up SIP, PPF, FD compounding, and NPS corpus with 80CCD breakdown."
+  },
+  {
+   "key": "retirement",
+   "label": "Retirement Corpus Planner",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "Retirement Corpus Planner",
+   "em": "Replacement ratio + inflation",
+   "sub": "Compute the corpus you need at retirement to fund inflation-adjusted expenses till end-of-life. Assumes a replacement ratio (typical 60-80%) of current expenses, separate pre- and post-retirement returns, and steady-state inflation. Returns the monthly SIP needed to bridge the gap given your current accumulated corpus."
+  },
+  {
+   "key": "hlv",
+   "label": "Insurance HLV / DIME",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "Insurance Need · HLV + DIME",
+   "em": "Term-cover sizing",
+   "sub": "Two-method estimate of life-cover requirement. HLV (Human Life Value): present value of family's share of working-life surplus. DIME: Debt + 10× income + Mortgage + Education. Recommended is the higher of the two. Subtract existing cover to find the gap to plug with fresh term insurance."
+  },
+  {
+   "key": "networth",
+   "label": "Net Worth Statement",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "Personal Net Worth Statement",
+   "em": "Assets − Liabilities",
+   "sub": "Snapshot of personal financial position. Sum of all assets (liquid + illiquid) less all liabilities (loans + credit). Useful for annual review, ITR Schedule AL (for income &gt; Rs 50L), and retirement planning. Liquid net worth excludes real estate & retirement to indicate short-term financial flexibility."
+  },
+  {
+   "key": "childedu",
+   "label": "Children Education Corpus",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "Children Education Corpus",
+   "em": "Inflation-adjusted goal-funding",
+   "sub": "Project the future cost of a degree at education-specific inflation (typically 10-12% in India), then back-solve the monthly SIP to bridge the gap. Education inflation runs hotter than CPI — engineering tuition has historically grown 10-12% annually, foreign universities even faster."
+  },
+  {
+   "key": "sipelss",
+   "label": "SIP vs ELSS",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "SIP / Lumpsum",
+   "em": "vs ELSS",
+   "sub": "Future value, LTCG @ 12.5% (post-Budget-2024), and tax saved by routing investment through ELSS (80C, old regime)."
+  },
+  {
+   "key": "sgb",
+   "label": "Sovereign Gold Bond",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "SGB · Sovereign Gold Bond",
+   "em": "",
+   "sub": ""
+  },
+  {
+   "key": "reit",
+   "label": "REIT / InvIT",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "REIT / InvIT Taxation",
+   "em": "Interest + dividend + RoC split",
+   "sub": "Distributions split into interest (slab + Sec 194LBA 10% TDS), dividend (tax-free unless SPV opted Sec 115BAA — then slab), and return-of-capital (reduces cost basis, taxed on sale). Units held &gt; 12 months get Sec 112A LTCG (12.5% post-23-Jul-2024 over Rs 1.25L); ≤ 12 months get Sec 111A 20%."
+  },
+  {
+   "key": "loandeduct",
+   "label": "80EEB EV · 80E Education",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "Loan-Interest Deductions",
+   "em": "Sec 80EEB / 80E",
+   "sub": "Electric-vehicle loan interest (Rs 1.5L cap) and education loan interest (uncapped, 8-AY window)."
+  },
+  {
+   "key": "nps",
+   "label": "NPS Corpus & Pension",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "NPS · Corpus & Pension",
+   "em": "National Pension System",
+   "sub": "Project Tier-I retirement corpus, mandatory annuity (40-100%), tax-free lump-sum (60% max) and Sec 80CCD deductions. Tax treatment under Sec 10(12A)/(12B) and Sec 80CCD(1)/(1B)/(2)."
+  },
+  {
+   "key": "ppf",
+   "label": "PPF Maturity",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "PPF · Maturity & Extension",
+   "em": "Public Provident Fund",
+   "sub": "15-year lock-in, extendable in 5-year blocks. Deposits Rs 500-Rs 1.5L p.a. Interest set quarterly by MoF (currently 7.1%). EEE — Sec 80C on deposit, Sec 10(11) on interest & maturity."
+  },
+  {
+   "key": "pfint",
+   "label": "PF Interest Sec 17(2)(viia)",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "PF Interest · Sec 17(2)(viia)",
+   "em": "Excess over Rs 2.5L p.a. taxable",
+   "sub": "From FY 2021-22 onwards, interest on employee PF contribution exceeding Rs 2,50,000 in a year (or Rs 5,00,000 where there is no employer contribution — e.g. GPF) is fully taxable as 'Salary' under Sec 17(2)(viia). EPFO maintains two sub-accounts: taxable interest (excess portion) and exempt interest (basic Rs 2.5L). TDS deducted by EPFO on the taxable portion at slab rate."
+  },
+  {
+   "key": "eps",
+   "label": "EPS Pension",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "EPS · Employees Pension Scheme",
+   "em": "(Salary × Service) / 70",
+   "sub": "Monthly pension under EPS-95 paid to retired members of the Employees Provident Fund. Formula: (Pensionable Salary × Pensionable Service) ÷ 70. Salary capped at Rs 15,000/month unless higher-wage option exercised post Supreme Court 2022 ruling. Service capped at 35 years. Early-pension between 50-57: 4% reduction per year before 58. Min pension Rs 1,000/month."
+  },
+  {
+   "key": "ssy",
+   "label": "Sukanya Samriddhi (SSY)",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "SSY · Sukanya Samriddhi Yojana",
+   "em": "Girl-child EEE under Sec 10(11A)",
+   "sub": "Open before the girl turns 10. Deposit for 15 years; matures at year 21 from open. Q2 FY 2026-27 (Jul–Sep 2026) rate 8.2%. Deposits Rs 250-Rs 1,50,000 p.a. Interest & maturity fully tax-free under Sec 10(11A); deposit eligible for Sec 80C in old regime. Premature withdrawal of 50% allowed after age 18 for higher education or marriage."
+  },
+  {
+   "key": "scss",
+   "label": "Sr. Citizens · SCSS",
+   "cat": "finance",
+   "catLabel": "Money & Loans",
+   "title": "SCSS · Senior Citizens Savings",
+   "em": "5+3 yrs · Rs 30L cap",
+   "sub": "For 60+ residents (55+ if retired & funded from retirement benefits within a month). Q2 FY 2026-27 (Jul–Sep 2026) rate 8.2%, quarterly payout. Deposit cap raised to Rs 30L from FY 2023-24. Sec 80C on deposit; interest fully taxable per slab. Sec 194A TDS at Rs 1L threshold for seniors (FA 2025)."
+  },
+  {
+   "key": "nri",
+   "label": "NRI Residency",
+   "cat": "nri",
+   "catLabel": "NRI / Cross-border",
+   "title": "NRI tax residence",
+   "em": "follow the applicable tests",
+   "sub": "Individual domestic residence estimate. Confirm the legal category, day counts and income base. Treaty residence and ship-crew voyage adjustments require separate review."
+  },
+  {
+   "key": "nrirepat",
+   "label": "NRO / NRE Repatriation",
+   "cat": "nri",
+   "catLabel": "NRI / Cross-border",
+   "title": "NRO / NRE Repatriation",
+   "em": "& 15CA / 15CB",
+   "sub": "USD 1 million FY cap (NRO), 15CA / 15CB form picker, and CA-certificate requirement check."
+  },
+  {
+   "key": "dtaa",
+   "label": "DTAA Withholding Rate",
+   "cat": "nri",
+   "catLabel": "NRI / Cross-border",
+   "title": "DTAA Withholding Rate",
+   "em": "treaty rate finder",
+   "sub": "Indicative withholding rates for payments to non-residents under India's DTAAs. Lower of treaty rate or domestic rate applies (subject to TRC + Form 10F)."
+  },
+  {
+   "key": "ftc",
+   "label": "Foreign Tax Credit (Form 67)",
+   "cat": "nri",
+   "catLabel": "NRI / Cross-border",
+   "title": "Foreign Tax Credit",
+   "em": "Form 67",
+   "sub": "FTC u/s 90/91. Lower of foreign tax paid or Indian tax on same income. File Form 67 before ITR due date."
+  },
+  {
+   "key": "sec195",
+   "label": "Sec 195 NR Payment TDS",
+   "cat": "nri",
+   "catLabel": "NRI / Cross-border",
+   "title": "Sec 195 · NR Payment TDS",
+   "em": "Act vs DTAA · Sec 206AA fallback",
+   "sub": "TDS on any sum chargeable in India paid to a non-resident. The rate is the lower of the Act rate and the DTAA rate (if TRC + Form 10F held). Without PAN, Sec 206AA floors the rate at 20%. Surcharge and cess apply only when the IT Act rate is used. Net-of-tax (grossing-up) arrangements increase the TDS by the factor 1/(1−r)."
+  },
+  {
+   "key": "form10f",
+   "label": "Form 10F NR Declaration",
+   "cat": "nri",
+   "catLabel": "NRI / Cross-border",
+   "title": "Form 10F · NR DTAA Declaration",
+   "em": "Self-declaration · electronic filing",
+   "sub": "Mandatory when the TRC issued by the resident country doesn't contain all particulars prescribed under Sec 90(5). Filed electronically on the income-tax e-filing portal. Non-resident without PAN can now register on the portal as 'Other Person' to file Form 10F online (CBDT relaxation Oct-2023, extended)."
+  },
+  {
+   "key": "schedfa",
+   "label": "Schedule FA Foreign Asset",
+   "cat": "nri",
+   "catLabel": "NRI / Cross-border",
+   "title": "Schedule FA · Foreign Asset",
+   "em": "BMA 2015 · Rs 10L + 90% FMV",
+   "sub": "Resident-and-Ordinarily-Resident (ROR) individuals must disclose foreign bank accounts, securities, immovable property, trusts, and signing authority in Schedule FA of ITR. Black Money Act 2015 imposes Rs 10L penalty for non-disclosure (Sec 43) and 90% of FMV + prosecution for wilful concealment (Sec 50). Threshold: any asset, any value — no minimum."
+  },
+  {
+   "key": "rentreceipt",
+   "label": "Rent Receipts",
+   "cat": "utilities",
+   "catLabel": "Generators & Utils",
+   "title": "Rent Receipts",
+   "em": "12-month set",
+   "sub": "Generate 12 monthly rent receipts for HRA proof. Landlord PAN required if annual rent exceeds Rs 1,00,000."
+  },
+  {
+   "key": "validator",
+   "label": "Format Validator",
+   "cat": "utilities",
+   "catLabel": "Generators & Utils",
+   "title": "Format Validator",
+   "em": "PAN · GSTIN · TAN · IFSC · Aadhaar",
+   "sub": "Offline checksum validation — GSTIN Mod-36, Aadhaar Verhoeff. No data leaves your browser."
+  }
+ ]
+}

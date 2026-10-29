@@ -1,0 +1,14 @@
+.indexation-flow{margin:18px 0;padding:20px;background:var(--bg);border:1px solid var(--line-soft);border-radius:14px;color:var(--fg)}
+.indexation-flow h3{margin:0 0 14px;font:600 17px/1.4 var(--sans)}
+.indexation-flow .indexation-steps{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.indexation-flow li{font:400 12px/1.5 var(--sans);display:grid;gap:7px}
+.indexation-flow .indexation-value{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.indexation-flow strong{font:600 14px/1.5 var(--mono)}
+.indexation-flow .indexation-track{height:7px;border-radius:8px;background:var(--line-soft);overflow:hidden}
+.indexation-flow .indexation-track i{display:block;height:100%;width:100%;background:var(--accent,#1B6E7E);transform-origin:left;transition:transform .24s ease-out}
+.indexation-flow .indexation-original i{background:#526b86}
+.indexation-flow p{font:400 12px/1.7 var(--sans);color:var(--fg-dim);margin:14px 0 0}
+.indexation-flow .indexation-formula{border-top:1px solid var(--line-soft);padding-top:14px;font-family:var(--mono);overflow-wrap:anywhere}
+@media(max-width:600px){.indexation-flow{padding:16px}}
+@media(prefers-reduced-motion:reduce){.indexation-flow .indexation-track i{transition:none!important}}
+@media print{.indexation-flow{break-inside:avoid}.indexation-track{display:none}}

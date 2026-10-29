@@ -1,4 +1,6 @@
 ---
+import PageHero from '../components/PageHero.astro';
+import SideContact from '../components/SideContact.astro';
 import Base from '../layouts/Base.astro';
 import Map from '../components/Map.astro';
 import V from '../components/V.astro';
@@ -10,9 +12,9 @@ import { NAP } from '../data/site';
   path="/contact/"
   crumbs={[{ name: 'Contact', path: '/contact/' }]}
 >
-  <article class="narrow">
-    <h1>Contact CA S. A. Abdul Rahim, Adyar, Chennai</h1>
-    <p class="lead">The office of CA S. A. Abdul Rahim, Chartered Accountant, is at 14/2, 15th Cross Street, Shastri Nagar, Adyar, Chennai, Tamil Nadu 600020. It is open Monday to Saturday from 8:00 am to 8:00 pm and closed on Sunday.</p>
+  <PageHero crumbs={[{ name: 'Contact', path: '/contact/' }]} h1={"Contact CA S. A. Abdul Rahim, Adyar, Chennai"} lead={"The office of CA S. A. Abdul Rahim, Chartered Accountant, is at 14/2, 15th Cross Street, Shastri Nagar, Adyar, Chennai, Tamil Nadu 600020. It is open Monday to Saturday from 8:00 am to 8:00 pm and closed on Sunday."} />
+  <div class="wrap layout">
+  <article class="prose">
 
     <dl class="facts">
       <dt>Address</dt><dd>{NAP.addressLine}</dd>
@@ -40,4 +42,6 @@ import { NAP } from '../data/site';
     <p>It helps to keep your PAN, the notice or document you have a question about, and your login details for the income tax or GST portal at hand. Please do not send passwords by WhatsApp or email; they can be entered by you at the time of filing.</p>
     <p class="meta">Last reviewed: <time datetime="2026-10-29">29 October 2026</time>. Address as listed on <a href={NAP.mapsUrl} rel="noopener">Google Maps</a>. Official portals: <a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a>, <a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a>.</p>
   </article>
+  <div class="sidebar"><SideContact /></div>
+  </div>
 </Base>

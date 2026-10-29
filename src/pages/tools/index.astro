@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Icon from '../../components/Icon.astro';
+import { TOOLS, CATEGORIES } from '../../data/tools';
+import { SITE_URL, REVIEWED_TEXT, SRC } from '../../data/site';
+
+const crumbs = [{ name: 'Calculators', path: '/tools/' }];
+const byKey = Object.fromEntries(TOOLS.map((t) => [t.key, t]));
+const itemList = {
+  '@type': 'ItemList',
+  '@id': `${SITE_URL}/tools/#list`,
+  name: 'Tax and finance calculators',
+  numberOfItems: TOOLS.length,
+  itemListElement: TOOLS.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t.copy.h1, url: `${SITE_URL}/tools/${t.key}/` })),
+};
+---
+<Base
+  title="Tax, GST and TDS Calculators | CA S. A. Abdul Rahim"
+  description={`${TOOLS.length} calculators for income tax, capital gains, HRA, TDS, GST, EMI, NRI tax and compliance, with the working shown for the selected year.`}
+  path="/tools/"
+  crumbs={crumbs}
+  schema={[itemList]}
+>
+  <PageHero crumbs={crumbs} eyebrow="Calculators" h1={`${TOOLS.length} tax, GST and finance calculators`} lead="Income tax under both regimes, capital gains, HRA, TDS on property, advance tax interest, GST, EMI, NRI tax and more. Each calculator shows its working and the year it applies to. Results are estimates for the figures you enter and are general information only.">
+    <div class="tool-search" role="search">
+      <Icon name="search" />
+      <label class="sr-only" for="tool-q">Search calculators</label>
+      <input id="tool-q" type="search" placeholder="Search by name or section, e.g. HRA, 194IA, EMI" autocomplete="off" />
+      <output id="tool-count" for="tool-q" aria-live="polite">{TOOLS.length} calculators</output>
+    </div>
+  </PageHero>
+
+  <nav class="cat-nav" aria-label="Calculator categories">
+    <div class="wrap">
+      <ul>{CATEGORIES.map((c) => <li><a href={`#${c.k}`}>{c.label} · {c.tools.length}</a></li>)}</ul>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    {CATEGORIES.map((c) => (
+      <section class="tool-cat" id={c.k} aria-labelledby={`h-${c.k}`}>
+        <h2 id={`h-${c.k}`}>{c.label}</h2>
+        <p>{c.intro}</p>
+        <ul class="tool-grid plain" role="list">
+          {c.tools.map((k) => byKey[k]).filter(Boolean).map((t) => (
+            <li data-tool={`${t.key} ${t.label} ${t.copy.h1} ${t.title} ${t.em}`.toLowerCase()}>
+              <a href={`/tools/${t.key}/`}><strong>{t.copy.h1}</strong><span>{t.copy.description}</span></a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+    <p class="tool-empty" id="tool-empty" hidden>No calculator matches that search. Try a shorter word or a section number.</p>
+    <p class="meta spaced">Last reviewed: <time datetime="2026-10-29">{REVIEWED_TEXT}</time>. Rates and thresholds change with each Finance Act. Check the figures on the <a href={SRC.itPortal.href} rel="noopener">Income Tax Department portal</a> and the <a href={SRC.gst.href} rel="noopener">GST portal</a> before acting on a result.</p>
+    <div class="section-pad"></div>
+  </div>
+</Base>

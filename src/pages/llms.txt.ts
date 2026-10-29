@@ -1,4 +1,5 @@
 import { SITE_URL, NAP, AREAS, SERVICES, GUIDES, REVIEWED_TEXT } from '../data/site';
+import { TOOLS, CATEGORIES } from '../data/tools';
 
 export function GET() {
   const body = `# ${NAP.name}
@@ -7,7 +8,7 @@ export function GET() {
 
 The practice covers income tax returns, income tax notices and appeals, TDS (including TDS on property purchases and NRI property sales), capital gains, NRI taxation, GST registration, returns and notices, tax audit, statutory audit of companies, accounting and bookkeeping, company/LLP/partnership registration, trust and NGO registration, and Udyam (MSME) registration.
 
-Member of the Institute of Chartered Accountants of India (ICAI). As required by ICAI, the website does not solicit work or advertise; content is general information only, not professional advice. Content last reviewed ${REVIEWED_TEXT}. From 1 April 2026 the Income-tax Act, 2025 replaced the Income-tax Act, 1961.
+As required by the Institute of Chartered Accountants of India (ICAI), the website does not solicit work or advertise; content is general information only, not professional advice. Content last reviewed ${REVIEWED_TEXT}. From 1 April 2026 the Income-tax Act, 2025 replaced the Income-tax Act, 1961.
 
 Areas near the office: ${AREAS.join(', ')}.
 
@@ -16,6 +17,10 @@ ${SERVICES.map((s) => `- [${s.label}](${SITE_URL}${s.href}): ${s.blurb}`).join('
 
 ## Guides
 ${GUIDES.map((g) => `- [${g.title}](${SITE_URL}${g.href})`).join('\n')}
+
+## Calculators
+- [All calculators](${SITE_URL}/tools/): ${TOOLS.length} tax, GST, TDS and finance calculators. Results are estimates for the figures entered.
+${CATEGORIES.map((c) => `\n### ${c.label}\n` + c.tools.map((k) => TOOLS.find((t) => t.key === k)!).map((t) => `- [${t.copy.h1}](${SITE_URL}/tools/${t.key}/): ${t.copy.description}`).join('\n')).join('\n')}
 
 ## About and contact
 - [About](${SITE_URL}/about/)

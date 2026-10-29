@@ -1,0 +1,1982 @@
+{
+  "it": {
+    "h1": "Income tax calculator",
+    "title": "Income tax calculator",
+    "description": "Estimate income tax for an individual under the old and new regimes, including surcharge and cess, for the selected tax year.",
+    "summary": "This tool works out the income tax payable by an individual, with surcharge and health and education cess, under the old and the new regime. It is used by salaried employees, professionals and anyone estimating a tax bill before filing. You need to enter your income under each head, the deductions you claim and the tax year, and the result shows taxable income, tax before and after cess, and the figures for each regime.",
+    "steps": [
+      "Enter your income under each head, the deductions you claim and the tax year.",
+      "Choose the regime, age group and tax year to match your situation.",
+      "Read taxable income, tax before and after cess, and the figures for each regime in the result."
+    ],
+    "note": "Surcharge and cess are shown separately; confirm the slab and rebate for your tax year before filing."
+  },
+  "capgains": {
+    "h1": "Capital gains tax calculator",
+    "title": "Capital gains tax calculator",
+    "description": "Compute short-term and long-term capital gains tax on shares, mutual funds, property and other assets for the selected tax year.",
+    "summary": "This tool computes capital gains on the transfer of an asset and the tax on that gain, separating short-term from long-term holdings. It is used by investors selling shares, mutual fund units, property or other capital assets. You need to enter the asset type, purchase and sale dates, cost and sale value, and the result shows the holding period, the gain or loss and the tax at the applicable rate.",
+    "steps": [
+      "Enter the asset type, purchase and sale dates, cost and sale value.",
+      "Choose the asset class and the tax year to match your situation.",
+      "Read the holding period, the gain or loss and the tax at the applicable rate in the result."
+    ],
+    "note": "Rates and holding periods differ by asset class; check that you picked the correct class before relying on the result."
+  },
+  "sec50aa": {
+    "h1": "Section 50AA debt fund gains calculator",
+    "title": "Section 50AA debt fund calculator",
+    "description": "Work out the gain on specified mutual funds and market-linked debentures taxed at slab rate with no indexation benefit.",
+    "summary": "This tool works out the gain on specified mutual fund units and market-linked debentures that are treated as short-term and taxed at the slab rate. It is used by investors in debt-oriented mutual funds and market-linked debentures. You need to enter the purchase date, purchase cost, sale value and your slab rate, and the result shows the gain treated as short-term and the tax at your slab rate.",
+    "steps": [
+      "Enter the purchase date, purchase cost, sale value and your slab rate.",
+      "Choose the instrument type and your applicable slab rate to match your situation.",
+      "Read the gain treated as short-term and the tax at your slab rate in the result."
+    ],
+    "note": "Whether a fund is a specified mutual fund depends on its asset mix; confirm this from the scheme documents."
+  },
+  "hra": {
+    "h1": "HRA exemption calculator",
+    "title": "HRA exemption calculator",
+    "description": "Calculate house rent allowance exemption from basic salary, rent paid and city, and see the taxable HRA for the selected year.",
+    "summary": "This tool calculates how much of the house rent allowance received is exempt and how much is taxable, using the lowest of the three prescribed limits. It is used by salaried employees who pay rent and receive HRA. You need to enter basic salary, dearness allowance, HRA received, rent paid and the city of residence, and the result shows the exempt HRA, the taxable HRA and which limit applied.",
+    "steps": [
+      "Enter basic salary, dearness allowance, HRA received, rent paid and the city of residence.",
+      "Choose the city category and the period for which you claim to match your situation.",
+      "Read the exempt HRA, the taxable HRA and which limit applied in the result."
+    ],
+    "note": "HRA relief is available only under the old regime and needs rent receipts; the landlord PAN is needed for large rent."
+  },
+  "advtax": {
+    "h1": "Advance tax and interest calculator",
+    "title": "Advance tax and interest calculator",
+    "description": "Calculate advance tax instalments and the interest for late or short payment for the selected assessment year.",
+    "summary": "This tool estimates the advance tax instalments due and the interest for default or deferment of payment, along with interest for late filing. It is used by individuals, professionals and businesses who pay advance tax. You need to enter your estimated tax liability, the dates and amounts of payments made and the filing date, and the result shows the instalment schedule, the shortfall and the interest by section.",
+    "steps": [
+      "Enter your estimated tax liability, the dates and amounts of payments made and the filing date.",
+      "Choose the due dates and the assessment year to match your situation.",
+      "Read the instalment schedule, the shortfall and the interest by section in the result."
+    ],
+    "note": "Interest is estimated month by month; actual interest depends on the exact dates of payment and the return filed."
+  },
+  "ctc": {
+    "h1": "CTC structure and take-home calculator",
+    "title": "CTC structure and take-home calculator",
+    "description": "Break a CTC into salary components and estimate monthly take-home pay under the old and new tax regimes. Uses the figures you enter.",
+    "summary": "This tool splits a cost-to-company figure into salary components and estimates the monthly in-hand pay after tax and deductions under each regime. It is used by employees comparing offers and employers designing salary structures. You need to enter the annual CTC, the proposed component split and your investments, and the result shows the monthly take-home pay, the annual tax and a comparison of both regimes.",
+    "steps": [
+      "Enter the annual CTC, the proposed component split and your investments.",
+      "Choose the regime and the component amounts to match your situation.",
+      "Read the monthly take-home pay, the annual tax and a comparison of both regimes in the result."
+    ],
+    "note": "Employer contribution and perquisite treatment vary by employer policy; check your offer letter for the actual structure."
+  },
+  "gratuity": {
+    "h1": "Gratuity, leave encashment, VRS and pension exemption",
+    "title": "Gratuity, leave, VRS and pension exemption",
+    "description": "Find the tax-exempt part of gratuity, leave encashment, voluntary retirement compensation and commuted pension.",
+    "summary": "This tool finds the exempt and taxable parts of gratuity, leave encashment, voluntary retirement compensation and commuted pension. It is used by retiring or separating employees and pensioners. You need to enter last drawn salary, years of service, leave balance and the amount received, and the result shows the exempt limit, the exempt amount and the taxable balance.",
+    "steps": [
+      "Enter last drawn salary, years of service, leave balance and the amount received.",
+      "Choose the type of receipt and whether the employer is covered by the gratuity law to match your situation.",
+      "Read the exempt limit, the exempt amount and the taxable balance in the result."
+    ],
+    "note": "Exemption limits depend on the employer type and on earlier receipts; confirm these before treating an amount as exempt."
+  },
+  "itrpicker": {
+    "h1": "ITR form picker",
+    "title": "ITR form picker",
+    "description": "Find out which income tax return form, from ITR-1 to ITR-7, applies to your income sources and status. Uses the figures you enter.",
+    "summary": "This tool helps identify which of the forms ITR-1 to ITR-7 applies, based on the taxpayer's status and sources of income. It is used by individuals, HUFs, firms, companies and trusts about to file a return. You need to enter your status, residence, types of income and whether you have a business or foreign assets, and the result shows the form that appears to apply and the reason for it.",
+    "steps": [
+      "Enter your status, residence, types of income and whether you have a business or foreign assets.",
+      "Choose your status and the income types you have to match your situation.",
+      "Read the form that appears to apply and the reason for it in the result."
+    ],
+    "note": "The form depends on facts for the whole year; confirm eligibility against the instructions of the relevant return form."
+  },
+  "homeloan": {
+    "h1": "Home loan interest deduction calculator",
+    "title": "Home loan interest deduction calculator",
+    "description": "Work out the home loan interest deduction for a self-occupied or let-out house, including pre-construction interest.",
+    "summary": "This tool works out the deduction for home loan interest on a self-occupied or let-out house, including pre-construction interest spread over five years. It is used by home owners with a housing loan. You need to enter the interest paid in the year, the pre-construction interest and whether the house is let out, and the result shows the interest allowed this year and the amount that can be set off against other income.",
+    "steps": [
+      "Enter the interest paid in the year, the pre-construction interest and whether the house is let out.",
+      "Choose the property use and the regime to match your situation.",
+      "Read the interest allowed this year and the amount that can be set off against other income in the result."
+    ],
+    "note": "The cap for self-occupied property and the set-off limit apply per year; confirm the limits for your tax year."
+  },
+  "chvia": {
+    "h1": "Chapter VI-A deductions calculator",
+    "title": "Chapter VI-A deductions calculator",
+    "description": "See how much of each Chapter VI-A deduction you have used and the headroom left under the old regime. Uses the figures you enter.",
+    "summary": "This tool tracks the amounts claimed under the main Chapter VI-A deductions and shows the headroom left against each limit. It is used by salaried individuals and professionals planning investments under the old regime. You need to enter the amounts invested or paid for each deduction and your age category, and the result shows the claimed amount, the unused limit and the estimated tax effect.",
+    "steps": [
+      "Enter the amounts invested or paid for each deduction and your age category.",
+      "Choose your age group and the deductions that apply to you to match your situation.",
+      "Read the claimed amount, the unused limit and the estimated tax effect in the result."
+    ],
+    "note": "Most Chapter VI-A deductions are available only under the old regime; check each limit and eligibility condition."
+  },
+  "esop": {
+    "h1": "ESOP and RSU tax calculator",
+    "title": "ESOP and RSU tax calculator",
+    "description": "Estimate tax on ESOP, RSU and sweat equity at exercise as a perquisite and again on sale as capital gain. Uses the figures you enter.",
+    "summary": "This tool estimates tax in two stages: the perquisite taxed as salary at exercise, and the capital gain on a later sale of the shares. It is used by employees and founders who receive stock options or restricted stock units. You need to enter the exercise cost, the market value at exercise, the sale value and the dates, and the result shows the perquisite value, the capital gain and the tax at each stage.",
+    "steps": [
+      "Enter the exercise cost, the market value at exercise, the sale value and the dates.",
+      "Choose the type of shares and your slab rate to match your situation.",
+      "Read the perquisite value, the capital gain and the tax at each stage in the result."
+    ],
+    "note": "Valuation of unlisted shares and the treatment of foreign shares need separate checking; use the valuation your employer reports."
+  },
+  "buyback": {
+    "h1": "Share buyback tax calculator",
+    "title": "Share buyback tax calculator",
+    "description": "Estimate tax on a company's share buyback for the selected period, under the rules that applied before and after the recent changes.",
+    "summary": "This tool estimates the tax on a share buyback under the three rule sets that have applied over time, based on the buyback date. It is used by shareholders who tender shares in a buyback and companies planning one. You need to enter the buyback date, the consideration received, the cost of the shares and the holding period, and the result shows the taxable amount and the tax under the rules for the chosen date.",
+    "steps": [
+      "Enter the buyback date, the consideration received, the cost of the shares and the holding period.",
+      "Choose the shareholder category and the buyback date to match your situation.",
+      "Read the taxable amount and the tax under the rules for the chosen date in the result."
+    ],
+    "note": "The rules changed more than once; confirm the date of the buyback and the treatment in your own return."
+  },
+  "dividend": {
+    "h1": "Dividend tax and TDS calculator",
+    "title": "Dividend tax and TDS calculator",
+    "description": "Estimate tax and TDS on dividend income, and the deduction for dividends passed on, for the selected year. Uses the figures you enter.",
+    "summary": "This tool estimates the tax payable on dividend income, the tax deducted at source on it and the deduction for dividend passed on to others. It is used by shareholders and companies that receive and distribute dividends. You need to enter the dividend received, the expenses claimed and your slab rate, and the result shows the taxable dividend, the TDS and the net tax.",
+    "steps": [
+      "Enter the dividend received, the expenses claimed and your slab rate.",
+      "Choose the shareholder type and the payment date to match your situation.",
+      "Read the taxable dividend, the TDS and the net tax in the result."
+    ],
+    "note": "TDS is deducted only above the prescribed annual threshold per payer; check the threshold for your tax year."
+  },
+  "cgreinvest": {
+    "h1": "Capital gain reinvestment exemption planner",
+    "title": "Capital gain reinvestment planner",
+    "description": "Plan the exemption on long-term capital gains by reinvesting in a house, bonds or a new residential property. Uses the figures you enter.",
+    "summary": "This tool shows how much of a long-term capital gain can be kept exempt by reinvesting the sale proceeds in a house, specified bonds or another qualifying asset. It is used by taxpayers who have sold property or other long-term assets. You need to enter the capital gain, the net consideration and the amount you plan to reinvest, and the result shows the exempt amount, the taxable balance and the time limits.",
+    "steps": [
+      "Enter the capital gain, the net consideration and the amount you plan to reinvest.",
+      "Choose the type of asset sold and the reinvestment route to match your situation.",
+      "Read the exempt amount, the taxable balance and the time limits in the result."
+    ],
+    "note": "Each exemption has its own time limit and conditions; confirm the conditions before investing."
+  },
+  "sec54ec": {
+    "h1": "Section 54EC capital gain bonds calculator",
+    "title": "Section 54EC capital gain bonds calculator",
+    "description": "Check the exemption on land or building gains when invested in specified bonds within the permitted period. Uses the figures you enter.",
+    "summary": "This tool checks how much of a long-term gain on land or building is exempt when invested in specified bonds within the permitted time. It is used by sellers of land or buildings with long-term gains. You need to enter the date of transfer, the gain and the amount invested in the bonds, and the result shows the exempt gain, the taxable balance and the last date to invest.",
+    "steps": [
+      "Enter the date of transfer, the gain and the amount invested in the bonds.",
+      "Choose the transfer date and the investment date to match your situation.",
+      "Read the exempt gain, the taxable balance and the last date to invest in the result."
+    ],
+    "note": "There is a ceiling on investment per financial year and a lock-in; confirm the current limits before investing."
+  },
+  "sec80iac": {
+    "h1": "Section 80IAC startup deduction calculator",
+    "title": "Section 80IAC startup deduction calculator",
+    "description": "Estimate the profit deduction for an eligible startup over the permitted block of years, based on its profits and years of claim.",
+    "summary": "This tool estimates the deduction on profits of an eligible startup for the years chosen within the permitted period. It is used by founders and finance teams of recognised startups. You need to enter the year of incorporation, the profits of each year and the years you choose to claim, and the result shows the profit eligible for deduction and the resulting tax saving estimate.",
+    "steps": [
+      "Enter the year of incorporation, the profits of each year and the years you choose to claim.",
+      "Choose the claim years and the eligibility details to match your situation.",
+      "Read the profit eligible for deduction and the resulting tax saving estimate in the result."
+    ],
+    "note": "Eligibility needs recognition and a certificate from the competent authority; confirm each condition before claiming."
+  },
+  "sec54gb": {
+    "h1": "Section 54GB property to startup calculator",
+    "title": "Section 54GB property to startup calculator",
+    "description": "Check the exemption on gains from residential property sold and invested in the shares of an eligible startup company.",
+    "summary": "This tool checks the exemption on the gain from the sale of a residential property when the net consideration is invested in shares of an eligible company. It is used by individuals and HUFs who sold a residential property. You need to enter the sale value, the cost, the net consideration and the amount subscribed in shares, and the result shows the exempt gain, the taxable balance and the key dates.",
+    "steps": [
+      "Enter the sale value, the cost, the net consideration and the amount subscribed in shares.",
+      "Choose the date of sale and the investment details to match your situation.",
+      "Read the exempt gain, the taxable balance and the key dates in the result."
+    ],
+    "note": "The scheme has time limits and a lock-in on the shares; confirm that the company meets the conditions."
+  },
+  "sec54b": {
+    "h1": "Section 54B agricultural land exemption",
+    "title": "Section 54B agricultural land exemption",
+    "description": "Calculate the exemption on gains from selling agricultural land when you buy new agricultural land within the prescribed period.",
+    "summary": "This tool calculates the exemption on the capital gain from the transfer of agricultural land when new agricultural land is bought within the time allowed. It is used by individuals and HUFs who sold agricultural land that was used for farming. You need to enter the capital gain, the amount spent on new land and the dates of sale and purchase, and the result shows the exempt amount, the taxable gain and the date by which to reinvest.",
+    "steps": [
+      "Enter the capital gain, the amount spent on new land and the dates of sale and purchase.",
+      "Choose the dates and the amount reinvested to match your situation.",
+      "Read the exempt amount, the taxable gain and the date by which to reinvest in the result."
+    ],
+    "note": "Land must have been used for agriculture before sale; unused money may need to be placed in a deposit account."
+  },
+  "slumpsale": {
+    "h1": "Slump sale capital gains calculator",
+    "title": "Slump sale capital gains calculator",
+    "description": "Compute the capital gain on a slump sale from the consideration and the net worth of the undertaking transferred.",
+    "summary": "This tool computes the capital gain on a slump sale by deducting the net worth of the undertaking from the lump-sum consideration. It is used by business owners and companies selling an undertaking as a going concern. You need to enter the lump-sum consideration, the net worth of the undertaking and the date of the business start, and the result shows the net worth, the capital gain and its short-term or long-term nature.",
+    "steps": [
+      "Enter the lump-sum consideration, the net worth of the undertaking and the date of the business start.",
+      "Choose the holding period of the undertaking to match your situation.",
+      "Read the net worth, the capital gain and its short-term or long-term nature in the result."
+    ],
+    "note": "Net worth follows a prescribed method and needs a certificate from an accountant; do not use rough accounting values."
+  },
+  "sec43ca": {
+    "h1": "Section 43CA stamp duty value calculator",
+    "title": "Section 43CA stamp duty value calculator",
+    "description": "Check the stamp duty value deemed as sale value when a builder or developer sells property held as stock-in-trade.",
+    "summary": "This tool checks whether the stamp duty value of a property held as stock-in-trade is taken as the sale value, using the permitted tolerance band. It is used by builders, developers and buyers of such properties. You need to enter the agreement value and the stamp duty value of the property, and the result shows the value adopted for tax and any difference from the agreed value.",
+    "steps": [
+      "Enter the agreement value and the stamp duty value of the property.",
+      "Choose the date of agreement and of registration to match your situation.",
+      "Read the value adopted for tax and any difference from the agreed value in the result."
+    ],
+    "note": "The tolerance and the date for the stamp duty value depend on the facts of the sale; check the agreement and registration dates."
+  },
+  "sec40a": {
+    "h1": "TDS disallowance calculator for Section 40(a)",
+    "title": "TDS disallowance, Section 40(a)",
+    "description": "Estimate the expense disallowed when tax was not deducted or deposited on time, for a resident or non-resident payee.",
+    "summary": "This tool estimates the part of an expense that is disallowed when tax was not deducted or was not deposited on time, for resident and non-resident payees. It is used by businesses and professionals whose accounts are audited. You need to enter the expense amount, the TDS applicable and the dates of deduction and deposit, and the result shows the disallowed amount and the stage at which it can be claimed later.",
+    "steps": [
+      "Enter the expense amount, the TDS applicable and the dates of deduction and deposit.",
+      "Choose the payee type and the dates to match your situation.",
+      "Read the disallowed amount and the stage at which it can be claimed later in the result."
+    ],
+    "note": "An expense disallowed can be claimed in a later year when tax is paid; check the conditions in the provision."
+  },
+  "sec10aa": {
+    "h1": "Section 10AA SEZ deduction calculator",
+    "title": "Section 10AA SEZ deduction calculator",
+    "description": "Estimate the profit deduction for a unit in a Special Economic Zone over the years of the tax holiday. Uses the figures you enter.",
+    "summary": "This tool estimates the deduction on export profits of a unit in a Special Economic Zone across the years of the holiday. It is used by SEZ units and their finance teams. You need to enter the export turnover, the total turnover, the profit and the year of operation, and the result shows the deduction allowed for the year and the profit that remains taxable.",
+    "steps": [
+      "Enter the export turnover, the total turnover, the profit and the year of operation.",
+      "Choose the year of the unit's operation to match your situation.",
+      "Read the deduction allowed for the year and the profit that remains taxable in the result."
+    ],
+    "note": "The deduction is available only to units that began operations within the specified dates; check eligibility first."
+  },
+  "sec14a": {
+    "h1": "Section 14A exempt income disallowance",
+    "title": "Section 14A exempt income disallowance",
+    "description": "Compute the expenditure disallowed against exempt income using the prescribed formula on average investments. Uses the figures you enter.",
+    "summary": "This tool computes the expenditure disallowed for earning exempt income, using the prescribed formula based on average investments in exempt assets. It is used by businesses, companies and individuals with exempt income. You need to enter the exempt income, the investments at the start and end of the year and the expenses claimed, and the result shows the average investment, the amount disallowed and the amount allowed.",
+    "steps": [
+      "Enter the exempt income, the investments at the start and end of the year and the expenses claimed.",
+      "Choose the method used and any direct expenses to match your situation.",
+      "Read the average investment, the amount disallowed and the amount allowed in the result."
+    ],
+    "note": "The formula applies where the assessing officer is not satisfied with the claim; check the facts of your case."
+  },
+  "surcharge": {
+    "h1": "Surcharge and marginal relief calculator",
+    "title": "Surcharge and marginal relief calculator",
+    "description": "Calculate surcharge by income band and the marginal relief at each threshold for individuals and HUFs. Uses the figures you enter.",
+    "summary": "This tool calculates the surcharge on income tax by income band, together with the marginal relief that applies at each threshold. It is used by high-income individuals and HUFs. You need to enter the total income, any income taxed at special rates and the regime, and the result shows the surcharge, the marginal relief and the tax with cess.",
+    "steps": [
+      "Enter the total income, any income taxed at special rates and the regime.",
+      "Choose the regime and the tax year to match your situation.",
+      "Read the surcharge, the marginal relief and the tax with cess in the result."
+    ],
+    "note": "Surcharge on some special-rate income is capped; confirm the cap that applies to each type of income."
+  },
+  "sec115ad": {
+    "h1": "Foreign portfolio investor tax calculator",
+    "title": "FPI tax calculator under Section 115AD",
+    "description": "Estimate tax on income of a foreign portfolio investor at the special rates applied on a gross basis. Uses the figures you enter.",
+    "summary": "This tool estimates tax on the income of a foreign portfolio investor at the special rates, applied on a gross basis without deductions. It is used by foreign portfolio investors and their tax advisers. You need to enter the type and amount of each income and the gains on securities, and the result shows the tax by type of income, the surcharge and the total.",
+    "steps": [
+      "Enter the type and amount of each income and the gains on securities.",
+      "Choose the type of income and any treaty rate to match your situation.",
+      "Read the tax by type of income, the surcharge and the total in the result."
+    ],
+    "note": "A treaty may give a lower rate; check the treaty and the documents needed to claim it."
+  },
+  "sec94b": {
+    "h1": "Thin capitalisation interest limit calculator",
+    "title": "Thin capitalisation limit calculator",
+    "description": "Find how much interest paid to foreign associated enterprises is limited under the thin capitalisation rule. Uses the figures you enter.",
+    "summary": "This tool finds how much interest paid to non-resident associated enterprises can be claimed, using a share of earnings before interest, tax, depreciation and amortisation. It is used by companies with cross-border borrowing from related parties. You need to enter the interest expense, the EBITDA and the borrowing from associated enterprises, and the result shows the allowed interest, the excess interest and the carry forward.",
+    "steps": [
+      "Enter the interest expense, the EBITDA and the borrowing from associated enterprises.",
+      "Choose the lender type to match your situation.",
+      "Read the allowed interest, the excess interest and the carry forward in the result."
+    ],
+    "note": "Excess interest can be carried forward for a limited period; confirm eligibility and the carry-forward rules."
+  },
+  "sec43b": {
+    "h1": "Statutory dues allowed on payment basis",
+    "title": "Statutory dues on payment basis",
+    "description": "Check which statutory dues are allowed only when paid, and the effect on taxable profit for the year. Uses the figures you enter.",
+    "summary": "This tool checks which statutory dues are allowed as a deduction only in the year of payment and shows the effect on taxable profit. It is used by businesses and professionals who keep accounts on the mercantile basis. You need to enter the dues provided in accounts and the dates and amounts actually paid, and the result shows the allowed amount, the disallowed amount and the amount allowed later.",
+    "steps": [
+      "Enter the dues provided in accounts and the dates and amounts actually paid.",
+      "Choose the type of due and the payment date to match your situation.",
+      "Read the allowed amount, the disallowed amount and the amount allowed later in the result."
+    ],
+    "note": "Payment before the due date of filing the return is normally the test; confirm the date for each item."
+  },
+  "sec234f": {
+    "h1": "Late filing fee calculator for Section 234F",
+    "title": "Late filing fee calculator for Section 234F",
+    "description": "Calculate the fee for filing an income tax return after the due date, with interest for delay on the unpaid tax.",
+    "summary": "This tool calculates the fee for filing a return after the due date and the interest for delay on the tax that remained unpaid. It is used by taxpayers who missed the due date for filing their return. You need to enter the total income, the tax payable, the due date and the actual or expected filing date, and the result shows the fee, the interest for delay and the total extra cost.",
+    "steps": [
+      "Enter the total income, the tax payable, the due date and the actual or expected filing date.",
+      "Choose the income band and the number of days of delay to match your situation.",
+      "Read the fee, the interest for delay and the total extra cost in the result."
+    ],
+    "note": "The fee depends on the total income; also check the interest on unpaid tax and the last date allowed for a belated return."
+  },
+  "sec234d": {
+    "h1": "Interest on excess refund calculator",
+    "title": "Interest on excess refund calculator",
+    "description": "Estimate the interest payable by a taxpayer when a refund granted earlier is found to be excessive on assessment.",
+    "summary": "This tool estimates the interest payable by a taxpayer where a refund granted earlier is found to be more than due at the regular assessment. It is used by taxpayers who received an intimation refund and then faced an assessment. You need to enter the refund received, the excess found and the months between refund and assessment, and the result shows the excess refund, the interest and the total amount due back.",
+    "steps": [
+      "Enter the refund received, the excess found and the months between refund and assessment.",
+      "Choose the dates of refund and assessment to match your situation.",
+      "Read the excess refund, the interest and the total amount due back in the result."
+    ],
+    "note": "Part months are counted as full months; confirm the period from the date of the refund."
+  },
+  "sec244a": {
+    "h1": "Interest on refund calculator",
+    "title": "Interest on refund calculator",
+    "description": "Estimate the interest the Department pays on a refund of excess tax, TDS or advance tax for the delay period. Uses the figures you enter.",
+    "summary": "This tool estimates the interest paid by the Department on a refund of excess advance tax, TDS or self-assessment tax. It is used by taxpayers waiting for a refund. You need to enter the refund amount, the date of payment and the date of the refund, and the result shows the interest period, the interest and the total refund.",
+    "steps": [
+      "Enter the refund amount, the date of payment and the date of the refund.",
+      "Choose the type of tax paid and the period to match your situation.",
+      "Read the interest period, the interest and the total refund in the result."
+    ],
+    "note": "The start of the interest period differs by type of payment; confirm the dates from your tax statements."
+  },
+  "p10a": {
+    "h1": "Pension commutation exemption calculator",
+    "title": "Pension commutation exemption",
+    "description": "Find the tax-free portion of a lump sum received for commuting a part of pension. Based on the details you enter.",
+    "summary": "This tool finds the exempt and taxable parts of a lump sum received in exchange for giving up a portion of the pension. It is used by retired employees who receive a pension. You need to enter the commuted amount, the percentage commuted and whether gratuity is received, and the result shows the exempt part and the taxable part of the lump sum.",
+    "steps": [
+      "Enter the commuted amount, the percentage commuted and whether gratuity is received.",
+      "Choose whether you are a government employee to match your situation.",
+      "Read the exempt part and the taxable part of the lump sum in the result."
+    ],
+    "note": "The exemption differs for government and other employees; confirm your employer category."
+  },
+  "sec112a": {
+    "h1": "LTCG on listed equity shares calculator",
+    "title": "LTCG on listed equity shares calculator",
+    "description": "Compute long-term capital gains tax on listed equity shares and equity fund units, including the annual exempt limit.",
+    "summary": "This tool computes long-term capital gains on listed equity shares and units of equity-oriented funds, after the annual exempt limit. It is used by investors who hold listed shares and equity mutual funds for more than a year. You need to enter the purchase cost, the sale value, the dates and any grandfathering value, and the result shows the long-term gain, the exempt part and the tax.",
+    "steps": [
+      "Enter the purchase cost, the sale value, the dates and any grandfathering value.",
+      "Choose the dates of purchase and sale to match your situation.",
+      "Read the long-term gain, the exempt part and the tax in the result."
+    ],
+    "note": "Only transactions subject to securities transaction tax qualify in most cases; confirm the conditions."
+  },
+  "ltcgharvest": {
+    "h1": "Equity LTCG harvesting calculator",
+    "title": "Equity LTCG harvesting calculator",
+    "description": "Estimate how much long-term equity gain to realise each year to use the annual exemption limit. Uses the figures you enter.",
+    "summary": "This tool estimates how much long-term gain from equity holdings could be realised in a year to make use of the annual exemption limit. It is used by investors with large unrealised gains in equity shares or funds. You need to enter the current holdings, their cost, the present value and the gains already realised, and the result shows the unused exemption, the gain that can be harvested and the tax effect.",
+    "steps": [
+      "Enter the current holdings, their cost, the present value and the gains already realised.",
+      "Choose the financial year and the holdings considered to match your situation.",
+      "Read the unused exemption, the gain that can be harvested and the tax effect in the result."
+    ],
+    "note": "Selling and rebuying has a cost and a market risk; check these before acting on the estimate."
+  },
+  "sec111a": {
+    "h1": "STCG on listed equity shares calculator",
+    "title": "STCG on listed equity shares calculator",
+    "description": "Compute short-term capital gains tax on listed equity shares and equity fund units held for a short period. Uses the figures you enter.",
+    "summary": "This tool computes short-term capital gains on listed equity shares and equity-oriented funds sold within the short-term holding period. It is used by traders and investors who sell shares within a year. You need to enter the purchase cost, the sale value, the expenses on transfer and the dates, and the result shows the short-term gain and the tax at the applicable rate.",
+    "steps": [
+      "Enter the purchase cost, the sale value, the expenses on transfer and the dates.",
+      "Choose the dates of purchase and sale to match your situation.",
+      "Read the short-term gain and the tax at the applicable rate in the result."
+    ],
+    "note": "Frequent trading can be treated as business income instead; check how your activity is classified."
+  },
+  "sec89": {
+    "h1": "Section 89(1) salary arrears relief calculator",
+    "title": "Section 89(1) arrears relief calculator",
+    "description": "Calculate relief on salary arrears or advance salary received, by spreading the amount over the years it relates to.",
+    "summary": "This tool calculates the relief on salary received in arrears or in advance by spreading it over the years to which it relates. It is used by salaried employees who received arrears. You need to enter the arrears for each year, the salary of each year and the tax already paid, and the result shows the tax on the arrears in each year, the extra tax and the relief.",
+    "steps": [
+      "Enter the arrears for each year, the salary of each year and the tax already paid.",
+      "Choose the years to which the arrears relate to match your situation.",
+      "Read the tax on the arrears in each year, the extra tax and the relief in the result."
+    ],
+    "note": "The relief is claimed through a prescribed form; no relief arises where the difference is negative."
+  },
+  "sec80gg": {
+    "h1": "Section 80GG rent deduction calculator",
+    "title": "Section 80GG rent deduction calculator",
+    "description": "Check the rent deduction for tenants who receive no HRA, based on the lowest of the three prescribed limits. Uses the figures you enter.",
+    "summary": "This tool checks the deduction for rent paid by a person who receives no house rent allowance, using the lowest of the prescribed limits. It is used by self-employed persons and employees without HRA. You need to enter the rent paid in the year, the adjusted total income and the months of rent, and the result shows the deduction allowed and the limit that applied.",
+    "steps": [
+      "Enter the rent paid in the year, the adjusted total income and the months of rent.",
+      "Choose the rent months and your property ownership to match your situation.",
+      "Read the deduction allowed and the limit that applied in the result."
+    ],
+    "note": "You must not own residential property at the place of work and must file the prescribed form; confirm the conditions."
+  },
+  "sec80u": {
+    "h1": "Disability deduction calculator for 80U and 80DD",
+    "title": "Disability deduction: Section 80U and 80DD",
+    "description": "Find the flat deduction for a taxpayer with a disability or for a dependent with a disability. Uses the figures you enter.",
+    "summary": "This tool finds the fixed deduction for a taxpayer with a disability or for the care of a dependent with a disability. It is used by taxpayers and families who care for a person with a disability. You need to enter the degree of disability and whether the claim is for yourself or a dependent, and the result shows the deduction amount allowed.",
+    "steps": [
+      "Enter the degree of disability and whether the claim is for yourself or a dependent.",
+      "Choose the section, the severity of disability to match your situation.",
+      "Read the deduction amount allowed in the result."
+    ],
+    "note": "A medical authority certificate is required; check the severity category stated in the certificate."
+  },
+  "sec80ddb": {
+    "h1": "Medical deduction calculator for 80D and 80DDB",
+    "title": "Medical deduction: Section 80D and 80DDB",
+    "description": "Estimate the deduction for health insurance premium and for treatment of specified diseases. Uses the figures you enter.",
+    "summary": "This tool estimates the deduction for health insurance premium and for treatment of specified diseases for yourself or a dependent. It is used by individuals and HUFs with medical expenses. You need to enter the premium or expense paid, any insurance reimbursement and the age of the person, and the result shows the deduction allowed and the limit that applied.",
+    "steps": [
+      "Enter the premium or expense paid, any insurance reimbursement and the age of the person.",
+      "Choose the section and the age group to match your situation.",
+      "Read the deduction allowed and the limit that applied in the result."
+    ],
+    "note": "These deductions are not allowed under the new regime; confirm the diseases and documents required."
+  },
+  "sec80d": {
+    "h1": "Health insurance deduction calculator, Section 80D",
+    "title": "Health insurance deduction, Section 80D",
+    "description": "Work out the health insurance deduction for self, family and parents, with the senior citizen and checkup limits.",
+    "summary": "This tool works out the deduction for health insurance premium paid for self, family and parents, with the higher limits for senior citizens and the limit for preventive checkups. It is used by individuals and HUFs who pay health insurance premiums. You need to enter the premiums for self and parents, the ages and the preventive health checkup cost, and the result shows the deduction allowed for each group and the total.",
+    "steps": [
+      "Enter the premiums for self and parents, the ages and the preventive health checkup cost.",
+      "Choose the age group of each insured group to match your situation.",
+      "Read the deduction allowed for each group and the total in the result."
+    ],
+    "note": "Premium paid in cash does not qualify except for checkups; confirm the limits for your tax year."
+  },
+  "hravsgg": {
+    "h1": "HRA or Section 80GG rent relief calculator",
+    "title": "HRA or Section 80GG rent relief",
+    "description": "Check whether HRA exemption or the Section 80GG rent deduction applies, and estimate the relief for the period.",
+    "summary": "This tool checks whether the HRA route or the rent deduction route applies to a tenant and estimates the relief under the one that fits. It is used by tenants, whether or not their employer pays HRA. You need to enter the months of rent, basic salary, HRA received if any, and the rent paid, and the result shows the relief under the applicable route and the lowest limit that set it.",
+    "steps": [
+      "Enter the months of rent, basic salary, HRA received if any, and the rent paid.",
+      "Choose whether the period includes HRA to match your situation.",
+      "Read the relief under the applicable route and the lowest limit that set it in the result."
+    ],
+    "note": "The routes are exclusive for the same period; confirm which one fits each month of rent."
+  },
+  "sec87a": {
+    "h1": "Section 87A rebate calculator",
+    "title": "Section 87A rebate calculator",
+    "description": "Check whether a resident individual gets the Section 87A rebate and how marginal relief affects tax near the limit.",
+    "summary": "This tool checks the rebate on income tax for a resident individual under each regime and shows the effect near the income limit. It is used by resident individuals with moderate taxable income. You need to enter the total taxable income and any income taxed at a special rate, and the result shows the tax before rebate, the rebate and the tax payable.",
+    "steps": [
+      "Enter the total taxable income and any income taxed at a special rate.",
+      "Choose the regime and the tax year to match your situation.",
+      "Read the tax before rebate, the rebate and the tax payable in the result."
+    ],
+    "note": "The rebate may not apply to some special-rate income; confirm the rules for your tax year."
+  },
+  "sec80jjaa": {
+    "h1": "Section 80JJAA employment deduction calculator",
+    "title": "Section 80JJAA deduction calculator",
+    "description": "Estimate the deduction for the extra employee cost of new workers, claimed over three consecutive years. Uses the figures you enter.",
+    "summary": "This tool estimates the deduction for the additional cost of new employees, claimed for three consecutive years. It is used by employers who have hired new workers. You need to enter the salary of each new employee, the date of joining and the number of days worked, and the result shows the additional employee cost, the deduction and the years of claim.",
+    "steps": [
+      "Enter the salary of each new employee, the date of joining and the number of days worked.",
+      "Choose the year of employment and the salary band to match your situation.",
+      "Read the additional employee cost, the deduction and the years of claim in the result."
+    ],
+    "note": "The employee must meet the salary cap and the days of service condition, and an audit report is needed."
+  },
+  "sec80cch": {
+    "h1": "Agniveer corpus fund deduction calculator",
+    "title": "Agniveer corpus fund deduction calculator",
+    "description": "Check the deduction for contributions to the Agniveer Corpus Fund by the personnel and the Central Government.",
+    "summary": "This tool checks the deduction for contributions to the Agniveer Corpus Fund by the enrolled person and the matching Government contribution. It is used by personnel enrolled under the Agnipath Scheme. You need to enter the contribution made by the person and by the Government in the year, and the result shows the deduction allowed and the amount taxable on withdrawal.",
+    "steps": [
+      "Enter the contribution made by the person and by the Government in the year.",
+      "Select the regime from the options that apply to your case.",
+      "Read the deduction allowed and the amount taxable on withdrawal in the result."
+    ],
+    "note": "Check how the corpus is treated when it is paid out at the end of service."
+  },
+  "mat": {
+    "h1": "MAT and AMT calculator",
+    "title": "MAT and AMT calculator",
+    "description": "Compare normal tax with minimum alternate tax for a company, or alternate minimum tax for other taxpayers, for the selected year.",
+    "summary": "This tool compares normal tax with the minimum alternate tax on book profit for companies, or with the alternate minimum tax on adjusted income for other taxpayers. It is used by companies, LLPs and other non-company assessees with tax holidays or deductions. You need to enter the book profit or adjusted total income and the normal tax after deductions, and the result shows the minimum tax, the tax payable and any credit that arises.",
+    "steps": [
+      "Enter the book profit or adjusted total income and the normal tax after deductions.",
+      "Choose the entity type and the tax year to match your situation.",
+      "Read the minimum tax, the tax payable and any credit that arises in the result."
+    ],
+    "note": "Credit carry-forward and set-off limits depend on the tax year; confirm them before use."
+  },
+  "vda": {
+    "h1": "Crypto and virtual digital asset tax calculator",
+    "title": "Crypto and VDA tax calculator",
+    "description": "Total the gains on each transfer of virtual digital assets, apply the flat tax rate and compare it with the TDS shown.",
+    "summary": "This tool totals the gains from each transfer of virtual digital assets, keeps losses apart and compares the tax with the TDS deducted. It is used by individuals and HUFs who trade or sell crypto assets. You need to enter each disposal with its cost, sale value and the TDS deducted, and the result shows the total gain, the tax before surcharge and cess and the TDS reconciliation.",
+    "steps": [
+      "Enter each disposal with its cost, sale value and the TDS deducted.",
+      "Choose the transfers to include to match your situation.",
+      "Read the total gain, the tax before surcharge and cess and the TDS reconciliation in the result."
+    ],
+    "note": "Losses cannot be set off against other income and cost is the only deduction; the result is an estimate only."
+  },
+  "gift56": {
+    "h1": "Gift tax calculator under Section 56(2)(x)",
+    "title": "Gift tax calculator under Section 56(2)(x)",
+    "description": "Check whether a gift of money or property is taxable in the hands of the receiver and how much is added to income.",
+    "summary": "This tool checks whether a gift of money, movable property or immovable property is taxed in the hands of the receiver and how much is added to income. It is used by anyone who received a gift, and families planning one. You need to enter the gift value, the relationship with the giver and the stamp duty value for property, and the result shows whether the gift is taxable and the amount added to income.",
+    "steps": [
+      "Enter the gift value, the relationship with the giver and the stamp duty value for property.",
+      "Choose the gift type and the relationship to match your situation.",
+      "Read whether the gift is taxable and the amount added to income in the result."
+    ],
+    "note": "Gifts from specified relatives and some occasions are exempt; confirm the details of the giver and the occasion."
+  },
+  "angel": {
+    "h1": "Angel tax calculator, Section 56(2)(viib)",
+    "title": "Angel tax calculator, Section 56(2)(viib)",
+    "description": "Estimate the excess share premium taxed in a closely held company; check the tax year as the provision has changed.",
+    "summary": "This tool estimates the share premium above fair market value that is taxed in a closely held company, and notes the change in the law. It is used by company founders and finance teams who issue shares. You need to enter the issue value, the fair market value and the number of shares issued, and the result shows the excess premium and the amount that would be taxed.",
+    "steps": [
+      "Enter the issue value, the fair market value and the number of shares issued.",
+      "Choose the date of issue and the investor type to match your situation.",
+      "Read the excess premium and the amount that would be taxed in the result."
+    ],
+    "note": "The provision was withdrawn for new issues from a later date; check the date of your share issue."
+  },
+  "partner": {
+    "h1": "Partnership firm interest and remuneration limit",
+    "title": "Partner interest and remuneration limit",
+    "description": "Work out the interest and remuneration to partners that a firm or LLP can claim as a deduction. Uses the figures you enter.",
+    "summary": "This tool works out the interest and remuneration to partners that a firm or LLP can claim, using the prescribed limits on book profit. It is used by partnership firms, LLPs and their accountants. You need to enter the book profit, the capital of each partner and the interest and remuneration paid, and the result shows the allowed interest, the allowed remuneration and the disallowed excess.",
+    "steps": [
+      "Enter the book profit, the capital of each partner and the interest and remuneration paid.",
+      "Choose the type of firm and the working partners to match your situation.",
+      "Read the allowed interest, the allowed remuneration and the disallowed excess in the result."
+    ],
+    "note": "The deed must authorise the payments; confirm the deed provisions and the basis of the calculation."
+  },
+  "fno": {
+    "h1": "Futures and options tax calculator",
+    "title": "Futures and options tax calculator",
+    "description": "Compute the income from futures and options trading as non-speculative business income, with turnover for audit purposes.",
+    "summary": "This tool computes the profit or loss from futures and options trading as business income and the turnover used to test the need for audit. It is used by traders in equity and commodity derivatives. You need to enter the realised profit or loss on each contract, the premium, and the expenses, and the result shows the net profit or loss, the turnover and the tax at your slab rate.",
+    "steps": [
+      "Enter the realised profit or loss on each contract, the premium, and the expenses.",
+      "Choose the instrument type to match your situation.",
+      "Read the net profit or loss, the turnover and the tax at your slab rate in the result."
+    ],
+    "note": "Turnover is computed by a prescribed method; check the audit limits and the loss set-off rules."
+  },
+  "corp115": {
+    "h1": "Company tax regime comparison, Section 115BAA and 115BAB",
+    "title": "Company tax regime comparison",
+    "description": "Compare the normal rate of company tax with the concessional regimes that give up certain deductions. Uses the figures you enter.",
+    "summary": "This tool compares the tax for a domestic company under the normal provisions and under the concessional regimes, which require giving up some deductions. It is used by companies and their finance teams. You need to enter the profit, the deductions and exemptions otherwise claimed and the brought forward losses, and the result shows the tax under each regime and the difference between them.",
+    "steps": [
+      "Enter the profit, the deductions and exemptions otherwise claimed and the brought forward losses.",
+      "Choose the regime and the type of business to match your situation.",
+      "Read the tax under each regime and the difference between them in the result."
+    ],
+    "note": "The choice is binding once made; check the conditions for the concessional regimes before deciding."
+  },
+  "coop115": {
+    "h1": "Co-operative society tax calculator",
+    "title": "Co-operative society tax regime calculator",
+    "description": "Compare the tax of a co-operative society at the concessional rates with tax at the normal rates. Uses the figures you enter.",
+    "summary": "This tool compares the tax of a co-operative society under the concessional regimes with its tax under the normal provisions. It is used by co-operative societies and their accountants. You need to enter the total income, the deductions otherwise claimed and whether the society is in manufacturing, and the result shows the tax under each regime, including surcharge and cess.",
+    "steps": [
+      "Enter the total income, the deductions otherwise claimed and whether the society is in manufacturing.",
+      "Choose the regime and the type of society to match your situation.",
+      "Read the tax under each regime, including surcharge and cess in the result."
+    ],
+    "note": "The concessional regimes need an option in the prescribed form and give up deductions; confirm the conditions."
+  },
+  "sec79": {
+    "h1": "Change of shareholding and loss carry forward",
+    "title": "Shareholding change loss carry forward",
+    "description": "Test whether a closely held company can carry forward its losses after a change in shareholding. Uses the figures you enter.",
+    "summary": "This tool tests whether a closely held company can carry forward and set off its past losses after a change in its shareholding. It is used by closely held companies and their advisers. You need to enter the change in shareholding, the accumulated loss and the year of loss, and the result shows the loss that stays available or that lapses.",
+    "steps": [
+      "Enter the change in shareholding, the accumulated loss and the year of loss.",
+      "Choose the type of company and any exception that applies to match your situation.",
+      "Read the loss that stays available or that lapses in the result."
+    ],
+    "note": "The test is based on voting power; some exceptions apply for specified entities and situations."
+  },
+  "sec72a": {
+    "h1": "Loss carry forward on amalgamation",
+    "title": "Loss carry forward on amalgamation",
+    "description": "Estimate the business loss and unabsorbed depreciation that pass to the amalgamated company if the conditions are met.",
+    "summary": "This tool estimates the business loss and unabsorbed depreciation that pass to the amalgamated company when the conditions are met. It is used by companies and advisers working on a merger. You need to enter the accumulated business loss, the unabsorbed depreciation and the conditions of the amalgamation, and the result shows the loss and depreciation that can be carried to the new company.",
+    "steps": [
+      "Enter the accumulated business loss, the unabsorbed depreciation and the conditions of the amalgamation.",
+      "Choose the type of business to match your situation.",
+      "Read the loss and depreciation that can be carried to the new company in the result."
+    ],
+    "note": "Loss is allowed only if the stated conditions are met for the prescribed period."
+  },
+  "huf": {
+    "h1": "HUF tax planner",
+    "title": "HUF tax planner",
+    "description": "Compare the tax of a family with and without a Hindu Undivided Family, which has its own PAN and slab. Uses the figures you enter.",
+    "summary": "This tool compares the combined tax with and without a Hindu Undivided Family, which is a separate taxpayer with its own PAN. It is used by families who have or plan a HUF. You need to enter the income of the individual, the income of the HUF and the deductions, and the result shows the tax for each taxpayer and the combined tax.",
+    "steps": [
+      "Enter the income of the individual, the income of the HUF and the deductions.",
+      "Choose the regime and the sources of income to match your situation.",
+      "Read the tax for each taxpayer and the combined tax in the result."
+    ],
+    "note": "Clubbing rules can apply to income from assets transferred to the HUF; check the source of the income."
+  },
+  "sec80g": {
+    "h1": "Donation deduction calculator, Section 80G",
+    "title": "Donation deduction calculator, Section 80G",
+    "description": "Work out the deduction for donations to approved funds and charities, based on the category and limit. Uses the figures you enter.",
+    "summary": "This tool works out the deduction for donations to charities and approved funds, grouped by the percentage and limit that apply to each. It is used by individuals and businesses who give donations. You need to enter the donation made to each institution and the mode of payment, and the result shows the deduction in each category and the total.",
+    "steps": [
+      "Enter the donation made to each institution and the mode of payment.",
+      "Choose the category of the institution to match your situation.",
+      "Read the deduction in each category and the total in the result."
+    ],
+    "note": "This deduction is available under the old regime only; cash donations above a limit do not qualify."
+  },
+  "revtax": {
+    "h1": "Reverse tax calculator for target take-home",
+    "title": "Reverse tax calculator for target take-home",
+    "description": "Find the gross salary required to reach a target take-home amount after tax, by working backwards from the net figure.",
+    "summary": "This tool works backwards from a target take-home amount to the gross salary needed, after tax and statutory deductions. It is used by employees negotiating pay and employers planning offers. You need to enter the target net pay and the deductions or exemptions you expect, and the result shows the estimated gross salary and the tax at that level.",
+    "steps": [
+      "Enter the target net pay and the deductions or exemptions you expect.",
+      "Choose the regime and the period of the target to match your situation.",
+      "Read the estimated gross salary and the tax at that level in the result."
+    ],
+    "note": "This is an iterative estimate; actual take-home depends on the structure of pay and employer policy."
+  },
+  "stampduty": {
+    "h1": "Stamp duty and registration calculator",
+    "title": "Stamp duty and registration calculator",
+    "description": "Estimate stamp duty and registration charges on a property purchase by state and the value of the transaction.",
+    "summary": "This tool estimates the stamp duty and registration charges on a property transaction for the chosen state. It is used by home buyers, sellers and property investors. You need to enter the value of the property, the state and the buyer category, and the result shows the stamp duty, the registration charge and the total cost.",
+    "steps": [
+      "Enter the value of the property, the state and the buyer category.",
+      "Choose the state and any concessions you qualify for to match your situation.",
+      "Read the stamp duty, the registration charge and the total cost in the result."
+    ],
+    "note": "These levies are set by each state and change; confirm the current rate with the sub-registrar's office."
+  },
+  "sec194q": {
+    "h1": "Section 194Q and 206C(1H) decider",
+    "title": "Section 194Q and 206C(1H) decider",
+    "description": "Decide whether tax is deducted on a purchase of goods or collected on a sale of goods, based on turnover and the amount.",
+    "summary": "This tool decides whether tax applies on the purchase of goods or on the sale of goods, by testing turnover and the amount of the transaction. It is used by buyers and sellers of goods in business. You need to enter the turnover of the buyer, the purchase value in the year and the PAN status, and the result shows which provision applies and the amount of tax.",
+    "steps": [
+      "Enter the turnover of the buyer, the purchase value in the year and the PAN status.",
+      "Choose the role of buyer or seller to match your situation.",
+      "Read which provision applies and the amount of tax in the result."
+    ],
+    "note": "Only one of the two provisions applies to a transaction; confirm the order of precedence."
+  },
+  "setoff": {
+    "h1": "Loss set-off and carry forward planner",
+    "title": "Loss set-off and carry forward planner",
+    "description": "Plan the set-off of losses against income of the same and other heads, and the carry forward to later years. Uses the figures you enter.",
+    "summary": "This tool plans the set-off of losses against income under the same head and other heads, and the carry forward of the balance to later years. It is used by individuals, firms and companies with losses. You need to enter the income and loss under each head for the year and the losses brought forward, and the result shows the loss set off, the loss carried forward and the year in which it expires.",
+    "steps": [
+      "Enter the income and loss under each head for the year and the losses brought forward.",
+      "Choose the type of loss to match your situation.",
+      "Read the loss set off, the loss carried forward and the year in which it expires in the result."
+    ],
+    "note": "Return must be filed in time to carry forward most losses; check the time limit for each loss."
+  },
+  "lrs": {
+    "h1": "LRS and TCS on foreign remittance",
+    "title": "LRS and TCS on foreign remittance",
+    "description": "Estimate tax collected at source on remittances abroad under the Liberalised Remittance Scheme for different purposes.",
+    "summary": "This tool estimates the tax collected at source on remittances sent abroad under the Liberalised Remittance Scheme. It is used by individuals sending money abroad for travel, study, gifts or investment. You need to enter the amount remitted, the purpose, and the total remitted in the financial year, and the result shows the TCS rate that applies, the tax collected and the threshold used.",
+    "steps": [
+      "Enter the amount remitted, the purpose, and the total remitted in the financial year.",
+      "Choose the purpose of remittance and the source of funds to match your situation.",
+      "Read the TCS rate that applies, the tax collected and the threshold used in the result."
+    ],
+    "note": "Rates and thresholds depend on the purpose and the date; the TCS can be claimed as credit in your return."
+  },
+  "customs": {
+    "h1": "Customs duty calculator",
+    "title": "Customs duty calculator",
+    "description": "Compute the customs duty on imported goods, including basic duty, social welfare surcharge and integrated tax.",
+    "summary": "This tool computes the customs duty on imported goods, stacking the basic duty, the social welfare surcharge and the integrated GST on the assessable value. It is used by importers and their accounts teams. You need to enter the assessable value, the basic customs duty rate and other duty rates, and the result shows the duty at each stage and the total landed cost.",
+    "steps": [
+      "Enter the assessable value, the basic customs duty rate and other duty rates.",
+      "Choose the goods and the duty rates to match your situation.",
+      "Read the duty at each stage and the total landed cost in the result."
+    ],
+    "note": "Rates depend on the tariff heading and on notifications; confirm them from the current customs tariff."
+  },
+  "ulip": {
+    "h1": "ULIP maturity tax calculator",
+    "title": "ULIP maturity tax, Section 10(10D)",
+    "description": "Check whether ULIP maturity proceeds are exempt or taxed, based on the premium paid and the date of issue. Uses the figures you enter.",
+    "summary": "This tool checks whether the maturity proceeds of a unit linked insurance plan are exempt or taxed, depending on the annual premium and the date of issue. It is used by policyholders of unit linked insurance plans. You need to enter the annual premium, the sum assured, the policy date and the maturity amount, and the result shows whether the proceeds are exempt and the taxable gain if not.",
+    "steps": [
+      "Enter the annual premium, the sum assured, the policy date and the maturity amount.",
+      "Choose the date of issue of the policy to match your situation.",
+      "Read whether the proceeds are exempt and the taxable gain if not in the result."
+    ],
+    "note": "The test depends on the premium paid across policies; add up the premiums of all your policies."
+  },
+  "sec10d": {
+    "h1": "Life insurance maturity tax, Section 10(10D)",
+    "title": "Sec 10(10D) life insurance maturity check",
+    "description": "Check whether life insurance maturity proceeds are exempt, based on the premium to sum assured ratio and annual premium limits.",
+    "summary": "This tool checks whether the maturity proceeds of a life insurance policy are exempt by testing the premium against the sum assured and the premium limit. It is used by policyholders approaching maturity. You need to enter the sum assured, the annual premium, the date of issue and the amount received, and the result shows whether the proceeds are exempt and the taxable gain if they are not.",
+    "steps": [
+      "Enter the sum assured, the annual premium, the date of issue and the amount received.",
+      "Choose the policy date and the policy type to match your situation.",
+      "Read whether the proceeds are exempt and the taxable gain if they are not in the result."
+    ],
+    "note": "Death benefit is treated differently from maturity; confirm the treatment for the date of issue."
+  },
+  "fdtax": {
+    "h1": "FD and RD post-tax return calculator",
+    "title": "FD and RD post-tax return calculator",
+    "description": "Estimate the maturity amount, post-tax yield and TDS on a bank fixed deposit or recurring deposit. Uses the figures you enter.",
+    "summary": "This tool estimates the maturity value, the tax and the post-tax yield on a fixed or recurring deposit, along with the TDS that may be deducted. It is used by depositors in banks and post offices. You need to enter the deposit amount, the interest rate, the tenure and your slab rate, and the result shows the maturity amount, the interest, the tax and the post-tax yield.",
+    "steps": [
+      "Enter the deposit amount, the interest rate, the tenure and your slab rate.",
+      "Choose the compounding frequency and your tax rate to match your situation.",
+      "Read the maturity amount, the interest, the tax and the post-tax yield in the result."
+    ],
+    "note": "Interest is taxed every year as it accrues, even if paid at maturity; use the rate quoted by your bank."
+  },
+  "sec80eea": {
+    "h1": "First home loan interest deduction, Section 80EEA",
+    "title": "Section 80EEA first home interest",
+    "description": "Check the extra deduction on home loan interest for a first-time buyer, beyond the usual limit for house property.",
+    "summary": "This tool checks the extra deduction on home loan interest for a first-time buyer, which is over and above the usual limit on house property. It is used by home buyers who took loans in the eligible period. You need to enter the loan sanction date, the stamp duty value, the interest paid and the loan outstanding, and the result shows the extra deduction allowed and the interest already claimed.",
+    "steps": [
+      "Enter the loan sanction date, the stamp duty value, the interest paid and the loan outstanding.",
+      "Choose the loan date to match your situation.",
+      "Read the extra deduction allowed and the interest already claimed in the result."
+    ],
+    "note": "The deduction applies only to loans sanctioned within a stated window; confirm the dates and conditions."
+  },
+  "gaming": {
+    "h1": "Lottery and online gaming winnings tax",
+    "title": "Lottery and online gaming winnings tax",
+    "description": "Estimate tax on winnings from lotteries, games and online gaming, which are taxed at a flat rate. Uses the figures you enter.",
+    "summary": "This tool estimates the tax on winnings from lotteries, puzzles, games and online gaming, which are taxed at a flat rate. It is used by players and organisers of such games. You need to enter the winning amount, the deposits and withdrawals in the year and the TDS deducted, and the result shows the tax at the flat rate, the TDS and the balance.",
+    "steps": [
+      "Enter the winning amount, the deposits and withdrawals in the year and the TDS deducted.",
+      "Choose the type of winning to match your situation.",
+      "Read the tax at the flat rate, the TDS and the balance in the result."
+    ],
+    "note": "No deduction is allowed except in specific cases; check how net winnings from online gaming are measured."
+  },
+  "gstcomp": {
+    "h1": "GST composition scheme eligibility checker",
+    "title": "GST composition scheme eligibility checker",
+    "description": "Check eligibility for the GST composition scheme and estimate the tax at the flat rate for your type of business.",
+    "summary": "This tool checks whether a small taxpayer can opt for the GST composition scheme and estimates the tax at the flat rate for the business type. It is used by small traders, manufacturers and restaurants. You need to enter the annual turnover, the type of business and the interstate supplies if any, and the result shows whether you are eligible and the flat rate of tax.",
+    "steps": [
+      "Enter the annual turnover, the type of business and the interstate supplies if any.",
+      "Choose the type of business to match your situation.",
+      "Read whether you are eligible and the flat rate of tax in the result."
+    ],
+    "note": "Composition taxpayers cannot claim input tax credit; confirm the conditions for your business type."
+  },
+  "cii": {
+    "h1": "Cost inflation index calculator",
+    "title": "Cost inflation index calculator",
+    "description": "Index the purchase cost of an asset with the cost inflation index and compute the long-term gain where it applies.",
+    "summary": "This tool indexes the cost of acquisition using the cost inflation index and computes the long-term gain where indexation is available. It is used by sellers of property and other long-term assets. You need to enter the year and cost of purchase, the year of sale and the sale value, and the result shows the indexed cost, the gain and the tax under the rules that apply.",
+    "steps": [
+      "Enter the year and cost of purchase, the year of sale and the sale value.",
+      "Choose the year of purchase to match your situation.",
+      "Read the indexed cost, the gain and the tax under the rules that apply in the result."
+    ],
+    "note": "Indexation is allowed only in some cases; confirm whether it applies to the asset and the date of transfer."
+  },
+  "pol80gg": {
+    "h1": "Political donation deduction, Section 80GGB and 80GGC",
+    "title": "Political donation deduction calculator",
+    "description": "Check the deduction for donations to registered political parties and electoral trusts, with the conditions. Uses the figures you enter.",
+    "summary": "This tool checks the deduction for donations made to registered political parties and electoral trusts, subject to conditions. It is used by individuals, companies and others who donate to political parties. You need to enter the amount donated, the recipient and the mode of payment, and the result shows the deduction allowed and any amount that does not qualify.",
+    "steps": [
+      "Enter the amount donated, the recipient and the mode of payment.",
+      "Choose the donor type to match your situation.",
+      "Read the deduction allowed and any amount that does not qualify in the result."
+    ],
+    "note": "Cash donations do not qualify; the party must be registered and the claim is made under the old regime."
+  },
+  "sec50c": {
+    "h1": "Section 50C stamp duty value calculator",
+    "title": "Section 50C stamp duty value calculator",
+    "description": "Check whether the stamp duty value replaces the agreement value when computing capital gains on land or buildings.",
+    "summary": "This tool checks whether the stamp duty value replaces the agreement value as the sale consideration when computing capital gains on land or building. It is used by sellers and buyers of land and buildings. You need to enter the agreement value and the stamp duty value of the property, and the result shows the consideration adopted for tax and the capital gain.",
+    "steps": [
+      "Enter the agreement value and the stamp duty value of the property.",
+      "Choose the dates of agreement and registration to match your situation.",
+      "Read the consideration adopted for tax and the capital gain in the result."
+    ],
+    "note": "A tolerance band applies; the buyer may be taxed separately if the value is below the stamp duty value."
+  },
+  "itru": {
+    "h1": "Updated return calculator, ITR-U",
+    "title": "Updated return calculator, ITR-U",
+    "description": "Estimate the additional tax and fee for filing an updated return under Section 139(8A) in the permitted period.",
+    "summary": "This tool estimates the additional tax payable for filing an updated return, based on the time that has passed since the end of the relevant year. It is used by taxpayers correcting or filing a return after the due date. You need to enter the tax due, the tax already paid, the original due date and the date of filing, and the result shows the additional tax, the fee and the total payable.",
+    "steps": [
+      "Enter the tax due, the tax already paid, the original due date and the date of filing.",
+      "Choose the filing period to match your situation.",
+      "Read the additional tax, the fee and the total payable in the result."
+    ],
+    "note": "An updated return is allowed only in specified situations; check eligibility before you file."
+  },
+  "hp": {
+    "h1": "House property income calculator",
+    "title": "House property income calculator",
+    "description": "Compute income from house property: gross annual value, net annual value and the deductions under the Act. Uses the figures you enter.",
+    "summary": "This tool computes income from house property by taking the annual value, deducting municipal tax, and allowing the standard deduction and interest. It is used by owners of rented or self-occupied property. You need to enter the rent received, the municipal tax paid, the loan interest and the period of letting, and the result shows the net annual value, the deductions and the income or loss from house property.",
+    "steps": [
+      "Enter the rent received, the municipal tax paid, the loan interest and the period of letting.",
+      "Choose the property use and the number of owners to match your situation.",
+      "Read the net annual value, the deductions and the income or loss from house property in the result."
+    ],
+    "note": "Unrealised rent and vacancy can alter the annual value; confirm the facts for each property."
+  },
+  "rcm": {
+    "h1": "GST reverse charge decider",
+    "title": "GST reverse charge decider",
+    "description": "Check whether GST is payable by the recipient under the reverse charge mechanism and what to report. Uses the figures you enter.",
+    "summary": "This tool checks whether the recipient and not the supplier has to pay GST under the reverse charge, based on the type of supply and the supplier. It is used by registered businesses that buy goods and services. You need to enter the type of supply, the supplier status and the value of the supply, and the result shows whether reverse charge applies and the tax payable by the recipient.",
+    "steps": [
+      "Enter the type of supply, the supplier status and the value of the supply.",
+      "Choose the nature of the supply to match your situation.",
+      "Read whether reverse charge applies and the tax payable by the recipient in the result."
+    ],
+    "note": "The list of notified supplies changes by notification; confirm it for the date of the supply."
+  },
+  "ewb": {
+    "h1": "E-way bill requirement checker",
+    "title": "E-way bill requirement checker",
+    "description": "Check whether an e-way bill is required for a movement of goods based on value, distance and the type of movement.",
+    "summary": "This tool checks whether an e-way bill is needed for a movement of goods by testing the value of the consignment and the type of movement. It is used by suppliers, transporters and recipients of goods. You need to enter the value of the goods, the type of movement and the goods transported, and the result shows whether an e-way bill is required and the validity period.",
+    "steps": [
+      "Enter the value of the goods, the type of movement and the goods transported.",
+      "Choose whether the movement is within or outside the state to match your situation.",
+      "Read whether an e-way bill is required and the validity period in the result."
+    ],
+    "note": "Exemptions and state limits apply; check the rules for the goods and states concerned."
+  },
+  "pos": {
+    "h1": "GST place of supply checker",
+    "title": "GST place of supply checker",
+    "description": "Find the place of supply for goods or services to decide whether the supply is within a state or between states.",
+    "summary": "This tool finds the place of supply of goods or services to decide whether the supply is an intra-state or an inter-state supply. It is used by GST registered businesses and their accountants. You need to enter the location of the supplier and the recipient, the type of supply and the delivery location, and the result shows the place of supply and whether CGST and SGST or IGST applies.",
+    "steps": [
+      "Enter the location of the supplier and the recipient, the type of supply and the delivery location.",
+      "Choose the nature of the supply to match your situation.",
+      "Read the place of supply and whether CGST and SGST or IGST applies in the result."
+    ],
+    "note": "Special rules apply to services such as immovable property and transport; check them for your transaction."
+  },
+  "optimizer": {
+    "h1": "Tax saving optimizer",
+    "title": "Tax saving optimizer",
+    "description": "Plan how to use deductions across investments, insurance and home loan, and compare the old and new regimes. Uses the figures you enter.",
+    "summary": "This tool plans how to use the deduction limits across investments, insurance, pension and home loan, and compares the old and the new regime. It is used by salaried individuals planning their tax-saving investments. You need to enter the income, the deductions you can use, the investments planned and your risk profile, and the result shows a suggested spread of deductions and the regime that results in lower tax.",
+    "steps": [
+      "Enter the income, the deductions you can use, the investments planned and your risk profile.",
+      "Choose your age and risk preference to match your situation.",
+      "Read a suggested spread of deductions and the regime that results in lower tax in the result."
+    ],
+    "note": "This is a planning aid and not advice on a product; check that each investment suits your finances."
+  },
+  "sec80tta": {
+    "h1": "Savings interest deduction, Section 80TTA and 80TTB",
+    "title": "Section 80TTA and 80TTB deduction",
+    "description": "Check the deduction for interest on savings accounts and, for senior citizens, deposits, under the old regime.",
+    "summary": "This tool checks the deduction for interest on savings accounts and, for senior citizens, on deposits, under the old regime. It is used by depositors and senior citizens with interest income. You need to enter the interest from savings accounts, fixed deposits and post office deposits, and the result shows the deduction allowed and the interest left taxable.",
+    "steps": [
+      "Enter the interest from savings accounts, fixed deposits and post office deposits.",
+      "Choose your age group to match your situation.",
+      "Read the deduction allowed and the interest left taxable in the result."
+    ],
+    "note": "These deductions are not allowed under the new regime; confirm the age test and the types of interest covered."
+  },
+  "equalisation": {
+    "h1": "Equalisation levy calculator",
+    "title": "Equalisation levy calculator",
+    "description": "Compute the equalisation levy on online advertising and digital services paid to non-residents, where applicable.",
+    "summary": "This tool computes the equalisation levy on payments to non-residents for online advertising and digital services, where the levy applies. It is used by businesses that pay non-residents for digital services. You need to enter the amount paid, the type of service and the date of payment, and the result shows the levy at the applicable rate and the due date for payment.",
+    "steps": [
+      "Enter the amount paid, the type of service and the date of payment.",
+      "Choose the type of service to match your situation.",
+      "Read the levy at the applicable rate and the due date for payment in the result."
+    ],
+    "note": "The scope of the levy has changed over time; confirm what applies to the date of your payment."
+  },
+  "sec89a": {
+    "h1": "Foreign retirement benefit tax, Section 89A",
+    "title": "Foreign retirement benefit tax, Section 89A",
+    "description": "Estimate the tax treatment of foreign retirement accounts such as 401(k) and UK pension for resident Indians. Uses the figures you enter.",
+    "summary": "This tool estimates how income from foreign retirement accounts is taxed, with the option of tax deferral for residents of India. It is used by residents of India who hold accounts in the USA, UK or Canada. You need to enter the account balance, the income accrued and the year of withdrawal, and the result shows the income taxable in the year and the income deferred.",
+    "steps": [
+      "Enter the account balance, the income accrued and the year of withdrawal.",
+      "Choose the country of the account to match your situation.",
+      "Read the income taxable in the year and the income deferred in the result."
+    ],
+    "note": "The relief depends on notified countries and accounts; confirm that your account is covered."
+  },
+  "sec80gga": {
+    "h1": "Research and rural donation deduction, Section 80GGA",
+    "title": "Section 80GGA donation deduction",
+    "description": "Check the deduction for donations to scientific research and rural development for taxpayers without business income.",
+    "summary": "This tool checks the deduction for donations to scientific research and rural development, available to taxpayers who have no business income. It is used by individuals and others who donate to approved institutions. You need to enter the donation made, the recipient institution and the mode of payment, and the result shows the deduction allowed and the amount not eligible.",
+    "steps": [
+      "Enter the donation made, the recipient institution and the mode of payment.",
+      "Choose the institution type to match your situation.",
+      "Read the deduction allowed and the amount not eligible in the result."
+    ],
+    "note": "Cash donations above a stated limit are not allowed; confirm the approval of the recipient."
+  },
+  "sec80ee": {
+    "h1": "First home interest deduction, Section 80EE",
+    "title": "First home interest deduction, Section 80EE",
+    "description": "Check the older extra deduction on home loan interest for a first home in the specified loan year. Uses the figures you enter.",
+    "summary": "This tool checks the older extra deduction on home loan interest for a first-time buyer for loans sanctioned in the stated year. It is used by borrowers who still claim the benefit. You need to enter the loan sanction date, the loan and property values, and the interest paid, and the result shows the deduction available this year and the limit.",
+    "steps": [
+      "Enter the loan sanction date, the loan and property values, and the interest paid.",
+      "Choose the year of loan sanction to match your situation.",
+      "Read the deduction available this year and the limit in the result."
+    ],
+    "note": "This applies only to loans sanctioned in a window that has closed; it helps existing claims only."
+  },
+  "p44ada": {
+    "h1": "Presumptive tax for professionals, Section 44ADA",
+    "title": "Section 44ADA presumptive tax",
+    "description": "Estimate presumptive income for specified professionals at a fixed share of receipts and compare it with actual profit.",
+    "summary": "This tool estimates the presumptive income of a specified professional at a fixed share of gross receipts and compares it with the actual profit. It is used by doctors, lawyers, architects, engineers, accountants and similar professionals. You need to enter the gross receipts, the actual expenses and the profit as per accounts, and the result shows the deemed income, the actual income and the difference.",
+    "steps": [
+      "Enter the gross receipts, the actual expenses and the profit as per accounts.",
+      "Choose the receipts limit that applies to you to match your situation.",
+      "Read the deemed income, the actual income and the difference in the result."
+    ],
+    "note": "Receipt limits depend on the mode of receipt; if you claim lower income, a tax audit may follow."
+  },
+  "p44ae": {
+    "h1": "Presumptive tax for goods carriages, Section 44AE",
+    "title": "Section 44AE presumptive tax",
+    "description": "Estimate the presumptive income of a goods carriage owner on a per-vehicle basis for the year. Uses the figures you enter.",
+    "summary": "This tool estimates the presumptive income of an owner of goods vehicles, calculated per vehicle for the months of ownership. It is used by owners of up to ten goods carriages. You need to enter the number of vehicles, the tonnage of each, and the months of ownership, and the result shows the deemed income per vehicle and the total.",
+    "steps": [
+      "Enter the number of vehicles, the tonnage of each, and the months of ownership.",
+      "Choose whether the vehicle is heavy or other to match your situation.",
+      "Read the deemed income per vehicle and the total in the result."
+    ],
+    "note": "The scheme is not available above a stated number of vehicles; the owner can still claim a higher actual income."
+  },
+  "ptax": {
+    "h1": "Professional tax calculator by state",
+    "title": "Professional tax calculator by state",
+    "description": "Find the professional tax payable on salary in each state, deducted by the employer and remitted to the state.",
+    "summary": "This tool finds the professional tax deducted by the employer on salary, using the slabs of the state concerned. It is used by salaried employees and employers. You need to enter the monthly salary and the state of work, and the result shows the monthly and annual professional tax.",
+    "steps": [
+      "Enter the monthly salary and the state of work.",
+      "Choose the state and the pay period to match your situation.",
+      "Read the monthly and annual professional tax in the result."
+    ],
+    "note": "Slabs differ by state and can change; verify the current slab with the state department."
+  },
+  "bonus": {
+    "h1": "Statutory bonus calculator",
+    "title": "Statutory bonus calculator",
+    "description": "Calculate the statutory bonus under the Payment of Bonus Act, with the minimum and maximum percentages and wage ceiling.",
+    "summary": "This tool calculates the bonus due under the Payment of Bonus Act, applying the minimum and maximum percentages and the wage ceiling. It is used by employers and employees in covered establishments. You need to enter the basic pay, dearness allowance, months worked and the bonus percentage, and the result shows the bonus payable and the allocable surplus test.",
+    "steps": [
+      "Enter the basic pay, dearness allowance, months worked and the bonus percentage.",
+      "Choose the percentage and the wage ceiling used to match your situation.",
+      "Read the bonus payable and the allocable surplus test in the result."
+    ],
+    "note": "Coverage depends on the size of the establishment; confirm that the law applies and check state notifications."
+  },
+  "esi": {
+    "h1": "ESI contribution calculator",
+    "title": "ESI contribution calculator",
+    "description": "Compute employer and employee contributions under the Employees' State Insurance Act on monthly wages. Uses the figures you enter.",
+    "summary": "This tool computes the employer and employee contributions under the Employees' State Insurance Act on the monthly wages. It is used by employers and payroll teams. You need to enter the monthly wages and the number of employees, and the result shows the employee share, the employer share and the total contribution.",
+    "steps": [
+      "Enter the monthly wages and the number of employees.",
+      "Choose the month and the wage ceiling to match your situation.",
+      "Read the employee share, the employer share and the total contribution in the result."
+    ],
+    "note": "Coverage depends on the wage ceiling and the establishment; confirm current rates with the corporation."
+  },
+  "epfdmg": {
+    "h1": "EPF and ESI late payment damages calculator",
+    "title": "EPF and ESI late payment damages",
+    "description": "Estimate damages on late deposit of provident fund and state insurance contributions, at the graded rates. Uses the figures you enter.",
+    "summary": "This tool estimates the damages charged on late deposit of provident fund and employee insurance contributions, using the graded rates by days of delay. It is used by employers who deposit contributions late. You need to enter the amount of contribution, the due date and the date of deposit, and the result shows the days of delay, the rate and the damages.",
+    "steps": [
+      "Enter the amount of contribution, the due date and the date of deposit.",
+      "Select the scheme from the options that apply to your case.",
+      "Read the days of delay, the rate and the damages in the result."
+    ],
+    "note": "The damages are assessed by the authority and may differ; interest is charged separately."
+  },
+  "scencompare": {
+    "h1": "Tax scenario comparison tool",
+    "title": "Tax scenario comparison tool",
+    "description": "Compare up to four tax scenarios with different regimes, deductions and incomes, side by side. Uses the figures you enter.",
+    "summary": "This tool compares up to four tax scenarios side by side, each with its own regime, deductions and income mix. It is used by individuals and advisers choosing between options. You need to enter the income, the deductions and the regime for each scenario, and the result shows the tax for each scenario and the gap between the highest and lowest.",
+    "steps": [
+      "Enter the income, the deductions and the regime for each scenario.",
+      "Choose the regime for each scenario to match your situation.",
+      "Read the tax for each scenario and the gap between the highest and lowest in the result."
+    ],
+    "note": "The comparison depends entirely on the inputs; verify each scenario against your facts."
+  },
+  "gst": {
+    "h1": "GST calculator",
+    "title": "GST calculator",
+    "description": "Add or remove GST from an amount, split it into CGST, SGST and IGST, and check input tax credit that is blocked.",
+    "summary": "This tool adds or removes GST from an amount, splits the tax into CGST, SGST and IGST, and checks the composition scheme and blocked input tax credit. It is used by business owners, accountants and consumers. You need to enter the amount, the GST rate and whether the amount includes tax, and the result shows the taxable value, the tax split and the total.",
+    "steps": [
+      "Enter the amount, the GST rate and whether the amount includes tax.",
+      "Choose the rate and the type of supply to match your situation.",
+      "Read the taxable value, the tax split and the total in the result."
+    ],
+    "note": "Rates depend on the goods or service; confirm the rate against the current notification."
+  },
+  "invoice": {
+    "h1": "GST tax invoice generator",
+    "title": "GST tax invoice generator",
+    "description": "Prepare a GST tax invoice with automatic numbering, tax split and details of the buyer and seller. Uses the figures you enter.",
+    "summary": "This tool prepares a GST tax invoice with automatic numbering, place of supply taken from the GSTIN and the tax split on each line. It is used by small businesses and professionals who register under GST. You need to enter the details of the seller and buyer, the items, quantities, rates and the tax rate, and the result shows a printable invoice with the tax split and totals.",
+    "steps": [
+      "Enter the details of the seller and buyer, the items, quantities, rates and the tax rate.",
+      "Choose the items and the tax rates to match your situation.",
+      "Read a printable invoice with the tax split and totals in the result."
+    ],
+    "note": "This is a drafting aid; check the mandatory details and whether e-invoicing applies."
+  },
+  "hsn": {
+    "h1": "HSN and SAC code lookup",
+    "title": "HSN and SAC code lookup",
+    "description": "Search HSN and SAC codes and the GST rate that applies, for the more common goods and services. Uses the figures you enter.",
+    "summary": "This tool searches a list of commonly used HSN and SAC codes and shows the GST rate attached to each. It is used by businesses classifying goods and services for GST. You need to enter a keyword or a code, and the result shows the code, its description and the GST rate.",
+    "steps": [
+      "Enter a keyword or a code in the fields provided.",
+      "Choose a filter by goods or services to match your situation.",
+      "Read the code, its description and the GST rate in the result."
+    ],
+    "note": "The list is selective and rates change by notification; confirm the code and rate from official sources."
+  },
+  "gst2b": {
+    "h1": "GSTR-2B reconciliation tool",
+    "title": "GSTR-2B reconciliation tool",
+    "description": "Match your purchase register with GSTR-2B to find mismatches in input tax credit before filing. Uses the figures you enter.",
+    "summary": "This tool compares your purchase register with the data in GSTR-2B and flags the invoices that do not match. It is used by businesses and accountants who file GST returns. You need to enter the rows from GSTR-2B and from your purchase register, and the result shows the matched invoices, the mismatches and the input tax credit at risk.",
+    "steps": [
+      "Enter the rows from GSTR-2B and from your purchase register.",
+      "Choose the matching basis to match your situation.",
+      "Read the matched invoices, the mismatches and the input tax credit at risk in the result."
+    ],
+    "note": "The check runs on what you paste in; confirm each mismatch with the supplier."
+  },
+  "gstrefund": {
+    "h1": "GST refund calculator",
+    "title": "GST refund calculator",
+    "description": "Compute GST refund for exports and inverted duty structures using the prescribed formulae. Uses the figures you enter.",
+    "summary": "This tool computes the refund of GST on exports and on an inverted duty structure using the prescribed formulae. It is used by exporters and manufacturers with credit accumulation. You need to enter the turnover of zero-rated supplies, the input tax credit and the tax paid, and the result shows the maximum refund and the formula used.",
+    "steps": [
+      "Enter the turnover of zero-rated supplies, the input tax credit and the tax paid.",
+      "Choose the type of refund to match your situation.",
+      "Read the maximum refund and the formula used in the result."
+    ],
+    "note": "Refund is subject to time limits and documents; the officer decides the final amount."
+  },
+  "gstr9": {
+    "h1": "GSTR-9 and 9C applicability checker",
+    "title": "GSTR-9 and 9C applicability checker",
+    "description": "Check whether the GST annual return and reconciliation statement apply to your turnover, and the due date. Uses the figures you enter.",
+    "summary": "This tool checks whether the GST annual return and the reconciliation statement apply, based on the aggregate turnover and registration. It is used by GST registered taxpayers and their accountants. You need to enter the aggregate turnover for the year and the number of states registered, and the result shows which annual return is needed and the turnover thresholds.",
+    "steps": [
+      "Enter the aggregate turnover for the year and the number of states registered.",
+      "Choose the financial year to match your situation.",
+      "Read which annual return is needed and the turnover thresholds in the result."
+    ],
+    "note": "Thresholds and optional filing depend on the year; check the notification for that year."
+  },
+  "gstrlf": {
+    "h1": "GST late fee and interest calculator",
+    "title": "GST late fee and interest calculator",
+    "description": "Compute the GST late fee for GSTR-1 and GSTR-3B and the interest on late payment of tax separately. Uses the figures you enter.",
+    "summary": "This tool computes the late fee for delayed GSTR-1 and GSTR-3B returns and the interest on late payment of tax, treating the two delays separately. It is used by GST registered taxpayers who file late. You need to enter the due date, the filing date, the tax payable and the type of return, and the result shows the late fee for each return, the interest and the total.",
+    "steps": [
+      "Enter the due date, the filing date, the tax payable and the type of return.",
+      "Choose the type of return and whether there was tax to match your situation.",
+      "Read the late fee for each return, the interest and the total in the result."
+    ],
+    "note": "Fee caps depend on the turnover and the type of return; confirm the cap for the period."
+  },
+  "gstint": {
+    "h1": "GST interest calculator, Section 50",
+    "title": "GST interest calculator, Section 50",
+    "description": "Calculate interest on late payment of GST and on excess input tax credit taken and used. Uses the figures you enter.",
+    "summary": "This tool calculates interest on GST paid late and interest on excess input tax credit claimed or reversed late. It is used by registered taxpayers who pay GST after the due date. You need to enter the amount of tax or credit and the number of days of delay, and the result shows the interest and the total payable.",
+    "steps": [
+      "Enter the amount of tax or credit and the number of days of delay.",
+      "Choose the interest rate for the type of default to match your situation.",
+      "Read the interest and the total payable in the result."
+    ],
+    "note": "Interest on credit applies only when it was used; confirm the days between the due date and payment."
+  },
+  "qrmp": {
+    "h1": "QRMP scheme eligibility checker",
+    "title": "QRMP scheme eligibility checker",
+    "description": "Check eligibility for quarterly returns with monthly payments, and the schedule of returns and payments. Uses the figures you enter.",
+    "summary": "This tool checks eligibility for the scheme of quarterly returns with monthly payment of tax and shows the schedule. It is used by small taxpayers registered under GST. You need to enter the aggregate turnover and the current filing frequency, and the result shows whether you can opt in and the schedule of filing and payment.",
+    "steps": [
+      "Enter the aggregate turnover and the current filing frequency.",
+      "Select the quarter from the options that apply to your case.",
+      "Read whether you can opt in and the schedule of filing and payment in the result."
+    ],
+    "note": "A taxpayer must opt in; confirm the conditions and the dates for the quarter."
+  },
+  "regst": {
+    "h1": "GST on real estate calculator",
+    "title": "GST on real estate calculator",
+    "description": "Estimate the GST rate on residential and commercial property sales and how input tax credit is treated. Uses the figures you enter.",
+    "summary": "This tool estimates the GST rate on the sale of residential and commercial units under construction and the treatment of input tax credit. It is used by builders and buyers of real estate. You need to enter the value of the sale, the type of unit, the carpet area and the date of the project, and the result shows the GST rate, the tax amount and the credit position.",
+    "steps": [
+      "Enter the value of the sale, the type of unit, the carpet area and the date of the project.",
+      "Choose the project type to match your situation.",
+      "Read the GST rate, the tax amount and the credit position in the result."
+    ],
+    "note": "Rates and the land deduction depend on the project and the date; check the notification."
+  },
+  "einvoice": {
+    "h1": "GST e-invoice applicability checker",
+    "title": "GST e-invoice applicability checker",
+    "description": "Check whether e-invoicing is mandatory for your business based on turnover and the type of invoice. Uses the figures you enter.",
+    "summary": "This tool checks whether you need to generate an invoice reference number from the portal, based on aggregate turnover and the invoice type. It is used by registered businesses issuing B2B and export invoices. You need to enter the aggregate turnover and the type of supplies, and the result shows whether e-invoicing applies and the threshold used.",
+    "steps": [
+      "Enter the aggregate turnover and the type of supplies.",
+      "Choose the year of turnover to match your situation.",
+      "Read whether e-invoicing applies and the threshold used in the result."
+    ],
+    "note": "The threshold has been reduced over time; confirm the limit that applies from the date of your invoice."
+  },
+  "gstcndn": {
+    "h1": "GST credit note and debit note time limit",
+    "title": "GST credit and debit note time limits",
+    "description": "Check the last date to issue a credit note and the time to reflect a debit note under GST. Uses the figures you enter.",
+    "summary": "This tool checks the last date to issue a credit note and the timing for debit notes under the GST law. It is used by GST registered suppliers. You need to enter the date of the original invoice and the date of the note, and the result shows the last date allowed and the treatment of input tax credit.",
+    "steps": [
+      "Enter the date of the original invoice and the date of the note.",
+      "Choose the type of note to match your situation.",
+      "Read the last date allowed and the treatment of input tax credit in the result."
+    ],
+    "note": "The time limit depends on the financial year of supply; confirm it with the current provisions."
+  },
+  "gta": {
+    "h1": "GST on goods transport agency services",
+    "title": "GST on goods transport agency services",
+    "description": "Check GST on goods transport agency services at the default rate and the reverse charge, based on the option chosen.",
+    "summary": "This tool checks the GST on services of a goods transport agency, showing the rate options and who pays under the reverse charge. It is used by transport agencies and their business customers. You need to enter the freight value, the option for the rate and the status of the recipient, and the result shows the tax rate, who pays it and the input tax credit position.",
+    "steps": [
+      "Enter the freight value, the option for the rate and the status of the recipient.",
+      "Choose the option for the rate to match your situation.",
+      "Read the tax rate, who pays it and the input tax credit position in the result."
+    ],
+    "note": "The option has to be exercised in time; check the conditions of each option."
+  },
+  "importsvc": {
+    "h1": "GST on import of services calculator",
+    "title": "GST on import of services calculator",
+    "description": "Calculate the integrated GST payable by the recipient on services received from outside India and the credit. Uses the figures you enter.",
+    "summary": "This tool calculates the integrated GST payable by the recipient on services imported from a supplier outside India, and the related input credit. It is used by businesses that pay foreign suppliers for services. You need to enter the value of the services, the rate of GST and the date of supply, and the result shows the tax payable under reverse charge and the credit available.",
+    "steps": [
+      "Enter the value of the services, the rate of GST and the date of supply.",
+      "Choose the nature of the service to match your situation.",
+      "Read the tax payable under reverse charge and the credit available in the result."
+    ],
+    "note": "Imports from related persons may be valued differently; check the rules for the transaction."
+  },
+  "tds": {
+    "h1": "TDS calculator and rate finder",
+    "title": "TDS calculator and rate finder",
+    "description": "Find the TDS rate, threshold and tax to deduct for a payment, across the common sections, for the selected year.",
+    "summary": "This tool finds the rate of tax to be deducted at source on a payment, the threshold and the tax to deduct, across the common sections. It is used by deductors, accountants and payers of salary and other sums. You need to enter the section, the amount paid and the status of the payee, and the result shows the rate, the threshold and the TDS amount.",
+    "steps": [
+      "Enter the section, the amount paid and the status of the payee.",
+      "Choose the nature of payment and the payee status to match your situation.",
+      "Read the rate, the threshold and the TDS amount in the result."
+    ],
+    "note": "A higher rate applies where the PAN is not furnished; confirm the rate and threshold for the date of payment."
+  },
+  "tcs": {
+    "h1": "TCS calculator, Section 206C",
+    "title": "TCS calculator, Section 206C",
+    "description": "Calculate tax collected at source on specified sales and receipts, and the rate that applies to the transaction.",
+    "summary": "This tool calculates the tax collected at source on specified transactions, with the rate and threshold for each category. It is used by sellers who collect tax and buyers who pay it. You need to enter the amount of the sale or receipt and the category of the transaction, and the result shows the rate, the TCS amount and the amount after collection.",
+    "steps": [
+      "Enter the amount of the sale or receipt and the category of the transaction.",
+      "Choose the category and the buyer status to match your situation.",
+      "Read the rate, the TCS amount and the amount after collection in the result."
+    ],
+    "note": "A higher rate applies without a PAN; the TCS shows in Form 26AS and can be claimed as credit."
+  },
+  "tdslate": {
+    "h1": "TDS late filing fee and interest calculator",
+    "title": "TDS late filing fee and interest calculator",
+    "description": "Estimate late fee, penalty range and interest for TDS returns and deposits made after the due date. Uses the figures you enter.",
+    "summary": "This tool estimates the late fee for a TDS return, the penalty range and the interest on tax deducted but deposited late. It is used by deductors with late TDS returns or deposits. You need to enter the amount of TDS, the due dates, the dates of deduction and the date of filing, and the result shows the late fee, the interest and the penalty range.",
+    "steps": [
+      "Enter the amount of TDS, the due dates, the dates of deduction and the date of filing.",
+      "Choose the type of default to match your situation.",
+      "Read the late fee, the interest and the penalty range in the result."
+    ],
+    "note": "The late fee is limited to the amount of TDS; the penalty is decided by the officer."
+  },
+  "sec192": {
+    "h1": "Salary TDS calculator, Section 192",
+    "title": "Salary TDS calculator, Section 192",
+    "description": "Estimate the monthly tax an employer deducts from salary, on the average rate basis, with declarations considered.",
+    "summary": "This tool estimates the monthly tax an employer deducts from salary on the average rate basis, after taking the declarations of the employee into account. It is used by employers, payroll teams and salaried employees. You need to enter the salary, the allowances, the declared deductions and the months remaining, and the result shows the annual tax estimate and the tax to deduct each month.",
+    "steps": [
+      "Enter the salary, the allowances, the declared deductions and the months remaining.",
+      "Choose the regime and the declarations to match your situation.",
+      "Read the annual tax estimate and the tax to deduct each month in the result."
+    ],
+    "note": "The deduction depends on the declarations made to the employer; actual tax is settled in the return."
+  },
+  "sec192a": {
+    "h1": "EPF withdrawal TDS calculator",
+    "title": "EPF withdrawal TDS calculator",
+    "description": "Estimate TDS on early withdrawal from a provident fund account, with and without PAN, for the payment year. Uses the figures you enter.",
+    "summary": "This tool estimates the tax deducted when a provident fund balance is withdrawn before five years of service, with and without a valid PAN. It is used by employees who withdraw their provident fund. You need to enter the taxable balance, the years of service and the PAN status, and the result shows whether TDS applies, the rate and the amount.",
+    "steps": [
+      "Enter the taxable balance, the years of service and the PAN status.",
+      "Choose the year of payment to match your situation.",
+      "Read whether TDS applies, the rate and the amount in the result."
+    ],
+    "note": "TDS may not apply for transfers or small amounts; confirm the threshold and the years of service."
+  },
+  "panaadhaar": {
+    "h1": "PAN and Aadhaar link status guide",
+    "title": "PAN and Aadhaar link status guide",
+    "description": "Know the steps for checking the PAN and Aadhaar link on the income tax portal and what to do for each message.",
+    "summary": "This tool explains the steps to check whether a PAN is linked with Aadhaar on the income tax portal and what to do for the message you see. It is used by individuals who hold a PAN and an Aadhaar. You need to enter the message shown on the portal when you check the status, and the result shows the next step for that message and the points to keep in mind.",
+    "steps": [
+      "Enter the message shown on the portal when you check the status.",
+      "Choose the message you got to match your situation.",
+      "Read the next step for that message and the points to keep in mind in the result."
+    ],
+    "note": "This guide does not verify your PAN; keep the portal confirmation and check the tax effect for the year."
+  },
+  "sec194la": {
+    "h1": "Compulsory acquisition TDS, Section 194LA",
+    "title": "Compulsory acquisition TDS, Section 194LA",
+    "description": "Calculate TDS on compensation paid for compulsory acquisition of immovable property above the threshold. Uses the figures you enter.",
+    "summary": "This tool calculates the tax deducted on compensation paid for the compulsory acquisition of immovable property where it exceeds the threshold. It is used by authorities that acquire land and recipients of compensation. You need to enter the compensation or enhanced compensation and the type of property, and the result shows whether tax applies and the TDS amount.",
+    "steps": [
+      "Enter the compensation or enhanced compensation and the type of property.",
+      "Choose the type of property to match your situation.",
+      "Read whether tax applies and the TDS amount in the result."
+    ],
+    "note": "Compensation for agricultural land in rural areas is not covered; check the nature of the land."
+  },
+  "sec194m": {
+    "h1": "Personal payments TDS, Section 194M",
+    "title": "Personal payments TDS, Section 194M",
+    "description": "Calculate TDS by individuals and HUFs on payments to contractors and professionals above the annual limit. Uses the figures you enter.",
+    "summary": "This tool calculates the tax deducted by individuals and HUFs, who are not under audit, on payments to contractors and professionals above the limit. It is used by individuals and HUFs who pay contractors, commission or fees. You need to enter the amount paid in the year and the type of payment, and the result shows whether the limit is crossed and the TDS amount.",
+    "steps": [
+      "Enter the amount paid in the year and the type of payment.",
+      "Choose the type of payment to match your situation.",
+      "Read whether the limit is crossed and the TDS amount in the result."
+    ],
+    "note": "A TAN is not needed; check that you are not subject to a tax audit and file the challan on time."
+  },
+  "sec194o": {
+    "h1": "E-commerce operator TDS calculator",
+    "title": "E-commerce operator TDS calculator",
+    "description": "Estimate TDS on payments to e-commerce participants, checking the year, the seller's status and the base amount.",
+    "summary": "This tool estimates the tax deducted on payments or credits to a resident seller through an e-commerce platform, with checks for threshold and identity. It is used by e-commerce operators and sellers on platforms. You need to enter the annual gross sales, the amount credited and the PAN status of the seller, and the result shows whether the deduction applies, the rate and the amount.",
+    "steps": [
+      "Enter the annual gross sales, the amount credited and the PAN status of the seller.",
+      "Choose the year and the status of the seller to match your situation.",
+      "Read whether the deduction applies, the rate and the amount in the result."
+    ],
+    "note": "This is not the final tax of the seller; check the base amount and exceptional cases."
+  },
+  "sec194b": {
+    "h1": "Winnings TDS calculator, Section 194B and 194BA",
+    "title": "Section 194B winnings TDS",
+    "description": "Calculate TDS on winnings from lotteries, games and online gaming, including net winnings in online games. Uses the figures you enter.",
+    "summary": "This tool calculates the tax deducted on winnings from lotteries, games and online gaming, including net winnings from online games. It is used by payers and recipients of winnings. You need to enter the winning amount, the aggregate winnings and, for online games, the deposits and withdrawals, and the result shows the TDS at the flat rate and the net amount paid.",
+    "steps": [
+      "Enter the winning amount, the aggregate winnings and, for online games, the deposits and withdrawals.",
+      "Choose the type of game to match your situation.",
+      "Read the TDS at the flat rate and the net amount paid in the result."
+    ],
+    "note": "Rules differ for online gaming and horse racing; check the type of winning and the date."
+  },
+  "sec194lbb": {
+    "h1": "Investment fund distribution TDS, Section 194LBB",
+    "title": "Section 194LBB AIF distribution TDS",
+    "description": "Calculate TDS on income distributed by Category I and II alternative investment funds to investors. Uses the figures you enter.",
+    "summary": "This tool calculates the tax deducted on income distributed by Category I and II alternative investment funds to their unit holders. It is used by fund managers and investors in alternative investment funds. You need to enter the amount distributed and the status of the investor, and the result shows the TDS rate and the amount deducted.",
+    "steps": [
+      "Enter the amount distributed and the status of the investor.",
+      "Choose the investor category and any treaty rate to match your situation.",
+      "Read the TDS rate and the amount deducted in the result."
+    ],
+    "note": "Business income is not covered by the deduction; check the nature of the income distributed."
+  },
+  "sec194t": {
+    "h1": "Partner payment TDS, Section 194T",
+    "title": "Partner payment TDS, Section 194T",
+    "description": "Calculate TDS on salary, interest, remuneration and bonus paid by a firm to its partners above the annual limit.",
+    "summary": "This tool calculates the tax deducted by a partnership firm or LLP on salary, remuneration, interest, bonus or commission paid to partners above the limit. It is used by partnership firms, LLPs and their accountants. You need to enter the payments made to each partner in the year and the nature of each payment, and the result shows whether the limit is crossed and the amount of TDS.",
+    "steps": [
+      "Enter the payments made to each partner in the year and the nature of each payment.",
+      "Choose the type of payment to match your situation.",
+      "Read whether the limit is crossed and the amount of TDS in the result."
+    ],
+    "note": "The provision applies from a stated date; check the date of credit or payment."
+  },
+  "sec194lbc": {
+    "h1": "Securitisation trust TDS, Section 194LBC",
+    "title": "Securitisation trust TDS, Section 194LBC",
+    "description": "Calculate TDS on income distributed by a securitisation trust to investors, by investor type and treaty rate. Uses the figures you enter.",
+    "summary": "This tool calculates the tax deducted on income paid by a securitisation trust to its investors, by the investor category and any treaty rate. It is used by securitisation trusts and their investors. You need to enter the amount distributed and the type of investor, and the result shows the TDS rate and the amount deducted.",
+    "steps": [
+      "Enter the amount distributed and the type of investor.",
+      "Choose the investor type and the treaty rate to match your situation.",
+      "Read the TDS rate and the amount deducted in the result."
+    ],
+    "note": "Treaty rates need documents such as a residence certificate; confirm them before applying."
+  },
+  "form16": {
+    "h1": "Form 16 generator",
+    "title": "Form 16 TDS certificate generator",
+    "description": "Prepare a preview of Form 16 for salary, showing the TDS summary and the computation of the employee's tax. Uses the figures you enter.",
+    "summary": "This tool prepares a preview of Form 16 for salary income, showing the summary of tax deducted and the computation of Part B. It is used by employers and payroll teams. You need to enter the details of the employer and employee, the salary, the deductions and the tax deducted, and the result shows a Form 16 style preview with the tax computation.",
+    "steps": [
+      "Enter the details of the employer and employee, the salary, the deductions and the tax deducted.",
+      "Choose the regime and the deductions to match your situation.",
+      "Read a Form 16 style preview with the tax computation in the result."
+    ],
+    "note": "Part A comes from the TDS portal; this is a preview and not a certificate."
+  },
+  "sec194c": {
+    "h1": "Contractor TDS calculator, Section 194C",
+    "title": "Contractor TDS calculator, Section 194C",
+    "description": "Calculate TDS on payments to contractors and sub-contractors, with single payment and annual limits. Uses the figures you enter.",
+    "summary": "This tool calculates the tax deducted on payments to contractors and sub-contractors, with the single payment and annual limit tests. It is used by businesses and individuals who pay contractors. You need to enter the payment, the total in the year and the type of payee, and the result shows whether the limits are crossed, the rate and the TDS.",
+    "steps": [
+      "Enter the payment, the total in the year and the type of payee.",
+      "Choose the type of payee to match your situation.",
+      "Read whether the limits are crossed, the rate and the TDS in the result."
+    ],
+    "note": "The rate depends on the type of payee; transporters with PAN may have an exemption."
+  },
+  "sec194i": {
+    "h1": "Rent TDS for businesses, Section 194I",
+    "title": "Rent TDS for businesses, Section 194I",
+    "description": "Calculate TDS on rent for land, building, plant and machinery paid by businesses under audit. Uses the figures you enter.",
+    "summary": "This tool calculates the tax deducted on rent paid by businesses for land, buildings, plant, machinery and equipment, with the limit. It is used by businesses, firms and companies that pay rent. You need to enter the rent paid in the year or month and the type of asset, and the result shows the rate, whether the limit is crossed, and the TDS.",
+    "steps": [
+      "Enter the rent paid in the year or month and the type of asset.",
+      "Choose the type of asset to match your situation.",
+      "Read the rate, whether the limit is crossed, and the TDS in the result."
+    ],
+    "note": "The limit applies on rent paid in the year; confirm the threshold for your payment date."
+  },
+  "sec194j": {
+    "h1": "Professional fees TDS, Section 194J",
+    "title": "Professional fees TDS, Section 194J",
+    "description": "Calculate TDS on professional fees and technical services above the threshold at the rates for each type. Uses the figures you enter.",
+    "summary": "This tool calculates the tax deducted on fees for professional and technical services, applying the rate for each type and the threshold. It is used by businesses and individuals who pay professionals. You need to enter the fee paid, the total in the year and the type of service, and the result shows the rate, whether the limit is crossed and the TDS.",
+    "steps": [
+      "Enter the fee paid, the total in the year and the type of service.",
+      "Choose the type of service to match your situation.",
+      "Read the rate, whether the limit is crossed and the TDS in the result."
+    ],
+    "note": "A different rate applies to some payees; confirm the nature of the service and the threshold."
+  },
+  "sec194h": {
+    "h1": "Commission TDS calculator, Section 194H",
+    "title": "Commission TDS calculator, Section 194H",
+    "description": "Calculate TDS on commission or brokerage paid for buying or selling goods and for services. Uses the figures you enter.",
+    "summary": "This tool calculates the tax deducted on commission or brokerage paid for services in the course of buying or selling goods or services. It is used by businesses that pay agents and brokers. You need to enter the commission paid, the total in the year and the PAN status, and the result shows whether the limit is crossed, the rate and the TDS.",
+    "steps": [
+      "Enter the commission paid, the total in the year and the PAN status.",
+      "Choose the payment date to match your situation.",
+      "Read whether the limit is crossed, the rate and the TDS in the result."
+    ],
+    "note": "Some payments are not covered; confirm the nature of the payment and the threshold."
+  },
+  "sec194n": {
+    "h1": "Cash withdrawal TDS, Section 194N",
+    "title": "Cash withdrawal TDS, Section 194N",
+    "description": "Calculate TDS on large cash withdrawals from banks and post offices, which differs for filers and non-filers. Uses the figures you enter.",
+    "summary": "This tool calculates the tax deducted on cash withdrawals from banks, co-operative banks and post offices above the limits for filers and non-filers. It is used by account holders who withdraw large cash amounts. You need to enter the cash withdrawn in the year and whether you have filed returns, and the result shows the limit, the rate and the TDS on the excess.",
+    "steps": [
+      "Enter the cash withdrawn in the year and whether you have filed returns.",
+      "Choose your filing status to match your situation.",
+      "Read the limit, the rate and the TDS on the excess in the result."
+    ],
+    "note": "The TDS is credited in your tax statement; confirm the limit and rate for your category."
+  },
+  "sec194ib": {
+    "h1": "Rent TDS for individuals, Section 194IB",
+    "title": "Rent TDS for individuals, Section 194IB",
+    "description": "Calculate TDS by an individual or HUF tenant on monthly rent above the limit, without a TAN. Uses the figures you enter.",
+    "summary": "This tool calculates the tax deducted by an individual or HUF tenant on monthly rent above the limit, without the need for a TAN. It is used by tenants who are individuals or HUFs and not under audit. You need to enter the monthly rent, the number of months and the PAN status, and the result shows whether the limit is crossed, the rate and the TDS.",
+    "steps": [
+      "Enter the monthly rent, the number of months and the PAN status.",
+      "Choose the months of rent to match your situation.",
+      "Read whether the limit is crossed, the rate and the TDS in the result."
+    ],
+    "note": "The tax is deducted once in the year or at the end of tenancy; file the challan on time."
+  },
+  "sec194ia": {
+    "h1": "Property purchase TDS, Section 194IA",
+    "title": "Property purchase TDS estimate",
+    "description": "Estimate TDS on the purchase of immovable property from a resident seller, on the higher of the consideration and stamp duty value.",
+    "summary": "This tool estimates the tax deducted by a buyer on purchasing property from a resident seller, using the higher of the consideration and the stamp duty value. It is used by buyers of immovable property. You need to enter the consideration, the stamp duty value and the number of buyers and sellers, and the result shows whether tax applies, the base value and the TDS.",
+    "steps": [
+      "Enter the consideration, the stamp duty value and the number of buyers and sellers.",
+      "Choose the number of buyers and sellers to match your situation.",
+      "Read whether tax applies, the base value and the TDS in the result."
+    ],
+    "note": "Instalments, ownership shares and filing forms need separate checking; confirm the seller's residence."
+  },
+  "f15gh": {
+    "h1": "Form 15G and 15H eligibility checker",
+    "title": "Form 15G and 15H eligibility checker",
+    "description": "Check whether you can submit Form 15G or 15H to avoid TDS on interest, by answering a few questions. Uses the figures you enter.",
+    "summary": "This tool helps check whether a depositor is eligible to submit a declaration in Form 15G or 15H to avoid tax deduction on interest, through yes or no questions. It is used by depositors and senior citizens with interest income. You need to enter answers to questions on age, income and tax liability, and the result shows whether you appear eligible and which form applies.",
+    "steps": [
+      "Enter answers to questions on age, income and tax liability.",
+      "Choose your age and the estimated tax liability to match your situation.",
+      "Read whether you appear eligible and which form applies in the result."
+    ],
+    "note": "Eligibility depends on total income and nil tax; submitting a wrong declaration has consequences."
+  },
+  "cal": {
+    "h1": "Compliance calendar",
+    "title": "Compliance calendar",
+    "description": "Track statutory due dates for income tax, GST, TDS and other filings, with countdowns to the next dates. Uses the figures you enter.",
+    "summary": "This tool lists statutory due dates for income tax, GST, TDS and other filings, with a countdown to the next dates. It is used by business owners, accountants and individual taxpayers. You need to enter the category of dates you want to follow, and the result shows the upcoming dates with the days remaining and an option to add to your calendar.",
+    "steps": [
+      "Enter the category of dates you want to follow.",
+      "Choose the category and the month to match your situation.",
+      "Read the upcoming dates with the days remaining and an option to add to your calendar in the result."
+    ],
+    "note": "Dates can be extended by notification; check the portal before relying on a date."
+  },
+  "audit": {
+    "h1": "Tax audit applicability checker, Section 44AB",
+    "title": "Section 44AB tax audit checker",
+    "description": "Check whether a tax audit is required, the related penalty, and the deadline for the audit report. Uses the figures you enter.",
+    "summary": "This tool checks whether a tax audit is required based on turnover, receipts and the manner of business, and shows the penalty and the due date. It is used by businesses and professionals with significant turnover. You need to enter the turnover or gross receipts, the cash share and the presumptive scheme details, and the result shows whether an audit applies, the penalty for default and the due date.",
+    "steps": [
+      "Enter the turnover or gross receipts, the cash share and the presumptive scheme details.",
+      "Choose the type of assessee and the scheme opted to match your situation.",
+      "Read whether an audit applies, the penalty for default and the due date in the result."
+    ],
+    "note": "The limit depends on the cash share; confirm the facts with the audit provisions."
+  },
+  "presumptive": {
+    "h1": "Presumptive taxation calculator, 44AD, 44ADA, 44AE",
+    "title": "Presumptive taxation calculator",
+    "description": "Check eligibility for presumptive taxation and compare deemed profit with normal computation for business and professions.",
+    "summary": "This tool checks eligibility for presumptive taxation of businesses, professions and goods carriages and compares the deemed profit with the actual profit. It is used by small businesses, professionals and transporters. You need to enter the turnover or receipts, the actual profit, the vehicle details if any, and the result shows the deemed profit, the actual profit and the scheme limits.",
+    "steps": [
+      "Enter the turnover or receipts, the actual profit, the vehicle details if any.",
+      "Choose the scheme that applies to you to match your situation.",
+      "Read the deemed profit, the actual profit and the scheme limits in the result."
+    ],
+    "note": "Opting out may attract a tax audit and bar you from the scheme for some years; read the conditions."
+  },
+  "depreciation": {
+    "h1": "Depreciation calculator under the Income-tax Act",
+    "title": "Income-tax depreciation calculator",
+    "description": "Compute depreciation on up to ten blocks of assets on the written down value method, including additional depreciation.",
+    "summary": "This tool computes depreciation on blocks of assets using the written down value method, with additional depreciation and the half-year rule where it applies. It is used by businesses and professionals with fixed assets. You need to enter the opening block value, the additions, the sales and the rate for each block, and the result shows the depreciation for each block and the closing written down value.",
+    "steps": [
+      "Enter the opening block value, the additions, the sales and the rate for each block.",
+      "Choose the block of asset and the date of use to match your situation.",
+      "Read the depreciation for each block and the closing written down value in the result."
+    ],
+    "note": "Block rates and rules depend on the tax year; confirm the rate and class of each asset."
+  },
+  "udyam": {
+    "h1": "MSME classification and payment check",
+    "title": "MSME classification and payment check",
+    "description": "Classify an enterprise as micro, small or medium by investment and turnover, and check the payment timeline for MSME suppliers.",
+    "summary": "This tool classifies an enterprise as micro, small or medium by investment and turnover, and tests the payment timeline for MSME suppliers. It is used by MSME owners and buyers who purchase from MSMEs. You need to enter the investment in plant and machinery, the turnover and the dates of supply and payment, and the result shows the category, the due date for payment and any amount that may be disallowed.",
+    "steps": [
+      "Enter the investment in plant and machinery, the turnover and the dates of supply and payment.",
+      "Choose the type of enterprise to match your situation.",
+      "Read the category, the due date for payment and any amount that may be disallowed in the result."
+    ],
+    "note": "Classification follows the Udyam registration; confirm that the supplier is registered and the dates."
+  },
+  "sec43bh": {
+    "h1": "MSME 45-day payment rule, Section 43B(h)",
+    "title": "MSME 45-day payment rule, Section 43B(h)",
+    "description": "Check whether payments to micro and small suppliers made late are disallowed in the year, using the 45-day rule.",
+    "summary": "This tool checks whether an amount payable to a micro or small enterprise is disallowed in the year because it was not paid within the allowed period. It is used by buyers who purchase from micro and small enterprises. You need to enter the invoice amount, the date of supply, the date of payment and any written agreement, and the result shows the due date for payment, the amount disallowed and the year when allowed.",
+    "steps": [
+      "Enter the invoice amount, the date of supply, the date of payment and any written agreement.",
+      "Choose the agreed period of credit to match your situation.",
+      "Read the due date for payment, the amount disallowed and the year when allowed in the result."
+    ],
+    "note": "The time depends on the written agreement; the supplier must be registered under the MSME law."
+  },
+  "sec269su": {
+    "h1": "Digital payment modes, Section 269SU",
+    "title": "Digital payment modes, Section 269SU",
+    "description": "Check whether a business must offer prescribed electronic modes of payment based on its turnover, and the penalty for default.",
+    "summary": "This tool checks whether a business must provide the prescribed electronic modes of payment, based on its turnover in the preceding year, and the penalty. It is used by businesses with large turnover. You need to enter the turnover, sales or receipts of the preceding year, and the result shows whether the provision applies and the penalty for each day of default.",
+    "steps": [
+      "Enter the turnover, sales or receipts of the preceding year.",
+      "Choose the preceding year to match your situation.",
+      "Read whether the provision applies and the penalty for each day of default in the result."
+    ],
+    "note": "Check the modes of payment that are prescribed and the date from which the rule applies."
+  },
+  "penalty": {
+    "h1": "Late fee and penalty calculator",
+    "title": "Late fee and penalty calculator",
+    "description": "Estimate late fees and penalties for income tax returns, TDS and GST, and the interest that accompanies each. Uses the figures you enter.",
+    "summary": "This tool estimates late filing fees, penalties and interest for income tax returns, TDS returns and GST returns in one place. It is used by taxpayers and accountants dealing with late filing. You need to enter the tax or fee amount, the due date and the date of filing, and the result shows the late fee, the penalty and the interest for the default chosen.",
+    "steps": [
+      "Enter the tax or fee amount, the due date and the date of filing.",
+      "Choose the type of default to match your situation.",
+      "Read the late fee, the penalty and the interest for the default chosen in the result."
+    ],
+    "note": "Penalties are decided by the authority; this tool only estimates the statutory fees and interest."
+  },
+  "sec115bbe": {
+    "h1": "Unexplained income tax, Section 115BBE",
+    "title": "Unexplained income tax, Section 115BBE",
+    "description": "Estimate tax at the special rate on unexplained credits, investments and expenditure, with surcharge and cess.",
+    "summary": "This tool estimates the tax at the special rate on unexplained cash credits, investments, money and expenditure, including surcharge and cess. It is used by taxpayers facing additions in assessment and their advisers. You need to enter the amount added to income and any other income of the year, and the result shows the tax on the unexplained income, the surcharge, the cess and the total.",
+    "steps": [
+      "Enter the amount added to income and any other income of the year.",
+      "Choose the type of addition to match your situation.",
+      "Read the tax on the unexplained income, the surcharge, the cess and the total in the result."
+    ],
+    "note": "No deduction or set-off is allowed against the income; penalty provisions are separate."
+  },
+  "sec270a": {
+    "h1": "Under-reporting penalty, Section 270A",
+    "title": "Under-reporting penalty, Section 270A",
+    "description": "Estimate the penalty on under-reported or misreported income as a percentage of the tax on that income. Uses the figures you enter.",
+    "summary": "This tool estimates the penalty for under-reporting or misreporting of income, as a percentage of the tax payable on the under-reported income. It is used by taxpayers who received an assessment order and their advisers. You need to enter the income returned, the income assessed and the tax on the difference, and the result shows the under-reported income, the tax payable on it and the penalty.",
+    "steps": [
+      "Enter the income returned, the income assessed and the tax on the difference.",
+      "Choose the type of default to match your situation.",
+      "Read the under-reported income, the tax payable on it and the penalty in the result."
+    ],
+    "note": "Exceptions and immunity are available in some cases; check the facts and the order."
+  },
+  "cash269": {
+    "h1": "Cash transaction limits, Section 269ST, 269SS and 269T",
+    "title": "Cash transaction limits",
+    "description": "Check cash receipts, loans and repayments against the statutory limits and the penalty for default. Uses the figures you enter.",
+    "summary": "This tool checks cash receipts, loans, deposits and repayments against the statutory limits and shows the penalty for default. It is used by businesses, professionals and individuals who handle cash. You need to enter the amount of cash, the type of transaction and whether it is a single transaction, and the result shows whether the limit is crossed and the penalty amount.",
+    "steps": [
+      "Enter the amount of cash, the type of transaction and whether it is a single transaction.",
+      "Choose the type of transaction to match your situation.",
+      "Read whether the limit is crossed and the penalty amount in the result."
+    ],
+    "note": "Several exceptions exist for banks and governments; check whether your transaction is covered."
+  },
+  "cash40a": {
+    "h1": "Cash payment disallowance, Section 40A(3)",
+    "title": "Cash payment disallowance, Section 40A(3)",
+    "description": "Estimate the expenditure disallowed when a business pays above the cash limit to one person in a day. Uses the figures you enter.",
+    "summary": "This tool estimates the expenditure disallowed when a business pays cash above the limit to a single person in a single day. It is used by businesses and professionals under audit. You need to enter the cash payment, the number of payments in a day and your slab rate, and the result shows the amount disallowed and the extra tax.",
+    "steps": [
+      "Enter the cash payment, the number of payments in a day and your slab rate.",
+      "Choose the type of payee to match your situation.",
+      "Read the amount disallowed and the extra tax in the result."
+    ],
+    "note": "A higher limit applies to transport payments; confirm the exceptions listed in the rules."
+  },
+  "ais": {
+    "h1": "AIS and Form 26AS reconciliation tool",
+    "title": "AIS and 26AS reconciliation tool",
+    "description": "Compare entries from AIS or Form 26AS with the amounts you declared and flag the differences to check. Uses the figures you enter.",
+    "summary": "This tool compares rows from the Annual Information Statement or Form 26AS with the amounts you plan to declare and flags the differences. It is used by individuals and accountants preparing a return. You need to enter the rows from AIS or 26AS and the amounts in your own records, and the result shows the matched rows, the mismatches and the difference for each.",
+    "steps": [
+      "Enter the rows from AIS or 26AS and the amounts in your own records.",
+      "Choose the source and the matching basis to match your situation.",
+      "Read the matched rows, the mismatches and the difference for each in the result."
+    ],
+    "note": "Only the rows you paste are compared; confirm each difference against your documents before filing."
+  },
+  "tp3ceb": {
+    "h1": "Form 3CEB applicability checker",
+    "title": "Form 3CEB applicability checker",
+    "description": "Check whether Form 3CEB, the report on international transactions with associated enterprises, is required for your transactions.",
+    "summary": "This tool checks whether Form 3CEB is needed for international transactions with associated enterprises and specified domestic transactions above the limit. It is used by companies and businesses with foreign related parties. You need to enter the value of international transactions and specified domestic transactions, and the result shows whether a report is required and the due date.",
+    "steps": [
+      "Enter the value of international transactions and specified domestic transactions.",
+      "Choose whether associated enterprises are involved to match your situation.",
+      "Read whether a report is required and the due date in the result."
+    ],
+    "note": "Associated enterprise status depends on control and shareholding; confirm each relationship."
+  },
+  "trustreg": {
+    "h1": "Trust registration guide, Section 12AB and 80G",
+    "title": "Trust registration guide",
+    "description": "Understand the registration cycle for charitable trusts, the forms used and the validity period of each registration.",
+    "summary": "This tool explains the registration of charitable and religious trusts, the forms used and the validity period of each registration. It is used by trustees and accountants of trusts and institutions. You need to enter the stage of the trust: new, existing or renewal, and the result shows the form to use, the validity period and the next date for action.",
+    "steps": [
+      "Enter the stage of the trust: new, existing or renewal.",
+      "Choose the stage of registration to match your situation.",
+      "Read the form to use, the validity period and the next date for action in the result."
+    ],
+    "note": "Registration is granted by the Commissioner; check the current forms and due dates on the portal."
+  },
+  "trustapp": {
+    "h1": "Trust income application calculator",
+    "title": "Trust income application calculator",
+    "description": "Check whether a registered trust has applied the required share of income and see the amount that can be accumulated.",
+    "summary": "This tool checks whether a registered trust has applied the required share of its income for its objects and shows the amount that may be accumulated. It is used by trustees and accountants preparing the return of a trust. You need to enter the income of the year, the amount applied, the capital expenditure and the amounts set aside, and the result shows the required application, the shortfall and the accumulated income.",
+    "steps": [
+      "Enter the income of the year, the amount applied, the capital expenditure and the amounts set aside.",
+      "Choose the type of application to match your situation.",
+      "Read the required application, the shortfall and the accumulated income in the result."
+    ],
+    "note": "Accumulation needs a notice in the prescribed form; check the investment rules for accumulated funds."
+  },
+  "emi": {
+    "h1": "EMI and loan amortisation calculator",
+    "title": "EMI and loan amortisation calculator",
+    "description": "Calculate the monthly instalment on a loan, view the repayment schedule and see the effect of prepayments. Uses the figures you enter.",
+    "summary": "This tool calculates the monthly instalment on a loan, builds the repayment schedule and shows the effect of part prepayments. It is used by borrowers comparing loans and planning repayment. You need to enter the loan amount, the rate of interest, the tenure and any prepayment, and the result shows the instalment, the total interest and the schedule of principal and interest.",
+    "steps": [
+      "Enter the loan amount, the rate of interest, the tenure and any prepayment.",
+      "Choose the tenure and the prepayment option to match your situation.",
+      "Read the instalment, the total interest and the schedule of principal and interest in the result."
+    ],
+    "note": "Banks may round instalments or change the rate; check the schedule given by your lender."
+  },
+  "investments": {
+    "h1": "Investment returns calculator",
+    "title": "Investment returns calculator",
+    "description": "Project the value of a SIP, PPF, fixed deposit or NPS investment over your chosen period. Uses the figures you enter.",
+    "summary": "This tool projects the value of a step-up SIP, PPF deposits, a fixed deposit and an NPS corpus over the chosen period. It is used by savers planning long-term goals. You need to enter the amount invested, the expected rate of return and the number of years, and the result shows the maturity value, the amount invested and the gain.",
+    "steps": [
+      "Enter the amount invested, the expected rate of return and the number of years.",
+      "Choose the type of investment and the frequency of investment to match your situation.",
+      "Read the maturity value, the amount invested and the gain in the result."
+    ],
+    "note": "Returns are assumed and not certain; rates of PPF and fixed deposits change from time to time."
+  },
+  "retirement": {
+    "h1": "Retirement corpus calculator",
+    "title": "Retirement corpus calculator",
+    "description": "Estimate the corpus needed at retirement to meet expenses that rise with inflation, using a replacement ratio.",
+    "summary": "This tool estimates the corpus you need at retirement to meet expenses that rise with inflation, using a replacement ratio for your income. It is used by working individuals planning for retirement. You need to enter your age, retirement age, current expenses, inflation rate and expected return, and the result shows the corpus needed, the monthly saving required and the years remaining.",
+    "steps": [
+      "Enter your age, retirement age, current expenses, inflation rate and expected return.",
+      "Choose the inflation and return assumptions to match your situation.",
+      "Read the corpus needed, the monthly saving required and the years remaining in the result."
+    ],
+    "note": "The result depends on assumptions about inflation and return; revise them from time to time."
+  },
+  "hlv": {
+    "h1": "Life insurance need calculator",
+    "title": "Life insurance need calculator",
+    "description": "Estimate the life cover needed with the human life value and DIME methods, to help size a term insurance cover.",
+    "summary": "This tool estimates the life cover a family may need, using the human life value method and the DIME method of debt, income, mortgage and education. It is used by individuals with dependants who plan their insurance. You need to enter your income, age, debts, home loan, children's education needs and existing cover, and the result shows the cover needed by each method and the gap against existing cover.",
+    "steps": [
+      "Enter your income, age, debts, home loan, children's education needs and existing cover.",
+      "Choose the method used to match your situation.",
+      "Read the cover needed by each method and the gap against existing cover in the result."
+    ],
+    "note": "This is an estimate and not a recommendation of a policy; consider your family's needs and the terms of the plan."
+  },
+  "networth": {
+    "h1": "Personal net worth statement",
+    "title": "Personal net worth statement",
+    "description": "Prepare a statement of your assets and liabilities to see your net worth at a point in time. Uses the figures you enter.",
+    "summary": "This tool prepares a statement of personal assets and liabilities and works out the net worth by deducting liabilities from assets. It is used by individuals who plan finances, apply for loans or prepare disclosures. You need to enter the value of liquid and fixed assets, investments, property and your loans, and the result shows the total assets, the total liabilities and the net worth.",
+    "steps": [
+      "Enter the value of liquid and fixed assets, investments, property and your loans.",
+      "Choose the asset and liability categories to match your situation.",
+      "Read the total assets, the total liabilities and the net worth in the result."
+    ],
+    "note": "Values are as entered by you and are not valued independently; update them from time to time."
+  },
+  "childedu": {
+    "h1": "Children's education corpus calculator",
+    "title": "Children's education corpus calculator",
+    "description": "Project the future cost of a degree with education inflation and estimate the monthly saving needed to reach it.",
+    "summary": "This tool projects the future cost of a degree using an education inflation rate and estimates the saving needed to reach that goal. It is used by parents planning for their children's education. You need to enter the present cost of the course, the child's age, the years to start and the expected return, and the result shows the future cost, the corpus needed and the monthly saving.",
+    "steps": [
+      "Enter the present cost of the course, the child's age, the years to start and the expected return.",
+      "Choose the inflation and return assumptions to match your situation.",
+      "Read the future cost, the corpus needed and the monthly saving in the result."
+    ],
+    "note": "Education costs vary widely; use realistic inflation and return figures and revise them from time to time."
+  },
+  "sipelss": {
+    "h1": "SIP and ELSS comparison calculator",
+    "title": "SIP and ELSS comparison calculator",
+    "description": "Compare a SIP or lump sum with an ELSS investment, including long-term gains tax and the tax saved under the old regime.",
+    "summary": "This tool compares the future value of a SIP or lump sum with an ELSS investment, along with the long-term capital gains tax and the deduction under the old regime. It is used by investors who are choosing between funds and tax-saving options. You need to enter the amount invested, the period, the expected return and your slab rate, and the result shows the future value, the tax on gains and the tax saved by the deduction.",
+    "steps": [
+      "Enter the amount invested, the period, the expected return and your slab rate.",
+      "Choose the investment mode and the regime to match your situation.",
+      "Read the future value, the tax on gains and the tax saved by the deduction in the result."
+    ],
+    "note": "Mutual fund returns are not fixed, and ELSS has a lock-in; the deduction is available under the old regime."
+  },
+  "sgb": {
+    "h1": "Sovereign gold bond return calculator",
+    "title": "Sovereign gold bond calculator",
+    "description": "Estimate the interest, redemption value and tax treatment of a sovereign gold bond for the chosen holding period.",
+    "summary": "This tool estimates the interest, the redemption or sale value and the tax on a sovereign gold bond, based on the holding period and the buyer. It is used by investors in sovereign gold bonds. You need to enter the grams, the issue value per gram, the sale value per gram, the holding months and your slab rate, and the result shows the interest, the capital gain and the tax.",
+    "steps": [
+      "Enter the grams, the issue value per gram, the sale value per gram, the holding months and your slab rate.",
+      "Choose the holding period and the mode of exit to match your situation.",
+      "Read the interest, the capital gain and the tax in the result."
+    ],
+    "note": "The tax treatment depends on whether the bond is redeemed at maturity or sold in the market."
+  },
+  "reit": {
+    "h1": "REIT and InvIT taxation calculator",
+    "title": "REIT and InvIT taxation calculator",
+    "description": "Split distributions from REITs and InvITs into interest, dividend and return of capital, and estimate the tax.",
+    "summary": "This tool splits distributions from a REIT or InvIT into interest, dividend and return of capital, and estimates the tax and the gain on sale of units. It is used by investors in real estate and infrastructure trusts. You need to enter the units held, the purchase and sale values per unit and the annual distribution, and the result shows the taxable income, the capital gain and the TDS.",
+    "steps": [
+      "Enter the units held, the purchase and sale values per unit and the annual distribution.",
+      "Choose the split of the distribution to match your situation.",
+      "Read the taxable income, the capital gain and the TDS in the result."
+    ],
+    "note": "The split is declared by the trust each year; use the figures from its statement."
+  },
+  "loandeduct": {
+    "h1": "Education and electric vehicle loan interest deduction",
+    "title": "Education and EV loan interest deduction",
+    "description": "Work out the deduction for interest on an education loan and on an electric vehicle loan, subject to the limits.",
+    "summary": "This tool works out the deduction for interest paid on an education loan and on an electric vehicle loan, subject to the limits of each. It is used by borrowers who repay education or electric vehicle loans. You need to enter the interest paid in the year, the date of loan sanction and the purpose of the loan, and the result shows the deduction allowed under each section and the total.",
+    "steps": [
+      "Enter the interest paid in the year, the date of loan sanction and the purpose of the loan.",
+      "Choose the loan type to match your situation.",
+      "Read the deduction allowed under each section and the total in the result."
+    ],
+    "note": "These deductions are for the old regime; confirm the conditions on the loan and the lender."
+  },
+  "nps": {
+    "h1": "NPS corpus and pension calculator",
+    "title": "NPS corpus and pension calculator",
+    "description": "Project the National Pension System corpus, the annuity share, the tax-free lump sum and the monthly pension. Uses the figures you enter.",
+    "summary": "This tool projects the National Pension System corpus at retirement, the share used to buy an annuity, the tax-free lump sum and the monthly pension. It is used by NPS subscribers planning retirement. You need to enter the monthly contribution, the age, the expected return and the annuity share, and the result shows the corpus, the lump sum, the annuity and the monthly pension estimate.",
+    "steps": [
+      "Enter the monthly contribution, the age, the expected return and the annuity share.",
+      "Choose the annuity share and the return to match your situation.",
+      "Read the corpus, the lump sum, the annuity and the monthly pension estimate in the result."
+    ],
+    "note": "Returns and annuity rates are not fixed; confirm the withdrawal rules in force at retirement."
+  },
+  "ppf": {
+    "h1": "PPF maturity calculator",
+    "title": "PPF maturity calculator",
+    "description": "Calculate the maturity value of a Public Provident Fund account, including the 15-year term and extensions. Uses the figures you enter.",
+    "summary": "This tool calculates the maturity value of a Public Provident Fund account over the 15-year term, with extensions in blocks of five years. It is used by PPF account holders and savers. You need to enter the yearly deposit, the rate of interest, the year of opening and the extensions, and the result shows the balance each year, the interest earned and the maturity value.",
+    "steps": [
+      "Enter the yearly deposit, the rate of interest, the year of opening and the extensions.",
+      "Choose the deposit pattern and the extension to match your situation.",
+      "Read the balance each year, the interest earned and the maturity value in the result."
+    ],
+    "note": "The rate is notified each quarter by the Government; deposit within the permitted limits."
+  },
+  "pfint": {
+    "h1": "Taxable provident fund interest calculator",
+    "title": "Taxable provident fund interest calculator",
+    "description": "Work out the taxable interest on employee provident fund contributions above the annual limit. Uses the figures you enter.",
+    "summary": "This tool works out the interest on employee contributions to a provident fund that is taxable when the contribution exceeds the annual limit. It is used by employees who contribute a large amount to their provident fund. You need to enter the contribution for the year, the employer contribution, the interest rate and the balance, and the result shows the taxable part of the interest and the non-taxable part.",
+    "steps": [
+      "Enter the contribution for the year, the employer contribution, the interest rate and the balance.",
+      "Choose the financial year to match your situation.",
+      "Read the taxable part of the interest and the non-taxable part in the result."
+    ],
+    "note": "The limit differs when the employer makes no contribution; check how your account is split."
+  },
+  "eps": {
+    "h1": "EPS pension calculator",
+    "title": "EPS pension calculator",
+    "description": "Estimate the monthly pension under the Employees' Pension Scheme from the pensionable salary and service. Uses the figures you enter.",
+    "summary": "This tool estimates the monthly pension under the Employees' Pension Scheme from the pensionable salary and the period of service. It is used by retiring members of the Employees' Provident Fund. You need to enter the pensionable salary, the years of service and the age at exit, and the result shows the monthly pension estimate and the calculation used.",
+    "steps": [
+      "Enter the pensionable salary, the years of service and the age at exit.",
+      "Choose the date of joining to match your situation.",
+      "Read the monthly pension estimate and the calculation used in the result."
+    ],
+    "note": "The actual pension is fixed by the EPFO; the wage ceiling and rules depend on the date of joining."
+  },
+  "ssy": {
+    "h1": "Sukanya Samriddhi Yojana calculator",
+    "title": "Sukanya Samriddhi Yojana calculator",
+    "description": "Estimate the balance and maturity value of a Sukanya Samriddhi account for the girl child over the full term. Uses the figures you enter.",
+    "summary": "This tool estimates the balance and the maturity value of a Sukanya Samriddhi account over the deposit period and up to maturity. It is used by parents and guardians of a girl child. You need to enter the yearly deposit, the girl's age at opening and the interest rate, and the result shows the balance each year, the interest earned and the maturity value.",
+    "steps": [
+      "Enter the yearly deposit, the girl's age at opening and the interest rate.",
+      "Choose the age of the girl and the deposit pattern to match your situation.",
+      "Read the balance each year, the interest earned and the maturity value in the result."
+    ],
+    "note": "The rate is notified each quarter; check the rules on deposits, partial withdrawal and closure."
+  },
+  "scss": {
+    "h1": "Senior citizens savings scheme calculator",
+    "title": "Senior citizens savings scheme calculator",
+    "description": "Calculate quarterly interest and total returns on a Senior Citizens Savings Scheme deposit, with the maturity and extension.",
+    "summary": "This tool calculates the quarterly interest and total return on a deposit in the Senior Citizens Savings Scheme, with the maturity and extension. It is used by senior citizens and retirees looking for regular interest. You need to enter the deposit amount, the rate of interest and the term, and the result shows the quarterly interest, the total interest and the maturity amount.",
+    "steps": [
+      "Enter the deposit amount, the rate of interest and the term.",
+      "Choose the deposit amount and whether you extend to match your situation.",
+      "Read the quarterly interest, the total interest and the maturity amount in the result."
+    ],
+    "note": "The interest is taxable and TDS applies above a limit; the deposit limit is set by the scheme."
+  },
+  "nri": {
+    "h1": "NRI residential status checker",
+    "title": "NRI residential status checker",
+    "description": "Estimate the residential status of an individual based on days of stay in India during the year and earlier years.",
+    "summary": "This tool estimates the residential status of an individual from the number of days spent in India in the year and in earlier years. It is used by individuals who live or work abroad and visit India. You need to enter the dates of each stay in India, your citizenship and the income from India, and the result shows the likely residential status and the day-count test that applied.",
+    "steps": [
+      "Enter the dates of each stay in India, your citizenship and the income from India.",
+      "Choose your citizenship and India-sourced income to match your situation.",
+      "Read the likely residential status and the day-count test that applied in the result."
+    ],
+    "note": "Confirm the status and the treaty position with your records; the status is decided for each year."
+  },
+  "nrirepat": {
+    "h1": "NRO and NRE repatriation guide",
+    "title": "NRO and NRE repatriation guide",
+    "description": "Check repatriation limits from NRO accounts, and find which forms are needed for remittances abroad. Uses the figures you enter.",
+    "summary": "This tool checks the limit for repatriating funds from an NRO account and shows which of Form 15CA and Form 15CB applies to the remittance. It is used by NRIs who send money out of India. You need to enter the amount, the nature of the remittance, the account type and the amount remitted in the year, and the result shows the repatriation limit, the forms needed and the points to confirm.",
+    "steps": [
+      "Enter the amount, the nature of the remittance, the account type and the amount remitted in the year.",
+      "Choose the account and the purpose of the remittance to match your situation.",
+      "Read the repatriation limit, the forms needed and the points to confirm in the result."
+    ],
+    "note": "A certificate from an accountant may be needed; check the exchange control rules and the bank's requirements."
+  },
+  "dtaa": {
+    "h1": "DTAA withholding rate finder",
+    "title": "DTAA withholding rate finder",
+    "description": "Look up indicative withholding tax rates for payments to non-residents under India's tax treaties. Uses the figures you enter.",
+    "summary": "This tool looks up indicative withholding rates for payments to non-residents under India's tax treaties and compares them with the domestic rate. It is used by businesses that pay non-residents and non-resident recipients. You need to enter the country, the type of payment and the amount, and the result shows the treaty rate, the domestic rate and the lower rate.",
+    "steps": [
+      "Enter the country, the type of payment and the amount.",
+      "Choose the country and the type of income to match your situation.",
+      "Read the treaty rate, the domestic rate and the lower rate in the result."
+    ],
+    "note": "The rates are indicative; check the treaty text, the protocol and the documents needed to claim the rate."
+  },
+  "ftc": {
+    "h1": "Foreign tax credit calculator for Form 67",
+    "title": "Foreign tax credit calculator",
+    "description": "Work out the foreign tax credit as the lower of foreign tax paid and Indian tax on the same income. Uses the figures you enter.",
+    "summary": "This tool works out the foreign tax credit as the lower of the foreign tax paid and the Indian tax on the same income. It is used by residents of India with income taxed in another country. You need to enter the foreign income, the foreign tax paid and the Indian tax on that income, and the result shows the credit allowed and the excess foreign tax that is not allowed.",
+    "steps": [
+      "Enter the foreign income, the foreign tax paid and the Indian tax on that income.",
+      "Choose the country and the type of income to match your situation.",
+      "Read the credit allowed and the excess foreign tax that is not allowed in the result."
+    ],
+    "note": "Form 67 must be filed before the return and the amount must be converted at the prescribed rate."
+  },
+  "sec195": {
+    "h1": "TDS on payments to non-residents, Section 195",
+    "title": "Section 195 TDS on non-residents",
+    "description": "Estimate TDS on payments to non-residents under the Act or a treaty, with the higher rate where no PAN is given.",
+    "summary": "This tool estimates the tax to be deducted on payments to non-residents under the domestic law or under a treaty, with the higher rate when no PAN is given. It is used by businesses that make payments abroad and their accountants. You need to enter the amount paid, the nature of the payment, the country and the treaty documents, and the result shows the rate applied, the tax to deduct and the grossed up amount.",
+    "steps": [
+      "Enter the amount paid, the nature of the payment, the country and the treaty documents.",
+      "Choose the country and whether you apply the treaty to match your situation.",
+      "Read the rate applied, the tax to deduct and the grossed up amount in the result."
+    ],
+    "note": "Forms 15CA and 15CB may be needed; check the taxability of the payment before deducting."
+  },
+  "form10f": {
+    "h1": "Form 10F declaration guide",
+    "title": "Form 10F declaration guide",
+    "description": "Understand when a non-resident must furnish Form 10F with a tax residency certificate to claim a treaty benefit.",
+    "summary": "This tool explains when a non-resident has to furnish Form 10F with a tax residency certificate in order to claim a treaty benefit. It is used by non-residents claiming treaty benefits and the payers who deduct tax. You need to enter whether a certificate was issued and the details it contains, and the result shows whether Form 10F is needed and the details to fill in.",
+    "steps": [
+      "Enter whether a certificate was issued and the details it contains.",
+      "Choose whether the certificate has the needed details to match your situation.",
+      "Read whether Form 10F is needed and the details to fill in in the result."
+    ],
+    "note": "The form is filed electronically; check the current requirements on the portal."
+  },
+  "schedfa": {
+    "h1": "Schedule FA foreign asset disclosure guide",
+    "title": "Schedule FA foreign asset guide",
+    "description": "Check which foreign assets and income must be reported in the return of a resident, and the penalty for non-disclosure.",
+    "summary": "This tool checks which foreign assets and foreign income a resident and ordinarily resident individual must report in the return, and the penalty for non-disclosure. It is used by residents of India who hold foreign bank accounts, shares or property. You need to enter the type of asset, the value and the peak balance, and the result shows whether disclosure is needed and the schedules to fill in.",
+    "steps": [
+      "Enter the type of asset, the value and the peak balance.",
+      "Choose the type of asset to match your situation.",
+      "Read whether disclosure is needed and the schedules to fill in in the result."
+    ],
+    "note": "Disclosure is separate from taxation; check the limits and the calendar year of reporting."
+  },
+  "rentreceipt": {
+    "h1": "Rent receipt generator",
+    "title": "Rent receipt generator",
+    "description": "Generate a set of twelve monthly rent receipts as proof of rent for HRA, with the landlord's details. Uses the figures you enter.",
+    "summary": "This tool generates a set of twelve monthly rent receipts that can be submitted to an employer as proof of rent for a house rent allowance claim. It is used by salaried tenants who claim HRA. You need to enter the tenant and landlord names, the address, the monthly rent and the period, and the result shows twelve printable receipts for the period.",
+    "steps": [
+      "Enter the tenant and landlord names, the address, the monthly rent and the period.",
+      "Choose the months of rent to match your situation.",
+      "Read twelve printable receipts for the period in the result."
+    ],
+    "note": "The landlord's PAN is needed when the yearly rent crosses the limit; only generate receipts for rent actually paid."
+  },
+  "validator": {
+    "h1": "PAN, GSTIN and IFSC format validator",
+    "title": "PAN, GSTIN, TAN and IFSC validator",
+    "description": "Check the format and checksum of a PAN, GSTIN, TAN, IFSC or Aadhaar number offline, without storing any data. Uses the figures you enter.",
+    "summary": "This tool checks the format and the checksum of a PAN, GSTIN, TAN, IFSC or Aadhaar number on your device, without sending the number anywhere. It is used by accountants and businesses who verify details before use. You need to enter the number you want to check, and the result shows whether the format and the checksum are valid.",
+    "steps": [
+      "Enter the number you want to check in the fields provided.",
+      "Choose the type of number to match your situation.",
+      "Read whether the format and the checksum are valid in the result."
+    ],
+    "note": "A valid format does not mean that the number is issued or active; verify it on the official portal."
+  }
+}

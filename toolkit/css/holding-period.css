@@ -1,0 +1,15 @@
+/* Finite input feedback: no timers, autoplay or offscreen animation work. */
+.holding-period{margin:18px 0;padding:20px;border:1px solid var(--line-soft);border-radius:14px;background:var(--bg);color:var(--fg)}
+.holding-period h3{margin:0 0 12px;font:600 17px/1.4 var(--sans)}
+.holding-period .holding-status{display:inline-block;padding:5px 10px;border-radius:20px;background:var(--bg-raised);border:1px solid var(--line-soft);font:600 12px/1.5 var(--sans)}
+.holding-track{position:relative;height:9px;margin:25px 0;background:var(--line-soft);border-radius:10px}
+.holding-track .holding-fill{position:absolute;inset:0;border-radius:10px;background:var(--accent,#1B6E7E);transform-origin:left;transition:transform .24s ease-out}
+.holding-track .holding-cutoff{position:absolute;top:-6px;width:2px;height:21px;background:var(--fg)}
+.holding-track .holding-sale{position:absolute;top:-3px;width:15px;height:15px;border:3px solid var(--bg);border-radius:50%;background:var(--fg);transform:translateX(-50%);transition:left .24s ease-out}
+.holding-dates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
+.holding-dates li{display:grid;gap:5px;font:400 12px/1.5 var(--sans)}
+.holding-dates strong{font:600 13px/1.5 var(--mono)}
+.holding-period p{font:400 12px/1.7 var(--sans);margin:14px 0 0;color:var(--fg-dim)}
+@media(max-width:600px){.holding-period{padding:16px}.holding-dates{grid-template-columns:1fr}.holding-dates li{grid-template-columns:1fr auto;align-items:baseline}}
+@media(prefers-reduced-motion:reduce){.holding-track .holding-fill,.holding-track .holding-sale{transition:none!important}}
+@media print{.holding-track{display:none}.holding-period{break-inside:avoid}}

@@ -24,7 +24,7 @@ for (const f of htmlFiles()) {
   const isService = h.includes('"@type":"Service"');
   if (isService && words < 600) probs.push(`only ${words} words`);
   if (isGuide && (words < 900 || words > 1700)) probs.push(`guide ${words} words`);
-  const faqs = [...h.matchAll(/<h3>([^<]*\?)<\/h3><p>([^<]*)<\/p>/g)];
+  const faqs = [...h.matchAll(/<h3[^>]*>([^<]*\?)<\/h3>(?:<\/summary>)?<p>([^<]*)<\/p>/g)];
   for (const m of faqs) { const n = m[2].trim().split(/\s+/).length; if (n < 40 || n > 60) probs.push(`FAQ ${n} words: ${m[1].slice(0, 40)}`); }
   const ph = (vis.match(/\[(VERIFY|CONFIRM)\]/g) || []).length;
   if (ph) placeholders.push(`${p} (${ph})`);

@@ -8,7 +8,10 @@ Static website for CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai. B
 |---|---|
 | `npm install` | Install dependencies |
 | `npm run dev` | Local development server at http://localhost:4321 |
-| `npm run build` | Build the site into `dist/` |
+| `npm run build` | Build the calculators (`scripts/build-toolkit.mjs`) and the site into `dist/` |
+| `npm run build:toolkit` | Rebuild only the calculators into `public/toolkit/` and `src/data/tools.json` |
+| `node scripts/serve-dist.mjs` | Serve `dist/` on port 4322 with the `vercel.json` headers (CSP) |
+| `BASE=http://localhost:4322 npm run check:tools` | Open all 165 calculator pages in Chrome and fail on any error |
 | `npm run check:all` | Run all checks on `dist/` (run after build) |
 | `node scripts/screenshots.mjs` | Screenshots at 390 px and 1366 px (needs `npx astro preview` running and Chrome installed) |
 | `node scripts/make-og.mjs` | Rebuild the 1200×630 share image |
@@ -22,6 +25,13 @@ Static website for CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai. B
 - `src/pages/`: one file per page. `[VERIFY]` and `[CONFIRM]` markers use `src/components/V.astro`.
 - `vercel.json`: security headers (CSP, HSTS, X-Frame-Options and others), cache rules, www redirect.
 - `public/robots.txt`, `src/pages/sitemap.xml.ts`, `src/pages/llms.txt.ts`.
+
+## Calculators
+
+- Source: `toolkit/src/toolkit.jsx` (adapted from the finclar toolkit, branding removed), year rules in `toolkit/tax-rules.json`, styles in `toolkit/css/` (all scoped under `.tk`; `theme.css` sets the site colours).
+- `scripts/build-toolkit.mjs` splits each calculator into its own file under `public/toolkit/tools/` (generated, not committed) and writes `src/data/tools.json`.
+- Page copy for each calculator page: `src/data/tool-copy.json` (H1, title, description, summary, steps, note). Pages: `src/pages/tools/index.astro` and `src/pages/tools/[key].astro`.
+- See `docs/HANDOVER-SEO-GEO-AEO.md` for the SEO, GEO and AEO handover.
 
 ## Checks (`scripts/`)
 

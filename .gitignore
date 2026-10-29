@@ -6,3 +6,5 @@ dist/
 *.log
 .DS_Store
 reports/lighthouse-*.json
+public/toolkit/
+reports/check-tools.json
