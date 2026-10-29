@@ -382,3 +382,46 @@ dl.facts dd { margin: 0; }
 .brand-logo { width: 4rem; height: auto; flex: none; }
 .foot-logo { display: block; width: 6rem; height: auto; margin-bottom: 1rem; padding: 0.4rem; background: #fff; border-radius: 10px; }
 @media (max-width: 767px) { .brand-logo { width: 3rem; } }
+
+/* One-page income tax calculator */
+.itc { display: grid; grid-template-columns: minmax(0, 1fr) 22rem; gap: 2rem; align-items: start; padding-top: 2.5rem; }
+.itc-form { display: grid; gap: 1.1rem; }
+.itc-card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.4rem 1.5rem; box-shadow: var(--shadow-sm); }
+.itc-card h2 { font-size: 1.15rem; margin: 0 0 1rem; display: flex; align-items: center; gap: 0.6rem; }
+.itc-card h2::before { content: ''; width: 0.5rem; height: 1.3rem; border-radius: 3px; background: var(--gold); }
+.itc-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem 1.25rem; }
+.itc-grid label { display: flex; flex-direction: column; gap: 0.35rem; font-weight: 600; font-size: 0.93rem; color: var(--ink); line-height: 1.35; }
+.itc-grid small { font-weight: 400; color: var(--muted); font-size: 0.82rem; }
+.itc-grid select, .itc-input { border: 1px solid var(--line); border-radius: 10px; background: #fff; font: inherit; font-weight: 400; min-height: 46px; }
+.itc-grid select { padding: 0 0.75rem; color: var(--text); }
+.itc-input { display: flex; align-items: center; padding-left: 0.8rem; }
+.itc-input span { color: var(--muted); font-size: 0.85rem; }
+.itc-input input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: inherit; font-size: 1rem; padding: 0.65rem 0.75rem; text-align: right; font-variant-numeric: tabular-nums; color: var(--text); }
+.itc-input:focus-within, .itc-grid select:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(184, 146, 79, 0.18); outline: 0; }
+.itc-summary { position: sticky; top: 6.5rem; }
+.itc-sum-card { background: linear-gradient(160deg, #13254a, #0c1a36); color: #d5dbe7; border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-lg); }
+.itc-regimes { display: grid; gap: 0.7rem; margin-bottom: 1rem; }
+.itc-regimes > div { padding: 0.9rem 1rem; border-radius: 12px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); }
+.itc-regimes > div.lower { border-color: var(--gold-2); background: rgba(217,189,134,0.12); }
+.itc-regimes > div.lower span::after { content: ' · lower'; color: var(--gold-2); }
+.itc-regimes span { display: block; font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: #9ea8bb; }
+.itc-regimes b { display: block; font-family: var(--serif); font-size: 1.9rem; color: #fff; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.itc-regimes small { color: #b9c2d3; font-size: 0.85rem; }
+.itc-verdict { color: #fff; font-weight: 600; margin-bottom: 1rem; }
+.itc-statement-wrap { padding-top: 2.5rem; }
+.itc-statement-wrap h2 { margin-top: 0; }
+.itc-table td:nth-child(n+2), .itc-table th:nth-child(n+2) { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.itc-table .itc-head th { background: var(--sand); color: var(--gold-ink); text-align: left; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.itc-table .itc-sub td { font-weight: 600; background: var(--ivory); }
+.itc-table .itc-total td { font-weight: 700; color: var(--ink); background: #f3ecdc; font-size: 1.02rem; }
+@media (max-width: 1080px) { .itc { grid-template-columns: 1fr; } .itc-summary { position: sticky; top: 4.5rem; z-index: 5; order: -1; } .itc-sum-card { padding: 1rem; } .itc-regimes { grid-template-columns: 1fr 1fr; margin-bottom: 0.5rem; } .itc-regimes b { font-size: 1.35rem; } .itc-regimes small, .itc-sum-card .btn, .itc-sum-card .eyebrow { display: none; } .itc-verdict { margin: 0; font-size: 0.9rem; } }
+@media (max-width: 640px) { .itc-grid { grid-template-columns: 1fr; } .itc-summary { top: 4rem; } }
+@media print { .itc-form, .itc-summary, .page-hero, .layout, .site-footer, .topline { display: none !important; } .itc-statement-wrap { padding: 0; } }
+.feature-tool { display: grid; gap: 0.3rem; margin-top: 1.75rem; padding: 1.25rem 1.5rem; border-radius: var(--radius-lg); background: var(--paper); border: 1px solid var(--gold-2); box-shadow: var(--shadow); text-decoration: none; color: var(--text); }
+.feature-tool .chip { justify-self: start; }
+.feature-tool strong { font-family: var(--serif); font-size: 1.3rem; color: var(--ink); }
+.feature-tool span:last-child { color: var(--muted); }
+.feature-tool:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); color: var(--text); }
+.feature-tool strong::after { content: ' →'; color: var(--gold); }
+.itc-regimes b { white-space: nowrap; }
+@media (max-width: 640px) { .itc-regimes > div { padding: 0.6rem 0.75rem; } .itc-regimes b { font-size: 1.15rem; } .itc-regimes span { font-size: 0.7rem; } .itc-regimes > div.lower span::after { content: ' · lower'; } }

@@ -6,7 +6,7 @@ const paths = [
   ...SERVICES.map((s) => s.href),
   '/areas/', '/guides/',
   ...GUIDES.map((g) => g.href),
-  '/tools/', ...TOOLS.map((t) => `/tools/${t.key}/`),
+  '/tools/', '/tools/income-tax-calculator/', ...TOOLS.map((t) => `/tools/${t.key}/`),
   '/contact/', '/disclaimer/', '/privacy/',
 ];
 

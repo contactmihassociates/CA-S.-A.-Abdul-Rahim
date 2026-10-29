@@ -43,6 +43,7 @@ const app = {
 
   <PageHero crumbs={crumbs} eyebrow={`Calculator · ${cat.label}`} h1={c.h1} lead={c.summary} />
 
+  {tool.key === "it" && <div class="wrap"><a class="feature-tool" href="/tools/income-tax-calculator/"><span class="chip">Detailed version</span><strong>Full income tax calculator with every head of income</strong><span>Salary, house property, business, capital gains, other sources, deductions, surcharge and cess, old vs new, on one page.</span></a></div>}
   <div class="wrap tool-shell">
     <div class="tk">
       <div id="app" data-tool={tool.key}>

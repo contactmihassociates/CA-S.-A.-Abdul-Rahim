@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "check:tools": "node scripts/check-tools.mjs",
     "check:all": "node scripts/check-banned.mjs && node scripts/check-nap.mjs && node scripts/check-links.mjs && node scripts/check-jsonld.mjs && node scripts/check-pages.mjs",
-    "build:toolkit": "node scripts/build-toolkit.mjs"
+    "build:toolkit": "node scripts/build-toolkit.mjs",
+    "test:itcalc": "node scripts/test-itcalc.mjs"
   },
   "dependencies": {
     "@fontsource/source-sans-3": "^5.3.1",
