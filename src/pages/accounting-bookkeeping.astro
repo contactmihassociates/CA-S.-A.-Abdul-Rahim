@@ -1,0 +1,72 @@
+---
+import Service from '../layouts/Service.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'Is it compulsory to maintain books of account?', a: 'Income tax law requires businesses and professionals above specified income or turnover limits to maintain books of account, and certain professionals to keep specified books whatever their income. Companies and LLPs must keep books under their own laws. GST law also requires registered persons to keep accounts and records at the place of business.' },
+  { q: 'Can I keep accounts in Tally myself and only get help at year end?', a: 'Yes. Many small businesses enter their own vouchers and ask a CA office to check entries, reconcile banks, pass year-end adjustments and finalise the accounts. This works well when entries are made regularly. A monthly or quarterly check prevents a large clean-up at year end.' },
+  { q: 'How long should accounting records be kept?', a: 'Records should generally be kept for at least the period within which proceedings can be started under income tax, GST and company law, which is several years after the year ends and longer in some cases. Keeping digital backups of Tally data and scanned bills for at least eight years is a practical rule.' },
+  { q: 'What is bank reconciliation and why does it matter?', a: 'Bank reconciliation is matching every entry in your bank statement with the entries in your books and explaining the differences, such as cheques not yet cleared. It catches missing entries, duplicate entries and bank charges, and is the first thing an auditor or tax officer checks.' },
+  { q: 'Do accounts help with income tax and GST notices?', a: 'Yes. Most notices arise from a mismatch between what the department sees, such as bank deposits or supplier invoices, and what was reported. Up-to-date books with reconciliations make it possible to answer such notices quickly with evidence, instead of reconstructing transactions years later.' },
+];
+---
+<Service
+  title="Accounting and Bookkeeping in Chennai (Tally)"
+  description="Monthly accounting and bookkeeping in Tally for businesses and professionals in Chennai: vouchers, bank reconciliation, GST, TDS and year-end accounts."
+  path="/accounting-bookkeeping/"
+  h1="Accounting and bookkeeping services in Chennai"
+  name="Accounting and bookkeeping"
+  topic="accounting and bookkeeping"
+  lead="Accounting and bookkeeping means recording every sale, purchase, expense, receipt and payment of a business in its books, usually in Tally, and closing the accounts at the end of the year. The CA office in Adyar, Chennai, maintains monthly accounts for small businesses, professionals, trusts and companies, reconciles bank accounts and keeps the books ready for GST, TDS, income tax and audit."
+  faqs={faqs}
+  related={['/gst-return-filing/', '/tds-return-filing/', '/tax-audit/', '/statutory-audit/']}
+  sources={[SRC.itIndia, SRC.gst, SRC.mca]}
+>
+  <h2>Who needs this</h2>
+  <ul>
+    <li>Shops, traders and small manufacturers registered under GST.</li>
+    <li>Professionals such as doctors, consultants and architects who need proper books for income tax.</li>
+    <li>Partnership firms, LLPs and private limited companies that need accounts for audit and filings.</li>
+    <li>Trusts and societies that must keep accounts for income tax registration and audit.</li>
+    <li>Landlords with several properties who want rent and expenses recorded in one place.</li>
+  </ul>
+
+  <h2>What the work includes</h2>
+  <ul>
+    <li>Recording sales, purchases, expenses, receipts and payments in Tally from bills and bank statements.</li>
+    <li>Bank reconciliation for every account, monthly.</li>
+    <li>Ledgers for customers and suppliers, with ageing of amounts due.</li>
+    <li>GST working for GSTR-1 and GSTR-3B from the books, and input tax credit reconciliation.</li>
+    <li>TDS working on payments, for monthly payment and quarterly statements.</li>
+    <li>Year-end entries: depreciation, provisions, prepaid and outstanding items, stock.</li>
+    <li>Preparation of the profit and loss account and balance sheet for tax filing and audit.</li>
+  </ul>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>Sales invoices and purchase bills, or exports from your billing software</li>
+    <li>Bank statements for all accounts, in Excel or PDF</li>
+    <li>Expense bills: rent, salaries, electricity, telephone, travel and repairs</li>
+    <li>Loan statements and fixed asset purchase invoices</li>
+    <li>Cash book or petty cash records</li>
+    <li>Previous year's balance sheet and Tally data backup</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>The current state of your books is checked and a starting point agreed: opening balances or last closed year.</li>
+    <li>A monthly routine is fixed for sending bills and bank statements, usually by the fifth of the next month.</li>
+    <li>Entries are made and reconciled; questions on unclear entries are sent to you in one list.</li>
+    <li>Monthly GST and TDS figures are prepared from the books.</li>
+    <li>At year end, the accounts are closed and handed over for audit and income tax filing.</li>
+  </ol>
+
+  <h2>Key dates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Date</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>GSTR-1 (monthly filers)</td><td>11th of the next month</td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
+      <tr><td>GSTR-3B (monthly filers)</td><td>20th of the next month</td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
+      <tr><td>Financial year end</td><td>31 March</td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+</Service>

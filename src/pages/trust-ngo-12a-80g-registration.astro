@@ -1,0 +1,67 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'What is the difference between 12A (12AB) and 80G registration?', a: 'Registration under section 12A or 12AB of the earlier law lets the trust claim exemption on its own income if it is applied to its objects. Approval under section 80G lets donors claim a deduction for their donations. They are separate registrations, and the Income-tax Act, 2025 gives both new section numbers.' },
+  { q: 'Is a newly formed trust eligible for registration immediately?', a: 'A new trust can apply for provisional registration, which is valid for a limited period, and then apply for regular registration before the provisional period ends or within the time from the start of activities. Missing the window for regular registration can lead to tax on the trust\'s income.' },
+  { q: 'Does a trust need to file an income tax return if its income is exempt?', a: 'Yes. A registered trust whose total income before exemption is above the basic exemption limit must file its return in ITR-7, with the audit report in the prescribed form, by the due date. Exemption is lost or reduced if the return or audit report is filed late.' },
+  { q: 'Should we form a trust or a society?', a: 'A public charitable trust is formed by a trust deed and is managed by trustees, often a small group. A society is registered under the Tamil Nadu Societies Registration Act with members and an elected governing body, and suits larger memberships. Both can apply for income tax registration.' },
+  { q: 'What records must a registered trust keep?', a: 'A registered trust must keep books of account, receipts for donations with donor details, a register of anonymous donations, details of application of income for its objects, and accumulation forms where income is set apart for future use. Donations received must also be reported to the department.' },
+];
+---
+<Service
+  title="Trust and NGO Registration, 12A and 80G, Chennai"
+  description="Trust and society registration in Chennai, income tax registration (earlier 12A/12AB) and 80G approval, ITR-7 and audit for charitable trusts and NGOs."
+  path="/trust-ngo-12a-80g-registration/"
+  h1="Trust and NGO registration, 12A and 80G in Chennai"
+  name="Trust and NGO registration"
+  topic="your trust or NGO registration"
+  lead="A charitable trust or society is formed by a trust deed or by registration under the Tamil Nadu Societies Registration Act, and then registered with the Income Tax Department so its income is exempt and donors can claim a deduction. The CA office in Adyar, Chennai, helps with the trust deed, registration, income tax registration (earlier sections 12A, 12AB and 80G), the yearly ITR-7 return and audit."
+  faqs={faqs}
+  related={['/accounting-bookkeeping/', '/tax-audit/', '/income-tax-return-filing-chennai/', '/company-llp-registration-chennai/']}
+  sources={[SRC.itPortal, SRC.itIndia, SRC.tnreginet]}
+>
+  <h2>Who needs this</h2>
+  <ul>
+    <li>Families and groups forming a public charitable trust for education, medical relief or relief of the poor.</li>
+    <li>Societies and associations, including residents' welfare associations and religious bodies.</li>
+    <li>Existing trusts whose registration or approval is due for renewal.</li>
+    <li>Trusts that need to file ITR-7 and the audit report every year.</li>
+  </ul>
+
+  <h2>The law in brief</h2>
+  <p>Under the Income-tax Act, 1961, registration of trusts was under section 12A and 12AB, and approval for donors' deduction under section 80G, with applications in Form 10A and Form 10AB. Registration is generally granted for five years and must be renewed. The Income-tax Act, 2025 places the provisions for registered non-profit organisations in a separate chapter with new section and form numbers from 1 April 2026; check the current form before applying <V />.</p>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>Registered trust deed, or society registration certificate with bye-laws</li>
+    <li>PAN of the trust or society</li>
+    <li>PAN and Aadhaar of the trustees or governing body members</li>
+    <li>Address proof of the registered office</li>
+    <li>Note on activities carried out and proposed</li>
+    <li>Accounts for the years since formation, if any</li>
+    <li>Bank account statement of the trust</li>
+    <li>Details of other registrations such as FCRA, if any</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>The objects are discussed and the trust deed or bye-laws are drafted so that they meet income tax conditions.</li>
+    <li>The trust deed is registered with the Sub-Registrar, or the society with the Registrar of Societies.</li>
+    <li>PAN and a bank account are obtained in the name of the trust.</li>
+    <li>The application for income tax registration and donor approval is filed online.</li>
+    <li>Queries from the Commissioner are answered and the registration order is received.</li>
+    <li>Yearly: accounts, audit report and ITR-7 are prepared and filed, and donations are reported.</li>
+  </ol>
+
+  <h2>Key dates for assessment year 2026-27</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Due date</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Audit report of the trust</td><td>One month before the due date of the return <V /></td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>ITR-7 for trusts requiring audit</td><td>31 October 2026 <V /></td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>Statement of donations received</td><td>31 May after the end of the year</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+</Service>

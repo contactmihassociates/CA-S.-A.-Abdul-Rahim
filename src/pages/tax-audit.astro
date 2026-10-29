@@ -1,0 +1,66 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'What turnover makes a tax audit compulsory for a business?', a: 'Under the earlier section 44AB, a business needed a tax audit if turnover exceeded Rs 1 crore, or Rs 10 crore where cash receipts and cash payments were each not more than 5 percent of the total. Commentary says these limits continue in section 63 of the 2025 Act; confirm before relying on it.' },
+  { q: 'Do professionals such as doctors need a tax audit?', a: 'A person carrying on a profession needed a tax audit under the earlier law if gross receipts exceeded Rs 50 lakh in the year. Professionals using the presumptive scheme who declare income below the presumptive rate, and whose income is above the exemption limit, may also need an audit.' },
+  { q: 'Is a tax audit needed if I opt for presumptive taxation?', a: 'If you declare income at or above the presumptive rate under the scheme for small businesses or professionals, a tax audit is usually not required. If you declare a lower income and your total income exceeds the basic exemption limit, a tax audit can be required. The answer depends on facts for each year.' },
+  { q: 'What is the penalty for not getting a tax audit done?', a: 'Under the earlier law, failure to get accounts audited or to furnish the audit report in time could attract a penalty of 0.5 percent of turnover or gross receipts, limited to Rs 1.5 lakh, unless there was reasonable cause. Check the corresponding provision in the Income-tax Act, 2025.' },
+  { q: 'Who signs the tax audit report?', a: 'The tax audit report is signed by a Chartered Accountant in practice who is not disqualified, such as being an employee or relative of the taxpayer. It is uploaded on the income tax portal by the Chartered Accountant and must then be accepted by the taxpayer from their own login before the due date.' },
+];
+---
+<Service
+  title="Tax Audit in Chennai: Who Needs It, What to Prepare"
+  description="Tax audit for businesses and professionals in Chennai: turnover limits (earlier section 44AB), presumptive cases, documents to prepare and due dates."
+  path="/tax-audit/"
+  h1="Tax audit in Chennai"
+  name="Tax audit"
+  topic="your tax audit"
+  lead="A tax audit is an audit of the books of account of a business or profession by a Chartered Accountant, required by income tax law when turnover or gross receipts cross set limits or when lower presumptive income is declared. The auditor reports in the prescribed form whether the books are properly kept and gives detailed particulars required by the Income Tax Department. The CA office in Adyar, Chennai, carries out tax audits and files the audit report."
+  faqs={faqs}
+  related={['/accounting-bookkeeping/', '/statutory-audit/', '/income-tax-return-filing-chennai/', '/guides/tax-audit-who-needs-it-what-to-prepare/']}
+  sources={[SRC.itPortal, SRC.itIndia, SRC.icai]}
+>
+  <h2>Who needs this</h2>
+  <ul>
+    <li>Businesses with turnover above Rs 1 crore, or above Rs 10 crore where cash transactions are within 5 percent.</li>
+    <li>Professionals with gross receipts above Rs 50 lakh.</li>
+    <li>Businesses and professionals under the presumptive schemes who declare lower income than the scheme rate and have income above the exemption limit.</li>
+    <li>Partnership firms, LLPs and companies crossing these limits, in addition to any audit under other laws.</li>
+  </ul>
+  <p>Under the Income-tax Act, 1961 this was section 44AB, and the report was given in Form 3CA or 3CB with Form 3CD. For tax year 2026-27 onward, the Income-tax Act, 2025 applies; commentary places tax audit in section 63 with a new audit report form. Audits of financial year 2025-26, done in 2026, continue under section 44AB and Forms 3CA, 3CB and 3CD <V />.</p>
+
+  <h2>What to prepare</h2>
+  <ul class="checklist">
+    <li>Complete books of account in Tally or other software, closed for the year</li>
+    <li>Bank statements for all accounts, and bank reconciliation</li>
+    <li>Sales and purchase registers, with GST returns for the year</li>
+    <li>Stock statement as at year end, with the method of valuation</li>
+    <li>Fixed asset register with additions, sales and dates</li>
+    <li>Loan statements and details of loans taken or repaid in cash</li>
+    <li>TDS returns, challans and certificates</li>
+    <li>Details of payments to relatives and related parties, and cash payments above the limits</li>
+    <li>Details of dues to micro and small enterprises, and their payment dates</li>
+  </ul>
+  <p>The guide <a href="/guides/tax-audit-who-needs-it-what-to-prepare/">tax audit: who needs it and what to prepare</a> explains each item.</p>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>Applicability is checked from the turnover, cash ratio and income declared.</li>
+    <li>The auditor is appointed and added on the income tax portal as the Chartered Accountant for the audit form.</li>
+    <li>Books and records are examined; queries are raised and answered.</li>
+    <li>The audit report and statement of particulars are prepared, discussed with you and uploaded.</li>
+    <li>You accept the report from your portal login, and the income tax return is then filed.</li>
+  </ol>
+
+  <h2>Key dates for financial year 2025-26</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Due date</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Tax audit report</td><td>30 September 2026 <V /></td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>Income tax return of audited taxpayers</td><td>31 October 2026 <V /></td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+  <p>Dates are often extended by CBDT circulars. Check the portal before relying on a date.</p>
+</Service>

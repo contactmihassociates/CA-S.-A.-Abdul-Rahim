@@ -1,0 +1,69 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'How do I check whether an income tax notice is genuine?', a: 'Every genuine notice or order issued by the department carries a Document Identification Number (DIN). Log in to incometax.gov.in and look under e-Proceedings and pending actions, or use the authenticate notice facility on the portal. Do not click links in emails or SMS messages that ask for passwords or payments.' },
+  { q: 'What happens if I do not reply to a notice?', a: 'If no reply is filed within the time given, the officer can complete the proceedings on the basis of the information available, which usually means additions to income, a tax demand, interest and possibly penalty. Replying in time, even with a request for more time, keeps your options open.' },
+  { q: 'Can I reply online without meeting the officer?', a: 'Yes. Most proceedings now run on the faceless system. Replies, documents and explanations are uploaded under e-Proceedings on the portal. A personal hearing by video conference can be requested where the law allows. A Chartered Accountant can file replies on your behalf as your authorised representative.' },
+  { q: 'What is an intimation and is it the same as a notice?', a: 'An intimation is the result of processing your return at the Centralised Processing Centre. It compares the income and tax in your return with the department\'s computation. It may show no change, a refund or a demand. A demand in an intimation can be agreed, disputed online or corrected by filing a rectification request.' },
+  { q: 'Is there a time limit to file an appeal?', a: 'Under the earlier law, an appeal to the Commissioner of Income-tax (Appeals) had to be filed within 30 days of receiving the order, and delay could be condoned for sufficient reason. Check the time limit under the Income-tax Act, 2025 for orders passed on or after 1 April 2026 before relying on this.' },
+];
+---
+<Service
+  title="Income Tax Notice Reply in Chennai, Adyar"
+  description="Replying to income tax notices, intimations and demands in Chennai. Appeals before CIT(A) and updated returns. What to do first and documents needed."
+  path="/income-tax-notice-reply-chennai/"
+  h1="Income tax notice reply and appeals in Chennai"
+  name="Income tax notice reply"
+  topic="an income tax notice"
+  lead="An income tax notice is a written communication from the Income Tax Department asking you to explain, correct or support something in your return, or to file a return you missed. The CA office in Adyar, Chennai, reads the notice with you, prepares the reply and supporting documents, files it online and represents you in appeals before the Commissioner of Income-tax (Appeals)."
+  faqs={faqs}
+  related={['/income-tax-return-filing-chennai/', '/guides/income-tax-notice-first-steps/', '/capital-gains-tax-property-sale/', '/tax-audit/']}
+  sources={[SRC.itPortal, SRC.itIndia]}
+>
+  <h2>Who needs this</h2>
+  <p>Anyone who receives a communication from the department on the portal, by email or by post. The most common ones are:</p>
+  <ul>
+    <li><strong>Intimation after processing</strong>, showing a demand because a deduction, TDS credit or income was treated differently from your return.</li>
+    <li><strong>Defective return notice</strong>, asking you to correct a return that is incomplete or filed in the wrong form.</li>
+    <li><strong>Mismatch or compliance notices</strong>, where the Annual Information Statement shows a high-value transaction, such as a property purchase, cash deposit or share sale, that is not reflected in your return.</li>
+    <li><strong>Scrutiny notices</strong>, asking for documents and explanations to support the income and deductions in your return.</li>
+    <li><strong>Notices for income that may have escaped assessment</strong>, usually issued for an earlier year where information suggests income was not reported.</li>
+    <li><strong>Demand notices and penalty notices</strong> that follow an assessment order.</li>
+  </ul>
+  <p>Under the Income-tax Act, 2025, sections dealing with assessment, reassessment and appeals have new numbers, while proceedings for earlier years started under the 1961 Act continue to refer to the old sections. The notice itself states the section under which it is issued <V />.</p>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>The notice or order, with its DIN and the response due date</li>
+    <li>Copy of the return and computation for that year, and the acknowledgement</li>
+    <li>AIS, TIS and Form 26AS for that year</li>
+    <li>Bank statements for the period in question</li>
+    <li>Proof for the specific item questioned: sale deed, purchase deed, loan documents, gift deed, salary slips, investment proofs or invoices</li>
+    <li>Earlier correspondence with the department, if any</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>Share the notice by WhatsApp or bring it to the office. The first task is to note the due date and confirm the DIN.</li>
+    <li>The notice is read with your return for that year to identify exactly what is being asked.</li>
+    <li>You collect the documents for the specific point raised; the office prepares a reply with a short explanation and annexures.</li>
+    <li>The reply is uploaded on the portal under e-Proceedings, or a request for more time is filed if documents are pending.</li>
+    <li>After the order, any demand is checked. If the order is not acceptable, options such as rectification, appeal before the Commissioner of Income-tax (Appeals) or stay of demand are explained.</li>
+    <li>If income was left out of an earlier return, an updated return may be filed in some cases, with additional tax, before proceedings start.</li>
+  </ol>
+
+  <h2>Key dates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Time limit</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Reply to a notice</td><td>The date stated in the notice itself</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>Appeal before CIT(A)</td><td>30 days from receipt of the order under the 1961 Act; check the 2025 Act for newer orders <V /></td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+      <tr><td>Updated return</td><td>Within the period allowed from the end of the relevant assessment year <V /></td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Points to keep in mind</h2>
+  <p>Read the whole notice, not just the subject line. Many notices only ask for a confirmation or a document. Reply to the point asked, with evidence, and keep the language factual. Keep a copy of every reply and the upload acknowledgement. If you have moved house or changed your email or mobile number, update your profile on the portal so that later notices reach you.</p>
+</Service>

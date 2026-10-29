@@ -1,0 +1,63 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'Where can I see GST notices issued to me?', a: 'Notices and orders are uploaded on the GST portal under Services, User Services, View Notices and Orders, and also under the Additional Notices and Orders tab. An email or SMS is usually sent as well, but the portal is the place to check. Replies are filed online against the same reference number.' },
+  { q: 'What is a DRC-01A or DRC-01 in GST?', a: 'DRC-01A is an intimation of tax ascertained, sent before a show cause notice so that you can pay or reply. DRC-01 is the summary of a show cause notice, demanding tax, interest and penalty. A reply to the show cause notice is filed in DRC-06 with supporting documents within the time stated.' },
+  { q: 'What happens if I ignore a GST notice?', a: 'The officer can pass an order on the information available, confirming the demand with interest and penalty. Unpaid demands can lead to recovery from bank accounts and blocking of input tax credit. For non-filing notices, the registration can be suspended or cancelled. Replying on time protects your right to be heard.' },
+  { q: 'Is there a time limit to appeal against a GST order?', a: 'An appeal to the Appellate Authority can be filed within three months of communication of the order, with a further one month allowed for sufficient cause. A pre-deposit of a percentage of the disputed tax is required to file the appeal. The appeal is filed online in Form GST APL-01.' },
+  { q: 'Who conducts a GST audit?', a: 'A GST audit by the department is conducted by tax officers, who inspect the books and records of the registered person after giving notice, and then issue their findings. The business should keep books, invoices, e-way bills and reconciliations ready, and respond to each observation with evidence.' },
+];
+---
+<Service
+  title="GST Notice Reply in Chennai: Scrutiny and Audit"
+  description="Replying to GST notices in Chennai: ASMT-10 scrutiny, DRC-01A, show cause notices, department audits and appeals. What to do first and documents needed."
+  path="/gst-notice-reply/"
+  h1="GST notice reply in Chennai"
+  name="GST notice reply"
+  topic="your GST notice"
+  lead="A GST notice is a communication from the GST department asking a registered business to explain a mismatch, file a pending return, pay tax found short, or support its records in a scrutiny or audit. The CA office in Adyar, Chennai, reads the notice, reconciles the figures, drafts and files the reply on the GST portal and attends to the proceedings."
+  faqs={faqs}
+  related={['/gst-return-filing/', '/gst-registration-chennai/', '/accounting-bookkeeping/', '/income-tax-notice-reply-chennai/']}
+  sources={[SRC.gst, SRC.cbic]}
+>
+  <h2>Who needs this</h2>
+  <ul>
+    <li>Businesses that receive a scrutiny notice (Form GST ASMT-10) about differences between returns.</li>
+    <li>Businesses with input tax credit mismatches between GSTR-3B and GSTR-2A or GSTR-2B.</li>
+    <li>Taxpayers who receive a DRC-01A intimation or a show cause notice under the demand provisions.</li>
+    <li>Businesses selected for a department audit under GST.</li>
+    <li>Taxpayers whose registration has been suspended, or who received a notice to cancel registration.</li>
+  </ul>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>The notice, with its reference number and reply due date</li>
+    <li>GSTR-1, GSTR-3B, GSTR-2A, GSTR-2B and annual returns for the period</li>
+    <li>Sales and purchase registers, and the books of account</li>
+    <li>Invoices, debit and credit notes, and e-way bills for the items questioned</li>
+    <li>Proof of payment to suppliers, where input tax credit is questioned</li>
+    <li>Earlier replies and orders for the same period, if any</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>Share the notice; the reply due date and the type of notice are noted first.</li>
+    <li>The figures in the notice are reconciled with your returns and books, item by item.</li>
+    <li>Where tax is genuinely short, the option of paying with interest early is explained, since it can reduce penalty.</li>
+    <li>Where the notice is not correct, a reply with reconciliation and documents is drafted and filed on the portal.</li>
+    <li>A personal hearing is attended if requested, and the final order is checked for appeal options.</li>
+  </ol>
+
+  <h2>Key dates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Time limit</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Reply to scrutiny notice ASMT-10</td><td>Within 30 days or the period allowed in the notice</td><td><a href="https://cbic-gst.gov.in/" rel="noopener">cbic-gst.gov.in</a></td></tr>
+      <tr><td>Reply to show cause notice</td><td>Within the period stated in the notice</td><td><a href="https://cbic-gst.gov.in/" rel="noopener">cbic-gst.gov.in</a></td></tr>
+      <tr><td>Appeal to Appellate Authority</td><td>3 months from communication of the order, plus 1 month for sufficient cause</td><td><a href="https://cbic-gst.gov.in/" rel="noopener">cbic-gst.gov.in</a></td></tr>
+      <tr><td>Pre-deposit for appeal</td><td>10 percent of disputed tax, subject to the cap in law <V /></td><td><a href="https://cbic-gst.gov.in/" rel="noopener">cbic-gst.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+</Service>

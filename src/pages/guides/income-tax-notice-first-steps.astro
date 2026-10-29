@@ -1,0 +1,82 @@
+---
+import Service from '../../layouts/Service.astro';
+import V from '../../components/V.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'I received an email about a refund or a notice with a link. Is it genuine?', a: 'Be careful. The department does not ask for passwords, card details or OTPs by email or SMS, and does not ask you to pay through a link in an email. Log in to incometax.gov.in directly by typing the address, and check whether the same notice appears under pending actions.' },
+  { q: 'Can I ask for more time to reply to a notice?', a: 'Yes, in most proceedings you can request an adjournment online with a reason, such as documents to be collected from a bank. Whether it is granted is for the officer to decide. Ask before the due date, and do not assume more time has been given until the portal shows it.' },
+  { q: 'Will replying to a notice lead to a raid or more scrutiny?', a: 'Replying factually and on time is the normal way to close a notice. Most notices are about a specific mismatch and close once it is explained or corrected. Not replying is what usually leads to an order against you, because the officer then has only the department\'s information.' },
+  { q: 'Should I pay the demand shown in an intimation immediately?', a: 'Check first whether the demand is correct. Many demands arise from TDS credits not matched or deductions disallowed because of data errors, and can be corrected by rectification. If the demand is correct, paying it early stops interest from running. Respond to the demand on the portal either way.' },
+];
+const pub = '2026-10-29';
+---
+<Service
+  title="Received an Income Tax Notice? First Steps"
+  description="Received an income tax notice? First steps: check it is genuine, note the due date, identify the type of notice, collect documents and reply on the portal."
+  path="/guides/income-tax-notice-first-steps/"
+  h1="Received an income tax notice: first steps"
+  name="Income tax notice first steps"
+  topic="your income tax notice"
+  lead="If you receive an income tax notice, first confirm it is genuine by checking its Document Identification Number on incometax.gov.in, note the date by which you must respond, and identify what kind of notice it is. Then collect the documents that relate to the specific point raised and reply online before the due date, or request more time. Most notices concern a single mismatch and close once it is explained."
+  faqs={faqs}
+  related={['/income-tax-notice-reply-chennai/', '/income-tax-return-filing-chennai/', '/capital-gains-tax-property-sale/']}
+  sources={[SRC.itPortal, SRC.itIndia]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>Step 1: Do not panic, and do not ignore it</h2>
+  <p>A notice is a request for information or action, not a finding that you have done something wrong. Many notices are generated automatically when the department's data, such as the Annual Information Statement, does not match your return. Ignoring the notice is the one response that almost always makes things worse, because the officer can then complete the proceeding on the information available.</p>
+
+  <h2>Step 2: Check that the notice is genuine</h2>
+  <ul class="checklist">
+    <li>Every notice, order or letter issued by the department carries a computer-generated Document Identification Number (DIN).</li>
+    <li>Log in to <a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a> by typing the address yourself, and check under Pending Actions, e-Proceedings or Worklist.</li>
+    <li>The portal also has an "Authenticate notice/order issued by ITD" facility on the home page, where you can enter the DIN or PAN and notice details.</li>
+    <li>Do not click links in emails or SMS messages that ask for passwords, OTPs or payment.</li>
+  </ul>
+
+  <h2>Step 3: Find the due date and the year</h2>
+  <p>Write down three things from the notice: the assessment year or tax year it relates to, the section under which it is issued, and the date by which a response is required. The due date is the most important. For notices issued from 1 April 2026, the section numbers are those of the Income-tax Act, 2025; for proceedings on earlier years started under the 1961 Act, older section numbers continue to appear.</p>
+
+  <h2>Step 4: Identify the type of notice</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What the notice says</th><th>What it usually means</th><th>First action</th></tr></thead>
+    <tbody>
+      <tr><td>Intimation after processing, with a demand or reduced refund</td><td>The department computed tax differently from your return</td><td>Compare its computation with your return line by line</td></tr>
+      <tr><td>Defective return</td><td>The return is incomplete, inconsistent or in the wrong form</td><td>Correct and refile within the time given</td></tr>
+      <tr><td>Proposed adjustment or mismatch</td><td>Income or TDS in the department's data does not match the return</td><td>Check AIS and Form 26AS; agree or disagree online</td></tr>
+      <tr><td>Scrutiny or assessment notice</td><td>Your return has been selected for detailed examination</td><td>Collect evidence for the points asked</td></tr>
+      <tr><td>Notice for income escaping assessment</td><td>The department has information that income for an earlier year was not taxed</td><td>Find the information relied on and your records for that year</td></tr>
+      <tr><td>Notice for non-filing</td><td>The department has data suggesting you should have filed a return</td><td>Check whether filing was required; file or explain</td></tr>
+      <tr><td>Demand notice or penalty notice</td><td>Follows an assessment order</td><td>Check the order and the time limit for appeal</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Step 5: Collect the documents</h2>
+  <p>Gather only what relates to the year and the point raised:</p>
+  <ul class="checklist">
+    <li>The return and computation for that year, and the acknowledgement</li>
+    <li>AIS, TIS and Form 26AS for that year</li>
+    <li>Bank statements for the period</li>
+    <li>Documents for the specific transaction: sale or purchase deed, gift deed, loan agreement, investment proof, salary slips, invoices or contracts</li>
+    <li>Any earlier correspondence with the department</li>
+  </ul>
+  <p>If the notice is about a large cash deposit, for example, the relevant evidence is where the cash came from: a withdrawal, sale proceeds, gifts from family with their bank records, or business receipts recorded in the books.</p>
+
+  <h2>Step 6: Prepare the reply</h2>
+  <ul>
+    <li>Answer each point asked, in the order asked, with a short factual explanation.</li>
+    <li>Attach documents as numbered annexures and refer to them in the reply.</li>
+    <li>Do not add information that has not been asked for unless it is needed to explain the point.</li>
+    <li>If the department is correct, consider accepting the adjustment or filing an updated return, where permitted, rather than contesting it.</li>
+  </ul>
+
+  <h2>Step 7: Submit online and keep proof</h2>
+  <p>Replies are uploaded on the portal under e-Proceedings against the specific notice. After submission, download the acknowledgement and keep it with a copy of the reply and annexures. If a personal hearing by video conference is available and needed, request it in the reply.</p>
+
+  <h2>Step 8: Follow the outcome</h2>
+  <p>After the reply, the officer may close the proceeding, ask further questions, or pass an order. If an order raises a demand you do not agree with, the options include rectification of an apparent mistake, an appeal before the Commissioner of Income-tax (Appeals), and a request for stay of demand. Each has a time limit, so note it as soon as the order arrives <V />.</p>
+
+  <h2>Keep your profile current</h2>
+  <p>Many people miss notices because the email or mobile number on the portal is old. Log in, check My Profile and update your contact details and address. Turn on email alerts from your mailbox for messages from the department's official domain.</p>
+  <p>For help with a reply, see <a href="/income-tax-notice-reply-chennai/">income tax notice reply and appeals in Chennai</a>.</p>
+</Service>

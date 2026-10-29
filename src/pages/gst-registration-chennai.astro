@@ -1,0 +1,65 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'What is the turnover limit for GST registration in Tamil Nadu?', a: 'For suppliers of goods only, registration is required once aggregate turnover crosses Rs 40 lakh in a financial year, provided they have opted for the higher limit and deal in goods eligible for it. For suppliers of services, the limit is Rs 20 lakh. Some businesses must register whatever their turnover.' },
+  { q: 'Who must register for GST even with low turnover?', a: 'Persons making inter-state taxable supplies of goods, e-commerce sellers in most cases, casual taxable persons, persons liable under reverse charge, input service distributors, and persons required to deduct or collect tax at source under GST must register regardless of turnover, subject to specific exemptions notified.' },
+  { q: 'Can I register GST at my home address?', a: 'Yes, a residential address can be the principal place of business if the business is actually carried on there. You need proof of the premises such as a property tax receipt or electricity bill, and a rent agreement with the owner\'s consent if the premises are rented. Officers may visit for physical verification.' },
+  { q: 'What is the composition scheme?', a: 'The composition scheme lets small taxpayers within a turnover limit pay GST at a fixed low rate on turnover and file simpler returns. They cannot collect tax from customers or claim input tax credit, and most cannot make inter-state supplies. Whether it suits you depends on your customers and margins.' },
+  { q: 'Why do GST applications get rejected?', a: 'Common reasons are an unclear or mismatched address proof, a rent agreement without the owner\'s documents, a mismatch between PAN details and the application, failure of Aadhaar authentication, or no reply to a clarification notice within the time allowed. Most rejections can be avoided by preparing documents carefully before applying.' },
+];
+---
+<Service
+  title="GST Registration in Chennai: Documents and Steps"
+  description="GST registration in Chennai: who needs it, turnover limits in Tamil Nadu, documents, Aadhaar authentication and the steps on gst.gov.in."
+  path="/gst-registration-chennai/"
+  h1="GST registration in Chennai"
+  name="GST registration"
+  topic="GST registration"
+  lead="GST registration gives a business a 15-digit GSTIN so it can collect Goods and Services Tax (GST) from customers, claim input tax credit and file GST returns. The CA office in Adyar, Chennai, checks whether you need to register, prepares the documents, files the application on gst.gov.in and replies to any clarification asked by the officer."
+  faqs={faqs}
+  related={['/gst-return-filing/', '/udyam-msme-registration/', '/company-llp-registration-chennai/', '/guides/gst-registration-documents-process/']}
+  sources={[SRC.gstReg, SRC.gst, SRC.cbic]}
+>
+  <h2>Who needs this</h2>
+  <ul>
+    <li>Traders, manufacturers and shops in Tamil Nadu whose turnover of goods crosses Rs 40 lakh in a year, where eligible for the higher limit.</li>
+    <li>Service providers such as consultants, contractors and agencies whose turnover crosses Rs 20 lakh.</li>
+    <li>Businesses selling to other states, or selling through e-commerce platforms, in most cases regardless of turnover.</li>
+    <li>Businesses that want registration because their customers are registered businesses that need input tax credit.</li>
+  </ul>
+  <p>Turnover is aggregate turnover across all businesses under the same PAN in India, including exempt supplies. Some goods and services are exempt from GST and do not count toward the need to register if all your supplies are exempt.</p>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>PAN of the business (or of the proprietor for a proprietorship)</li>
+    <li>Aadhaar of the proprietor, partners or directors, with mobile number linked for OTP</li>
+    <li>Photographs of the proprietor, partners or directors</li>
+    <li>Proof of constitution: partnership deed, certificate of incorporation, LLP agreement or trust deed</li>
+    <li>Address proof of the place of business: property tax receipt, electricity bill, and rent agreement or consent letter</li>
+    <li>Bank account proof: cancelled cheque or bank statement in the name of the business</li>
+    <li>Authorisation letter or board resolution for the authorised signatory</li>
+  </ul>
+  <p>The full process with the portal steps is in the guide <a href="/guides/gst-registration-documents-process/">GST registration documents and process</a>.</p>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>The office confirms whether registration is required and whether regular or composition registration suits you.</li>
+    <li>Part A of the application is filed on gst.gov.in with PAN, mobile and email; a temporary reference number is generated.</li>
+    <li>Part B is filled with business details, places of business, goods and services (HSN or SAC codes) and documents.</li>
+    <li>Aadhaar authentication is completed by the proprietor, partners or directors through the OTP link.</li>
+    <li>The officer checks the application and may issue a clarification notice, which is replied to on the portal.</li>
+    <li>On approval, the registration certificate (Form GST REG-06) is downloaded from the portal.</li>
+  </ol>
+
+  <h2>Key dates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Time limit</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Apply after becoming liable to register</td><td>Within 30 days of becoming liable</td><td><a href="https://cbic-gst.gov.in/" rel="noopener">cbic-gst.gov.in</a></td></tr>
+      <tr><td>Officer's decision where Aadhaar authentication is done</td><td>Within 7 working days, unless verification is needed <V /></td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
+      <tr><td>Reply to clarification notice</td><td>Within 7 working days of the notice</td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+</Service>

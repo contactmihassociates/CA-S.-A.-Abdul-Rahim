@@ -1,0 +1,66 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'What are the new TDS return form numbers from April 2026?', a: 'According to commentary on the Income-tax Rules, 2026, Form 24Q for salary is replaced by Form 138, Form 26Q for other resident payments by Form 140, and Form 27Q for non-residents by Form 144. Statements for quarters up to March 2026 still use the old forms. Confirm on the portal before filing.' },
+  { q: 'What is a TRACES default and how is it cleared?', a: 'After a TDS statement is processed, TRACES issues a justification report listing defaults such as short deduction, late payment, late filing fee or PAN errors. Most are cleared by filing a correction statement, paying the interest or fee shown, or correcting the challan details. Ignored defaults turn into demands.' },
+  { q: 'Is a late filing fee charged for a delayed TDS statement?', a: 'Yes. A late filing fee is charged for each day of delay until the statement is filed, limited to the amount of TDS. Penalty can also be levied if the statement is not filed within the extended time. Interest for late deduction or late payment is charged separately.' },
+  { q: 'When should Form 16 or Form 16A be issued?', a: 'Salary certificates are issued once a year after the last quarter\'s statement is filed, and certificates for other payments are issued each quarter. For payments from 1 April 2026, Form 16 becomes Form 130 and Form 16A becomes Form 131. Certificates must be downloaded from TRACES to be valid.' },
+  { q: 'Does a small business need a TAN?', a: 'Any person required to deduct TDS, other than those using the PAN-based challan-cum-statement for property, rent or contract payments by individuals, must obtain a Tax Deduction and Collection Account Number (TAN) and quote it in every challan, statement and certificate. Applying for TAN is done online.' },
+];
+---
+<Service
+  title="TDS Return Filing in Chennai, Adyar"
+  description="Quarterly TDS return filing in Chennai for salary and other payments, new form numbers from April 2026, TDS certificates and clearing TRACES defaults."
+  path="/tds-return-filing/"
+  h1="TDS return filing in Chennai"
+  name="TDS return filing"
+  topic="your TDS returns"
+  lead="A TDS return is the quarterly statement in which an employer or business reports the tax it deducted at source from salaries, rent, contract payments, professional fees, interest and other payments, together with the challans used to pay that tax. The CA office in Adyar, Chennai, prepares and files TDS returns, issues TDS certificates through TRACES and clears defaults raised after processing."
+  faqs={faqs}
+  related={['/tds-on-property-purchase-26qb/', '/accounting-bookkeeping/', '/gst-return-filing/', '/tax-audit/']}
+  sources={[SRC.traces, SRC.itForms2026, SRC.itPortal]}
+>
+  <h2>Who needs this</h2>
+  <ul>
+    <li>Employers paying salary above the taxable limit.</li>
+    <li>Businesses, firms and companies paying rent, contractors, professionals, commission or interest above the threshold limits.</li>
+    <li>Trusts, schools and hospitals that pay salaries and professional fees.</li>
+    <li>Anyone making payments to non-residents.</li>
+  </ul>
+
+  <h2>New Act and new forms</h2>
+  <p>From 1 April 2026, TDS is governed by sections 392 to 395 of the Income-tax Act, 2025, which bring the many TDS sections of the 1961 Act into tables <V />. The quarterly statements have new numbers: Form 138 (earlier 24Q) for salary, Form 140 (earlier 26Q) for other payments to residents, and Form 144 (earlier 27Q) for non-residents. Certificates are Form 130 (earlier Form 16) and Form 131 (earlier Form 16A). Statements for quarters up to January to March 2026 continue in the old forms.</p>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>TAN and login for the TRACES and income tax portals</li>
+    <li>Payment register for the quarter: name, PAN, amount, date and type of payment</li>
+    <li>Challans for TDS paid, with challan identification numbers</li>
+    <li>For salary: salary register, investment declarations and proofs of employees</li>
+    <li>Lower deduction certificates received from payees, if any</li>
+    <li>Previous statements and justification reports for corrections</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>Payments are checked against the threshold and rate for each type of payment.</li>
+    <li>Challans paid are matched with the deductions; any short payment and interest is worked out.</li>
+    <li>PANs are validated, and the statement is prepared with the file validation utility and filed.</li>
+    <li>After processing, the justification report is checked on TRACES and defaults are cleared through correction statements.</li>
+    <li>TDS certificates are downloaded from TRACES and issued to employees and payees.</li>
+  </ol>
+
+  <h2>Key dates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Quarter</th><th>Statement due date</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>April to June</td><td>31 July</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>July to September</td><td>31 October</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>October to December</td><td>31 January</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>January to March</td><td>31 May</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>Payment of TDS deducted in a month</td><td>7th of the next month; for March, 30 April <V /></td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+</Service>

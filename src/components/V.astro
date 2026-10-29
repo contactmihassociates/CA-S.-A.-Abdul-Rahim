@@ -1,0 +1,6 @@
+---
+// Visible marker for a statement the owner must verify before launch.
+interface Props { kind?: 'VERIFY' | 'CONFIRM' }
+const { kind = 'VERIFY' } = Astro.props;
+---
+<span class="verify">[{kind}]</span>

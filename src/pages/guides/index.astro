@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import { GUIDES, SERVICES } from '../../data/site';
+---
+<Base
+  title="Tax and Compliance Guides | CA S. A. Abdul Rahim"
+  description="Plain-language guides on ITR documents, TDS on property, NRI property sales, GST registration, income tax notices and tax audit, with official sources."
+  path="/guides/"
+  crumbs={[{ name: 'Guides', path: '/guides/' }]}
+>
+  <article class="narrow">
+    <h1>Tax and compliance guides</h1>
+    <p class="lead">These guides explain common income tax, TDS and GST tasks in plain language, step by step, with links to the official government portals. They are written by the office of CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai, and are general information only.</p>
+    <ul>{GUIDES.map((g) => <li><a href={g.href}>{g.title}</a> <span class="meta">· <time datetime={g.published}>29 October 2026</time></span></li>)}</ul>
+    <h2>Service pages</h2>
+    <ul>{SERVICES.map((s) => <li><a href={s.href}>{s.label}</a></li>)}</ul>
+    <p class="meta">Last reviewed: <time datetime="2026-10-29">29 October 2026</time>. Official sources: <a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a>, <a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a>.</p>
+  </article>
+</Base>

@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import { SERVICES } from '../data/site';
+---
+<Base title="Page not found | CA S. A. Abdul Rahim" description="The page you are looking for is not on this website. See the list of service pages and guides." path="/404/">
+  <article class="narrow">
+    <h1>Page not found</h1>
+    <p>The page you are looking for is not on this website. You can go to the <a href="/">home page</a> or one of these pages:</p>
+    <ul>{SERVICES.map((s) => <li><a href={s.href}>{s.label}</a></li>)}</ul>
+  </article>
+</Base>
