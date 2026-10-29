@@ -33,7 +33,7 @@ export const accountingService = {
   knowsLanguage: NAP.languages,
   foundingDate: NAP.foundingDate,
   founder: { '@id': PERSON_ID },
-  sameAs: [NAP.mapsUrl, NAP.gbpUrl, NAP.blog],
+  sameAs: [NAP.mapsUrl, NAP.gbpUrl, NAP.linkedin, NAP.blog],
 };
 
 export const person = {
@@ -44,6 +44,7 @@ export const person = {
   worksFor: { '@id': ORG_ID },
   knowsLanguage: NAP.languages,
   url: `${SITE_URL}/about/`,
+  sameAs: [NAP.linkedin],
 };
 
 export function breadcrumb(items: { name: string; path: string }[]) {
