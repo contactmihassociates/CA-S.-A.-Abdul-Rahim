@@ -1,0 +1,71 @@
+---
+import Service from '../../layouts/Service.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'Is the Rs 50 lakh limit checked on each buyer share or on the full consideration?', a: 'On the full consideration. From 1 October 2024, the earlier section 194-IA was amended to make clear that where there is more than one buyer or seller, the Rs 50 lakh limit is tested on the total consideration for the property, not on each person share. The same approach applies under the Income-tax Act, 2025.' },
+  { q: 'Can one buyer file a single form for both sellers?', a: 'According to the Form 141 FAQs, one deductor can file a single Form 141 for more than one deductee, if all of them are in the same category, corporate or non-corporate, and tax was deducted in the same month. Each buyer, as a separate deductor, files for their own share of the payment.' },
+  { q: 'My spouse is a co-owner but did not pay anything. Must the spouse deduct TDS?', a: 'TDS follows the payment. If the sale agreement names both spouses as buyers but only one actually pays, the paying buyer usually deducts on the payment made. Record the facts clearly in the agreement, and if the shares and payments differ, discuss it with your chartered accountant before filing.' },
+  { q: 'Does each seller get a separate TDS certificate?', a: 'Yes. Each seller needs a TDS certificate showing the TDS on their share, so that the credit appears in their own Form 26AS and AIS and they can claim it when reporting their capital gain in their income tax return for the year of sale. The buyer downloads these certificates from the TRACES portal.' },
+];
+const pub = '2026-10-30';
+---
+<Service
+  title="Joint Buyers or Sellers: TDS on Property"
+  description="Two buyers, two sellers or a couple buying together? How the Rs 50 lakh limit works, who deducts TDS, how to split shares and file Form 141 correctly."
+  path="/guides/joint-buyers-sellers-tds-on-property/"
+  h1="Joint buyers or joint sellers: TDS on property purchase"
+  name="TDS on property with joint buyers or sellers"
+  topic="TDS on a jointly owned property"
+  lead="When a property is bought or sold by more than one person, such as a husband and wife, family members or co-owners, TDS on the purchase must be split correctly. The Rs 50 lakh limit is checked on the total consideration, each buyer deducts TDS on the part they pay, and each seller must get credit for their own share. Most problems with joint purchases come from shares that do not match the agreement."
+  faqs={faqs}
+  related={['/tds-on-property-purchase-26qb/', '/guides/tds-on-property-purchase-50-lakh-step-by-step/', '/capital-gains-tax-property-sale/']}
+  sources={[SRC.form141, SRC.itForms2026, SRC.itPortal, SRC.traces, SRC.tnreginet]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>The basic rule</h2>
+  <p>A buyer of immovable property, other than agricultural land, from a resident seller must deduct TDS at 1 percent where the consideration or the stamp duty value is Rs 50 lakh or more. Under the Income-tax Act, 1961 this was section 194-IA and Form 26QB. From 1 April 2026, it is section 393(1) of the Income-tax Act, 2025 and Form 141, Schedule B. With joint owners, three questions come up: is the limit crossed, who deducts, and how is the amount split.</p>
+
+  <h2>Question 1: Is the Rs 50 lakh limit crossed?</h2>
+  <p>Look at the full consideration of the property. Before October 2024 there were disputes about whether a property of, say, Rs 80 lakh bought by two people with Rs 40 lakh each was below the limit. The Finance (No. 2) Act, 2024 amended section 194-IA from 1 October 2024 to make clear that where there is more than one buyer or seller, the limit is applied to the total consideration. So a property of Rs 80 lakh is above the limit even if each buyer's share is Rs 40 lakh.</p>
+  <p>Also compare the consideration with the stamp duty value fixed by the Tamil Nadu Registration Department. TDS is worked out on whichever is higher.</p>
+
+  <h2>Question 2: Who deducts?</h2>
+  <p>Each buyer who makes a payment is a deductor for that payment. If two buyers each pay half, each deducts TDS on their half and files for it with their own PAN. The Form 141 FAQs state that each deductor has to file a separate Form 141 for their share of the amount liable for TDS.</p>
+  <p>Where only one of the co-buyers actually pays, for example one spouse pays from their own account or home loan, the paying buyer usually deducts on the whole payment. Keep the payment trail consistent with what is written in the agreement.</p>
+
+  <h2>Question 3: How is the amount split between sellers?</h2>
+  <p>If there are two sellers, the payment is split between them in the ratio of their shares in the property, and TDS is deducted on each seller's share. Each seller's PAN and share must be entered correctly so that each gets credit for the right amount.</p>
+
+  <h2>Worked examples</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Situation</th><th scope="col">Who files</th><th scope="col">TDS (at 1 percent)</th></tr></thead>
+      <tbody>
+        <tr><td>Flat of Rs 90 lakh, two buyers 50:50, one seller</td><td>Each buyer files for Rs 45 lakh</td><td>Rs 45,000 by each buyer</td></tr>
+        <tr><td>Flat of Rs 90 lakh, one buyer, two sellers 50:50</td><td>The buyer files; one form may cover both sellers if same category and same month</td><td>Rs 45,000 for each seller, Rs 90,000 in all</td></tr>
+        <tr><td>Flat of Rs 90 lakh, two buyers 50:50, two sellers 50:50</td><td>Each buyer files for their half, covering both sellers</td><td>Each buyer deducts Rs 22,500 for each seller</td></tr>
+        <tr><td>Plot of Rs 60 lakh, three buyers with Rs 20 lakh each</td><td>Each buyer files for Rs 20 lakh</td><td>Rs 20,000 by each buyer; the limit is on the total of Rs 60 lakh</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>These examples assume a resident seller with an operative PAN and payment in one month. A higher rate applies where PAN is not available or is inoperative.</p>
+
+  <h2>Step by step for a joint purchase</h2>
+  <ol>
+    <li>Write the share of each buyer and each seller in the sale agreement.</li>
+    <li>Collect PAN, address, mobile and email of every buyer and seller, and check that each seller PAN is linked with Aadhaar.</li>
+    <li>For each payment, work out who is paying and how much goes to each seller.</li>
+    <li>Each paying buyer logs in to the income tax portal with their own PAN and files Form 141, Schedule B, for their part, entering the details of each seller and their share.</li>
+    <li>Pay the challan generated within the due date: within 30 days from the end of the month of deduction.</li>
+    <li>Download a TDS certificate for each seller from TRACES and hand it over.</li>
+  </ol>
+
+  <h2>Common mistakes with joint ownership</h2>
+  <ul>
+    <li>Treating a property as below the limit because each share is under Rs 50 lakh.</li>
+    <li>One buyer filing for the full amount while the other buyer also files for their share, so TDS is paid twice.</li>
+    <li>Entering only one seller's PAN for the whole payment, so the other seller gets no credit.</li>
+    <li>Shares in the form that differ from the shares in the sale deed, which causes mismatches in the sellers' returns.</li>
+  </ul>
+  <p>If a joint purchase form has already been filed wrongly, see <a href="/guides/correct-mistake-tds-on-property-form-141-26qb/">correcting a mistake in TDS on property</a>. Sellers will report their capital gain on their own share; see <a href="/capital-gains-tax-property-sale/">capital gains tax on sale of property</a>. For help with the filing, see <a href="/tds-on-property-purchase-26qb/">TDS on property purchase</a>.</p>
+</Service>

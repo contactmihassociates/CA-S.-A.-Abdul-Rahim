@@ -1,0 +1,76 @@
+---
+import Service from '../../layouts/Service.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'What happens if I forgot to deduct TDS when buying a property?', a: 'The buyer is treated as in default for the amount that should have been deducted. Pay that amount yourself, with interest at 1 percent a month or part of a month, file the challan-cum-statement for the month of the payment to the seller, and then give the seller the TDS certificate.' },
+  { q: 'Is the late fee charged even if the TDS was paid on time?', a: 'Yes. The late fee is for delay in furnishing the statement, not for delay in payment. If the statement, now Form 141 and earlier Form 26QB, is furnished after the due date, a fee of Rs 200 a day applies, limited to the TDS amount in that statement.' },
+  { q: 'Can the late fee or interest be waived?', a: 'Interest and the late fee are computed by law and are generally not waived on request. Paying the TDS and furnishing the statement as soon as the delay is noticed stops the interest and the fee from growing. A penalty, which is separate, may not be levied where there is a reasonable cause.' },
+  { q: 'Where do I see the demand for late fee or interest?', a: 'After the statement is processed, any short payment, interest or late fee is shown as a demand on the TRACES portal and is communicated to the buyer. Log in to TRACES with the buyer PAN as a taxpayer to view the demand and the processing details, and pay it through the income tax portal.' },
+];
+const pub = '2026-10-30';
+---
+<Service
+  title="Late TDS on Property: Interest and Late Fee"
+  description="Paid TDS on property late or forgot to deduct it? Interest, the Rs 200 a day late fee for Form 141 (earlier 26QB), and the steps to set it right."
+  path="/guides/late-tds-on-property-interest-late-fee/"
+  h1="Late TDS on property purchase: interest, late fee and what to do"
+  name="Late TDS on property purchase"
+  topic="late TDS on your property purchase"
+  lead="If you bought a property worth Rs 50 lakh or more and did not deduct TDS, deducted it but paid it late, or filed the statement late, the law charges interest on the delay in deduction or payment and a separate late fee of Rs 200 a day for late filing. The amounts keep growing until the default is cured, so the first step is always to pay and file as soon as the delay is noticed."
+  faqs={faqs}
+  related={['/tds-on-property-purchase-26qb/', '/guides/tds-on-property-purchase-50-lakh-step-by-step/', '/guides/correct-mistake-tds-on-property-form-141-26qb/']}
+  sources={[SRC.form141, SRC.itForms2026, SRC.itPortal, SRC.traces]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>The due dates that decide whether you are late</h2>
+  <p>TDS on purchase of immovable property from a resident seller is deducted by the buyer at the time of each payment or credit to the seller, whichever is earlier, once the consideration or the stamp duty value is Rs 50 lakh or more. According to the Income Tax Department's FAQs on Form 141, the deducted amount must be paid within 30 days from the end of the month in which it was deducted, and the challan-cum-statement must be furnished within one month from the end of that month.</p>
+  <p><strong>Example.</strong> You pay the seller on 12 November. The TDS is deducted on 12 November. Payment of the TDS and filing of the statement are due by the end of the following month. A payment made on 31 December is late; one made on 10 December is on time.</p>
+  <p>Under the Income-tax Act, 1961, this TDS was governed by section 194-IA and reported in Form 26QB. From 1 April 2026, the Income-tax Act, 2025 applies, the provision is section 393(1), and the form is Form 141, Schedule B. A deduction made on or before 31 March 2026 is still reported in Form 26QB.</p>
+
+  <h2>Three kinds of default</h2>
+  <p>It helps to work out which of these applies, because each has a different cost.</p>
+  <ol>
+    <li><strong>TDS not deducted at all.</strong> The full amount was paid to the seller without deduction. The buyer is treated as an assessee in default for the TDS amount.</li>
+    <li><strong>TDS deducted but paid late.</strong> The buyer kept back the TDS from the seller but paid it to the government after the due date.</li>
+    <li><strong>Statement furnished late.</strong> The TDS may have been paid on time, but the challan-cum-statement was furnished after the due date. With Form 141 and Form 26QB, payment and statement go together, so a late payment usually means a late statement as well.</li>
+  </ol>
+
+  <h2>Interest on late deduction or late payment</h2>
+  <p>Under section 398(3)(a) of the Income-tax Act, 2025, which replaced the earlier section 201(1A), interest is charged at:</p>
+  <ul class="checklist">
+    <li><strong>1 percent a month or part of a month</strong> where tax was not deducted, from the date it should have been deducted until the date it is actually deducted.</li>
+    <li><strong>1.5 percent a month or part of a month</strong> where tax was deducted but not paid, from the date of deduction until the date of payment.</li>
+  </ul>
+  <p>Because a part of a month counts as a full month, a delay of even one day into a new month adds a full month of interest. The interest must be paid before or along with the TDS.</p>
+  <p><strong>Example.</strong> On a flat of Rs 75 lakh, TDS at 1 percent is Rs 75,000. If it was deducted on 5 June and paid on 2 September, the delay runs over four months or parts of months (June, July, August and part of September), so interest at 1.5 percent a month is Rs 75,000 x 1.5 percent x 4 = Rs 4,500.</p>
+
+  <h2>Late fee for furnishing the statement late</h2>
+  <p>Under section 427 of the Income-tax Act, 2025, which replaced the earlier section 234E, a fee of Rs 200 is payable for every day the failure to furnish the statement continues. The total fee cannot exceed the amount of TDS in that statement.</p>
+  <p><strong>Example.</strong> If the statement was due on 30 June and furnished on 9 August, the delay is 40 days and the fee is Rs 8,000, provided the TDS in the statement is at least Rs 8,000. If the TDS was Rs 6,000, the fee is limited to Rs 6,000.</p>
+  <p>The late fee is not the same as interest. Both can apply to the same transaction, and both are in addition to the TDS itself.</p>
+
+  <h2>Penalty, in some cases</h2>
+  <p>Separate from interest and the late fee, the law provides for penalties for failure to deduct or pay TDS and for failure to furnish statements. Penalties are not automatic. They are levied by an order, and the law allows the buyer to show a reasonable cause. Paying the TDS, interest and fee promptly, before any notice, puts the buyer in a stronger position.</p>
+
+  <h2>What to do now: step by step</h2>
+  <ol>
+    <li><strong>Work out the dates.</strong> Note the date of each payment to the seller, the date TDS should have been deducted, and the date of payment of TDS, if any.</li>
+    <li><strong>Compute the TDS.</strong> One percent of the consideration or the stamp duty value, whichever is higher, for each payment. A higher rate applies where the seller's PAN is not available or is inoperative.</li>
+    <li><strong>Compute the interest.</strong> Use the rates above for the number of months or parts of months of delay.</li>
+    <li><strong>File the statement and pay.</strong> Log in to the income tax portal with the buyer PAN and file Form 141 (or Form 26QB for deductions up to 31 March 2026) for the month of deduction. The portal shows the interest and fee fields; enter them and pay the challan generated.</li>
+    <li><strong>Check TRACES.</strong> After processing, log in to TRACES as a taxpayer, confirm there is no outstanding demand, and download the TDS certificate for the seller.</li>
+    <li><strong>Inform the seller.</strong> Give the seller the certificate so the TDS shows in their Form 26AS and they can claim it in their return.</li>
+  </ol>
+
+  <h2>If you never deducted TDS and the seller has already paid tax</h2>
+  <p>Where the buyer did not deduct TDS but the seller has included the sale in their return and paid the tax, the earlier law allowed the buyer to avoid being treated as in default for the tax amount on producing a certificate from a chartered accountant in the prescribed form, although interest up to the date of the seller's return still applied. Check the corresponding provision and form under the Income-tax Act, 2025 before relying on this route, because form numbers have changed.</p>
+
+  <h2>How to avoid this next time</h2>
+  <ul>
+    <li>Deduct TDS on the advance and on each instalment, not only at registration.</li>
+    <li>File Form 141 and pay on the same day as the payment to the seller wherever possible.</li>
+    <li>Check the guideline value on <a href="https://tnreginet.gov.in/" rel="noopener">tnreginet.gov.in</a> before the agreement, because TDS is on the higher of the sale consideration and the stamp duty value.</li>
+    <li>Ask the bank, before disbursement of a home loan, to release the amount net of TDS.</li>
+  </ul>
+  <p>If the problem is a wrong PAN, amount or year rather than a delay, see <a href="/guides/correct-mistake-tds-on-property-form-141-26qb/">correcting a mistake in TDS on property</a>. For help with the filing, see <a href="/tds-on-property-purchase-26qb/">TDS on property purchase</a>.</p>
+</Service>
