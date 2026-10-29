@@ -1,0 +1,78 @@
+---
+import Service from '../../layouts/Service.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'Is GSTR-9 compulsory if my turnover is below Rs 2 crore?', a: 'No. Registered persons with aggregate turnover up to Rs 2 crore in a financial year have been exempted from filing the GSTR-9 annual return for that year by notification, including for 2025-26 under Notification No. 15/2025-Central Tax. They may still file it voluntarily. Check the notification for the year you are filing.' },
+  { q: 'Can GSTR-9 be revised after filing?', a: 'No. Once GSTR-9 is filed it cannot be revised. Any tax found short while preparing it can be paid through Form DRC-03, but excess tax or missed input tax credit cannot be claimed through the annual return. So reconcile your books, GSTR-1, GSTR-3B and GSTR-2B carefully before you file.' },
+  { q: 'What is the difference between GSTR-9 and GSTR-9C?', a: 'GSTR-9 is the annual return that summarises outward supplies, input tax credit and tax paid for the year. GSTR-9C is a reconciliation statement between the audited financial statements and GSTR-9. GSTR-9C is required where aggregate turnover is above Rs 5 crore and is self-certified by the taxpayer.' },
+  { q: 'Who files the annual return for a composition taxpayer?', a: 'A taxpayer under the composition scheme does not file GSTR-9. Instead, composition taxpayers file Form GSTR-4 as their annual return, generally by 30 April after the end of the financial year. Regular taxpayers, including those who opted out of composition during the year, file GSTR-9 for the period as regular taxpayers.' },
+];
+const pub = '2026-10-30';
+---
+<Service
+  title="GSTR-9 Annual Return: Who Files and By When"
+  description="GSTR-9 for 2025-26 is due by 31 December 2026. Who must file, the Rs 2 crore exemption, GSTR-9C above Rs 5 crore, late fee, and a checklist before filing."
+  path="/guides/gstr-9-annual-return-who-files-due-date/"
+  h1="GSTR-9 annual return: who files, due date and what to check"
+  name="GSTR-9 annual return guide"
+  topic="your GST annual return"
+  lead="GSTR-9 is the GST annual return for regular taxpayers. For the financial year 2025-26 it is due by 31 December 2026. It is optional for businesses with aggregate turnover up to Rs 2 crore, compulsory above that, and businesses above Rs 5 crore also file the GSTR-9C reconciliation statement. Because the return cannot be revised, the work is mainly in reconciling the books with the monthly returns before filing."
+  faqs={faqs}
+  related={['/gst-return-filing/', '/gst-notice-reply/', '/tools/gst/']}
+  sources={[SRC.gst, SRC.cbic]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>Who has to file GSTR-9</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Aggregate turnover in 2025-26</th><th scope="col">GSTR-9</th><th scope="col">GSTR-9C</th></tr></thead>
+      <tbody>
+        <tr><td>Up to Rs 2 crore</td><td>Optional (exempted by notification)</td><td>Not required</td></tr>
+        <tr><td>Above Rs 2 crore and up to Rs 5 crore</td><td>Compulsory</td><td>Not required</td></tr>
+        <tr><td>Above Rs 5 crore</td><td>Compulsory</td><td>Compulsory, self-certified</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Aggregate turnover is worked out on an all-India basis for the same PAN, across all GST registrations. GSTR-9 is not filed by composition taxpayers (who file GSTR-4), input service distributors, non-resident taxable persons, casual taxable persons or persons deducting or collecting tax at source, who have their own returns.</p>
+
+  <h2>Due date</h2>
+  <p>The annual return is due by 31 December following the end of the financial year. For 2025-26, the due date is 31 December 2026, unless the government extends it by notification. Check the GST portal close to the date.</p>
+
+  <h2>What the return contains</h2>
+  <ul class="checklist">
+    <li><strong>Outward supplies:</strong> taxable, exempt, nil-rated and zero-rated supplies, with credit and debit notes and amendments.</li>
+    <li><strong>Input tax credit:</strong> credit availed in GSTR-3B, split into inputs, capital goods and input services, credit reversed, and credit as per GSTR-2B.</li>
+    <li><strong>Tax paid:</strong> tax payable and paid in cash and through credit, with interest and late fee.</li>
+    <li><strong>Transactions of the previous year</strong> declared in returns up to the cut-off date of the following year.</li>
+    <li><strong>HSN-wise summary</strong> of outward and inward supplies.</li>
+  </ul>
+
+  <h2>Checklist before filing</h2>
+  <ol>
+    <li><strong>Close the books.</strong> Finalise the accounts for the year, at least to the stage of sales, purchases and expenses.</li>
+    <li><strong>Reconcile sales.</strong> Match sales in the books with GSTR-1 and GSTR-3B month by month. Pay any short tax through DRC-03 before filing.</li>
+    <li><strong>Reconcile input tax credit.</strong> Match credit in the books with GSTR-3B and GSTR-2B. Reverse credit on blocked items and on suppliers' invoices not reflected in GSTR-2B.</li>
+    <li><strong>Claim pending credit in time.</strong> Input tax credit for 2025-26 can be claimed only up to 30 November 2026 or the date of filing the annual return, whichever is earlier.</li>
+    <li><strong>Check rate changes.</strong> GST rates on many goods and services changed from 22 September 2025, so 2025-26 has two rate structures. Check that HSN and rate-wise figures are split correctly.</li>
+    <li><strong>Check the figures auto-filled</strong> by the portal and correct them where the books are right and the portal is not.</li>
+    <li><strong>File GSTR-9C</strong> if turnover is above Rs 5 crore, reconciling the audited financial statements with GSTR-9.</li>
+  </ol>
+
+  <h2>Late fee</h2>
+  <p>A late fee applies for each day of delay in filing GSTR-9, counted under both CGST and the State GST law. Under the rates notified from 2022-23, the total is:</p>
+  <ul>
+    <li>Rs 50 a day where aggregate turnover is up to Rs 5 crore, limited to 0.04 percent of turnover in the state or union territory.</li>
+    <li>Rs 100 a day where aggregate turnover is above Rs 5 crore and up to Rs 20 crore, limited to 0.04 percent of turnover in the state or union territory.</li>
+    <li>Rs 200 a day where aggregate turnover is above Rs 20 crore, limited to 0.5 percent of turnover in the state or union territory.</li>
+  </ul>
+  <p>Late fee cannot be paid using input tax credit; it is paid in cash. Interest is separate and applies to any tax paid late.</p>
+
+  <h2>Common mistakes</h2>
+  <ul>
+    <li>Treating the annual return as a chance to claim credit missed during the year. It is not.</li>
+    <li>Ignoring differences between GSTR-2B and credit claimed, which later lead to notices.</li>
+    <li>Leaving the HSN summary incomplete or with the wrong rate after the September 2025 changes.</li>
+    <li>Filing without reconciling with the audited accounts where GSTR-9C applies.</li>
+  </ul>
+  <p>If a notice arrives after filing, see <a href="/gst-notice-reply/">GST notice reply</a>. For help with returns, see <a href="/gst-return-filing/">GST return filing</a>.</p>
+</Service>

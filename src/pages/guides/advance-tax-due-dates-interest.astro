@@ -1,0 +1,83 @@
+---
+import Service from '../../layouts/Service.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'Do salaried employees need to pay advance tax?', a: 'Usually the employer deducts enough TDS on salary. But if you have other income, such as interest on fixed deposits, rent, capital gains or freelance income, and the tax remaining after TDS is Rs 10,000 or more for the year, you must pay advance tax on that balance by the instalment dates.' },
+  { q: 'I missed the 15 September instalment. What should I do now?', a: 'Pay the shortfall as soon as possible, together with the December instalment if it is due. Interest for deferment runs only for the period of delay on each instalment, so paying early limits it. Use challan ITNS 280 on the income tax portal and choose advance tax as the type of payment.' },
+  { q: 'Do senior citizens have to pay advance tax?', a: 'A resident individual aged 60 or more at any time during the year, who has no income from business or profession, does not need to pay advance tax. Such a person can pay the tax as self-assessment tax before filing the return. A senior citizen with business or professional income must pay advance tax.' },
+  { q: 'How do I pay advance tax online?', a: 'Log in to the income tax e-filing portal, open e-Pay Tax, choose the tax year and select advance tax as the type of payment. Pay through net banking, debit card, UPI or the other modes offered. Keep the challan receipt, because its details are entered in your income tax return.' },
+];
+const pub = '2026-10-30';
+---
+<Service
+  title="Advance Tax Due Dates and Interest Explained"
+  description="Advance tax instalments by 15 June, September, December and March: who must pay, how to work it out, and interest (earlier sections 234B and 234C)."
+  path="/guides/advance-tax-due-dates-interest/"
+  h1="Advance tax: due dates, who must pay, and interest for late payment"
+  name="Advance tax due dates and interest"
+  topic="your advance tax"
+  lead="Advance tax is income tax paid during the year in instalments instead of in one amount at the end. Anyone whose tax for the year, after TDS and TCS, is Rs 10,000 or more must pay it, in four instalments due by 15 June, 15 September, 15 December and 15 March. Missing or short-paying an instalment leads to interest, so it helps to estimate income early and pay on time."
+  faqs={faqs}
+  related={['/income-tax-return-filing-chennai/', '/capital-gains-tax-property-sale/', '/tools/advtax/']}
+  sources={[SRC.itPortal, SRC.itIndia, SRC.itForms2026]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>Who has to pay advance tax</h2>
+  <p>Advance tax applies to individuals, Hindu undivided families, firms, companies and other taxpayers whose estimated tax for the year, after reducing TDS and TCS, is Rs 10,000 or more. It is common for:</p>
+  <ul class="checklist">
+    <li>Doctors, consultants, traders and other people with business or professional income.</li>
+    <li>Salaried employees with large interest, rent or freelance income on which TDS is not enough.</li>
+    <li>Anyone who has sold shares, mutual funds or property during the year and made a capital gain.</li>
+    <li>Landlords receiving rent, especially where the tenant does not deduct TDS.</li>
+  </ul>
+  <p>A resident senior citizen, aged 60 or more, who has no income from business or profession is not required to pay advance tax.</p>
+
+  <h2>The four due dates</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Due date</th><th scope="col">Cumulative amount to be paid</th></tr></thead>
+      <tbody>
+        <tr><td>On or before 15 June</td><td>At least 15 percent of the tax for the year</td></tr>
+        <tr><td>On or before 15 September</td><td>At least 45 percent</td></tr>
+        <tr><td>On or before 15 December</td><td>At least 75 percent</td></tr>
+        <tr><td>On or before 15 March</td><td>100 percent</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Taxpayers who declare business or professional income on a presumptive basis can pay the whole advance tax in one instalment by 15 March.</p>
+  <p>If a capital gain, lottery winning or similar income arises after an instalment date, the tax on it can be included in the remaining instalments; interest is not charged for the earlier instalments on that income if it is paid that way.</p>
+
+  <h2>How to work out the amount</h2>
+  <ol>
+    <li><strong>Estimate your total income for the year</strong> under each head: salary, house property, business or profession, capital gains and other sources such as interest.</li>
+    <li><strong>Choose the regime.</strong> Work out the tax under the regime you expect to use, with surcharge and health and education cess.</li>
+    <li><strong>Reduce TDS and TCS</strong> that has been or will be deducted, as shown in Form 26AS and the Annual Information Statement.</li>
+    <li><strong>Apply the percentages</strong> above to the balance for each due date, reducing what you have already paid.</li>
+  </ol>
+  <p><strong>Example.</strong> A consultant estimates tax of Rs 2,40,000 for the year and TDS of Rs 60,000 by clients. The balance is Rs 1,80,000. By 15 June at least Rs 27,000 is due, by 15 September Rs 81,000 in all, by 15 December Rs 1,35,000 in all, and by 15 March the full Rs 1,80,000.</p>
+  <p>The <a href="/tools/advtax/">advance tax and interest calculator</a> does this arithmetic and shows the interest if a date is missed.</p>
+
+  <h2>Interest for missing an instalment (deferment)</h2>
+  <p>Under section 425 of the Income-tax Act, 2025, which replaced the earlier section 234C, interest is charged when an instalment is paid late or short. For the June, September and December instalments it is 1 percent a month for three months on the shortfall, that is 3 percent, and for the March instalment it is 1 percent. Small shortfalls are relaxed: no interest is charged for June if at least 12 percent was paid, or for September if at least 36 percent was paid.</p>
+
+  <h2>Interest for not paying enough by 31 March (default)</h2>
+  <p>Under section 424 of the Income-tax Act, 2025, which replaced the earlier section 234B, if advance tax paid by the end of the year is less than 90 percent of the tax assessed, interest is charged at 1 percent a month, or part of a month, on the shortfall from 1 April after the tax year until the tax is paid. This is in addition to the interest for deferment.</p>
+  <p><strong>Example.</strong> If assessed tax is Rs 1,80,000 and only Rs 1,00,000 was paid as advance tax, the shortfall of Rs 80,000 attracts interest of Rs 800 a month from 1 April until you pay it as self-assessment tax, plus interest for each missed instalment.</p>
+
+  <h2>How to pay</h2>
+  <ol>
+    <li>Log in to <a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a> or use the e-Pay Tax option without logging in, with your PAN.</li>
+    <li>Choose the correct tax year and select advance tax as the type of payment.</li>
+    <li>Enter the amount and pay through net banking, debit card, UPI or another mode offered.</li>
+    <li>Download the challan receipt. Note the BSR code, date and challan serial number for your return.</li>
+  </ol>
+
+  <h2>Tips to avoid interest</h2>
+  <ul>
+    <li>Check income in early December before the third instalment, when most of the year's income is known.</li>
+    <li>Include capital gains from the sale of shares or property in the next instalment after the sale.</li>
+    <li>Ask banks for interest certificates mid-year instead of waiting for March.</li>
+    <li>If income falls, you can pay less in later instalments; interest is on the shortfall against the actual tax, not the estimate.</li>
+  </ul>
+  <p>For help with your return and advance tax, see <a href="/income-tax-return-filing-chennai/">income tax return filing</a>.</p>
+</Service>

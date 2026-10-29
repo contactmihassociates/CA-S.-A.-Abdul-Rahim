@@ -4,6 +4,8 @@ import PageHero from '../../components/PageHero.astro';
 import SideContact from '../../components/SideContact.astro';
 import { TOOLS, CATEGORIES, CATEGORY_SERVICE, CATEGORY_SOURCES, TOOLKIT, type Tool } from '../../data/tools';
 import { SERVICES, SITE_URL, REVIEWED_TEXT } from '../../data/site';
+import { TOOL_FAQS } from '../../data/tool-faqs';
+import { faqPage } from '../../data/schema';
 
 export function getStaticPaths() {
   return TOOLS.map((tool) => ({ params: { key: tool.key }, props: { tool } }));
@@ -19,6 +21,7 @@ const related = [...siblings.slice(start), ...siblings.slice(0, start)].slice(0,
   .map((k) => TOOLS.find((t) => t.key === k)!).filter(Boolean);
 const service = SERVICES.find((s) => s.href === CATEGORY_SERVICE[tool.cat]);
 const sources = CATEGORY_SOURCES[tool.cat] ?? [];
+const faqs = TOOL_FAQS[tool.key] ?? [];
 const app = {
   '@type': 'WebApplication',
   '@id': `${SITE_URL}${path}#app`,
@@ -32,7 +35,7 @@ const app = {
   provider: { '@id': `${SITE_URL}/#accountingservice` },
 };
 ---
-<Base title={`${c.title} | CA Abdul Rahim`} description={c.description} path={path} crumbs={crumbs} schema={[app]}>
+<Base title={`${c.title} | CA Abdul Rahim`} description={c.description} path={path} crumbs={crumbs} schema={faqs.length ? [app, faqPage(faqs)] : [app]}>
   <Fragment slot="head">
     <link rel="stylesheet" href={TOOLKIT.css} />
     <script src="/toolkit/vendor/react.production.min.js" defer></script>
@@ -60,6 +63,15 @@ const app = {
       <p>{c.note}</p>
       <p>The result is an estimate for the figures you enter. It is not a filed return, a certificate or professional advice. Rates, thresholds and section numbers change with each Finance Act, and the Income-tax Act, 2025 applies from 1 April 2026 with new section and form numbers.</p>
       {service && <p>For the related work, see <a href={service.href}>{service.label}</a>.</p>}
+
+      {faqs.length > 0 && (
+        <section class="faq" aria-labelledby="faq-h">
+          <h2 id="faq-h">Frequently asked questions</h2>
+          <div class="faq-list">
+            {faqs.map((f, i) => (<details open={i === 0}><summary><h3>{f.q}</h3></summary><p>{f.a}</p></details>))}
+          </div>
+        </section>
+      )}
 
       <h2>Related calculators</h2>
       <ul class="tool-grid plain" role="list">

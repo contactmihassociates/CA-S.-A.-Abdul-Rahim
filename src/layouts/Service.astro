@@ -64,7 +64,10 @@ const tools = toolKeys.map((k) => toolData.tools.find((t) => t.key === k)).filte
       {tools.length > 0 && (
         <nav class="side-card" aria-labelledby="side-tools-h">
           <h2 id="side-tools-h">Related calculators</h2>
-          <ul>{tools.map((t) => <li><a href={`/tools/${t.key}/`}>{t.label}</a></li>)}</ul>
+          <ul>
+            {path === "/income-tax-return-filing-chennai/" && <li><a href="/tools/income-tax-calculator/">Full income tax calculator, old vs new</a></li>}
+            {tools.map((t) => <li><a href={`/tools/${t.key}/`}>{t.label}</a></li>)}
+          </ul>
         </nav>
       )}
       <nav class="side-card" aria-labelledby="rel-h">

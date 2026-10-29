@@ -30,7 +30,7 @@ export const NAP = {
   lng: 80.2571196,
   mapsUrl: 'https://www.google.com/maps/place/?cid=16323173430388216385',
   directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=13.0003461%2C80.2571196',
-  mapEmbed: 'https://www.google.com/maps?cid=16323173430388216385&output=embed',
+  mapEmbed: 'https://www.google.com/maps?q=13.0003461,80.2571196&z=16&output=embed',
   gbpUrl: 'https://g.page/r/CUFSYkXAj4fiEBM',
   linkedin: 'https://www.linkedin.com/in/casaabdulrahim',
   blog: 'https://casaabdulrahim-notes.blogspot.com/',
@@ -74,6 +74,11 @@ export const GUIDES = [
   { href: '/guides/gst-registration-documents-process/', title: 'GST registration documents and process', published: '2026-10-29' },
   { href: '/guides/income-tax-notice-first-steps/', title: 'Received an income tax notice: first steps', published: '2026-10-29' },
   { href: '/guides/tax-audit-who-needs-it-what-to-prepare/', title: 'Tax audit: who needs it and what to prepare', published: '2026-10-29' },
+  { href: '/guides/late-tds-on-property-interest-late-fee/', title: 'Late TDS on property purchase: interest, late fee and what to do', published: '2026-10-30' },
+  { href: '/guides/correct-mistake-tds-on-property-form-141-26qb/', title: 'Correcting a mistake in TDS on property (Form 141 or Form 26QB)', published: '2026-10-30' },
+  { href: '/guides/joint-buyers-sellers-tds-on-property/', title: 'Joint buyers or joint sellers: TDS on property purchase', published: '2026-10-30' },
+  { href: '/guides/advance-tax-due-dates-interest/', title: 'Advance tax: due dates, who must pay, and interest', published: '2026-10-30' },
+  { href: '/guides/gstr-9-annual-return-who-files-due-date/', title: 'GSTR-9 annual return: who files, due date and what to check', published: '2026-10-30' },
 ];
 
 // Official sources used across pages

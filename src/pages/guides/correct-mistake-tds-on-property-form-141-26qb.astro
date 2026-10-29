@@ -1,0 +1,70 @@
+---
+import Service from '../../layouts/Service.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'Can I correct Form 141 on the income tax e-filing portal?', a: 'No. According to the Income Tax Department FAQs on Form 141, a Form 141 cannot be corrected on the e-filing portal. Corrections are made only on the TDS-TRACES portal, after the buyer registers there as a taxpayer using the PAN with which the form was filed.' },
+  { q: 'The seller is not getting TDS credit in Form 26AS. What should I check?', a: 'Check the seller PAN, the financial year, the amount and the seller share entered in the form, and whether the challan was paid. A wrong PAN or year is the usual reason. The buyer can correct these on TRACES; once processed, the credit appears in the seller Form 26AS and AIS.' },
+  { q: 'I paid TDS twice for the same payment. Can I get it back?', a: 'Yes, excess TDS paid by mistake can be claimed back by the buyer through a refund request on the income tax portal, earlier made in Form 26B. The claim needs the challan details and must be made within the time allowed. If credit was given to the seller, the seller claims it instead.' },
+  { q: 'Do I need the seller to sign anything for a correction?', a: 'Usually no. The correction is made by the buyer, as the person who filed the form, on TRACES. It is good practice to tell the seller what was changed and to give the seller the revised TDS certificate once the corrected statement is processed, so the credit matches in their return.' },
+];
+const pub = '2026-10-30';
+---
+<Service
+  title="Correct a Mistake in TDS on Property (Form 141)"
+  description="Wrong PAN, amount or year in TDS on property? How to correct Form 141 (earlier Form 26QB) on TRACES, fix a challan and claim back TDS paid twice."
+  path="/guides/correct-mistake-tds-on-property-form-141-26qb/"
+  h1="Correcting a mistake in TDS on property (Form 141 or Form 26QB)"
+  name="Correcting TDS on property"
+  topic="correcting your TDS on property"
+  lead="Mistakes in TDS on property purchase are common: a wrong seller PAN, the wrong financial year, the full amount entered for one seller instead of the share, or the same TDS paid twice. Most of these can be corrected online by the buyer on the TRACES portal. A correction made early saves the seller from a mismatch in their return and the buyer from a notice."
+  faqs={faqs}
+  related={['/tds-on-property-purchase-26qb/', '/guides/tds-on-property-purchase-50-lakh-step-by-step/', '/guides/late-tds-on-property-interest-late-fee/']}
+  sources={[SRC.form141, SRC.itForms2026, SRC.itPortal, SRC.traces]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>Which form are you correcting?</h2>
+  <p>Under the Income-tax Act, 1961, TDS on purchase of property from a resident seller was under section 194-IA and was paid and reported through Form 26QB. From 1 April 2026, the Income-tax Act, 2025 applies; the provision is section 393(1), and the challan-cum-statement is Form 141, Schedule B, which replaced Forms 26QB, 26QC, 26QD and 26QE. A deduction made on or before 31 March 2026 stays in Form 26QB. Either way, the corrections are made on the same portal: TRACES.</p>
+
+  <h2>Common mistakes and how each is fixed</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Mistake</th><th scope="col">Effect</th><th scope="col">Usual fix</th></tr></thead>
+      <tbody>
+        <tr><td>Wrong seller PAN</td><td>Seller gets no credit; someone else may</td><td>Correction request on TRACES by the buyer</td></tr>
+        <tr><td>Wrong buyer PAN</td><td>Form shown against the wrong person</td><td>Correction on TRACES; in some cases with the assessing officer</td></tr>
+        <tr><td>Wrong financial or assessment year</td><td>Credit in the wrong year; seller mismatch</td><td>Correction on TRACES; challan year may need a separate challan correction</td></tr>
+        <tr><td>Wrong amount or share</td><td>Short or excess credit to a seller</td><td>Correction of amount or share details on TRACES</td></tr>
+        <tr><td>Wrong date of payment or deduction</td><td>Interest or late fee demand</td><td>Correction of dates on TRACES</td></tr>
+        <tr><td>TDS paid twice</td><td>Excess payment</td><td>Refund request by the buyer on the income tax portal</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Step by step: correcting on TRACES</h2>
+  <ol>
+    <li><strong>Register on TRACES.</strong> Go to <a href="https://www.tdscpc.gov.in/" rel="noopener">tdscpc.gov.in</a> and register as a taxpayer with the buyer PAN, the PAN used for the form. If you are already registered, log in.</li>
+    <li><strong>Find the statement.</strong> Use the acknowledgement number of the Form 141 or Form 26QB to locate it. Keep the challan details (BSR code, date, challan serial number and amount) ready, because TRACES uses them to confirm your identity.</li>
+    <li><strong>Raise the correction request.</strong> Open the online correction option for the form and choose the field to be corrected. Some fields, such as PAN, may need e-verification or approval by the TDS assessing officer before the change is accepted.</li>
+    <li><strong>Submit and note the request number.</strong> Track the status on TRACES. Once the request is processed, the corrected statement replaces the old one.</li>
+    <li><strong>Download the revised certificate.</strong> Download the TDS certificate again (Form 132 under the Income-tax Rules, 2026; Form 16B for older deductions) and give it to the seller.</li>
+    <li><strong>Ask the seller to check.</strong> The seller should see the corrected credit in Form 26AS and AIS before filing the return for the year of sale.</li>
+  </ol>
+
+  <h2>Mistakes in the challan itself</h2>
+  <p>Form 141 and Form 26QB combine the statement and the challan. If the error is in the payment itself, for example tax paid under the wrong year, or the amount paid is less than what was due, the correction may involve the challan and not only the statement. A shortfall is usually paid through a fresh challan with interest. Where the challan details cannot be changed online, a request to the jurisdictional TDS assessing officer may be needed.</p>
+
+  <h2>TDS paid twice or paid in excess</h2>
+  <p>It happens, for example, when the buyer files the form for an instalment and the bank also deducts and pays for the same payment, or when a form is filed twice after a payment failure that later went through. If the excess has not been credited to the seller, the buyer can claim a refund on the income tax portal (earlier Form 26B), giving the challan details. If the credit has gone to the seller, the seller claims it in their return instead. Check which of the two applies before making a claim.</p>
+
+  <h2>Before you correct anything</h2>
+  <ul class="checklist">
+    <li>Take a copy of the original acknowledgement, challan and TDS certificate.</li>
+    <li>Compare every field with the sale agreement and the sale deed: names, PANs, shares, dates and amounts.</li>
+    <li>Confirm the seller PAN is operative (linked with Aadhaar), because an inoperative PAN attracts a higher rate.</li>
+    <li>Check TRACES for any demand already raised for interest or late fee; see <a href="/guides/late-tds-on-property-interest-late-fee/">late TDS on property</a>.</li>
+  </ul>
+
+  <h2>Mistakes that cannot be fixed by correction</h2>
+  <p>If TDS was not deducted at all, there is nothing to correct; the TDS has to be paid with interest. If the seller is a non-resident, the TDS is under a different provision and needs a TAN and a quarterly return, not Form 141 Schedule B; see <a href="/guides/nri-selling-property-chennai-tds-lower-certificate/">NRI selling property in Chennai</a>. Filing the wrong form for an NRI seller usually needs fresh compliance under the correct provision, not a correction.</p>
+  <p>For help with a correction, see <a href="/tds-on-property-purchase-26qb/">TDS on property purchase</a>.</p>
+</Service>

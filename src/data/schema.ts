@@ -11,7 +11,6 @@ export const accountingService = {
   telephone: NAP.phoneTel,
   email: NAP.email,
   image: `${SITE_URL}/og-image.png`,
-  logo: `${SITE_URL}/ca-logo-512.png`,
   address: {
     '@type': 'PostalAddress',
     streetAddress: NAP.street,
