@@ -3,7 +3,6 @@ import PageHero from '../components/PageHero.astro';
 import SideContact from '../components/SideContact.astro';
 import Base from '../layouts/Base.astro';
 import Map from '../components/Map.astro';
-import V from '../components/V.astro';
 import { NAP } from '../data/site';
 ---
 <Base
@@ -31,12 +30,12 @@ import { NAP } from '../data/site';
 
     <h2>Directions</h2>
     <h3>From Adyar signal</h3>
-    <p>The office is about 1 to 2 km south of Adyar signal. Go south along Lattice Bridge Road (L.B. Road) and turn into Shastri Nagar; 15th Cross Street is inside the Shastri Nagar residential area <V kind="CONFIRM" />.</p>
+    <p>The office is about 1 km south of Adyar signal, in Shastri Nagar. Head south from the signal towards Shastri Nagar; 15th Cross Street is inside the Shastri Nagar residential area.</p>
     <h3>From Thiruvanmiyur</h3>
-    <p>The office is about 2 to 3 km north of Thiruvanmiyur. Go north along L.B. Road towards Adyar and turn right into Shastri Nagar <V kind="CONFIRM" />.</p>
+    <p>The office is about 2 km north of Thiruvanmiyur. Head north towards Adyar; Shastri Nagar comes before Adyar signal.</p>
     <h3>From Besant Nagar</h3>
-    <p>The office is about 1 to 2 km west of Besant Nagar. Head west towards L.B. Road and enter Shastri Nagar from the Besant Nagar side <V kind="CONFIRM" />.</p>
-    <p>For other areas, see <a href="/areas/">areas and how to reach the office</a>.</p>
+    <p>The office is about 1 to 1.5 km west of Besant Nagar. Shastri Nagar lies between Besant Nagar and Adyar, so head west towards Adyar.</p>
+    <p>For a turn-by-turn route from where you are, use <a href={NAP.directionsUrl} data-directions rel="noopener">Get directions</a> on Google Maps. For other areas, see <a href="/areas/">areas and how to reach the office</a>.</p>
 
     <h2>Before you call or visit</h2>
     <p>It helps to keep your PAN, the notice or document you have a question about, and your login details for the income tax or GST portal at hand. Please do not send passwords by WhatsApp or email; they can be entered by you at the time of filing.</p>
