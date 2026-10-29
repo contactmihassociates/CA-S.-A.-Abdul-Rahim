@@ -81,7 +81,7 @@ export const GUIDES = [
   { href: '/guides/joint-buyers-sellers-tds-on-property/', title: 'Joint buyers or joint sellers: TDS on property purchase', published: '2026-10-29' },
   { href: '/guides/advance-tax-due-dates-interest/', title: 'Advance tax: due dates, who must pay, and interest', published: '2026-10-29' },
   { href: '/guides/gstr-9-annual-return-who-files-due-date/', title: 'GSTR-9 annual return: who files, due date and what to check', published: '2026-10-29' },
-  { href: '/guides/capital-gains-exemption-new-house-cgas/', title: 'Capital gains on a house sale: exemption by buying another house, and the Capital Gains Account Scheme', published: '2026-10-29' },
+  { href: '/guides/capital-gains-exemption-new-house-cgas/', title: 'Capital gains on a house sale: new house exemption and CGAS', published: '2026-10-29' },
   { href: '/guides/rental-income-tax-let-out-property/', title: 'Tax on rental income from a let-out house', published: '2026-10-29' },
   { href: '/guides/tds-property-seller-no-pan-inoperative-pan/', title: 'TDS on property when the seller has no PAN or an inoperative PAN', published: '2026-10-29' },
   { href: '/guides/buying-property-from-nri-tds-tan-rates/', title: 'Buying property from an NRI: TDS, TAN, rates and returns', published: '2026-10-29' },

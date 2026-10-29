@@ -86,12 +86,12 @@ const year = 2026;
             <div class="mega">
               {groups.map((g) => (
                 <div>
-                  <h3>{g}</h3>
+                  <p class="nav-head">{g}</p>
                   <ul>{SERVICES.filter((s) => s.group === g).map((s) => <li><a href={s.href}>{s.label}</a></li>)}</ul>
                 </div>
               ))}
               <div>
-                <h3>Guides</h3>
+                <p class="nav-head">Guides</p>
                 <ul>{GUIDES.slice(0, 3).map((g) => <li><a href={g.href}>{g.title}</a></li>)}</ul>
               </div>
               <div class="mega-foot">
@@ -116,7 +116,7 @@ const year = 2026;
           </ul>
           {groups.map((g) => (
             <>
-              <h3>{g}</h3>
+              <p class="nav-head">{g}</p>
               <ul>{SERVICES.filter((s) => s.group === g).map((s) => <li><a href={s.href}>{s.label}</a></li>)}</ul>
             </>
           ))}
