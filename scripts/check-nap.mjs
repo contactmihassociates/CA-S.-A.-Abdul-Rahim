@@ -5,7 +5,7 @@ import { htmlFiles, read, urlOf, visibleText, jsonld } from './lib.mjs';
 const NAME = 'CA S. A. Abdul Rahim';
 const ADDR = '14/2, 15th Cross Street, Shastri Nagar, Adyar, Chennai, Tamil Nadu 600020';
 const PHONE = '07397 283 223';
-const NEVER = [/94447\s?97222/, /95510\s?78603/];
+const NEVER = [/94447\s?97222/]; // 095510 78603 is a confirmed office number (owner, 30 Oct 2026)
 let bad = 0;
 const files = htmlFiles();
 for (const f of files) {
@@ -23,5 +23,5 @@ for (const f of all('dist').filter((p) => /\.(html|txt|xml|js|json)$/.test(p))) 
   const s = readFileSync(f, 'utf8');
   for (const r of NEVER) if (r.test(s)) { bad++; console.log(`FAIL forbidden number ${r} in ${f}`); }
 }
-console.log(bad ? `\n${bad} problem(s)` : `\nPASS: name, address and phone identical on all ${files.length} pages and in schema; 094447 97222 and 095510 78603 absent from every built file`);
+console.log(bad ? `\n${bad} problem(s)` : `\nPASS: name, address and phone identical on all ${files.length} pages and in schema; 094447 97222 absent from every built file`);
 process.exit(bad ? 1 : 0);

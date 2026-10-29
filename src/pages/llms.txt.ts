@@ -4,7 +4,7 @@ import { TOOLS, CATEGORIES } from '../data/tools';
 export function GET() {
   const body = `# ${NAP.name}
 
-> ${NAP.name} is a ${NAP.designation} in practice in Adyar, Chennai, India, since ${NAP.sinceYear} (opening date 12 April 1985). Office: ${NAP.addressLine}. Phone: ${NAP.phone} (${NAP.phoneTel}); other phone ${NAP.phone2}; WhatsApp ${NAP.whatsapp}; email ${NAP.email}. Hours: ${NAP.hoursText} Languages: ${NAP.languages.join(', ')}.
+> ${NAP.name} is a ${NAP.designation} in practice in Adyar, Chennai, India, since ${NAP.sinceYear} (opening date 12 April 1985). Office: ${NAP.addressLine}. Phone: ${NAP.phone} (${NAP.phoneTel}); other phones ${NAP.phone2} and ${NAP.phone3}; WhatsApp ${NAP.whatsapp}; email ${NAP.email}. Hours: ${NAP.hoursText} Languages: ${NAP.languages.join(', ')}.
 
 The practice covers income tax returns, income tax notices and appeals, TDS (including TDS on property purchases and NRI property sales), capital gains, NRI taxation, GST registration, returns and notices, tax audit, statutory audit of companies, accounting and bookkeeping, company/LLP/partnership registration, trust and NGO registration, and Udyam (MSME) registration.
 
