@@ -1,6 +1,5 @@
 ---
 import Service from '../layouts/Service.astro';
-import V from '../components/V.astro';
 import { SRC } from '../data/site';
 const faqs = [
   { q: 'What is the turnover limit for GST registration in Tamil Nadu?', a: 'For suppliers of goods only, registration is required once aggregate turnover crosses Rs 40 lakh in a financial year, provided they have opted for the higher limit and deal in goods eligible for it. For suppliers of services, the limit is Rs 20 lakh. Some businesses must register whatever their turnover.' },
@@ -58,7 +57,7 @@ const faqs = [
     <thead><tr><th>What</th><th>Time limit</th><th>Source</th></tr></thead>
     <tbody>
       <tr><td>Apply after becoming liable to register</td><td>Within 30 days of becoming liable</td><td><a href="https://cbic-gst.gov.in/" rel="noopener">cbic-gst.gov.in</a></td></tr>
-      <tr><td>Officer's decision where Aadhaar authentication is done</td><td>Within 7 working days, unless verification is needed <V /></td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
+      <tr><td>Officer's decision where Aadhaar authentication is done</td><td>Within 7 working days, unless verification is needed (up to 30 days where physical verification applies)</td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
       <tr><td>Reply to clarification notice</td><td>Within 7 working days of the notice</td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
     </tbody>
   </table></div>

@@ -33,7 +33,7 @@ export const accountingService = {
   knowsLanguage: NAP.languages,
   foundingDate: NAP.foundingDate,
   founder: { '@id': PERSON_ID },
-  sameAs: [NAP.mapsUrl, NAP.blog],
+  sameAs: [NAP.mapsUrl, NAP.gbpUrl, NAP.blog],
 };
 
 export const person = {

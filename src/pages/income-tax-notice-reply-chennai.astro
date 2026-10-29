@@ -1,6 +1,5 @@
 ---
 import Service from '../layouts/Service.astro';
-import V from '../components/V.astro';
 import { SRC } from '../data/site';
 const faqs = [
   { q: 'How do I check whether an income tax notice is genuine?', a: 'Every genuine notice or order issued by the department carries a Document Identification Number (DIN). Log in to incometax.gov.in and look under e-Proceedings and pending actions, or use the authenticate notice facility on the portal. Do not click links in emails or SMS messages that ask for passwords or payments.' },
@@ -32,7 +31,7 @@ const faqs = [
     <li><strong>Notices for income that may have escaped assessment</strong>, usually issued for an earlier year where information suggests income was not reported.</li>
     <li><strong>Demand notices and penalty notices</strong> that follow an assessment order.</li>
   </ul>
-  <p>Under the Income-tax Act, 2025, sections dealing with assessment, reassessment and appeals have new numbers, while proceedings for earlier years started under the 1961 Act continue to refer to the old sections. The notice itself states the section under which it is issued <V />.</p>
+  <p>Under the Income-tax Act, 2025, sections dealing with assessment, reassessment and appeals have new numbers, while proceedings for earlier years started under the 1961 Act continue to refer to the old sections. The notice itself states the section under which it is issued.</p>
 
   <h2>Documents usually needed</h2>
   <ul class="checklist">
@@ -59,8 +58,8 @@ const faqs = [
     <thead><tr><th>What</th><th>Time limit</th><th>Source</th></tr></thead>
     <tbody>
       <tr><td>Reply to a notice</td><td>The date stated in the notice itself</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
-      <tr><td>Appeal before CIT(A)</td><td>30 days from receipt of the order under the 1961 Act; check the 2025 Act for newer orders <V /></td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
-      <tr><td>Updated return</td><td>Within the period allowed from the end of the relevant assessment year <V /></td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+      <tr><td>Appeal before CIT(A)</td><td>30 days from receipt of the order; the official appeals help page states the limitation period is unchanged under the 2025 Act. Check the order for the section and form</td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+      <tr><td>Updated return</td><td>As provided in the updated-return provision; check the portal for the time limit for the year concerned</td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
     </tbody>
   </table></div>
 

@@ -1,6 +1,5 @@
 ---
 import Service from '../layouts/Service.astro';
-import V from '../components/V.astro';
 import { SRC } from '../data/site';
 const faqs = [
   { q: 'Is Form 26QB still used for property TDS?', a: 'Form 26QB applies to TDS deducted on or before 31 March 2026 under section 194-IA of the 1961 Act. For deductions on or after 1 April 2026, the Income Tax Department\'s FAQs say TDS on property is reported in Form 141, Schedule B, under section 393(1) of the Income-tax Act, 2025.' },
@@ -24,7 +23,7 @@ const faqs = [
 >
   <h2>The law in brief</h2>
   <p>Under the Income-tax Act, 1961, this was section 194-IA, and the buyer filed Form 26QB and gave the seller Form 16B. The Income-tax Act, 2025 came into force on 1 April 2026. According to the Income Tax Department's FAQs on Form 141, TDS on transfer of immovable property for deductions made on or after 1 April 2026 is covered by section 393(1) of the Income-tax Act, 2025 and reported in Form 141, Schedule B ("Purchase of Immovable Property from a Resident Seller"). Form 141 replaces Forms 26QB, 26QC, 26QD and 26QE. Agricultural land is excluded.</p>
-  <p>Under the earlier section 194-IA, the rate was 1 percent of the consideration or the stamp duty value, whichever is higher, where that amount was Rs 50 lakh or more. Commentary on the new law states the rate and threshold carry over unchanged; check the exact table entry in section 393(1) before payment <V />. If the seller does not have a valid PAN, or PAN is not linked with Aadhaar, a higher rate applies.</p>
+  <p>Under section 393(1) of the Income-tax Act, 2025 (Table, Sl. No. 3(i)), which replaced the earlier section 194-IA, the rate is 1 percent of the consideration or the stamp duty value, whichever is higher, where that amount is Rs 50 lakh or more. If the seller does not have a valid PAN, or PAN is not linked with Aadhaar, a higher rate applies.</p>
 
   <h2>Who needs this</h2>
   <ul>
@@ -59,7 +58,7 @@ const faqs = [
     <tbody>
       <tr><td>Payment of TDS</td><td>Within 30 days from the end of the month in which the deduction is made</td><td><a href={SRC.form141.href} rel="noopener">Form 141 FAQs</a></td></tr>
       <tr><td>Filing Form 141 (challan-cum-statement)</td><td>Within one month from the end of the month in which tax is deducted</td><td><a href={SRC.form141.href} rel="noopener">Form 141 FAQs</a></td></tr>
-      <tr><td>TDS certificate to seller</td><td>Within the time prescribed in the Income-tax Rules, 2026 <V /></td><td><a href="https://www.tdscpc.gov.in/" rel="noopener">TRACES</a></td></tr>
+      <tr><td>TDS certificate to seller</td><td>Form 132, within 15 days from the due date for furnishing Form 141</td><td><a href="https://www.tdscpc.gov.in/" rel="noopener">TRACES</a></td></tr>
     </tbody>
   </table></div>
 </Service>

@@ -1,6 +1,5 @@
 ---
 import Service from '../../layouts/Service.astro';
-import V from '../../components/V.astro';
 import { SRC } from '../../data/site';
 const faqs = [
   { q: 'Is TDS deducted from the advance paid at the time of agreement?', a: 'Yes. TDS applies to each payment, including the advance or token amount paid at the time of the sale agreement, once the total consideration is Rs 50 lakh or more. Deduct at the time of each payment or credit, whichever is earlier, and file the challan-cum-statement for each month in which you deduct.' },
@@ -36,7 +35,7 @@ const pub = '2026-10-29';
   <p>The stamp duty value is the guideline value fixed by the Tamil Nadu Registration Department, which you can check on <a href="https://tnreginet.gov.in/" rel="noopener">tnreginet.gov.in</a>.</p>
 
   <h2>Step 2: Work out the TDS amount</h2>
-  <p>Under the earlier section 194-IA, TDS was 1 percent of the amount paid or credited, where the total consideration or stamp duty value was Rs 50 lakh or more. Where the stamp duty value was higher than the consideration, TDS was calculated on the stamp duty value. Commentary on the new Act states the rate and threshold continue unchanged; confirm the table entry in section 393(1) before payment <V />.</p>
+  <p>Under section 393(1) of the Income-tax Act, 2025 (Table, Sl. No. 3(i)), which replaced the earlier section 194-IA, TDS is 1 percent of the consideration or the stamp duty value, whichever is higher, where that amount is Rs 50 lakh or more.</p>
   <p>If the seller's PAN is not available or is inoperative because it is not linked with Aadhaar, TDS is deducted at a higher rate. Ask the seller to confirm the PAN-Aadhaar link before you pay.</p>
   <p><strong>Example.</strong> You buy a flat for Rs 80 lakh and pay Rs 10 lakh on signing the agreement and Rs 70 lakh at registration. Assuming the 1 percent rate, you deduct Rs 10,000 from the first payment and Rs 70,000 from the second, and pay the seller Rs 9,90,000 and Rs 69,30,000. If there are two sellers with equal shares, each payment is split between them and TDS is deducted on each seller's share.</p>
 
@@ -60,7 +59,7 @@ const pub = '2026-10-29';
   <p>The FAQs on Form 141 state that the deducted amount must be paid within 30 days from the end of the month in which the deduction is made, and the statement must be furnished within one month from the end of that month.</p>
 
   <h2>Step 5: Give the TDS certificate to the seller</h2>
-  <p>After the statement is processed, the buyer registers on the TRACES portal (<a href="https://www.tdscpc.gov.in/" rel="noopener">tdscpc.gov.in</a>) with PAN, requests the TDS certificate for the seller and downloads it. Under the earlier law this certificate was Form 16B, to be given within 15 days of the due date for filing the statement. Check the certificate form and time limit under the Income-tax Rules, 2026 <V />.</p>
+  <p>After the statement is processed, the buyer registers on the TRACES portal (<a href="https://www.tdscpc.gov.in/" rel="noopener">tdscpc.gov.in</a>) with PAN, requests the TDS certificate for the seller and downloads it. Under the earlier law this certificate was Form 16B. Under the Income-tax Rules, 2026 it is Form 132, to be issued within 15 days from the due date for furnishing the Form 141 challan-cum-statement.</p>
 
   <h2>Step 6: Seller checks the credit</h2>
   <p>The seller should check that the TDS appears in their Form 26AS and AIS, and claim it in their income tax return for the year of sale, where they also report the capital gain. If the credit is missing, the usual causes are a wrong PAN, a wrong share split or a wrong year in the form, which the buyer can correct on TRACES.</p>

@@ -2,7 +2,6 @@
 import PageHero from '../components/PageHero.astro';
 import SideContact from '../components/SideContact.astro';
 import Base from '../layouts/Base.astro';
-import V from '../components/V.astro';
 import { NAP, AREAS, SERVICES } from '../data/site';
 ---
 <Base
@@ -19,12 +18,11 @@ import { NAP, AREAS, SERVICES } from '../data/site';
     <dl class="facts">
       <dt>Name</dt><dd>{NAP.name}</dd>
       <dt>Designation</dt><dd>{NAP.designation}</dd>
-      <dt>Professional body</dt><dd>Member of the Institute of Chartered Accountants of India (ICAI) <V kind="CONFIRM" /></dd>
+      <dt>Professional body</dt><dd>Institute of Chartered Accountants of India (ICAI). Under the Chartered Accountants Act, 1949, only members of the ICAI may use the designation Chartered Accountant.</dd>
       <dt>In practice since</dt><dd>12 April 1985</dd>
       <dt>Office</dt><dd>{NAP.addressLine}</dd>
       <dt>Languages</dt><dd>{NAP.languages.join(', ')}</dd>
       <dt>Hours</dt><dd>{NAP.hoursText}</dd>
-      <dt>ICAI membership number</dt><dd><V kind="CONFIRM" /></dd>
     </dl>
 
     <h2>Areas of work</h2>
