@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import Map from '../components/Map.astro';
+import V from '../components/V.astro';
+import { NAP } from '../data/site';
+// Approximate road distance (km) and off-peak drive time (minutes). [CONFIRM] with owner.
+const rows = [
+  { area: 'Adyar (Adyar signal, Gandhi Nagar)', km: '1 to 2', min: '5 to 10', route: 'South along Lattice Bridge Road (L.B. Road) into Shastri Nagar.' },
+  { area: 'Indira Nagar', km: '1 to 2', min: '5 to 10', route: 'East across L.B. Road into Shastri Nagar.' },
+  { area: 'Kasturba Nagar', km: '2', min: '5 to 10', route: 'Via L.B. Road south.' },
+  { area: 'Besant Nagar', km: '1 to 2', min: '5 to 10', route: 'West from Besant Nagar towards Shastri Nagar.' },
+  { area: 'Thiruvanmiyur', km: '2 to 3', min: '10', route: 'North along L.B. Road towards Adyar.' },
+  { area: 'Kottivakkam', km: '5', min: '15 to 20', route: 'North on East Coast Road, then L.B. Road via Thiruvanmiyur.' },
+  { area: 'Kotturpuram', km: '4', min: '15', route: 'Sardar Patel Road or Gandhi Mandapam Road to Adyar, then L.B. Road.' },
+  { area: 'Taramani', km: '4', min: '15', route: 'Via Rajiv Gandhi Salai or Kanagam Road to Thiruvanmiyur, then L.B. Road.' },
+  { area: 'Mylapore, Mandaveli, R.A. Puram', km: '4 to 5', min: '15 to 20', route: 'Cross the Adyar river by Thiru Vi Ka Bridge into Adyar, then L.B. Road.' },
+  { area: 'Alwarpet, Teynampet', km: '5 to 6', min: '20', route: 'Via Chamiers Road or TTK Road to Thiru Vi Ka Bridge, then Adyar.' },
+  { area: 'Velachery', km: '6', min: '20 to 25', route: 'Via Velachery Main Road or Taramani to Thiruvanmiyur, then L.B. Road.' },
+  { area: 'Guindy, Saidapet', km: '6 to 7', min: '20 to 25', route: 'Sardar Patel Road east to Adyar signal, then L.B. Road.' },
+  { area: 'T. Nagar, Nungambakkam', km: '8 to 9', min: '30', route: 'Via Anna Salai and Sardar Patel Road, or TTK Road to Adyar.' },
+];
+---
+<Base
+  title="CA Office near Adyar: Areas Served and Directions"
+  description="How to reach the CA office in Shastri Nagar, Adyar from Besant Nagar, Thiruvanmiyur, Velachery, Mylapore, Guindy and other areas of South Chennai."
+  path="/areas/"
+  crumbs={[{ name: 'Areas', path: '/areas/' }]}
+>
+  <article class="narrow">
+    <h1>Areas served and how to reach the CA office in Adyar</h1>
+    <p class="lead">The office of CA S. A. Abdul Rahim is at 14/2, 15th Cross Street, Shastri Nagar, Adyar, Chennai 600020, between Adyar, Besant Nagar and Thiruvanmiyur. People searching for an auditor in Thiruvanmiyur or Besant Nagar, or a CA in Velachery or Mylapore, can reach the office in roughly 5 to 30 minutes by road depending on traffic.</p>
+
+    <h2>Office location</h2>
+    <p>{NAP.addressLine}. {NAP.hoursText}</p>
+    <Map />
+
+    <h2>Distance and route from nearby areas</h2>
+    <p>Distances and times below are approximate, for travel by car or two-wheeler outside peak hours. Check live traffic on Google Maps before you leave <V kind="CONFIRM" />.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>From</th><th>Approx. distance (km)</th><th>Approx. time (min)</th><th>Usual route</th></tr></thead>
+      <tbody>{rows.map((r) => <tr><td>{r.area}</td><td>{r.km}</td><td>{r.min}</td><td>{r.route}</td></tr>)}</tbody>
+    </table></div>
+
+    <h2>By public transport</h2>
+    <p>MTC buses run along Lattice Bridge Road between Adyar and Thiruvanmiyur, and to Besant Nagar. The nearest MRTS stations are Thiruvanmiyur and Indira Nagar, from where an auto-rickshaw takes a few minutes <V kind="CONFIRM" />.</p>
+
+    <h2>Landmarks</h2>
+    <p>Landmark near the office: <V kind="CONFIRM" /> (for example, the nearest temple, school, bank or bus stop on 15th Cross Street, Shastri Nagar).</p>
+
+    <h2>Before you visit</h2>
+    <p>Call <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> before visiting so that the documents you bring match the work. Office hours are Monday to Saturday, 8:00 am to 8:00 pm. The office is closed on Sunday.</p>
+    <p class="meta">Last reviewed: <time datetime="2026-10-29">29 October 2026</time>. Source for address: <a href={NAP.mapsUrl} rel="noopener">Google Maps listing</a>. Official sources for the services: <a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a>, <a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a>.</p>
+  </article>
+</Base>

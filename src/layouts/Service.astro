@@ -1,0 +1,56 @@
+---
+import Base from './Base.astro';
+import ContactBlock from '../components/ContactBlock.astro';
+import { SERVICES, GUIDES, REVIEWED_TEXT } from '../data/site';
+import { faqPage, service, article } from '../data/schema';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  h1: string;
+  name: string;
+  lead: string;
+  faqs: { q: string; a: string }[];
+  related: string[];
+  sources: { href: string; label: string }[];
+  topic?: string;
+  guide?: { published: string; modified: string };
+}
+const { title, description, path, h1, name, lead, faqs, related, sources, topic, guide } = Astro.props;
+const all = [...SERVICES.map((s) => ({ href: s.href, label: s.label })), ...GUIDES.map((g) => ({ href: g.href, label: g.title }))];
+const relatedLinks = related.map((href) => all.find((x) => x.href === href)).filter(Boolean) as { href: string; label: string }[];
+const isGuide = Boolean(guide);
+const schema: object[] = [isGuide ? article(h1, path, description, guide!.published, guide!.modified) : service(name, path, description)];
+if (faqs.length) schema.push(faqPage(faqs));
+const crumbs = isGuide ? [{ name: 'Guides', path: '/guides/' }, { name, path }] : [{ name, path }];
+---
+<Base title={title} description={description} path={path} crumbs={crumbs} schema={schema} ogType={isGuide ? 'article' : 'website'}>
+  <article class="narrow">
+    <h1>{h1}</h1>
+    {isGuide && <p class="meta">By CA S. A. Abdul Rahim, Chartered Accountant · Published <time datetime={guide!.published}>29 October 2026</time> · Last reviewed <time datetime={guide!.modified}>{REVIEWED_TEXT}</time></p>}
+    <p class="lead">{lead}</p>
+
+    <slot />
+
+    {faqs.length > 0 && (
+      <section class="faq" aria-labelledby="faq-h">
+        <h2 id="faq-h">Frequently asked questions</h2>
+        {faqs.map((f) => (<><h3>{f.q}</h3><p>{f.a}</p></>))}
+      </section>
+    )}
+
+    <ContactBlock topic={topic ?? name.toLowerCase()} />
+
+    <section aria-labelledby="rel-h">
+      <h2 id="rel-h">Related pages</h2>
+      <ul>{relatedLinks.map((r) => <li><a href={r.href}>{r.label}</a></li>)}</ul>
+    </section>
+
+    <section class="sources" aria-labelledby="src-h">
+      <h2 id="src-h">Sources</h2>
+      <ul>{sources.map((s) => <li><a href={s.href} rel="noopener">{s.label}</a></li>)}</ul>
+      <p class="meta">Last reviewed: <time datetime="2026-10-29">{REVIEWED_TEXT}</time>. Tax law and portal forms change often. Check the official source or speak to a Chartered Accountant before acting on any of this information.</p>
+    </section>
+  </article>
+</Base>

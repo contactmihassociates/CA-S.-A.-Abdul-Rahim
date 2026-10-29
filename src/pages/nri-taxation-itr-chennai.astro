@@ -1,0 +1,66 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'Does an NRI have to file an income tax return in India?', a: 'An NRI must file if their income taxable in India is above the basic exemption limit, and should file to claim a refund of excess TDS, to report capital gains on sale of property or shares, or to carry forward losses. Income earned and received outside India is generally not taxable for a non-resident.' },
+  { q: 'Is interest on an NRE account taxable?', a: 'Interest on an NRE account has been exempt for a person who is a non-resident or not ordinarily resident under the foreign exchange rules. Interest on an NRO account is taxable in India and banks deduct TDS on it. Check that the account type matches your current residential status.' },
+  { q: 'How is residential status decided?', a: 'Residential status depends mainly on the number of days you were in India during the year and in earlier years, with special rules for Indian citizens and persons of Indian origin who visit India, and for those with high Indian income. It must be worked out for each year separately.' },
+  { q: 'Can I claim relief for tax paid abroad on Indian income?', a: 'India has tax treaties with many countries to avoid double taxation. Relief depends on the treaty with your country of residence and on documents such as a tax residency certificate. The claim is made in the Indian return and, where needed, in the return of the other country.' },
+  { q: 'Can my parents or relatives in Chennai handle the filing for me?', a: 'The return is filed online, so you do not need to be in India. Documents can be shared by WhatsApp and the return is e-verified by OTP on your Indian mobile number linked to Aadhaar, or through net banking or other verification methods allowed on the portal.' },
+];
+---
+<Service
+  title="NRI Income Tax and ITR Filing, Chennai"
+  description="NRI income tax and ITR filing in Chennai: residential status, NRO interest, rent, capital gains, TDS refunds and tax treaty relief. Documents and steps."
+  path="/nri-taxation-itr-chennai/"
+  h1="NRI income tax and ITR filing in Chennai"
+  name="NRI taxation and ITR filing"
+  topic="your NRI income tax return"
+  lead="Non-resident Indians (NRIs) pay income tax in India only on income that arises or is received in India, such as rent from a flat in Chennai, interest on NRO deposits, capital gains on property or shares, and some pensions. The CA office in Adyar works out your residential status, computes the Indian income, claims refunds of excess TDS and files the return online, so you do not have to travel."
+  faqs={faqs}
+  related={['/nri-property-sale-tds-lower-tds-certificate/', '/capital-gains-tax-property-sale/', '/income-tax-return-filing-chennai/', '/guides/nri-selling-property-chennai-tds-lower-certificate/']}
+  sources={[SRC.itPortal, SRC.itIndia, SRC.rbi]}
+>
+  <h2>Who needs this</h2>
+  <ul>
+    <li>NRIs and OCI card holders with rental income from property in Chennai.</li>
+    <li>NRIs with NRO fixed deposits, where the bank has deducted TDS at a high rate.</li>
+    <li>NRIs who sold property, shares or mutual funds in India during the year.</li>
+    <li>People who moved abroad or returned to India during the year, where the residential status needs care.</li>
+    <li>Pensioners living abroad who receive a pension from India.</li>
+  </ul>
+
+  <h2>Points specific to NRIs</h2>
+  <p>TDS on payments to NRIs is deducted at higher rates and without the basic exemption limit, so many NRIs pay more tax through TDS than they owe and need to file a return to get a refund. NRIs are not eligible for some deductions and rebates available to residents. Tenants paying rent to an NRI landlord must deduct TDS on the rent, which is a common area of default. From 1 April 2026 the Income-tax Act, 2025 applies, with the old section on payments to non-residents replaced by provisions in section 393(2) <V />.</p>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>PAN, passport pages with entry and exit stamps or a travel history for the year</li>
+    <li>NRO and NRE bank statements and interest certificates</li>
+    <li>Rent agreement and rent received; municipal tax paid</li>
+    <li>Capital gains statements for shares and mutual funds; sale deeds for property</li>
+    <li>Form 26AS, AIS and TIS from the income tax portal</li>
+    <li>Tax residency certificate from the country of residence, if treaty relief is claimed</li>
+    <li>Indian bank account for refund, pre-validated on the portal</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>Your days in India are counted to fix residential status for the year.</li>
+    <li>Indian income is collected and compared with Form 26AS and AIS.</li>
+    <li>Tax is computed, including treaty relief where applicable.</li>
+    <li>The return is filed online and you e-verify it from abroad.</li>
+    <li>The refund, if any, is tracked until it is credited.</li>
+  </ol>
+
+  <h2>Key dates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Date</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Return for assessment year 2026-27 (no audit)</td><td>31 July 2026</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>Belated or revised return for assessment year 2026-27</td><td>31 December 2026 or later date if extended <V /></td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>Advance tax on Indian income for tax year 2026-27</td><td>15 June, 15 September, 15 December, 15 March <V /></td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+</Service>

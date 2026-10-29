@@ -1,0 +1,65 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'Is Form 26QB still used for property TDS?', a: 'Form 26QB applies to TDS deducted on or before 31 March 2026 under section 194-IA of the 1961 Act. For deductions on or after 1 April 2026, the Income Tax Department\'s FAQs say TDS on property is reported in Form 141, Schedule B, under section 393(1) of the Income-tax Act, 2025.' },
+  { q: 'Does the buyer need a TAN to deduct TDS on a property purchase?', a: 'For purchase from a resident seller, the buyer does not need a TAN. The challan-cum-statement is filed using the buyer\'s PAN login on the income tax portal. Purchase from a non-resident seller has different rules; from 1 October 2026 Form 141 has a Schedule E for resident individual and HUF buyers.' },
+  { q: 'Is TDS deducted on the full sale value or only above Rs 50 lakh?', a: 'Under the earlier section 194-IA, once the consideration was Rs 50 lakh or more, TDS at 1 percent applied on the whole consideration, or the stamp duty value if higher, not only on the amount above Rs 50 lakh. Confirm the same position under the 2025 Act before making payment.' },
+  { q: 'What if there are two buyers or two sellers?', a: 'Each buyer deducts TDS on their share of the payment to each seller, and a separate challan-cum-statement is usually filed for each buyer and seller combination. The share of each person should match the sale deed. Errors here are a common reason for mismatches in the seller\'s tax credit.' },
+  { q: 'What happens if the buyer forgets to deduct TDS?', a: 'The buyer is treated as an assessee in default. Interest is charged for the delay in deduction and payment, a late fee applies for late filing of the statement, and penalty may follow. The seller may also not get the tax credit. Pay and file as soon as the omission is noticed.' },
+];
+---
+<Service
+  title="TDS on Property Purchase: Form 141 (earlier 26QB)"
+  description="TDS when you buy a property of Rs 50 lakh or more in Chennai. Form 141 (earlier Form 26QB, section 194-IA), certificate to seller, buying from an NRI."
+  path="/tds-on-property-purchase-26qb/"
+  h1="TDS on property purchase in Chennai: Form 141 (earlier Form 26QB)"
+  name="TDS on property purchase"
+  topic="TDS on your property purchase"
+  lead="When you buy a house, flat, building or non-agricultural land in India for Rs 50 lakh or more from a resident seller, you as the buyer must deduct tax at source (TDS) from the payment, deposit it and file a challan-cum-statement. For deductions from 1 April 2026 this is done in Form 141 (earlier Form 26QB). The CA office in Adyar, Chennai, works out the TDS, files the form and helps you download the certificate for the seller."
+  faqs={faqs}
+  related={['/nri-property-sale-tds-lower-tds-certificate/', '/capital-gains-tax-property-sale/', '/guides/tds-on-property-purchase-50-lakh-step-by-step/', '/tds-return-filing/']}
+  sources={[SRC.form141, SRC.itForms2026, SRC.itPortal, SRC.traces, SRC.tnreginet]}
+>
+  <h2>The law in brief</h2>
+  <p>Under the Income-tax Act, 1961, this was section 194-IA, and the buyer filed Form 26QB and gave the seller Form 16B. The Income-tax Act, 2025 came into force on 1 April 2026. According to the Income Tax Department's FAQs on Form 141, TDS on transfer of immovable property for deductions made on or after 1 April 2026 is covered by section 393(1) of the Income-tax Act, 2025 and reported in Form 141, Schedule B ("Purchase of Immovable Property from a Resident Seller"). Form 141 replaces Forms 26QB, 26QC, 26QD and 26QE. Agricultural land is excluded.</p>
+  <p>Under the earlier section 194-IA, the rate was 1 percent of the consideration or the stamp duty value, whichever is higher, where that amount was Rs 50 lakh or more. Commentary on the new law states the rate and threshold carry over unchanged; check the exact table entry in section 393(1) before payment <V />. If the seller does not have a valid PAN, or PAN is not linked with Aadhaar, a higher rate applies.</p>
+
+  <h2>Who needs this</h2>
+  <ul>
+    <li>Buyers of a flat, house, building or non-agricultural plot in Chennai or anywhere in India from a resident seller, where the sale consideration or stamp duty value is Rs 50 lakh or more.</li>
+    <li>Buyers paying in instalments to a builder: TDS is deducted on each instalment.</li>
+    <li>Buyers of property from a non-resident Indian (NRI): different, higher TDS applies. From 1 October 2026 Form 141 has a Schedule E for resident individual and HUF buyers purchasing from a non-resident. See <a href="/nri-property-sale-tds-lower-tds-certificate/">NRI property sale TDS</a>.</li>
+  </ul>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>PAN of every buyer and every seller; Aadhaar-PAN link status of the seller</li>
+    <li>Sale agreement or sale deed showing the consideration and share of each buyer and seller</li>
+    <li>Stamp duty value (guideline value) from the registration documents, see <a href="https://tnreginet.gov.in/" rel="noopener">tnreginet.gov.in</a></li>
+    <li>Dates and amounts of each payment or instalment</li>
+    <li>Address and contact details of buyers, sellers and property</li>
+    <li>Net banking access of the buyer for paying the TDS</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>The TDS amount is worked out for each buyer and seller for each payment.</li>
+    <li>The buyer logs in to incometax.gov.in with their own PAN and fills Form 141, Schedule B.</li>
+    <li>The TDS is paid online through the challan generated from the form.</li>
+    <li>After the TDS is processed, the buyer downloads the TDS certificate for the seller from the TRACES portal and gives it to the seller.</li>
+    <li>The seller checks that the credit appears in their Form 26AS or AIS before filing their own return.</li>
+  </ol>
+  <p>A detailed walkthrough is in the guide <a href="/guides/tds-on-property-purchase-50-lakh-step-by-step/">TDS when you buy a property worth Rs 50 lakh or more</a>.</p>
+
+  <h2>Key dates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Time limit</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Payment of TDS</td><td>Within 30 days from the end of the month in which the deduction is made</td><td><a href={SRC.form141.href} rel="noopener">Form 141 FAQs</a></td></tr>
+      <tr><td>Filing Form 141 (challan-cum-statement)</td><td>Within one month from the end of the month in which tax is deducted</td><td><a href={SRC.form141.href} rel="noopener">Form 141 FAQs</a></td></tr>
+      <tr><td>TDS certificate to seller</td><td>Within the time prescribed in the Income-tax Rules, 2026 <V /></td><td><a href="https://www.tdscpc.gov.in/" rel="noopener">TRACES</a></td></tr>
+    </tbody>
+  </table></div>
+</Service>

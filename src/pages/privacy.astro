@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import { NAP } from '../data/site';
+---
+<Base
+  title="Privacy Policy | CA S. A. Abdul Rahim"
+  description="Privacy policy for casaabdulrahim.in: no tracking cookies, no forms, no advertising. How the map, phone and WhatsApp links work."
+  path="/privacy/"
+  crumbs={[{ name: 'Privacy', path: '/privacy/' }]}
+>
+  <article class="narrow">
+    <h1>Privacy policy</h1>
+    <p class="lead">This website does not use advertising, tracking pixels or analytics cookies, and it has no contact forms. It does not collect your personal data.</p>
+    <h2>What is stored in your browser</h2>
+    <p>When you click "I agree" on the disclaimer screen, a single entry is saved in your browser's local storage so that the screen is not shown again. It contains no personal information and is not sent to any server. You can remove it by clearing your browser's site data.</p>
+    <h2>Google Maps</h2>
+    <p>The contact, home and areas pages show an embedded Google Map. When the map loads, Google may set cookies and receive your IP address under Google's own privacy policy. You can avoid this by using the address shown in text instead.</p>
+    <h2>Phone and WhatsApp</h2>
+    <p>The Call and WhatsApp buttons open your phone's dialer or the WhatsApp app. Any message you send on WhatsApp is handled by WhatsApp under its own terms. Please do not send passwords or full bank details by WhatsApp.</p>
+    <h2>Hosting</h2>
+    <p>The website is hosted on Cloudflare Pages. Cloudflare processes standard request data such as IP address for security and delivery.</p>
+    <h2>Information you share with the office</h2>
+    <p>Documents you share with the office for professional work are kept confidential as required by the Code of Ethics of the Institute of Chartered Accountants of India and applicable law, including the Digital Personal Data Protection Act, 2023.</p>
+    <h2>Contact</h2>
+    <p>{NAP.name}, {NAP.addressLine}. Phone <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a>.</p>
+    <p class="meta">Last reviewed: <time datetime="2026-10-29">29 October 2026</time>. Source: <a href="https://www.meity.gov.in/" rel="noopener">Ministry of Electronics and Information Technology (meity.gov.in)</a>.</p>
+  </article>
+</Base>

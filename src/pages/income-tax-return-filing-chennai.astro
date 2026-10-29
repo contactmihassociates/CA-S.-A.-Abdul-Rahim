@@ -1,0 +1,76 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'Do I need to file an ITR if tax has already been deducted from my salary?', a: 'Often yes. TDS by the employer does not replace the return. If your total income is above the basic exemption limit you must file, and filing is also the only way to claim a refund, carry forward losses or report other income such as interest, rent or capital gains.' },
+  { q: 'Can a pensioner or senior citizen file the return without visiting the office?', a: 'Yes. The return is filed online on the income tax portal. Documents such as the pension certificate, bank interest certificates and Form 26AS can be shared on WhatsApp after a phone call. After filing, the return must be e-verified, usually with an Aadhaar OTP, within the time allowed.' },
+  { q: 'Which ITR form applies to me?', a: 'It depends on the type and amount of income. Salary, one house property and interest usually go in the simpler forms, while capital gains, business or professional income and foreign assets need other forms. The form is chosen after looking at the full income picture for the year.' },
+  { q: 'Why has my income tax refund not come yet?', a: 'Common reasons are a return that was not e-verified, a bank account that is not pre-validated on the portal, a mismatch between TDS claimed and Form 26AS, or an adjustment against an old demand. The refund status and any communication can be checked after logging in to incometax.gov.in.' },
+  { q: 'What happens if I miss the due date?', a: 'A belated return can still be filed within the time allowed by law, but a late filing fee and interest may apply, and some losses cannot be carried forward. If even that time has passed, an updated return may be possible in some cases, with additional tax.' },
+];
+---
+<Service
+  title="Income Tax Return (ITR) Filing in Chennai, Adyar"
+  description="Income tax return filing in Adyar, Chennai for salaried, pensioners, senior citizens, business, professionals and rental income. Documents and dates."
+  path="/income-tax-return-filing-chennai/"
+  h1="Income tax return (ITR) filing in Chennai"
+  name="Income tax return filing"
+  topic="your income tax return"
+  lead="Income tax return filing is the yearly reporting of your income, deductions and taxes paid to the Income Tax Department on incometax.gov.in. The CA office in Adyar, Chennai, prepares and files returns for salaried employees, pensioners, senior citizens, business owners, professionals and people with rental income, and follows up on refunds."
+  faqs={faqs}
+  related={['/income-tax-notice-reply-chennai/', '/capital-gains-tax-property-sale/', '/nri-taxation-itr-chennai/', '/guides/documents-for-itr-filing-salaried-pensioners/']}
+  sources={[SRC.itPortal, SRC.itIndia, SRC.itForms2026]}
+>
+  <h2>Who needs ITR filing</h2>
+  <p>You need to file an income tax return if your total income for the year, before deductions, is above the basic exemption limit, and in several other cases even if it is not: for example, if you want a refund of TDS, have deposited large amounts in a bank, spent large amounts on foreign travel or electricity, hold assets abroad, or want to carry forward a loss. The return is also commonly asked for by banks for loans, by consulates for visas and by tenders and government schemes as proof of income.</p>
+  <ul>
+    <li><strong>Salaried employees</strong> with salary, interest and perhaps one house.</li>
+    <li><strong>Pensioners and senior citizens</strong> with pension, bank and post office interest, and senior citizen savings schemes.</li>
+    <li><strong>Business owners and shopkeepers</strong>, including those using the presumptive scheme for small businesses.</li>
+    <li><strong>Professionals</strong> such as doctors, lawyers, architects, consultants and freelancers.</li>
+    <li><strong>People with rental income</strong> from a house, flat or shop, and people who sold property, shares or mutual funds during the year.</li>
+  </ul>
+
+  <h2>Income-tax Act, 2025: what changed</h2>
+  <p>The Income-tax Act, 2025 replaced the Income-tax Act, 1961 from 1 April 2026. Income earned up to 31 March 2026 (financial year 2025-26, assessment year 2026-27) is still taxed and reported under the 1961 Act. Income earned from 1 April 2026 falls under the new Act, which uses the term "tax year" in place of "previous year" and "assessment year", and renumbers sections and forms. For example, the salary TDS certificate Form 16 is now Form 130 for salary paid from 1 April 2026. The return forms for tax year 2026-27, to be filed in 2027, will be notified by the Income Tax Department <V />.</p>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>PAN and Aadhaar (linked), and login details for the income tax portal if you have them</li>
+    <li>Form 16 from the employer (Form 130 for salary from 1 April 2026), or pension certificate</li>
+    <li>Annual Information Statement (AIS), Taxpayer Information Summary (TIS) and Form 26AS from the portal</li>
+    <li>Interest certificates from banks and post office, and dividend details</li>
+    <li>Rent received and municipal tax paid for let-out property; home loan interest certificate</li>
+    <li>Capital gains statements from brokers or mutual funds; sale and purchase deeds for property</li>
+    <li>Proof of deductions you plan to claim, where the tax regime you choose allows them</li>
+    <li>Bank account details for refund (account must be pre-validated on the portal)</li>
+    <li>For business or profession: books of account or bank statements, sales and expense summary, GST returns</li>
+  </ul>
+  <p>A longer checklist is in the guide <a href="/guides/documents-for-itr-filing-salaried-pensioners/">documents needed for ITR filing (salaried and pensioners)</a>.</p>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>Call or WhatsApp to share the type of income you have; the office tells you which documents to bring.</li>
+    <li>The income is compared with AIS, TIS and Form 26AS on the portal, so that interest, TDS and high-value transactions match.</li>
+    <li>The tax is computed under the old and new tax regimes where you have the option, and the result is explained to you.</li>
+    <li>Any balance tax and interest is paid through the e-Pay Tax facility before filing.</li>
+    <li>The return is filed online and you e-verify it, usually by Aadhaar OTP. You receive the acknowledgement (ITR-V).</li>
+    <li>The office follows up on the intimation from the Centralised Processing Centre and on the refund, if any.</li>
+  </ol>
+
+  <h2>Key dates for assessment year 2026-27</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Date</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Return for salaried and other individuals not requiring audit (ITR-1, ITR-2)</td><td>31 July 2026</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>Return for business or professional income without audit (ITR-3, ITR-4)</td><td>31 August 2026 <V /></td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>Return where tax audit applies</td><td>31 October 2026 <V /></td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>Belated or revised return</td><td>31 December 2026 or later date if extended <V /></td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+  <p>Dates can be extended by CBDT circulars. Always check the current notification on the portal.</p>
+
+  <h2>Refunds</h2>
+  <p>A refund arises when the TDS, advance tax or self-assessment tax paid is more than the tax actually payable, which is common for pensioners and senior citizens whose bank deducts TDS on interest. The refund is credited only after the return is processed, and only to a pre-validated bank account linked to your PAN. If the refund is delayed, the portal shows whether it was adjusted against an earlier demand, sent back because of a bank error, or held because the return was not verified.</p>
+</Service>

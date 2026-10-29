@@ -1,0 +1,66 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'Why is TDS so high when an NRI sells property?', a: 'When the seller is a non-resident, the buyer must deduct tax on the capital gain portion at the rates in force plus surcharge and cess, and in practice deducts on the whole sale value unless a lower deduction certificate is produced. This is often far more than the actual tax payable on the gain.' },
+  { q: 'What is a lower or nil TDS certificate?', a: 'It is a certificate issued by the Assessing Officer, on an application by the seller, stating a lower rate or nil rate at which the buyer may deduct tax. Under the Income-tax Rules, 2026 the application is made in Form 128, which replaces the earlier Form 13. It is valid only for the buyer and period stated.' },
+  { q: 'How long does a lower TDS certificate take?', a: 'The time depends on how complete the application is and on queries from the officer. Apply as soon as the sale terms are agreed, well before registration. Keep purchase deeds, cost of improvement and the expected sale value ready, because these drive the computation the officer relies on.' },
+  { q: 'Can the NRI get back excess TDS?', a: 'Yes. If the TDS deducted is more than the tax actually payable, the NRI files an income tax return in India for that year and claims a refund. The refund is credited to an Indian bank account that is pre-validated on the portal, such as an NRO account, after the return is processed.' },
+  { q: 'Can the sale money be sent abroad?', a: 'Repatriation is governed by FEMA and RBI rules, not only income tax. Sale proceeds held in an NRO account can generally be remitted within the annual limit set by the RBI, after paying tax and obtaining the CA certificate and remittance form required on the income tax portal. Check current RBI directions before remitting.' },
+];
+---
+<Service
+  title="NRI Property Sale TDS and Lower TDS Certificate"
+  description="NRI selling property in Chennai: TDS on sale, lower or nil TDS certificate in Form 128 (earlier Form 13), refund through ITR and repatriation basics."
+  path="/nri-property-sale-tds-lower-tds-certificate/"
+  h1="NRI property sale in Chennai: TDS and lower TDS certificate"
+  name="NRI property sale TDS"
+  topic="your NRI property sale"
+  lead="When a non-resident Indian (NRI) sells a house, flat or land in Chennai, the buyer must deduct income tax at source from the sale value at rates far higher than the 1 percent that applies to resident sellers. The NRI can apply for a lower or nil TDS certificate before the sale so that tax is deducted only on the expected capital gain. The CA office in Adyar prepares the computation and application, and later files the NRI's income tax return."
+  faqs={faqs}
+  related={['/tds-on-property-purchase-26qb/', '/capital-gains-tax-property-sale/', '/nri-taxation-itr-chennai/', '/guides/nri-selling-property-chennai-tds-lower-certificate/']}
+  sources={[SRC.form141, SRC.itForms2026, SRC.itPortal, SRC.rbi, SRC.tnreginet]}
+>
+  <h2>Who needs this</h2>
+  <ul>
+    <li>NRIs, including those holding OCI cards, who are selling property inherited from parents or bought earlier in Chennai.</li>
+    <li>Residents buying property from an NRI, who must deduct the correct TDS and file the statement.</li>
+    <li>Families where one co-owner is resident and another is non-resident: TDS rules differ for each co-owner's share.</li>
+  </ul>
+
+  <h2>The rules in brief</h2>
+  <p>Under the Income-tax Act, 1961, TDS on payments to non-residents was under section 195, and buyers needed a TAN and filed Form 27Q. Under the Income-tax Act, 2025, which applies from 1 April 2026, the Income Tax Department's Form 141 FAQs say a Schedule E has been introduced, with effect from 1 October 2026, for resident individual or HUF buyers purchasing property from a non-resident seller. Check whether TAN and quarterly statements are still needed in your case before payment <V />.</p>
+  <p>The lower or nil deduction certificate is applied for by the seller. Under the Income-tax Rules, 2026 the application is made in Form 128 (earlier Form 13), as stated in the department's guidance on new forms. The officer issues the certificate if satisfied that the seller's income justifies a lower rate.</p>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>PAN of the NRI seller and of the buyer; passport and visa or OCI card copy of the seller</li>
+    <li>Purchase deed, or for inherited property the deed of the previous owner, will or legal heir documents</li>
+    <li>Proof of cost of improvement, if any, with dates</li>
+    <li>Sale agreement showing the sale value and payment schedule</li>
+    <li>Guideline value of the property from <a href="https://tnreginet.gov.in/" rel="noopener">tnreginet.gov.in</a></li>
+    <li>Details of any planned reinvestment for capital gains exemption</li>
+    <li>NRO bank account details and earlier income tax returns filed in India, if any</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>The capital gain and the expected tax on it are worked out from the purchase cost, improvement cost and sale value.</li>
+    <li>The application for a lower or nil deduction certificate is prepared and filed online on the income tax portal.</li>
+    <li>Queries from the officer are answered; the certificate, once issued, is given to the buyer.</li>
+    <li>The buyer deducts TDS at the certificate rate and files the statement; the NRI checks the credit in Form 26AS.</li>
+    <li>After the year ends, the NRI's income tax return is filed, reporting the capital gain and claiming any refund.</li>
+    <li>For remittance abroad, the CA certificate and remittance form on the portal are prepared (earlier Forms 15CB and 15CA) <V />.</li>
+  </ol>
+
+  <h2>Key dates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Time limit</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Apply for lower TDS certificate</td><td>Before the payment from the buyer; no fixed date</td><td><a href={SRC.itForms2026.href} rel="noopener">Income-tax forms 2026</a></td></tr>
+      <tr><td>Buyer pays TDS and files Form 141</td><td>Within 30 days / one month from the end of the month of deduction</td><td><a href={SRC.form141.href} rel="noopener">Form 141 FAQs</a></td></tr>
+      <tr><td>NRI's income tax return for the year of sale</td><td>Usually 31 July after the end of the tax year <V /></td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+</Service>

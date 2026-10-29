@@ -1,0 +1,101 @@
+---
+import Service from '../../layouts/Service.astro';
+import V from '../../components/V.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'Is Form 16 enough to file my return?', a: 'Form 16 shows salary and the TDS deducted by your employer, but it does not show interest, dividends, capital gains or rent. Always check the Annual Information Statement on the portal as well, because the department compares your return with it and sends a notice if income listed there is missing.' },
+  { q: 'Where do I find AIS and Form 26AS?', a: 'Log in to incometax.gov.in with your PAN. The Annual Information Statement and Taxpayer Information Summary are under the AIS menu, and Form 26AS is available through the link to the TRACES website under e-File, Income Tax Returns, View Form 26AS. Download both before filing.' },
+  { q: 'What if my AIS shows income that is not mine?', a: 'You can give feedback on each entry in the AIS, for example that the information is incorrect, belongs to another person or is duplicated. The source of the information is then asked to confirm or correct it. Keep a copy of the feedback in case a notice is issued later.' },
+  { q: 'Do pensioners above 75 need to file a return?', a: 'Specified senior citizens aged 75 or more, with only pension and interest income from the same specified bank, can be exempt from filing if they give a declaration to the bank and the bank deducts the full tax. In all other cases, the normal filing rules apply. Check current conditions on the portal.' },
+];
+const pub = '2026-10-29';
+---
+<Service
+  title="Documents for ITR Filing: Salaried and Pensioners"
+  description="Documents needed for ITR filing by salaried employees and pensioners: Form 16, AIS, Form 26AS, interest certificates, rent and deduction proofs."
+  path="/guides/documents-for-itr-filing-salaried-pensioners/"
+  h1="Documents needed for ITR filing (salaried and pensioners)"
+  name="Documents for ITR filing"
+  topic="your income tax return"
+  lead="To file an income tax return as a salaried employee or pensioner you need your PAN and Aadhaar, your Form 16 or pension certificate, the Annual Information Statement (AIS) and Form 26AS from the income tax portal, interest certificates from banks and the post office, and proof of any deductions you want to claim. This guide lists each document, where to get it and what to check in it."
+  faqs={faqs}
+  related={['/income-tax-return-filing-chennai/', '/income-tax-notice-reply-chennai/', '/nri-taxation-itr-chennai/']}
+  sources={[SRC.itPortal, SRC.itIndia, SRC.traces, SRC.itForms2026]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>Before you start: which year are you filing for?</h2>
+  <p>Income earned from 1 April 2025 to 31 March 2026 is financial year 2025-26, and the return is filed for assessment year 2026-27 under the Income-tax Act, 1961. Income earned from 1 April 2026 onwards is taxed under the Income-tax Act, 2025, which calls the year a "tax year". That return will be filed in 2027. The documents are broadly the same, but some form names change; for example, the salary TDS certificate for salary paid from 1 April 2026 is Form 130 instead of Form 16. This guide gives both names where they differ.</p>
+
+  <h2>1. Identity and portal access</h2>
+  <ul class="checklist">
+    <li><strong>PAN card.</strong> Check that the name and date of birth match your Aadhaar.</li>
+    <li><strong>Aadhaar, linked with PAN.</strong> If PAN is not linked with Aadhaar, it may be treated as inoperative, which affects refunds and TDS rates. Link status can be checked on the portal without logging in.</li>
+    <li><strong>Mobile number linked with Aadhaar.</strong> The return is usually e-verified by an OTP sent to this number.</li>
+    <li><strong>Login to incometax.gov.in.</strong> Your user ID is your PAN. If you have forgotten the password, it can be reset with an Aadhaar OTP.</li>
+  </ul>
+
+  <h2>2. Salary documents (salaried employees)</h2>
+  <ul class="checklist">
+    <li><strong>Form 16 from each employer</strong> during the year (Form 130 for salary paid from 1 April 2026). Part A shows TDS deposited; Part B shows the salary breakup and deductions considered by the employer.</li>
+    <li><strong>Salary slips</strong>, especially for March, which show the year's totals.</li>
+    <li><strong>House rent receipts and rent agreement</strong>, if you claim house rent allowance exemption and did not give proof to the employer. The landlord's PAN is needed if annual rent is above the specified limit.</li>
+    <li><strong>Leave travel and other allowances</strong> claimed, with supporting bills.</li>
+    <li><strong>Details of a job change</strong> during the year, so that income from both employers is shown and the basic exemption is not counted twice.</li>
+  </ul>
+
+  <h2>3. Pension documents (pensioners and senior citizens)</h2>
+  <ul class="checklist">
+    <li><strong>Pension certificate or Form 16</strong> from the bank or treasury that pays the pension.</li>
+    <li><strong>Family pension details</strong>, if you receive pension as the family member of a deceased employee; it is taxed differently from your own pension.</li>
+    <li><strong>Commuted pension and gratuity details</strong>, if received during the year.</li>
+    <li><strong>Interest certificates</strong> for fixed deposits, Senior Citizens' Savings Scheme, Post Office Monthly Income Scheme and savings accounts. Senior citizens should check the TDS deducted on each.</li>
+    <li><strong>Form 15H copies</strong>, if you gave the bank a declaration not to deduct TDS.</li>
+  </ul>
+
+  <h2>4. Statements from the income tax portal</h2>
+  <p>These three statements are the department's view of your income. Download them first and compare with your own documents.</p>
+  <ul class="checklist">
+    <li><strong>Annual Information Statement (AIS):</strong> lists salary, interest, dividends, share and mutual fund sales, property purchases and sales, foreign remittances and other information reported about you.</li>
+    <li><strong>Taxpayer Information Summary (TIS):</strong> a summary of the AIS by category, used to pre-fill the return.</li>
+    <li><strong>Form 26AS:</strong> shows TDS and TCS credited to your PAN, advance tax and self-assessment tax paid, and refunds. Your TDS claim in the return must match this.</li>
+  </ul>
+  <p>If an entry in the AIS is wrong, record feedback on the portal before filing. If income in the AIS is correct but missing from your documents, include it in the return.</p>
+
+  <h2>5. Other income</h2>
+  <ul class="checklist">
+    <li><strong>Savings and deposit interest</strong> from all banks, including accounts you rarely use.</li>
+    <li><strong>Dividends</strong> from shares and mutual funds; the AIS usually lists them.</li>
+    <li><strong>Capital gains statements</strong> from your broker and mutual fund registrars (CAMS, KFintech), if you sold shares or units.</li>
+    <li><strong>Rent received</strong> from a let-out house, with the municipal property tax paid during the year.</li>
+    <li><strong>Sale or purchase deed</strong>, if you sold or bought property; see the <a href="/capital-gains-tax-property-sale/">capital gains page</a>.</li>
+    <li><strong>Foreign assets and income</strong>, if any, such as a foreign bank account or shares of a foreign employer; these must be reported in the return by residents.</li>
+  </ul>
+
+  <h2>6. Deductions and tax regime</h2>
+  <p>The new tax regime is the default. Under it, most deductions such as those for life insurance, provident fund and medical insurance are not available, but slab rates are lower. Under the old regime, you can claim these deductions. Salaried employees and pensioners without business income can choose the regime each year when filing. Keep these documents ready if you may choose the old regime:</p>
+  <ul class="checklist">
+    <li>Life insurance premium receipts, PPF passbook, ELSS statements, tuition fee receipts for children</li>
+    <li>Health insurance premium receipts for self, family and parents; preventive health check-up bills</li>
+    <li>Home loan interest and principal certificate from the bank, and the date of possession of the house</li>
+    <li>Donation receipts with the receiving institution's PAN and registration details</li>
+    <li>NPS contribution statement</li>
+  </ul>
+  <p>The limits and conditions for each deduction depend on the year and the Act that applies. For the tax year 2026-27, the deductions are in renumbered sections of the Income-tax Act, 2025 <V />.</p>
+
+  <h2>7. Bank account for refund</h2>
+  <p>Refunds are paid only to a bank account that is pre-validated on the portal and linked to your PAN. Log in, go to My Profile, My Bank Account and check that the account is validated and chosen for refund. If you have closed an account, remove it and add the new one; validation usually takes a few days.</p>
+
+  <h2>8. Previous year's return</h2>
+  <p>Keep last year's return and computation at hand. It shows carried forward losses, the tax regime chosen and any details that must be repeated, such as foreign assets or house property.</p>
+
+  <h2>What to check before filing</h2>
+  <ol>
+    <li>TDS in Form 16 or the pension certificate matches Form 26AS.</li>
+    <li>Interest in your bank certificates matches the AIS, for every account.</li>
+    <li>All income listed in the AIS is either included or has feedback recorded.</li>
+    <li>The tax regime chosen gives the lower tax, after considering your deductions.</li>
+    <li>The refund bank account is validated.</li>
+    <li>After filing, the return is e-verified within the time allowed; otherwise it is treated as not filed.</li>
+  </ol>
+  <p>For help with the return itself, see <a href="/income-tax-return-filing-chennai/">income tax return filing in Chennai</a>.</p>
+</Service>

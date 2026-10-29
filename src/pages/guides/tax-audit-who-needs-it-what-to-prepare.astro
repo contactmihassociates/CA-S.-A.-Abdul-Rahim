@@ -1,0 +1,109 @@
+---
+import Service from '../../layouts/Service.astro';
+import V from '../../components/V.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'How is turnover calculated for the tax audit limit?', a: 'Turnover generally means the total sales or gross receipts of the business for the year, excluding GST collected where it is not credited to the profit and loss account. Sales returns and trade discounts shown on the invoice are reduced. For professionals, gross receipts from the profession are used. The calculation is checked from the books.' },
+  { q: 'Does the cash limit of 5 percent include receipts by UPI or cheque?', a: 'No. Receipts by account payee cheque, bank draft or electronic modes such as UPI, NEFT, RTGS and card payments are not cash. The 5 percent condition looks at receipts and payments in cash. A receipt by a cheque that is not account payee is treated as cash for this purpose.' },
+  { q: 'Is a tax audit needed for a loss-making business?', a: 'If turnover is below the audit limit and you are not under a presumptive scheme, a loss alone does not make an audit compulsory. A business under the presumptive scheme that declares a loss or lower profit, with total income above the exemption limit, may need an audit. Check the facts each year.' },
+  { q: 'Can a tax audit report be revised after filing?', a: 'A tax audit report can be revised in limited situations, for example where there is a change in law with retrospective effect or a revision of accounts, by the auditor giving reasons. It cannot be revised merely to correct careless errors. This is why preparation before filing matters.' },
+];
+const pub = '2026-10-29';
+---
+<Service
+  title="Tax Audit: Who Needs It and What to Prepare"
+  description="Tax audit guide: turnover limits (earlier section 44AB), presumptive cases, professionals, and a checklist of records to prepare before the audit starts."
+  path="/guides/tax-audit-who-needs-it-what-to-prepare/"
+  h1="Tax audit: who needs it and what to prepare"
+  name="Tax audit guide"
+  topic="your tax audit"
+  lead="A tax audit is needed when a business's turnover or a professional's gross receipts cross the limits in income tax law, or when a business or professional under a presumptive scheme declares lower income and has taxable income above the exemption limit. Preparing well means closed books, reconciled bank and GST figures, a fixed asset register, stock details, TDS records and lists of cash and related-party transactions."
+  faqs={faqs}
+  related={['/tax-audit/', '/accounting-bookkeeping/', '/statutory-audit/']}
+  sources={[SRC.itPortal, SRC.itIndia, SRC.icai]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>Which law applies to which year</h2>
+  <p>For financial year 2025-26, audited in 2026, the tax audit is under section 44AB of the Income-tax Act, 1961, and the report is given in Form 3CA or 3CB with the statement of particulars in Form 3CD. For tax year 2026-27 onwards, the Income-tax Act, 2025 applies. Commentary on the new Act places the tax audit in section 63 with a new audit report form, and states the turnover limits are unchanged <V />. The limits below are from the earlier section 44AB.</p>
+
+  <h2>Who needs a tax audit</h2>
+  <h3>Businesses</h3>
+  <ul>
+    <li>Turnover, sales or gross receipts above <strong>Rs 1 crore</strong> in the year.</li>
+    <li>The limit is <strong>Rs 10 crore</strong> where aggregate cash receipts are not more than 5 percent of total receipts and aggregate cash payments are not more than 5 percent of total payments.</li>
+  </ul>
+  <h3>Professionals</h3>
+  <ul>
+    <li>Gross receipts from the profession above <strong>Rs 50 lakh</strong> in the year. This covers doctors, lawyers, architects, engineers, accountants, interior decorators, technical consultants and others in specified professions.</li>
+  </ul>
+  <h3>Presumptive taxation cases</h3>
+  <ul>
+    <li>A business under the presumptive scheme for small businesses that declares profit lower than the presumptive rate, and whose total income exceeds the basic exemption limit.</li>
+    <li>A professional under the presumptive scheme for professionals who declares lower profit than the presumptive rate, with total income above the exemption limit.</li>
+    <li>A business that opted out of the presumptive scheme within the lock-in period and has income above the exemption limit, in the years where the law requires it.</li>
+  </ul>
+  <p>Whether you need an audit depends on the figures for each year. It should be checked in February or March, before the year closes, so that there is time to plan.</p>
+
+  <h2>What to prepare: a checklist</h2>
+  <h3>Books of account</h3>
+  <ul class="checklist">
+    <li>All vouchers entered and books closed for the year in Tally or your software</li>
+    <li>Trial balance, profit and loss account and balance sheet in draft</li>
+    <li>Previous year's audited accounts and tax audit report</li>
+  </ul>
+  <h3>Bank and cash</h3>
+  <ul class="checklist">
+    <li>Bank statements for every account, including accounts closed during the year</li>
+    <li>Bank reconciliation as at 31 March</li>
+    <li>Cash book with daily balances; list of cash receipts and cash payments above the limits in income tax law</li>
+  </ul>
+  <h3>Sales, purchases and GST</h3>
+  <ul class="checklist">
+    <li>Sales and purchase registers</li>
+    <li>GSTR-1, GSTR-3B and the reconciliation of turnover in the books with GST returns</li>
+    <li>Input tax credit reconciliation with GSTR-2B</li>
+  </ul>
+  <h3>Stock</h3>
+  <ul class="checklist">
+    <li>Statement of opening and closing stock, quantity and value, with method of valuation</li>
+    <li>Quantity details of principal items for manufacturing and trading businesses</li>
+  </ul>
+  <h3>Fixed assets</h3>
+  <ul class="checklist">
+    <li>Fixed asset register with purchase dates, invoices, put-to-use dates and sales during the year</li>
+    <li>Depreciation as per income tax rates and blocks</li>
+  </ul>
+  <h3>Loans and related parties</h3>
+  <ul class="checklist">
+    <li>Loan statements and confirmations; list of loans or deposits taken or repaid in cash above the limits</li>
+    <li>List of relatives and related concerns, and payments made to them</li>
+    <li>Interest paid and TDS on it</li>
+  </ul>
+  <h3>TDS and statutory dues</h3>
+  <ul class="checklist">
+    <li>TDS returns, challans and the TRACES justification reports</li>
+    <li>Details of payments where TDS was not deducted, with reasons</li>
+    <li>Provident fund, ESI, professional tax and GST payments with dates</li>
+  </ul>
+  <h3>MSME suppliers</h3>
+  <ul class="checklist">
+    <li>List of suppliers registered as micro or small enterprises on Udyam, and the dates of payment to them, since late payment can affect the deduction for those expenses</li>
+  </ul>
+
+  <h2>How the audit runs</h2>
+  <ol>
+    <li>Applicability is confirmed and the auditor is appointed.</li>
+    <li>The taxpayer adds the auditor on the income tax portal against the audit form for the year.</li>
+    <li>The auditor examines the books and records, raises queries and reconciles figures.</li>
+    <li>The audit report and particulars are drafted and discussed with the taxpayer.</li>
+    <li>The auditor uploads the report, and the taxpayer accepts it from their own login.</li>
+    <li>The income tax return is filed using the audited figures.</li>
+  </ol>
+
+  <h2>Timing</h2>
+  <p>For financial year 2025-26, the tax audit report was due by 30 September 2026 and the return by 31 October 2026, unless extended <V />. Starting the preparation in April or May leaves time to resolve issues such as missing bank statements, unreconciled GST figures or unexplained cash entries.</p>
+
+  <h2>Consequences of missing it</h2>
+  <p>Under the earlier law, failure to get the audit done or to furnish the report in time could lead to a penalty of 0.5 percent of turnover or gross receipts, limited to Rs 1.5 lakh, unless there was a reasonable cause. A return filed without a required audit report may also be treated as defective.</p>
+  <p>For help with a tax audit, see <a href="/tax-audit/">tax audit in Chennai</a>.</p>
+</Service>

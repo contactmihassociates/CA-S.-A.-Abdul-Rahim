@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import Map from '../components/Map.astro';
+import V from '../components/V.astro';
+import { NAP } from '../data/site';
+---
+<Base
+  title="Contact CA S. A. Abdul Rahim, Adyar, Chennai"
+  description="Address, phone, WhatsApp, office hours, map and directions for CA S. A. Abdul Rahim, Chartered Accountant, Shastri Nagar, Adyar, Chennai 600020."
+  path="/contact/"
+  crumbs={[{ name: 'Contact', path: '/contact/' }]}
+>
+  <article class="narrow">
+    <h1>Contact CA S. A. Abdul Rahim, Adyar, Chennai</h1>
+    <p class="lead">The office of CA S. A. Abdul Rahim, Chartered Accountant, is at 14/2, 15th Cross Street, Shastri Nagar, Adyar, Chennai, Tamil Nadu 600020. It is open Monday to Saturday from 8:00 am to 8:00 pm and closed on Sunday.</p>
+
+    <dl class="facts">
+      <dt>Address</dt><dd>{NAP.addressLine}</dd>
+      <dt>Phone</dt><dd><a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a></dd>
+      <dt>Other phone</dt><dd><a href={`tel:${NAP.phone2Tel}`}>{NAP.phone2}</a></dd>
+      <dt>WhatsApp</dt><dd><a href={NAP.whatsappLink} rel="noopener">{NAP.whatsapp}</a></dd>
+      <dt>Hours</dt><dd>Monday to Saturday, 8:00 am to 8:00 pm IST. Sunday closed.</dd>
+      <dt>Languages</dt><dd>{NAP.languages.join(', ')}</dd>
+    </dl>
+
+    <h2>Map</h2>
+    <Map />
+
+    <h2>Directions</h2>
+    <h3>From Adyar signal</h3>
+    <p>The office is about 1 to 2 km south of Adyar signal. Go south along Lattice Bridge Road (L.B. Road) and turn into Shastri Nagar; 15th Cross Street is inside the Shastri Nagar residential area <V kind="CONFIRM" />.</p>
+    <h3>From Thiruvanmiyur</h3>
+    <p>The office is about 2 to 3 km north of Thiruvanmiyur. Go north along L.B. Road towards Adyar and turn right into Shastri Nagar <V kind="CONFIRM" />.</p>
+    <h3>From Besant Nagar</h3>
+    <p>The office is about 1 to 2 km west of Besant Nagar. Head west towards L.B. Road and enter Shastri Nagar from the Besant Nagar side <V kind="CONFIRM" />.</p>
+    <p>For other areas, see <a href="/areas/">areas and how to reach the office</a>.</p>
+
+    <h2>Before you call or visit</h2>
+    <p>It helps to keep your PAN, the notice or document you have a question about, and your login details for the income tax or GST portal at hand. Please do not send passwords by WhatsApp; they can be entered by you at the time of filing.</p>
+    <p class="meta">Last reviewed: <time datetime="2026-10-29">29 October 2026</time>. Address as listed on <a href={NAP.mapsUrl} rel="noopener">Google Maps</a>. Official portals: <a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a>, <a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a>.</p>
+  </article>
+</Base>

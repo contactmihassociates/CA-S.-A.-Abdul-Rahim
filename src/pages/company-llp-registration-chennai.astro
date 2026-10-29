@@ -1,0 +1,75 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'Which is better for a small business: company, LLP or partnership firm?', a: 'It depends on the number of owners, the need for outside investment, the compliance you are willing to handle and how you plan to take money out of the business. A private limited company suits outside investment, an LLP offers limited liability with lighter compliance, and a partnership firm is the simplest to form.' },
+  { q: 'How many people are needed to form a private limited company?', a: 'A private limited company needs at least two directors and two shareholders, who can be the same people, and at least one director must be resident in India. A one person company can be formed by a single individual who is an Indian citizen and resident in India.' },
+  { q: 'Is a registered office in a residential house allowed?', a: 'Yes. A company or LLP can have its registered office at a residence, with proof of address such as a recent utility bill and a no-objection letter from the owner. The registered office must be able to receive communications, and its address must be shown on letterheads and invoices.' },
+  { q: 'How is a partnership firm registered in Tamil Nadu?', a: 'A partnership deed is prepared on stamp paper and signed by the partners. The firm can be registered with the Registrar of Firms through the Tamil Nadu registration department portal tnreginet.gov.in. A PAN is then obtained for the firm, followed by a bank account and other registrations like GST.' },
+  { q: 'What yearly filings does a company need after registration?', a: 'Every company must hold Board meetings, get its accounts audited, hold an annual general meeting, file financial statements in AOC-4 and the annual return in MGT-7 or MGT-7A with the Registrar, file the director KYC, and file its income tax return. Missing these leads to late fees that add up daily.' },
+];
+---
+<Service
+  title="Company and LLP Registration in Chennai"
+  description="Private limited company, LLP and partnership firm registration in Chennai: documents, SPICe+ and FiLLiP steps, and yearly ROC/MCA compliance."
+  path="/company-llp-registration-chennai/"
+  h1="Company, LLP and partnership firm registration in Chennai"
+  name="Company and LLP registration"
+  topic="registering your company, LLP or firm"
+  lead="Company registration creates a separate legal entity, such as a private limited company or a limited liability partnership (LLP), registered with the Ministry of Corporate Affairs (MCA). A partnership firm is registered with the Registrar of Firms in Tamil Nadu. The CA office in Adyar, Chennai, explains which structure fits, prepares the documents, files the forms online and handles the yearly ROC and MCA compliance."
+  faqs={faqs}
+  related={['/statutory-audit/', '/gst-registration-chennai/', '/udyam-msme-registration/', '/accounting-bookkeeping/']}
+  sources={[SRC.mca, SRC.tnreginet]}
+>
+  <h2>Who needs this</h2>
+  <ul>
+    <li>Founders starting a new business with partners or investors.</li>
+    <li>Proprietors who want to convert their business into a company or LLP.</li>
+    <li>Families and friends starting a business together as a partnership firm.</li>
+    <li>Professionals forming an LLP for a joint practice where their professional rules allow it.</li>
+  </ul>
+
+  <h2>The main options</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Structure</th><th>Registered with</th><th>Main form</th></tr></thead>
+    <tbody>
+      <tr><td>Private limited company</td><td>Registrar of Companies, MCA</td><td>SPICe+ (INC-32), with e-MoA and e-AoA</td></tr>
+      <tr><td>One person company</td><td>Registrar of Companies, MCA</td><td>SPICe+ (INC-32)</td></tr>
+      <tr><td>Limited liability partnership</td><td>Registrar of Companies, MCA</td><td>FiLLiP, then LLP agreement in Form 3</td></tr>
+      <tr><td>Partnership firm</td><td>Registrar of Firms, Tamil Nadu</td><td>Partnership deed and registration on tnreginet.gov.in <V /></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>PAN and Aadhaar of each director, partner or designated partner</li>
+    <li>Address proof (recent bank statement or utility bill) and photograph of each person</li>
+    <li>Email and mobile number of each person, for OTP and digital signature</li>
+    <li>Registered office proof: electricity bill or property tax receipt, and owner's no-objection letter or rent agreement</li>
+    <li>Proposed names, in order of preference, and the main business activity</li>
+    <li>Capital or contribution amount and shareholding or profit-sharing ratio</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>The structure is chosen after discussing owners, investment and compliance.</li>
+    <li>Digital signature certificates are obtained for the directors or designated partners.</li>
+    <li>The name is checked against existing companies and trade marks, and reserved.</li>
+    <li>The incorporation forms are filed with the documents; PAN and TAN are issued with the certificate.</li>
+    <li>After incorporation: bank account, first auditor appointment, GST and other registrations.</li>
+    <li>Yearly compliance is set up with a calendar of Board meetings, audit and ROC filings.</li>
+  </ol>
+
+  <h2>Key yearly dates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Filing</th><th>Due date</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Company: AOC-4 financial statements</td><td>Within 30 days of the AGM</td><td><a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a></td></tr>
+      <tr><td>Company: MGT-7 or MGT-7A annual return</td><td>Within 60 days of the AGM</td><td><a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a></td></tr>
+      <tr><td>LLP: Form 11 annual return</td><td>30 May</td><td><a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a></td></tr>
+      <tr><td>LLP: Form 8 statement of account and solvency</td><td>30 October</td><td><a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a></td></tr>
+      <tr><td>Director KYC (DIR-3 KYC)</td><td>As notified by MCA <V /></td><td><a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+</Service>

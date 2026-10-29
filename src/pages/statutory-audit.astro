@@ -1,0 +1,68 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'Does every private limited company need an audit?', a: 'Yes. Every company registered under the Companies Act, 2013, including small private companies and one person companies, must have its financial statements audited by a Chartered Accountant every year, whatever its turnover. There is no turnover exemption from statutory audit for companies.' },
+  { q: 'When must the first auditor be appointed?', a: 'The Board of Directors must appoint the first auditor within 30 days of incorporation. If the Board fails to do so, the members appoint the auditor within 90 days at an extraordinary general meeting. Later, the auditor is appointed at the annual general meeting, generally for a term of five years.' },
+  { q: 'What is the difference between statutory audit and tax audit?', a: 'A statutory audit under the Companies Act gives an opinion on whether the financial statements give a true and fair view. A tax audit under income tax law reports specific particulars needed by the Income Tax Department. A company crossing the tax audit limits needs both, usually done together.' },
+  { q: 'What is CARO and does it apply to my company?', a: 'The Companies (Auditor\'s Report) Order, 2020 requires the auditor to report on additional matters such as fixed assets, inventory, loans and statutory dues. It does not apply to one person companies, small companies, and certain private companies within limits of capital, borrowings and revenue specified in the Order.' },
+  { q: 'Does an LLP need a statutory audit?', a: 'An LLP must get its accounts audited if its turnover exceeds Rs 40 lakh or its contribution exceeds Rs 25 lakh in a financial year, under the LLP rules. Smaller LLPs may still choose to have an audit, and a tax audit may separately apply if income tax limits are crossed.' },
+];
+---
+<Service
+  title="Statutory Audit of Companies in Chennai"
+  description="Statutory audit of private limited companies in Chennai under the Companies Act, 2013: who needs it, appointment of auditor, CARO, documents and dates."
+  path="/statutory-audit/"
+  h1="Statutory audit of companies in Chennai"
+  name="Statutory audit"
+  topic="the statutory audit of your company"
+  lead="A statutory audit is the yearly audit of a company's financial statements by an independent Chartered Accountant, required under the Companies Act, 2013 for every company. The auditor reports whether the balance sheet and profit and loss account give a true and fair view. The CA office in Adyar, Chennai, carries out statutory audits of private limited companies and LLP audits, and coordinates the annual filings with the Registrar of Companies."
+  faqs={faqs}
+  related={['/tax-audit/', '/accounting-bookkeeping/', '/company-llp-registration-chennai/', '/guides/tax-audit-who-needs-it-what-to-prepare/']}
+  sources={[SRC.mca, SRC.icai]}
+>
+  <h2>Who needs this</h2>
+  <ul>
+    <li>Every private limited company, one person company and public company registered in India.</li>
+    <li>LLPs with turnover above Rs 40 lakh or contribution above Rs 25 lakh.</li>
+    <li>Section 8 companies (not-for-profit companies).</li>
+    <li>Companies that need audited accounts for bank loans, tenders or investors.</li>
+  </ul>
+
+  <h2>What the audit covers</h2>
+  <p>The audit is carried out under the Standards on Auditing issued by the Institute of Chartered Accountants of India. The auditor checks the accounting records and supporting documents, confirms balances such as bank, loans, debtors and creditors, attends or checks stock counts, tests whether income and expenses are properly recorded, and checks compliance with accounting standards and the Schedule III format. Where applicable, the auditor also reports under the Companies (Auditor's Report) Order, 2020 and on internal financial controls.</p>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>Books of account and trial balance for the year</li>
+    <li>Bank statements and confirmations; loan statements</li>
+    <li>Fixed asset register and invoices for additions</li>
+    <li>Stock records and year-end stock statement</li>
+    <li>Minutes of Board and general meetings, and the statutory registers</li>
+    <li>GST, TDS and income tax returns and challans</li>
+    <li>Details of related party transactions and director loans</li>
+    <li>Previous year's audited financial statements</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>The auditor accepts the appointment in writing and the company files Form ADT-1 with the MCA.</li>
+    <li>An audit plan is agreed with the management, with a list of documents and timelines.</li>
+    <li>Fieldwork is carried out; observations are discussed with the directors.</li>
+    <li>The financial statements are finalised and approved by the Board, and the audit report is signed.</li>
+    <li>The financial statements are adopted at the annual general meeting and filed with the Registrar in AOC-4.</li>
+  </ol>
+
+  <h2>Key dates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Time limit</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Appointment of first auditor</td><td>Within 30 days of incorporation</td><td><a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a></td></tr>
+      <tr><td>Form ADT-1 for auditor appointment</td><td>Within 15 days of the meeting</td><td><a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a></td></tr>
+      <tr><td>Annual general meeting</td><td>Within 6 months of the end of the financial year (30 September)</td><td><a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a></td></tr>
+      <tr><td>AOC-4 (financial statements)</td><td>Within 30 days of the AGM</td><td><a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a></td></tr>
+      <tr><td>MGT-7 or MGT-7A (annual return)</td><td>Within 60 days of the AGM <V /></td><td><a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+</Service>

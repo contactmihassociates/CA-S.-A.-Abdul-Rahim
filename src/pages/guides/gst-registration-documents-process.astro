@@ -1,0 +1,99 @@
+---
+import Service from '../../layouts/Service.astro';
+import V from '../../components/V.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'Can I have more than one GST registration?', a: 'GST registration is taken for each state where you make taxable supplies, under the same PAN. Within a state, a business with several verticals can take separate registrations for each vertical, subject to conditions. Additional places of business in the same state are usually added to the existing registration.' },
+  { q: 'Is a separate bank account needed for GST registration?', a: 'The bank account given in the registration should be in the name of the business. For a proprietorship, it can be the proprietor\'s account used for the business. The bank details can be added within the time allowed after registration if they are not available at the time of applying.' },
+  { q: 'What is a TRN in GST registration?', a: 'A Temporary Reference Number is generated after Part A of the application is verified with the OTP sent to the mobile and email. The TRN is used to log in and complete Part B within the time allowed, after which it expires and a fresh application must be started.' },
+  { q: 'Can a GST registration be cancelled later if the business closes?', a: 'Yes. A registered person can apply for cancellation on the portal when the business is closed, transferred or no longer liable to register. All pending returns must be filed and a final return filed after cancellation. The officer can also cancel a registration for non-filing of returns.' },
+];
+const pub = '2026-10-29';
+---
+<Service
+  title="GST Registration Documents and Process, Step by Step"
+  description="GST registration documents and process for proprietors, firms and companies in Tamil Nadu: who needs it, documents, Part A and Part B on gst.gov.in."
+  path="/guides/gst-registration-documents-process/"
+  h1="GST registration documents and process"
+  name="GST registration guide"
+  topic="GST registration"
+  lead="GST registration is done online on gst.gov.in in two parts: Part A verifies your PAN, mobile and email and gives a Temporary Reference Number, and Part B collects business details and documents. You need PAN, Aadhaar, photographs, proof of business address, bank details and proof of the business's constitution. Most applications are approved within a few working days if the documents are clear and Aadhaar authentication is completed."
+  faqs={faqs}
+  related={['/gst-registration-chennai/', '/gst-return-filing/', '/udyam-msme-registration/']}
+  sources={[SRC.gstReg, SRC.gst, SRC.cbic]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>Do you need to register?</h2>
+  <p>Goods and Services Tax (GST) registration is compulsory when your aggregate turnover in a financial year crosses the threshold for your state and type of supply. For Tamil Nadu, the threshold is Rs 40 lakh for suppliers of goods only (where they are eligible for the higher limit) and Rs 20 lakh for suppliers of services. Aggregate turnover is the total value of all taxable, exempt and export supplies and inter-state supplies of all businesses under the same PAN across India, excluding GST itself.</p>
+  <p>Some businesses must register regardless of turnover. These include persons making inter-state taxable supplies of goods, most sellers through e-commerce operators, casual taxable persons, persons who must pay tax under reverse charge, and non-resident taxable persons. Specific exemptions have been notified for some small service providers and e-commerce sellers; check the current notifications on <a href="https://cbic-gst.gov.in/" rel="noopener">cbic-gst.gov.in</a>.</p>
+  <p>You can also register voluntarily below the threshold. This helps if your customers are registered businesses that want input tax credit, but it brings the full set of monthly or quarterly returns.</p>
+
+  <h2>Documents by type of business</h2>
+  <h3>Proprietorship</h3>
+  <ul class="checklist">
+    <li>PAN and Aadhaar of the proprietor</li>
+    <li>Passport-size photograph of the proprietor</li>
+    <li>Address proof of the place of business</li>
+    <li>Bank account proof: cancelled cheque, passbook first page or bank statement</li>
+  </ul>
+  <h3>Partnership firm or LLP</h3>
+  <ul class="checklist">
+    <li>PAN of the firm or LLP</li>
+    <li>Partnership deed, or LLP incorporation certificate and LLP agreement</li>
+    <li>PAN, Aadhaar and photograph of each partner or designated partner</li>
+    <li>Authorisation letter for the authorised signatory, signed by the partners</li>
+    <li>Address proof of the place of business and bank account proof</li>
+  </ul>
+  <h3>Private limited company</h3>
+  <ul class="checklist">
+    <li>PAN and certificate of incorporation of the company</li>
+    <li>Memorandum and articles of association</li>
+    <li>PAN, Aadhaar and photograph of the directors</li>
+    <li>Board resolution appointing the authorised signatory</li>
+    <li>Address proof of the place of business and bank account proof</li>
+  </ul>
+
+  <h2>Address proof: the most common problem</h2>
+  <p>Most GST applications that are rejected or delayed fail on address proof. The officer must be able to see who owns the premises and that you have the right to use them.</p>
+  <ul>
+    <li><strong>Own premises:</strong> latest property tax receipt, electricity bill or municipal khata copy in your name.</li>
+    <li><strong>Rented premises:</strong> a rent or lease agreement, together with the owner's electricity bill or property tax receipt.</li>
+    <li><strong>Premises of a relative or friend:</strong> a consent letter from the owner, with the owner's ID and an electricity bill or property tax receipt.</li>
+    <li><strong>Shared office or co-working space:</strong> the agreement with the operator and the operator's address proof.</li>
+  </ul>
+  <p>Make sure the address on the application matches the documents exactly, including door number and pin code. A photograph of the premises with the name board may be asked for.</p>
+
+  <h2>Step by step on gst.gov.in</h2>
+  <h3>Part A</h3>
+  <ol>
+    <li>Go to <a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a>, Services, Registration, New Registration.</li>
+    <li>Select "Taxpayer", the state (Tamil Nadu) and district, and enter the legal name as per PAN, the PAN, email and mobile number.</li>
+    <li>Verify the OTPs sent to the email and mobile. A Temporary Reference Number (TRN) is generated.</li>
+  </ol>
+  <h3>Part B</h3>
+  <ol>
+    <li>Log in with the TRN and complete the tabs: business details, promoters or partners, authorised signatory, principal place of business, additional places, goods and services, bank accounts and state-specific information.</li>
+    <li>Choose the main goods (HSN codes) or services (SAC codes) you supply.</li>
+    <li>Upload documents in the format and size the portal allows.</li>
+    <li>Choose whether to opt for Aadhaar authentication. Opting for it usually leads to quicker processing.</li>
+    <li>Sign the application with a digital signature (compulsory for companies and LLPs) or with the electronic verification code.</li>
+    <li>An Application Reference Number (ARN) is generated. Use it to track the status.</li>
+  </ol>
+  <h3>After submission</h3>
+  <ol>
+    <li>Complete Aadhaar authentication from the link sent to each promoter or partner, if opted.</li>
+    <li>If the officer issues a clarification notice (Form GST REG-03), reply in Form GST REG-04 within seven working days with the documents asked for.</li>
+    <li>Once approved, download the registration certificate (Form GST REG-06) from the portal. It shows the GSTIN, legal name and places of business.</li>
+  </ol>
+  <p>Where Aadhaar authentication is completed and no verification is needed, the law provides for approval within seven working days; where physical verification or further documents are needed, it can take longer <V />.</p>
+
+  <h2>After you get the GSTIN</h2>
+  <ul>
+    <li>Display the GSTIN on the name board and on every invoice.</li>
+    <li>Choose monthly filing or the quarterly QRMP scheme, if eligible.</li>
+    <li>Start filing returns from the effective date of registration, including nil returns.</li>
+    <li>Keep books of account and records at the principal place of business.</li>
+    <li>Consider <a href="/udyam-msme-registration/">Udyam registration</a> if you are a micro or small enterprise.</li>
+  </ul>
+  <p>For help with the application, see <a href="/gst-registration-chennai/">GST registration in Chennai</a>.</p>
+</Service>

@@ -1,0 +1,65 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'What is the difference between GSTR-1 and GSTR-3B?', a: 'GSTR-1 is the statement of outward supplies, listing invoices issued to customers. GSTR-3B is the summary return in which you declare total sales, input tax credit claimed and the tax paid. Both must be filed for each period, and the figures in both should agree with your books.' },
+  { q: 'What is the QRMP scheme?', a: 'The Quarterly Return Monthly Payment scheme lets small taxpayers with aggregate turnover up to Rs 5 crore file GSTR-1 and GSTR-3B every quarter while paying tax monthly. Invoices for business customers can be uploaded monthly through the Invoice Furnishing Facility so that customers get their input tax credit on time.' },
+  { q: 'Why does my input tax credit not match GSTR-2B?', a: 'Common reasons are suppliers who have not filed their GSTR-1, invoices uploaded under the wrong GSTIN, timing differences between purchase and supplier filing, and credit notes. Input tax credit should generally be claimed based on GSTR-2B, so a monthly reconciliation with your purchase register avoids notices later.' },
+  { q: 'Is late fee charged if I have no sales in a month?', a: 'A nil return still has to be filed for each period. Late fee for nil returns is lower than for regular returns, but it still adds up over months. Nil returns can be filed by SMS or on the portal. Filing on time also keeps the registration from being suspended for non-filing.' },
+  { q: 'Who needs to file the GST annual return?', a: 'Regular taxpayers file the annual return GSTR-9, subject to the turnover-based exemption notified for small taxpayers for each year, and those above the higher turnover limit also file the reconciliation statement GSTR-9C. Composition taxpayers file GSTR-4 annually. Check the notification for the relevant year.' },
+];
+---
+<Service
+  title="GST Return Filing in Chennai: GSTR-1, GSTR-3B"
+  description="GST return filing in Chennai: GSTR-1, GSTR-3B, QRMP, annual return GSTR-9 and input tax credit reconciliation with GSTR-2B. Documents and due dates."
+  path="/gst-return-filing/"
+  h1="GST return filing in Chennai"
+  name="GST return filing"
+  topic="your GST returns"
+  lead="GST return filing is the monthly or quarterly reporting of your sales, purchases, input tax credit and GST paid on the GST portal. The main returns are GSTR-1 (sales) and GSTR-3B (summary and payment), with an annual return at the end of the year. The CA office in Adyar, Chennai, prepares and files these returns and reconciles your input tax credit with GSTR-2B."
+  faqs={faqs}
+  related={['/gst-registration-chennai/', '/gst-notice-reply/', '/accounting-bookkeeping/', '/tax-audit/']}
+  sources={[SRC.gst, SRC.cbic]}
+>
+  <h2>Who needs this</h2>
+  <ul>
+    <li>Every business registered under GST, including those with no sales in a period (nil returns).</li>
+    <li>Small businesses under the QRMP scheme filing quarterly.</li>
+    <li>Composition taxpayers filing the quarterly statement and annual return.</li>
+    <li>Businesses with large purchase volumes that need monthly input tax credit reconciliation.</li>
+  </ul>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>Sales invoices, credit notes and debit notes for the period, or the sales register from Tally</li>
+    <li>Purchase invoices and purchase register</li>
+    <li>GSTR-2B for the period, downloaded from the portal</li>
+    <li>E-way bills and e-invoices, if applicable</li>
+    <li>Details of expenses under reverse charge, such as legal fees or goods transport</li>
+    <li>Bank statement for payments and receipts</li>
+    <li>GST portal login</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>Sales data is checked for GSTIN, place of supply, HSN codes and tax rates, then uploaded in GSTR-1.</li>
+    <li>Purchases are reconciled with GSTR-2B; credit is claimed only for eligible invoices appearing there.</li>
+    <li>Tax payable is worked out, credit is set off and the balance is paid in cash through the electronic cash ledger.</li>
+    <li>GSTR-3B is filed; differences between GSTR-1, GSTR-3B and GSTR-2B are noted and explained.</li>
+    <li>At year end, the annual return is prepared from the books and the monthly returns.</li>
+  </ol>
+
+  <h2>Key dates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Return</th><th>Due date</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>GSTR-1 (monthly)</td><td>11th of the next month</td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
+      <tr><td>GSTR-1 (quarterly, QRMP)</td><td>13th of the month after the quarter</td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
+      <tr><td>GSTR-3B (monthly)</td><td>20th of the next month</td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
+      <tr><td>GSTR-3B (quarterly, QRMP, Tamil Nadu)</td><td>22nd of the month after the quarter <V /></td><td><a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a></td></tr>
+      <tr><td>GSTR-9 annual return for 2025-26</td><td>31 December 2026 <V /></td><td><a href="https://cbic-gst.gov.in/" rel="noopener">cbic-gst.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+  <p>Due dates are sometimes extended by notification. Check the GST portal for the current period.</p>
+</Service>

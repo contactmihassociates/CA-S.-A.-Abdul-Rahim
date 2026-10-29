@@ -1,0 +1,73 @@
+---
+import Service from '../layouts/Service.astro';
+import V from '../components/V.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'When is the gain on sale of a house long-term?', a: 'Land or a building held for more than 24 months before sale has usually been treated as a long-term capital asset. Gains on assets held for 24 months or less are short-term and taxed at normal slab rates. Inherited property counts the holding period of the previous owner as well.' },
+  { q: 'Can I save tax by buying another house?', a: 'An individual or HUF selling a residential house held long-term can claim exemption by investing the gain in another residential house in India within the time allowed, earlier under section 54. Under the Income-tax Act, 2025, commentators place this relief in section 82. Confirm the section and conditions before relying on it.' },
+  { q: 'What if I cannot buy the new house before the return due date?', a: 'The unused gain can be deposited in the Capital Gains Account Scheme with a bank before the return due date and used later within the allowed period. If the amount is not used in time, it becomes taxable in the year the period ends. Keep the deposit receipts with the return.' },
+  { q: 'What value is used if the sale deed shows less than the guideline value?', a: 'Where the sale consideration is less than the stamp duty value fixed by the registration department, the stamp duty value is generally taken as the sale consideration for capital gains, subject to a small tolerance band. The guideline value in Tamil Nadu can be checked on tnreginet.gov.in.' },
+  { q: 'Do I need to report the sale if there is no tax after exemption?', a: 'Yes. The sale, the gain computed and the exemption claimed must be reported in the income tax return for the year of sale. The property sale also appears in your Annual Information Statement, so leaving it out can lead to a mismatch notice from the department.' },
+];
+---
+<Service
+  title="Capital Gains Tax on Property Sale, Chennai"
+  description="Capital gains tax on sale of a house, flat or land in Chennai: short and long term, guideline value, exemptions on reinvestment and reporting in your ITR."
+  path="/capital-gains-tax-property-sale/"
+  h1="Capital gains tax on property sale in Chennai"
+  name="Capital gains tax on property sale"
+  topic="capital gains on your property sale"
+  lead="Capital gains tax is the income tax on the profit you make when you sell a house, flat, plot or land. The tax depends on how long you held the property, the cost and the sale value, and whether you reinvest the gain in a way the law allows. The CA office in Adyar, Chennai, computes the gain, explains the exemptions and reports the sale in your income tax return."
+  faqs={faqs}
+  related={['/tds-on-property-purchase-26qb/', '/nri-property-sale-tds-lower-tds-certificate/', '/income-tax-return-filing-chennai/', '/guides/nri-selling-property-chennai-tds-lower-certificate/']}
+  sources={[SRC.itIndia, SRC.itPortal, SRC.tnreginet]}
+>
+  <h2>Who needs this</h2>
+  <ul>
+    <li>Individuals and families selling a house, flat, plot or agricultural land in an urban area.</li>
+    <li>People who inherited property and are now selling it.</li>
+    <li>Joint owners, where each owner reports their own share of the gain.</li>
+    <li>NRIs selling property in India (see the <a href="/nri-property-sale-tds-lower-tds-certificate/">NRI property sale page</a>).</li>
+    <li>Anyone entering a joint development agreement with a builder, where the timing of the gain needs care.</li>
+  </ul>
+
+  <h2>How the gain is worked out</h2>
+  <p>The gain is the sale consideration, less the expenses on transfer such as brokerage, less the cost of acquisition and cost of improvement. If the sale deed value is lower than the stamp duty value, the stamp duty value is generally used. Whether the gain is short-term or long-term depends on the holding period. Rates and the treatment of indexation for property were changed by the Finance (No. 2) Act, 2024 for transfers from 23 July 2024, and the Income-tax Act, 2025 carries these provisions in renumbered sections <V />. Because the rules depend on dates of purchase and sale, the computation is done on the actual documents, not on a rule of thumb.</p>
+
+  <h2>Exemptions commonly used</h2>
+  <ul>
+    <li><strong>Reinvestment in a residential house</strong> by an individual or HUF, earlier section 54 (sale of a house) and section 54F (sale of any other long-term asset).</li>
+    <li><strong>Investment in specified bonds</strong> within six months of the transfer, earlier section 54EC, subject to a limit.</li>
+    <li><strong>Capital Gains Account Scheme</strong> deposits where the reinvestment is not complete before the return due date.</li>
+  </ul>
+  <p>Commentary on the Income-tax Act, 2025 places these reliefs in sections 82 to 86 of the new Act. These section numbers and any change in the conditions must be checked against the bare Act before the return is filed <V />.</p>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>Purchase deed (or previous owner's deed and inheritance papers) and sale deed</li>
+    <li>Stamp duty and registration receipts for both purchase and sale</li>
+    <li>Proof of improvement cost with dates; brokerage receipts</li>
+    <li>Guideline value as on the date of sale</li>
+    <li>Details of the new house bought or built, bond certificates, or Capital Gains Account Scheme deposit receipt</li>
+    <li>TDS certificate received from the buyer</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>The documents are checked to fix the dates, the cost and the sale value.</li>
+    <li>The gain is computed and the tax with and without each exemption is shown to you.</li>
+    <li>If reinvestment is planned, the time limits for purchase, construction, bonds or deposit are set out in writing.</li>
+    <li>Advance tax, if payable on the gain, is worked out for the remaining instalment dates.</li>
+    <li>The sale and exemption are reported in the return for the year of sale.</li>
+  </ol>
+
+  <h2>Key dates</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Time limit</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Investment in specified bonds</td><td>Within 6 months of the date of transfer (earlier section 54EC) <V /></td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+      <tr><td>Purchase of new house</td><td>1 year before or 2 years after transfer; construction within 3 years (earlier section 54) <V /></td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+      <tr><td>Deposit in Capital Gains Account Scheme</td><td>Before the due date of the return for the year of sale</td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+</Service>
