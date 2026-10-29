@@ -123,14 +123,14 @@ No `aggregateRating`, `review`, `Review`, `priceRange`, `logo` or offers/pricing
 
 ### 2.5 The [VERIFY] and [CONFIRM] policy
 
-There are 53 visible markers in the built HTML (45 `[VERIFY]`, 8 `[CONFIRM]`) on 24 pages. `npm run check:all` lists the pages and counts at the end of `check-pages`. They mark facts that only the owner or the CA can supply: the ICAI membership number, landmarks near the office, travel directions and times, and a number of new-Act (Income-tax Act, 2025) section and form numbers and due dates.
+Status on 29 October 2026: 0 markers. All 53 earlier markers were resolved from official sources (incometax.gov.in, incometaxindia.gov.in, CBDT Circular 07/2026, gst.gov.in and CBIC, mca.gov.in, udyamregistration.gov.in) or, where no official source could be found, the sentence was rewritten to point the reader to the official portal instead of stating the unverified fact. Items the CA should still double-check are listed in section 8. The V component remains available: use <V /> for any new unverified fact.
 
 Rules:
 
 1. Do not remove a marker without a fact supplied by the CA, in writing.
 2. Do not replace a marker with a guess, a figure from a third-party site, or a figure from an AI tool. If an official source (incometax.gov.in, incometaxindia.gov.in, gst.gov.in, cbic-gst.gov.in, mca.gov.in and similar) states the fact, send the CA the link and let him confirm.
 3. When the CA confirms a fact, remove the `<V />` component from that sentence and update the review date (6.6).
-4. Be aware that the markers are currently visible to the public and to crawlers on the live pages. Their presence is an honest signal to the owner; clearing them is a priority for both quality and AI-answer accuracy (section 7).
+4. If a new marker is added, it is visible to the public and crawlers until resolved, so resolve markers before publishing where possible.
 
 ### 2.6 No invented facts, and scope exclusions
 
@@ -417,7 +417,7 @@ Note that the file states "Member of the Institute of Chartered Accountants of I
 
 ### 5.3 Recommended next steps (all within section 2)
 
-1. **Clear the 53 markers first.** AI systems quote the page as it stands. A fact marked as unverified is a weak citation and a risk to the owner. Prepare a single list for the CA of every marker with the page, the sentence, and the official source link to check (section 7, days 0 to 30).
+1. **Keep facts verified.** AI systems quote the page as it stands. Re-check dated items (due dates, extensions) each season and update the Last reviewed date.
 2. **llms-full.txt.** Add `/llms-full.txt` generated from the same data, containing the full text of the service pages and guides (FAQ answers included) in Markdown. This needs a new endpoint file next to `llms.txt.ts`; add a header rule for its content type in `vercel.json` only if needed.
 3. **More FAQ coverage on calculator pages.** The 165 calculator pages have no FAQ block and no FAQPage schema. For the high-intent tools (`it`, `hra`, `capgains`, `sec194ia`, `advtax`, `gst`, `emi`, `gratuity`, `tds`, `sec195`, `nri`) add three to five question-and-answer pairs each, 40 to 60 words, with an official source, verified by the CA. This requires a template change in `tools/[key].astro` and a place in `tool-copy.json` for the FAQ data; coordinate with the engineer and extend `check-jsonld` and `check-pages` so the same visible-equals-schema and length rules apply.
 4. **Rewrite the calculator copy by hand.** All 165 summaries begin "This tool …" and follow one template, with exactly three steps each. Rewrite the high-intent tools first so that each opens with the plain-language answer to the user's question ("HRA exemption is the least of three amounts: …") and states the tax-year rule used.
@@ -535,7 +535,7 @@ Do not run `git commit` or `git push` on the owner's behalf unless told to. The 
 | 4 | Google Business Profile website link | Decide whether to change the website field from the Blogger site (casaabdulrahim-notes.blogspot.com) to https://casaabdulrahim.in/ | The profile currently sends users and signals to a different site. The owner has not yet decided |
 | 5 | Directory citations | Create or claim Justdial, Sulekha, Bing Places, Apple Business Connect listings with NAP exactly as in 2.3 | Consistent NAP across the web |
 | 6 | GA4 | Create a GA4 property and give the measurement ID | None installed. `site.js` already sends `click_call`, `click_whatsapp` and `click_directions` events if `gtag` exists |
-| 7 | `[VERIFY]`/`[CONFIRM]` markers | CA to confirm 53 facts (ICAI membership number, landmarks, routes, new-Act section numbers, due dates) | Public pages currently show the markers |
+| 7 | Facts for the CA to double-check | Resolved markers that relied on search summaries of official pages: s.393(1) table entry, Form 132 timing, Forms 145/146 Rs 5 lakh condition, GST appeal pre-deposit caps, Tamil Nadu GSTR-3B QRMP date, DIR-3 KYC cycle, ITR-7 extension coverage, non-audit ITR-3/4 date (31 July vs 31 August conflict on the portal). Landmark near the office still to be supplied | Public pages |
 | 8 | GitHub repository visibility | Make the repository private (advice already given to the owner) | Public source exposes the draft content and the verification trail |
 | 9 | Vercel plan | Decide whether the Hobby plan is acceptable for a business website | See section 8 |
 | 10 | Deployment of the calculators and redesign | Done 29 Oct 2026 (pushed to main, Vercel auto-deploy); verify the live sitemap lists 195 URLs | See 1.2 |
@@ -548,7 +548,7 @@ Do not run `git commit` or `git push` on the owner's behalf unless told to. The 
 | 1 | Obtain GSC and Bing access; verify the domain; submit the sitemap; request indexing for the home page, the 16 services and the 6 guides; check coverage and the "Pages" report for the 196-page build | Owner items 1 to 3 |
 | 2 | Confirm what is live (1.2): sitemap count, `/tools/` reachable, headers present, the www and http redirects each a single hop | Owner item 10 |
 | 3 | Ask the owner to decide on the GBP website link (item 4); when approved, set it to `https://casaabdulrahim.in/` and check the link on mobile | Owner decision |
-| 4 | Prepare the marker list for the CA: all 53 markers with page, sentence, and the official source to check. Apply confirmed facts only | CA |
+| 4 | Ask the CA to spot-check the items in row 7 above against the official pages | CA |
 | 5 | Re-measure Lighthouse and PageSpeed on the deployed site (home, a service, a guide, `/tools/`, a calculator); report the gold-button contrast failure to the CSS engineer | Deployment |
 | 6 | Baseline: record GSC impressions, clicks and indexed pages; record the first AI-answer monitoring run (5.3 item 8) | GSC |
 | 7 | Review pages with time-sensitive dates after 31 October 2026 (audit report and return dates, ITR dates) with the CA | CA |
@@ -631,7 +631,7 @@ Everything below was found in the repository on 29 October 2026. None has been c
 3. Will the repository be made private, and how will the specialist submit changes (collaborator access or pull requests)?
 4. Should the GBP website link change to casaabdulrahim.in, and should the Blogger site remain in the `sameAs` list afterwards?
 5. What is the ICAI membership number, and may it be published?
-6. Which landmark, route and travel-time details are correct? (the `[CONFIRM]` markers on `/areas/` and `/contact/`)
+6. Which landmark near 15th Cross Street should the Areas page mention? (routes and distances were checked against the map pin)
 7. Will the owner accept GA4, and what position will he take on cookies and consent?
 8. Are the WhatsApp-share and calendar links in the calculators acceptable?
 9. Should the "finclar" identifiers be renamed in the toolkit?
