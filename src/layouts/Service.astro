@@ -6,7 +6,7 @@ import ContactBlock from '../components/ContactBlock.astro';
 import { SERVICES, GUIDES, REVIEWED_TEXT, SERVICE_TOOLS } from '../data/site';
 import { faqPage, service, article } from '../data/schema';
 import toolData from '../data/tools.json';
-import { SERVICE_GUIDES } from '../data/links';
+import { SERVICE_GUIDES, relatedGuides } from '../data/links';
 
 interface Props {
   title: string;
@@ -30,7 +30,7 @@ if (faqs.length) schema.push(faqPage(faqs));
 const crumbs = isGuide ? [{ name: 'Guides', path: '/guides/' }, { name, path }] : [{ name, path }];
 const group = SERVICES.find((s) => s.href === path)?.group;
 const toolKeys = SERVICE_TOOLS[path] ?? (isGuide ? SERVICE_TOOLS[related.find((r) => SERVICE_TOOLS[r]) ?? ''] ?? [] : []);
-const topicGuides = isGuide ? [] : (SERVICE_GUIDES[path] ?? []).map((h) => GUIDES.find((x) => x.href === h)).filter(Boolean) as { href: string; title: string }[];
+const topicGuides = (isGuide ? relatedGuides(path) : SERVICE_GUIDES[path] ?? []).map((h) => GUIDES.find((x) => x.href === h)).filter(Boolean) as { href: string; title: string }[];
 const tools = toolKeys.map((k) => toolData.tools.find((t) => t.key === k)).filter(Boolean) as { key: string; label: string }[];
 ---
 <Base title={title} description={description} path={path} crumbs={crumbs} schema={schema} ogType={isGuide ? 'article' : 'website'}>
@@ -74,7 +74,7 @@ const tools = toolKeys.map((k) => toolData.tools.find((t) => t.key === k)).filte
       )}
       {topicGuides.length > 0 && (
         <nav class="side-card" aria-labelledby="side-guides-h">
-          <h2 id="side-guides-h">Guides on this topic</h2>
+          <h2 id="side-guides-h">{isGuide ? 'Related guides' : 'Guides on this topic'}</h2>
           <ul>{topicGuides.map((gd) => <li><a href={gd.href}>{gd.title}</a></li>)}</ul>
         </nav>
       )}
