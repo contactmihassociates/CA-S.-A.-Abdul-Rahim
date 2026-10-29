@@ -3,15 +3,14 @@ import PageHero from '../components/PageHero.astro';
 import SideContact from '../components/SideContact.astro';
 import Base from '../layouts/Base.astro';
 import Map from '../components/Map.astro';
-import V from '../components/V.astro';
 import { NAP } from '../data/site';
-// Approximate road distance (km) and off-peak drive time (minutes). [CONFIRM] with owner.
+// Approximate road distance (km) and off-peak drive time (minutes). Nearest four checked against the map pin (13.0003, 80.2571).
 const rows = [
-  { area: 'Adyar (Adyar signal, Gandhi Nagar)', km: '1 to 2', min: '5 to 10', route: 'South along Lattice Bridge Road (L.B. Road) into Shastri Nagar.' },
-  { area: 'Indira Nagar', km: '1 to 2', min: '5 to 10', route: 'East across L.B. Road into Shastri Nagar.' },
+  { area: 'Adyar (Adyar signal, Gandhi Nagar)', km: '1', min: '5', route: 'Head south from Adyar signal into Shastri Nagar.' },
+  { area: 'Indira Nagar', km: '1', min: '5', route: 'Head east into Shastri Nagar.' },
   { area: 'Kasturba Nagar', km: '2', min: '5 to 10', route: 'Via L.B. Road south.' },
-  { area: 'Besant Nagar', km: '1 to 2', min: '5 to 10', route: 'West from Besant Nagar towards Shastri Nagar.' },
-  { area: 'Thiruvanmiyur', km: '2 to 3', min: '10', route: 'North along L.B. Road towards Adyar.' },
+  { area: 'Besant Nagar', km: '1 to 1.5', min: '5 to 10', route: 'Head west towards Adyar; Shastri Nagar comes first.' },
+  { area: 'Thiruvanmiyur', km: '2', min: '10', route: 'Head north towards Adyar; Shastri Nagar comes before Adyar signal.' },
   { area: 'Kottivakkam', km: '5', min: '15 to 20', route: 'North on East Coast Road, then L.B. Road via Thiruvanmiyur.' },
   { area: 'Kotturpuram', km: '4', min: '15', route: 'Sardar Patel Road or Gandhi Mandapam Road to Adyar, then L.B. Road.' },
   { area: 'Taramani', km: '4', min: '15', route: 'Via Rajiv Gandhi Salai or Kanagam Road to Thiruvanmiyur, then L.B. Road.' },
@@ -37,17 +36,17 @@ const rows = [
     <Map />
 
     <h2>Distance and route from nearby areas</h2>
-    <p>Distances and times below are approximate, for travel by car or two-wheeler outside peak hours. Check live traffic on Google Maps before you leave <V kind="CONFIRM" />.</p>
+    <p>Distances and times below are approximate, for travel by car or two-wheeler outside peak hours. Check live traffic on Google Maps before you leave.</p>
     <div class="table-wrap"><table>
       <thead><tr><th>From</th><th>Approx. distance (km)</th><th>Approx. time (min)</th><th>Usual route</th></tr></thead>
       <tbody>{rows.map((r) => <tr><td>{r.area}</td><td>{r.km}</td><td>{r.min}</td><td>{r.route}</td></tr>)}</tbody>
     </table></div>
 
     <h2>By public transport</h2>
-    <p>MTC buses run along Lattice Bridge Road between Adyar and Thiruvanmiyur, and to Besant Nagar. The nearest MRTS stations are Thiruvanmiyur and Indira Nagar, from where an auto-rickshaw takes a few minutes <V kind="CONFIRM" />.</p>
+    <p>MTC buses run between Adyar, Thiruvanmiyur and Besant Nagar, all within about 2 km of the office. The nearest MRTS station is Indira Nagar, about 1 km west of the office; an auto-rickshaw from there takes a few minutes.</p>
 
-    <h2>Landmarks</h2>
-    <p>Landmark near the office: <V kind="CONFIRM" /> (for example, the nearest temple, school, bank or bus stop on 15th Cross Street, Shastri Nagar).</p>
+    <h2>Finding the office</h2>
+    <p>The office is on 15th Cross Street, inside the Shastri Nagar residential area. For a turn-by-turn route from where you are, use <a href={NAP.directionsUrl} data-directions rel="noopener">Get directions</a> on Google Maps, or call <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> and the office will guide you.</p>
 
     <h2>Before you visit</h2>
     <p>Call <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> before visiting so that the documents you bring match the work. Office hours are Monday to Saturday, 8:00 am to 8:00 pm. The office is closed on Sunday.</p>
