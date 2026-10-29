@@ -9,6 +9,7 @@ export const accountingService = {
   name: NAP.name,
   url: `${SITE_URL}/`,
   telephone: NAP.phoneTel,
+  email: NAP.email,
   image: `${SITE_URL}/og-image.png`,
   address: {
     '@type': 'PostalAddress',
