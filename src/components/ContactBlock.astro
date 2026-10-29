@@ -4,5 +4,5 @@ interface Props { topic?: string }
 const { topic } = Astro.props;
 ---
 <aside class="contact-block" aria-label="Contact details">
-  <p>To discuss {topic ? topic : 'this'}, call <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> or visit the office at 14/2, 15th Cross Street, Shastri Nagar, Adyar. WhatsApp: <a href={NAP.whatsappLink} rel="noopener">{NAP.whatsapp}</a>. Office hours: {NAP.hoursText}</p>
+  <p>To discuss {topic ? topic : 'this'}, call <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> or visit the office at 14/2, 15th Cross Street, Shastri Nagar, Adyar. WhatsApp: <a href={NAP.whatsappLink} rel="noopener">{NAP.whatsapp}</a>. Email: <a href={`mailto:${NAP.email}`}>{NAP.email}</a>. Office hours: {NAP.hoursText}</p>
 </aside>

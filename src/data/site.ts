@@ -24,6 +24,7 @@ export const NAP = {
   phone2: '099402 78603',
   phone2Tel: '+919940278603',
   whatsapp: '+91 99402 78603',
+  email: 'enquiry@casaabdulrahim.in',
   whatsappLink: 'https://wa.me/919940278603?text=' + encodeURIComponent('Hello, I would like information about'),
   lat: 13.0003461,
   lng: 80.2571196,
