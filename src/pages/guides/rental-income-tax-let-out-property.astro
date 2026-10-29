@@ -1,0 +1,100 @@
+---
+import Service from '../../layouts/Service.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'Is the 30 percent deduction allowed on the full rent I receive?', a: 'No. It is 30 percent of the annual value, which is the rent received or receivable after reducing the municipal taxes you actually paid during the year. The deduction is a flat allowance for repairs and upkeep. You cannot claim actual repair bills separately, and no receipts are needed for it.' },
+  { q: 'Can I claim home loan interest on a house that is let out for the whole year?', a: 'Yes. For a let-out house, interest payable on the borrowed capital is deductible with no upper limit, along with pre-construction interest in five equal yearly instalments. Because the interest can exceed the rent, a loss may arise, and the rules on setting it off against other income then become important.' },
+  { q: 'Does my tenant have to deduct TDS on the rent I charge?', a: 'It depends on the rent and the tenant. An individual or HUF tenant outside the "specified person" category in the Act deducts tax only if the rent is more than Rs 50,000 for any month or part of a month. Tenants in that category have a separate rate. Check the rent against that limit for each month.' },
+  { q: 'How is rent taxed when a house is owned jointly?', a: 'Where owners hold definite shares, each owner reports rent, municipal tax, the 30 percent deduction and loan interest in proportion to the share, in their own return. The income is not combined in one name. Each owner can claim interest on their own share of the loan, and each has their own set-off position.' },
+];
+const pub = '2026-10-29';
+---
+<Service
+  title="Tax on Rental Income from a Let-Out House"
+  description="How rent from a let-out house is taxed: annual value, municipal tax, 30% deduction, home loan interest, loss set-off and TDS by tenants on high rent."
+  path="/guides/rental-income-tax-let-out-property/"
+  h1="Tax on rental income from a let-out house"
+  name="Tax on rental income from a let-out house"
+  topic="tax on your rental income"
+  lead="Rent from a house you own is taxed under the head Income from house property, on the annual value of the house. From that value you reduce municipal tax paid, then 30 percent, then home loan interest. The balance is added to your other income and taxed at your slab rates. A tenant may also have to deduct TDS if the rent is above Rs 50,000 for a month."
+  faqs={faqs}
+  related={['/guides/advance-tax-due-dates-interest/', '/income-tax-return-filing-chennai/', '/guides/capital-gains-exemption-new-house-cgas/']}
+  sources={[SRC.itIndia, SRC.itPortal, SRC.traces]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>Old law and new law in one paragraph</h2>
+  <p>The Income-tax Act, 2025 applies from 1 April 2026, that is, from tax year 2026-27. Rent earned in the financial year 2025-26 or earlier is taxed under the Income-tax Act, 1961, where the same rules were in sections 22 to 24 and the loss rules in section 71. This guide states the rules under the 2025 Act and names the earlier provision only for reference.</p>
+
+  <h2>Step 1: Find the annual value</h2>
+  <p>Section 21 of the 2025 Act fixes the annual value of a let house. It is the higher of two amounts:</p>
+  <ul>
+    <li>The rent the house might reasonably be expected to fetch from year to year.</li>
+    <li>The actual rent you receive or are entitled to receive.</li>
+  </ul>
+  <p>If the house is let but stays vacant for part of the year and, because of that, the rent you receive is lower than the expected rent, the annual value is the lower amount actually received or receivable. Rent that you cannot realise is left out, subject to the rules made for it.</p>
+
+  <h2>Step 2: Deduct municipal tax</h2>
+  <p>Taxes levied by a local authority, such as property tax paid to the Greater Chennai Corporation, reduce the annual value. Two points matter:</p>
+  <ul class="checklist">
+    <li>Only the tax you, as owner, actually paid during the tax year is deducted.</li>
+    <li>It is deducted in the year of payment, even if it relates to another year.</li>
+  </ul>
+  <p>A tax paid by the tenant is not deducted. The balance after this step is the net annual value.</p>
+
+  <h2>Step 3: Take the 30 percent standard deduction</h2>
+  <p>Section 22(1)(a) allows 30 percent of the annual value as determined under section 21. It is a flat deduction. You cannot claim it in addition to actual repairs, collection charges or insurance, and no bills are required. It is allowed even if you spent nothing on repairs.</p>
+
+  <h2>Step 4: Deduct home loan interest</h2>
+  <p>Section 22(1)(b) allows interest payable on capital borrowed to acquire, construct, repair, renew or reconstruct the house. For a house that is let out, there is no ceiling on this interest. The Rs 2 lakh and Rs 30,000 ceilings in section 22(2) are for a self-occupied house. If the loan was taken before the year in which the house was acquired or built, the interest for that earlier period is allowed in five equal instalments, starting in the year of acquisition or completion.</p>
+  <p><strong>Example.</strong> A flat is let at Rs 30,000 a month, so annual rent is Rs 3,60,000. Municipal tax paid is Rs 12,000. The net annual value is Rs 3,48,000. The 30 percent deduction is Rs 1,04,400. Interest on the loan for the year is Rs 1,50,000. Income from house property is Rs 3,48,000 less Rs 1,04,400 less Rs 1,50,000, which is Rs 93,600.</p>
+
+  <h2>If interest is more than the rent: loss from house property</h2>
+  <p>A negative figure after these steps is a loss under the head Income from house property. The rules for using it differ between the two regimes.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Point</th><th scope="col">If you opt out of the default regime</th><th scope="col">Default regime (section 202)</th></tr></thead>
+      <tbody>
+        <tr><td>Set-off against salary or other heads</td><td>Allowed up to Rs 2,00,000 in the year (section 109)</td><td>Not allowed; section 202(2)(b) says the loss is not set off with any other head</td></tr>
+        <tr><td>Carry forward of unabsorbed loss</td><td>Up to eight tax years, only against house property income (section 110)</td><td>Section 202(3) says such loss is deemed to have been given full effect; do not expect to carry it forward</td></tr>
+        <tr><td>Interest on let-out house</td><td>Fully deductible</td><td>Fully deductible against the rent of that house</td></tr>
+        <tr><td>Interest on a self-occupied house</td><td>Up to Rs 2,00,000 under section 22(2)</td><td>Not deductible, as per section 202(2)(a)(v)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The interest on a let-out house is therefore still useful in the default regime, but only against that rent. If the rent is lower than the interest, the extra interest does not reduce salary income. It is worth comparing both regimes each year when a loss is likely.</p>
+
+  <h2>TDS by the tenant on high rent</h2>
+  <p>Section 393(1) of the 2025 Act (Table, Sl. No. 2), which replaced the earlier section 194-I, makes the tenant deduct tax when rent is above Rs 50,000 for a month or part of a month.</p>
+  <ul>
+    <li>For an individual or HUF tenant outside the special category in the Act's table, the rate is 2 percent. The tax is deducted once, for the last month of the tenancy or the last month of the tax year, whichever comes first.</li>
+    <li>For the tenants in the table's "specified person" category, such as businesses, the rate for land, buildings, furniture and fittings is 10 percent, with the same Rs 50,000 limit.</li>
+  </ul>
+  <p>The tax deducted appears in your Form 26AS and AIS. Claim it in your return as tax already paid. A landlord whose income is below the taxable limit should still report the rent in the return, to claim a refund of any tax deducted.</p>
+
+  <h2>Joint owners</h2>
+  <p>When two or more people own a house in definite shares, each reports their own share of the rent, municipal tax and interest. The 30 percent deduction is computed on each owner's share. Each owner can also claim interest on the loan in proportion to their share, provided they are a borrower. Tenants usually test the Rs 50,000 limit on the rent paid to each owner. Ask the tenant to deduct and report TDS in each owner's PAN.</p>
+
+  <h2>Records to keep</h2>
+  <ul class="checklist">
+    <li>Rental agreement, with the rent, deposit and period of tenancy</li>
+    <li>Rent receipts, bank credits and the tenant's TDS certificates</li>
+    <li>Municipal tax receipts paid by you during the year</li>
+    <li>Loan statement and the lender's interest certificate</li>
+    <li>Ownership shares as per the sale deed and dates when the house was vacant</li>
+  </ul>
+
+  <h2>Key points and official sources</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Point</th><th scope="col">Provision</th><th scope="col">Source</th></tr></thead>
+      <tbody>
+        <tr><td>Annual value and municipal tax</td><td>Section 21, Income-tax Act, 2025</td><td><a href="https://www.incometaxindia.gov.in/w/section-21-196" rel="noopener">Section 21</a></td></tr>
+        <tr><td>30 percent and interest deduction</td><td>Section 22</td><td><a href="https://www.incometaxindia.gov.in/w/section-22-218" rel="noopener">Section 22</a></td></tr>
+        <tr><td>Set-off of loss</td><td>Sections 109 and 110</td><td><a href="https://www.incometaxindia.gov.in/w/section-109-102" rel="noopener">Section 109</a>, <a href="https://www.incometaxindia.gov.in/w/section-110-98" rel="noopener">Section 110</a></td></tr>
+        <tr><td>Default regime restrictions</td><td>Section 202</td><td><a href="https://www.incometaxindia.gov.in/w/section-202-76" rel="noopener">Section 202</a></td></tr>
+        <tr><td>TDS on rent</td><td>Section 393(1), Table Sl. No. 2</td><td><a href="https://www.incometaxindia.gov.in/w/section-393-5" rel="noopener">Section 393</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Landlords with large rent often have to pay advance tax as well; see <a href="/guides/advance-tax-due-dates-interest/">advance tax due dates and interest</a>. For filing, see <a href="/income-tax-return-filing-chennai/">income tax return filing</a>.</p>
+</Service>

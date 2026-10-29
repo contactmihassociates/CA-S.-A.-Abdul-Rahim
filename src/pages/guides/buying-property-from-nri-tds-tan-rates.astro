@@ -1,0 +1,78 @@
+---
+import Service from '../../layouts/Service.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'Does the Rs 50 lakh threshold apply when buying from an NRI?', a: 'No. The Rs 50 lakh threshold and the 1 percent rate are for a resident seller. When the seller is a non-resident, the buyer deducts under section 393(2) at the rates applicable to the income, whatever the value of the property. Do not apply the 1 percent rule to an NRI seller.' },
+  { q: 'Can the buyer deduct on the capital gain instead of the full consideration?', a: 'Only if the seller gives a lower or nil deduction certificate from the Assessing Officer, or the buyer can reliably establish the gain. The buyer usually does not know the seller\'s cost, so without a certificate the deduction is commonly made on the full sale consideration at the rate for the gain.' },
+  { q: 'Does an individual buyer need a TAN for property bought from an NRI?', a: 'Not for transactions from 1 October 2026. The Department\'s help page for Form 141 Schedule E says a TAN is no longer mandatory when a resident individual or HUF buys from a non-resident, and the buyer\'s PAN is used instead. Other buyers should check the requirement on the portal.' },
+  { q: 'Who files Form 145 and Form 146 when the NRI remits the money abroad?', a: 'The NRI seller files the remittance declaration, Form 145 (earlier Form 15CA), through the portal or the bank. Form 146 (earlier Form 15CB) is a Chartered Accountant\'s certificate, needed where the remittance is taxable and above the limit set in the rules. The buyer\'s role is deducting and reporting TDS.' },
+];
+const pub = '2026-10-29';
+---
+<Service
+  title="Buying Property from an NRI: TDS, TAN, Rates, Returns"
+  description="Buying a flat or house from an NRI: TDS on gain or full consideration, rates, Form 128, Form 141 Schedule E without TAN from 1 Oct 2026, Forms 145 and 146."
+  path="/guides/buying-property-from-nri-tds-tan-rates/"
+  h1="Buying property from an NRI: TDS, TAN, rates and returns"
+  name="Buying property from an NRI"
+  topic="buying property from an NRI"
+  lead="If you buy property from a non-resident seller, you must deduct TDS under section 393(2), not the 1 percent that applies to a resident seller. The tax is charged at the rate for the seller's capital gain, plus surcharge and cess, and unless the seller holds a lower deduction certificate it is usually deducted on the full sale consideration. From 1 October 2026, a resident individual or HUF buyer files Form 141, Schedule E, without a TAN."
+  faqs={faqs}
+  related={['/nri-property-sale-tds-lower-tds-certificate/', '/guides/nri-selling-property-chennai-tds-lower-certificate/', '/guides/tds-on-property-purchase-50-lakh-step-by-step/']}
+  sources={[SRC.form141, SRC.itForms2026, SRC.itPortal, SRC.itIndia, SRC.rbi, SRC.traces]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>Which rule applies: resident or non-resident seller</h2>
+  <p>Check the seller's residential status first, because the whole procedure depends on it. According to the Income Tax Department's FAQs, where the seller is a non-resident, tax is deducted under section 393(2) of the Income-tax Act, 2025 (Table, Sl. No. 17) and not under section 393(1) (Sl. No. 3(i)). For a resident seller the buyer deducts 1 percent once the value is Rs 50 lakh or more; see <a href="/guides/tds-on-property-purchase-50-lakh-step-by-step/">TDS on property purchase step by step</a>. A holder of an Indian passport living abroad is not automatically a non-resident for tax. Residential status is decided on days of stay in India, so ask the seller to state the status in writing and keep that statement with the file.</p>
+
+  <h2>What the TDS is charged on</h2>
+  <p>The law asks the buyer to deduct tax on the income chargeable to tax in the seller's hands. For a sale of property this is the capital gain, not the sale value. The buyer, however, does not know the seller's cost of acquisition or improvements. In practice, unless the seller produces a certificate, buyers and banks apply the rate to the full sale consideration, because the buyer is responsible if too little is deducted.</p>
+  <p><strong>Example.</strong> Property is sold for Rs 1 crore and the seller's long-term gain is Rs 20 lakh. At 12.5 percent, tax on the gain is Rs 2.5 lakh, before surcharge and cess. Deducted on the full Rs 1 crore, the TDS is Rs 12.5 lakh, before surcharge and cess. The seller recovers the difference as a refund after filing the return, which can take months. A lower deduction certificate avoids this.</p>
+
+  <h2>Rates, surcharge and cess</h2>
+  <ul class="checklist">
+    <li><strong>Long-term capital gain.</strong> The Department's page on property sales by non-residents gives 12.5 percent for transfers on or after 23 July 2024.</li>
+    <li><strong>Short-term capital gain.</strong> The same page gives 30 percent for an individual or firm and 35 percent for a foreign company. Confirm against the current rate chart on the portal.</li>
+    <li><strong>Surcharge and health and education cess.</strong> The Department states that the rate is further increased by the applicable surcharge and cess. The surcharge depends on the amount, so work it out for the actual figure.</li>
+    <li><strong>No PAN.</strong> If the seller's PAN is not available or is invalid, and the seller has not furnished the foreign address, tax residency certificate and tax identification number, the higher rate under section 397(2) applies. See <a href="/guides/tds-property-seller-no-pan-inoperative-pan/">TDS when the seller has no PAN</a>.</li>
+  </ul>
+  <p>Under most tax treaties India may tax gains from immovable property situated in India, so the domestic rates generally apply. The seller may claim treaty relief in the home country.</p>
+
+  <h2>Lower or nil deduction certificate: Form 128</h2>
+  <p>The seller can ask the Assessing Officer for a certificate fixing a lower rate, or nil, based on the real gain. Under the Income-tax Act, 1961 this was the application in Form 13 under section 197. Under the Income-tax Act, 2025, the Department's guidance says the application is in Form 128. The Schedule E help page refers to certificates under sections 395(1) and 395(2) and asks for the certificate number. The buyer should:</p>
+  <ul class="checklist">
+    <li>Ask the seller for the certificate before the first payment.</li>
+    <li>Check the buyer's name, the property, the rate and the period of validity.</li>
+    <li>Deduct at the certificate rate only for payments inside that period and amount.</li>
+    <li>Enter the certificate number in the Form 141 statement.</li>
+  </ul>
+  <p>The certificate covers only payments made after it is issued. For the seller's side, see <a href="/guides/nri-selling-property-chennai-tds-lower-certificate/">NRI selling property in Chennai</a>.</p>
+
+  <h2>TAN and filing: before and after 1 October 2026</h2>
+  <p>The route depends on the date of the payment or credit.</p>
+  <ol>
+    <li><strong>Before 1 October 2026.</strong> The buyer needed a TAN, paid the tax and reported it in a quarterly statement filed through TRACES. The Department's Schedule E page states that this was Form 144 on TRACES. A TAN is also a precondition for the TDS certificate under this route.</li>
+    <li><strong>From 1 October 2026, resident individual or HUF buyer.</strong> The buyer files Form 141, Schedule E, on the income tax portal using the buyer's own PAN. The Department states that a TAN is no longer mandatory for these transactions. Schedule E asks for the property, the stamp duty value, the sale consideration, the seller's capital gain type, the rate, any certificate number, and the tax. Payment is made through an e-Pay Tax challan.</li>
+    <li><strong>Any other buyer.</strong> The relief is stated for resident individuals and HUFs. A company, firm or other buyer should check on the portal whether a TAN is still required.</li>
+  </ol>
+  <p>Resident and non-resident sellers cannot be combined in one Form 141. Use Schedule B for a resident seller and Schedule E for a non-resident one. Check the due dates for Schedule E on the portal before the month-end.</p>
+
+  <h2>Remittance: Forms 145 and 146</h2>
+  <p>When the NRI moves the sale proceeds abroad, the bank asks for a declaration on the portal. These are now Form 145 (earlier Form 15CA) and Form 146 (earlier Form 15CB, the Chartered Accountant's certificate). Schedule E has an optional field for the acknowledgement number of Form 145. Remittance limits and the account to be credited are governed by the Reserve Bank of India's directions at <a href="https://www.rbi.org.in/" rel="noopener">rbi.org.in</a>. Payment into the seller's NRO account is the usual route.</p>
+
+  <h2>The seller's return and your protection</h2>
+  <p>The NRI must file an income tax return in India for the year of sale, report the gain and claim credit for the TDS. As buyer, ask for the seller's PAN, residential status, a copy of the lower deduction certificate if any, and keep the challan and acknowledgement. Give the seller the TDS certificate promptly so the credit shows in Form 26AS.</p>
+
+  <h2>Key points and official sources</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Point</th><th>Position</th><th>Official source</th></tr></thead>
+    <tbody>
+      <tr><td>Provision for non-resident seller</td><td>Section 393(2), Table Sl. No. 17</td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+      <tr><td>Form for buyer from 1 October 2026</td><td>Form 141, Schedule E; no TAN for resident individual or HUF</td><td><a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/form%20141%20schedule%20e%20challan-cum-statement%20of%20deduction%20of%20tax%20under%20section%20393-%20um" rel="noopener">Schedule E help page</a></td></tr>
+      <tr><td>Lower deduction certificate</td><td>Form 128 (earlier Form 13)</td><td><a href="https://www.incometaxindia.gov.in/faqs-and-guidance-notes-on-forms-as-per-income-tax-rules-2026" rel="noopener">FAQs on forms, Rules 2026</a></td></tr>
+      <tr><td>Remittance declaration</td><td>Forms 145 and 146 (earlier 15CA and 15CB)</td><td><a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/income-tax-forms" rel="noopener">Income-tax forms</a></td></tr>
+      <tr><td>Remittance limits</td><td>RBI directions</td><td><a href="https://www.rbi.org.in/" rel="noopener">rbi.org.in</a></td></tr>
+    </tbody>
+  </table></div>
+  <p>For help with the filing, see <a href="/nri-property-sale-tds-lower-tds-certificate/">NRI property sale TDS and lower TDS certificate</a>.</p>
+</Service>
