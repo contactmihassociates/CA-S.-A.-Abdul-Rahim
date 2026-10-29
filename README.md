@@ -36,7 +36,7 @@ Static website for CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai. B
 ## Checks (`scripts/`)
 
 - `check-banned.mjs`: ICAI banned words (best, leading, top, expert, No. 1, guaranteed, cheapest, free consultation, why choose us, testimonial, review, discount, price and more).
-- `check-nap.mjs`: exact name, address and phone on every page and in schema; the numbers 094447 97222 and 095510 78603 never appear.
+- `check-nap.mjs`: exact name, address and phone on every page and in schema; the number 094447 97222 never appears (095510 78603 is an office number since 30 Oct 2026).
 - `check-links.mjs`: every internal link and asset resolves.
 - `check-jsonld.mjs`: JSON-LD parses, required properties present, no rating/review markup, FAQ schema matches visible FAQs.
 - `check-pages.mjs`: title ≤ 60, description ≤ 155, one H1, canonical, "Last reviewed", official source link, word counts, FAQ answer length, open `[VERIFY]`/`[CONFIRM]` markers.

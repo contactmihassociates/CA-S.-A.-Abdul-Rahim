@@ -113,7 +113,7 @@ Points the specialist must understand about this check:
 | Languages | Tamil, English, Hindi |
 | In practice since | 12 April 1985 |
 
-Never use the numbers 094447 97222 or 095510 78603 anywhere. `scripts/check-nap.mjs` fails the build if either appears in any built `.html`, `.txt`, `.xml`, `.js` or `.json` file, and also fails if a page lacks the exact name, address and primary phone in visible text, or the name, telephone, street and postcode in its JSON-LD.
+Never use the number 094447 97222 anywhere. 095510 78603 is a confirmed office number (owner, 30 Oct 2026) and is on the site and GBP. `scripts/check-nap.mjs` fails the build if 094447 97222 appears in any built `.html`, `.txt`, `.xml`, `.js` or `.json` file, and also fails if a page lacks the exact name, address and primary phone in visible text, or the name, telephone, street and postcode in its JSON-LD.
 
 The same strings must be used on Google Business Profile, Bing Places, Apple Business Connect, Justdial, Sulekha and every other listing. Do not abbreviate "Street", add "No.", change "Tamil Nadu" to "TN", reorder lines or format the phone differently from the table above.
 

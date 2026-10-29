@@ -23,6 +23,8 @@ export const NAP = {
   phoneTel: '+917397283223',
   phone2: '099402 78603',
   phone2Tel: '+919940278603',
+  phone3: '095510 78603',
+  phone3Tel: '+919551078603',
   whatsapp: '+91 99402 78603',
   email: 'enquiry@casaabdulrahim.in',
   whatsappLink: 'https://wa.me/919940278603?text=' + encodeURIComponent('Hello, I would like information about'),
