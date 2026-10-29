@@ -1,0 +1,8 @@
+.rent-route{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0 28px}
+.rent-route span{position:relative;padding:12px 8px 16px;font:500 12px/1.5 var(--sans);border-bottom:3px solid var(--line-soft);color:var(--fg-dim)}
+.rent-route span::after{content:'';position:absolute;bottom:-3px;left:0;width:100%;height:3px;background:var(--accent,#1B6E7E);transform:scaleX(0);transform-origin:left;transition:transform .2s ease-out}
+.rent-route .active{color:var(--fg)}.rent-route .active::after{transform:scaleX(1)}
+.rent-limits .indexation-value{align-items:baseline}
+@media(max-width:600px){.rent-route{gap:5px}.rent-route span{padding:8px 3px 12px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.rent-route span::after,.rent-limits .indexation-track i{transition:none!important}}
+@media print{.rent-route{display:none}.rent-limits{break-inside:avoid}.rent-limits .indexation-track{display:none}}

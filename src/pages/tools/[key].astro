@@ -1,0 +1,77 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import SideContact from '../../components/SideContact.astro';
+import { TOOLS, CATEGORIES, CATEGORY_SERVICE, CATEGORY_SOURCES, TOOLKIT, type Tool } from '../../data/tools';
+import { SERVICES, SITE_URL, REVIEWED_TEXT } from '../../data/site';
+
+export function getStaticPaths() {
+  return TOOLS.map((tool) => ({ params: { key: tool.key }, props: { tool } }));
+}
+const { tool } = Astro.props as { tool: Tool };
+const c = tool.copy;
+const path = `/tools/${tool.key}/`;
+const cat = CATEGORIES.find((x) => x.k === tool.cat)!;
+const crumbs = [{ name: 'Calculators', path: '/tools/' }, { name: c.h1, path }];
+const siblings = cat.tools.filter((k) => k !== tool.key);
+const start = Math.max(0, siblings.indexOf(cat.tools[cat.tools.indexOf(tool.key) + 1] ?? '') - 3);
+const related = [...siblings.slice(start), ...siblings.slice(0, start)].slice(0, 8)
+  .map((k) => TOOLS.find((t) => t.key === k)!).filter(Boolean);
+const service = SERVICES.find((s) => s.href === CATEGORY_SERVICE[tool.cat]);
+const sources = CATEGORY_SOURCES[tool.cat] ?? [];
+const app = {
+  '@type': 'WebApplication',
+  '@id': `${SITE_URL}${path}#app`,
+  name: c.h1,
+  url: `${SITE_URL}${path}`,
+  description: c.description,
+  applicationCategory: 'FinanceApplication',
+  operatingSystem: 'Any (web browser)',
+  inLanguage: 'en-IN',
+  isAccessibleForFree: true,
+  provider: { '@id': `${SITE_URL}/#accountingservice` },
+};
+---
+<Base title={`${c.title} | CA Abdul Rahim`} description={c.description} path={path} crumbs={crumbs} schema={[app]}>
+  <Fragment slot="head">
+    <link rel="stylesheet" href={TOOLKIT.css} />
+    <script src="/toolkit/vendor/react.production.min.js" defer></script>
+    <script src="/toolkit/vendor/react-dom.production.min.js" defer></script>
+    <script src="/toolkit/vendor/qrcode.min.js" defer></script>
+    <script src={TOOLKIT.app} defer></script>
+  </Fragment>
+
+  <PageHero crumbs={crumbs} eyebrow={`Calculator · ${cat.label}`} h1={c.h1} lead={c.summary} />
+
+  <div class="wrap tool-shell">
+    <div class="tk">
+      <div id="app" data-tool={tool.key}>
+        <div class="tk-loading" role="status">Loading the calculator…</div>
+      </div>
+    </div>
+    <noscript><p class="tk-loading">This calculator needs JavaScript. You can still read how it works below, or call the office on 07397 283 223.</p></noscript>
+  </div>
+
+  <div class="wrap tool-about">
+    <article class="prose">
+      <h2>How to use this calculator</h2>
+      <ol>{c.steps.map((s) => <li>{s}</li>)}</ol>
+      <p>{c.note}</p>
+      <p>The result is an estimate for the figures you enter. It is not a filed return, a certificate or professional advice. Rates, thresholds and section numbers change with each Finance Act, and the Income-tax Act, 2025 applies from 1 April 2026 with new section and form numbers.</p>
+      {service && <p>For the related work, see <a href={service.href}>{service.label}</a>.</p>}
+
+      <h2>Related calculators</h2>
+      <ul class="tool-grid plain" role="list">
+        {related.map((t) => <li><a href={`/tools/${t.key}/`}><strong>{t.copy.h1}</strong><span>{t.copy.description}</span></a></li>)}
+      </ul>
+      <p><a class="link-arrow" href={`/tools/#${cat.k}`}>All {cat.label.toLowerCase()} calculators</a></p>
+
+      <section class="sources" aria-labelledby="src-h">
+        <h2 id="src-h">Sources</h2>
+        <ul>{sources.map((s) => <li><a href={s.href} rel="noopener">{s.label}</a></li>)}</ul>
+        <p class="meta">Last reviewed: <time datetime="2026-10-29">{REVIEWED_TEXT}</time>. General information only. Check the official source or speak to a Chartered Accountant before acting on a result.</p>
+      </section>
+    </article>
+    <div class="sidebar"><SideContact /></div>
+  </div>
+</Base>

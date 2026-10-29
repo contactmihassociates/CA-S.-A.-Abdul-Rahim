@@ -1,0 +1,26 @@
+/* Site theme for the calculators. Loaded last, so these values win over the finclar palettes. */
+:root {
+  --navy: #13254a; --navy-fg: #13254a; --navy-dark: #0c1a36; --navy-deep: #0c1a36;
+  --blue: #1f3a6d; --blue-soft: #f1ebdd; --teal: #1e5b5a;
+  --orange: #8a6a2e; --orange-dark: #6e5221; --gold: #b8924f; --saffron: #b8924f; --green: #1e5b5a;
+  --accent: #13254a; --accent-2: #8a6a2e;
+  --bg: transparent; --bg-2: #ffffff; --bg-card: #ffffff; --bg-input: #ffffff;
+  --surface: #ffffff; --surface-2: #faf8f3;
+  --line: #e4dccb; --line-soft: #efe9dc; --border: #e4dccb;
+  --fg: #1c2230; --fg-dim: #3f4656; --fg-soft: #626978; --ink-2: #3f4656; --muted: #626978;
+  --ok: #1d6b47; --success: #1d6b47; --warn: #8a5a12; --danger: #a33a2c;
+  --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --head: var(--serif);
+  --sans: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --shadow-sm: 0 1px 2px rgba(19, 37, 74, 0.06);
+  --shadow: 0 6px 20px rgba(19, 37, 74, 0.08);
+  --shadow-lg: 0 18px 40px rgba(19, 37, 74, 0.12);
+}
+body { min-height: 0; overflow-x: visible; background: transparent; font-size: 16px; }
+.container { max-width: none; padding: 0; }
+main { padding: 0; }
+.fa-badge { display: none; }
+.panel { border-radius: 16px; box-shadow: var(--shadow); }
+.panel-head h2 { font-family: var(--serif); font-weight: 600; color: var(--navy); }
+.btn-primary { background: var(--navy); border-color: var(--navy); color: #fff; }
+.btn-primary:hover { background: #1f3a6d; color: #fff; }

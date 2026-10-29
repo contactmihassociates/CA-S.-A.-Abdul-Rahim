@@ -1,0 +1,381 @@
+/* Toolkit presentation layer: Ledger & Ink palette for page chrome and app
+   surfaces. Calculator components, behavior, and generated styles stay intact. */
+body.toolkit-page {
+  --paper: #F6F3EC;
+  --paper-2: #EDE8DC;
+  --card: #FFFFFF;
+  --ink: #10213F;
+  --ink-deep: #0A1830;
+  --navy: #0B2E6B;
+  --navy-dark: #0A1830;
+  --navy-deep: #0A1830;
+  --navy-fg: #10213F;
+  --blue: #173A7A;
+  --blue-soft: #E3F1F3;
+  --teal: #1B6E7E;
+  --teal-2: #5FB8C9;
+  --teal-soft: #E3F1F3;
+  --orange: #1B6E7E;
+  --orange-dark: #155E6C;
+  --gold: #8FCAD6;
+  --bg: #F6F3EC;
+  --bg-2: #EDE8DC;
+  --bg-card: #FFFFFF;
+  --bg-input: #FBF9F4;
+  --surface: #FFFFFF;
+  --surface-2: #FBF9F4;
+  --line: #D9D2C3;
+  --line-soft: #ECE6D8;
+  --border: #D9D2C3;
+  --fg: #10213F;
+  --fg-dim: #3A4458;
+  --fg-soft: #5A6375;
+  --accent: #1B6E7E;
+  --accent-2: #5FB8C9;
+  --danger: #A0421C;
+  --ok: #1D6B3A;
+  --warn: #8A4B0B;
+  --serif: Fraunces, Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --shadow-sm: 0 1px 2px rgba(16, 33, 63, .05);
+  --shadow: 0 10px 30px -18px rgba(16, 33, 63, .35);
+  --shadow-lg: 0 30px 60px -30px rgba(16, 33, 63, .35);
+  min-height: 100vh;
+  overflow-x: clip;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+html[data-theme="dark"] body.toolkit-page {
+  --paper: #0A1830;
+  --paper-2: #10213F;
+  --card: #13284B;
+  --ink: #F6F3EC;
+  --ink-deep: #071326;
+  --navy: #10213F;
+  --navy-dark: #071326;
+  --navy-deep: #0A1830;
+  --navy-fg: #F6F3EC;
+  --blue: #173A7A;
+  --blue-soft: rgba(95, 184, 201, .14);
+  --teal: #5FB8C9;
+  --teal-2: #8FCAD6;
+  --teal-soft: rgba(95, 184, 201, .14);
+  --orange: #5FB8C9;
+  --orange-dark: #8FCAD6;
+  --gold: #8FCAD6;
+  --bg: #0A1830;
+  --bg-2: #10213F;
+  --bg-card: #13284B;
+  --bg-input: #0F2240;
+  --surface: #13284B;
+  --surface-2: #10213F;
+  --line: rgba(220, 228, 242, .16);
+  --line-soft: rgba(220, 228, 242, .09);
+  --border: rgba(220, 228, 242, .16);
+  --fg: #F6F3EC;
+  --fg-dim: #C3CCDC;
+  --fg-soft: #A7B3C9;
+  --accent: #5FB8C9;
+  --accent-2: #8FCAD6;
+  --danger: #FFB4A8;
+  --ok: #8AD6A4;
+  --warn: #FFD18A;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .24);
+  --shadow: 0 10px 30px -18px rgba(0, 0, 0, .5);
+  --shadow-lg: 0 30px 60px -30px rgba(0, 0, 0, .6);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body.toolkit-page :where(button, input, select, textarea) { font-family: var(--sans); }
+body.toolkit-page :where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+body.toolkit-page ::selection { background: var(--teal); color: #fff; }
+
+/* Site masthead */
+body.toolkit-page .tricolor { display: none; }
+body.toolkit-page .utility-bar {
+  background: var(--navy);
+  border: 0;
+  color: #DCE4F2;
+  font-family: var(--mono);
+}
+body.toolkit-page .utility-bar a,
+body.toolkit-page .utility-inner .right a { color: #fff; }
+body.toolkit-page nav.topbar {
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  box-shadow: none;
+}
+body.toolkit-page .nav-inner { max-width: 1440px; padding: 14px 5.55%; }
+body.toolkit-page .logo-mark {
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 12px;
+  background: url("/assets/finclar-mark.svg") center / 100% no-repeat;
+  box-shadow: none;
+}
+body.toolkit-page .logo .wordmark .brand-ar {
+  color: var(--ink);
+  font: 600 24px/1 var(--serif);
+  letter-spacing: -.02em;
+}
+body.toolkit-page .logo .wordmark .brand-ar::after { content: "."; color: var(--teal); }
+body.toolkit-page .logo .wordmark .tag { color: var(--fg-soft); }
+body.toolkit-page .nav-links a {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  color: var(--fg-dim);
+  font-weight: 500;
+}
+body.toolkit-page .nav-links a:hover { background: var(--surface-2); color: var(--ink); }
+body.toolkit-page .nav-links a.active { background: var(--ink); color: var(--paper); }
+body.toolkit-page .nav-cta > button {
+  width: 42px;
+  min-height: 42px;
+  padding: 0 !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+  color: var(--ink) !important;
+}
+body.toolkit-page .btn { border-radius: 999px; font-weight: 500; font-size: 14px; }
+body.toolkit-page .btn-primary { background: var(--teal); color: #fff; }
+body.toolkit-page .btn-primary:hover { background: #155E6C; color: #fff; }
+body.toolkit-page .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+body.toolkit-page .btn-ghost:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+html[data-theme="dark"] body.toolkit-page .btn-primary { background: var(--teal); color: #071326; }
+html[data-theme="dark"] body.toolkit-page .btn-ghost { color: var(--ink); border-color: var(--line); }
+
+/* Entry hero and tool browser */
+body.toolkit-page .container { max-width: 1440px; padding-right: 5.55%; padding-left: 5.55%; }
+body.toolkit-page .tools-hero {
+  margin-bottom: 0;
+  padding: clamp(42px, 6vw, 76px) clamp(22px, 5vw, 64px) 44px;
+  border-radius: 0 0 22px 22px;
+  background: var(--navy-deep);
+  background-image: repeating-linear-gradient(180deg, transparent 0 55px, rgba(255,255,255,.045) 55px 56px);
+  color: #F6F3EC;
+}
+body.toolkit-page .tools-hero::before {
+  background: linear-gradient(90deg, transparent 0 47px, rgba(232,185,165,.24) 47px 48px, transparent 48px);
+}
+body.toolkit-page .tools-hero .kicker {
+  border-color: rgba(143,202,214,.36);
+  border-radius: 999px;
+  background: transparent;
+  color: #A7DCE4;
+  font-family: var(--mono);
+  font-weight: 500;
+  letter-spacing: .08em;
+}
+body.toolkit-page .tools-hero h1 {
+  max-width: 900px;
+  font: 400 clamp(36px, 5vw, 64px)/1.05 var(--serif);
+  letter-spacing: -.03em;
+}
+body.toolkit-page .tools-hero h1 em { color: #8FCAD6; font-style: italic; }
+body.toolkit-page .tools-hero .sub { max-width: 72ch; color: #D4DCE7; }
+body.toolkit-page .toolkit-entry-actions a { border-radius: 999px; border-color: #8FCAD6; }
+body.toolkit-page .toolkit-entry-actions a:first-child { background: #8FCAD6; color: #0A1830; }
+body.toolkit-page .toolkit-overview { border-color: rgba(220,228,242,.24); }
+body.toolkit-page .toolkit-overview summary { color: #E7EAF0; }
+body.toolkit-page .toolkit-overview p { color: #D4DCE7; }
+body.toolkit-page .tk-boot { color: var(--ink); }
+body.toolkit-page .tk-boot-logo { background: var(--navy); }
+body.toolkit-page .tk-boot h2 { color: var(--ink); }
+
+body.toolkit-page .tool-finder {
+  border-color: var(--line);
+  border-radius: 16px;
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+}
+body.toolkit-page .tool-finder-toggle { min-height: 72px; }
+body.toolkit-page .tool-finder-toggle:hover { background: var(--surface-2); }
+body.toolkit-page .tool-finder-current small,
+body.toolkit-page .tool-finder-count { color: var(--fg-soft); }
+body.toolkit-page .tool-finder-action,
+body.toolkit-page .tool-finder-result .tool-finder-arrow { color: var(--teal); }
+body.toolkit-page .tool-finder-search input,
+body.toolkit-page .tool-finder-result { border-color: var(--line); background: var(--surface-2); color: var(--ink); }
+body.toolkit-page .tool-finder .cats { background: transparent; }
+body.toolkit-page .tool-finder .cats button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--fg-dim);
+}
+body.toolkit-page .tool-finder .cats button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+body.toolkit-page .tool-finder-result[aria-current="true"] { border-color: var(--teal); }
+
+/* Calculator workspace */
+body.toolkit-page .cats {
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--card);
+  box-shadow: none;
+}
+body.toolkit-page .cats button,
+body.toolkit-page .tabs .tab {
+  min-height: 44px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--fg-dim);
+  font: 500 13px/1.35 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+}
+body.toolkit-page .cats button:hover,
+body.toolkit-page .tabs .tab:hover { background: var(--surface-2); color: var(--ink); }
+body.toolkit-page .cats button.active,
+body.toolkit-page .tabs .tab.active { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+body.toolkit-page .cats button.active > span { color: inherit; opacity: .8 !important; }
+body.toolkit-page .tabs { gap: 8px; margin-bottom: 22px; }
+body.toolkit-page .tabs .tab { border-color: var(--line); background: var(--card); }
+body.toolkit-page .tabs .tab.active { border-color: var(--ink); }
+body.toolkit-page .tab .dot { color: var(--teal); }
+body.toolkit-page .tab.active .dot { background: var(--teal-2); }
+body.toolkit-page .panel {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--card);
+  box-shadow: 0 24px 54px -40px rgba(16,33,63,.45);
+}
+body.toolkit-page .panel::before { height: 3px; background: linear-gradient(90deg, var(--teal), var(--teal-2)); }
+body.toolkit-page .panel-head h2 { color: var(--ink); font: 500 clamp(24px,2.4vw,34px)/1.15 var(--serif); }
+body.toolkit-page .panel-head h2 em { color: var(--teal); font-style: italic; }
+body.toolkit-page .panel-meta,
+body.toolkit-page .year-select label,
+body.toolkit-page .year-act { color: var(--fg-soft); }
+body.toolkit-page .year-select select {
+  min-height: 44px;
+  border-color: var(--line);
+  border-radius: 10px;
+  background: var(--bg-input);
+  color: var(--ink);
+}
+body.toolkit-page .field label { color: var(--ink); font-size: 13px; }
+body.toolkit-page .field .hint { color: var(--fg-soft); }
+body.toolkit-page .field input,
+body.toolkit-page .field select,
+body.toolkit-page .field textarea {
+  min-height: 44px;
+  border-color: var(--line);
+  border-radius: 10px;
+  background: var(--bg-input);
+  color: var(--ink);
+}
+body.toolkit-page .field input:focus,
+body.toolkit-page .field select:focus,
+body.toolkit-page .field textarea:focus,
+body.toolkit-page .year-select select:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--teal) 18%, transparent);
+}
+body.toolkit-page .field input::placeholder,
+body.toolkit-page .field textarea::placeholder { color: var(--fg-soft); opacity: 1; }
+body.toolkit-page .result {
+  border-color: var(--navy-deep);
+  border-radius: 18px;
+  background: var(--navy-deep);
+  background-image: repeating-linear-gradient(180deg, transparent 0 43px, rgba(255,255,255,.04) 43px 44px);
+}
+body.toolkit-page .result .label,
+body.toolkit-page .result .big .cur,
+body.toolkit-page .bd-row.total .v,
+body.toolkit-page .slab-row .rate { color: #A7DCE4; }
+body.toolkit-page .result .big { font-family: var(--serif); font-weight: 400; }
+body.toolkit-page .result .sub { color: #D4DCE7; }
+body.toolkit-page .result :where(h1, h2, h3, h4, h5, h6) { color: #F6F3EC; }
+body.toolkit-page .quick,
+body.toolkit-page .quick-action-bar,
+body.toolkit-page .export-bar {
+  border-color: var(--line);
+  border-radius: 14px;
+  background: var(--surface-2);
+}
+body.toolkit-page .quick-action-bar button,
+body.toolkit-page .export-bar button { border-radius: 999px; }
+body.toolkit-page .verdict { border-radius: 12px; }
+body.toolkit-page footer { background: var(--navy-deep); color: #DCE4F2; }
+body.toolkit-page footer a { color: #F6F3EC; }
+
+/* Keep the full navigation at wide desktop sizes, then give the WhatsApp
+   action room before the secondary links start competing for space. */
+@media (max-width: 1360px) {
+  body.toolkit-page .nav-inner { gap: 10px; padding-right: 24px; padding-left: 24px; }
+  body.toolkit-page .nav-links { gap: 0; font-size: 13px; }
+  body.toolkit-page .nav-links a { padding-right: 8px; padding-left: 8px; }
+}
+@media (max-width: 1080px) {
+  body.toolkit-page .nav-links { display: none; }
+}
+
+@media (max-width: 900px) {
+  body.toolkit-page .nav-inner { padding-right: 24px; padding-left: 24px; }
+  body.toolkit-page .nav-links { display: none; }
+}
+@media (max-width: 600px) {
+  body.toolkit-page .fa-badge { position: static; display: table; margin: 12px auto; }
+  body.toolkit-page .utility-inner { height: auto; min-height: 32px; padding: 6px 16px; gap: 4px; }
+  body.toolkit-page .utility-inner .right { gap: 8px; font-size: 11px; }
+  body.toolkit-page .utility-inner .right a[href^="mailto:"] { display: none; }
+  body.toolkit-page .nav-inner { gap: 8px; padding: 10px 16px; }
+  body.toolkit-page .logo-mark { width: 38px; height: 38px; }
+  body.toolkit-page .logo .wordmark .brand-ar { font-size: 21px; }
+  body.toolkit-page .logo .wordmark .tag { display: none; }
+  body.toolkit-page .nav-cta { gap: 6px !important; }
+  body.toolkit-page .nav-cta .btn-ghost { display: none; }
+  body.toolkit-page .nav-cta .btn-primary { min-height: 40px; padding: 8px 12px; font-size: 12px; }
+  body.toolkit-page .container { padding-right: 16px; padding-left: 16px; }
+  body.toolkit-page .tools-hero.toolkit-entry { padding: 28px 20px 22px; border-radius: 0 0 18px 18px; }
+  body.toolkit-page .toolkit-entry h1 { font-size: clamp(32px, 9vw, 40px); }
+  body.toolkit-page .cats { padding: 7px; gap: 4px; }
+  body.toolkit-page .cats button { min-height: 42px; padding: 8px 11px; }
+  body.toolkit-page .panel { padding: 18px; border-radius: 16px; }
+  body.toolkit-page .panel-head { gap: 14px; }
+  body.toolkit-page .panel-head-right { gap: 10px; }
+  body.toolkit-page .year-select { align-items: flex-start; }
+}
+@media (max-width: 380px) {
+  body.toolkit-page .nav-inner { flex-wrap: wrap; }
+  body.toolkit-page .nav-cta { margin-left: auto; }
+  body.toolkit-page .nav-cta .btn-primary { display: inline-flex; white-space: nowrap; }
+  body.toolkit-page .tool-finder-results { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.toolkit-page *,
+  body.toolkit-page *::before,
+  body.toolkit-page *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+@media print {
+  body.toolkit-page { background: #fff !important; color: #000 !important; }
+  body.toolkit-page .topbar,
+  body.toolkit-page .tools-hero,
+  body.toolkit-page .cats,
+  body.toolkit-page .tabs,
+  body.toolkit-page footer,
+  body.toolkit-page .utility-bar,
+  body.toolkit-page .tricolor,
+  body.toolkit-page .quick-action-bar,
+  body.toolkit-page .export-bar { display: none !important; }
+  body.toolkit-page .panel { border: 0 !important; border-radius: 0 !important; background: #fff !important; box-shadow: none !important; }
+  body.toolkit-page .panel::before { display: none !important; }
+}
+
+body.toolkit-page .result .breakdown h3 { color: #F6F3EC !important; }

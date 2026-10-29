@@ -91,3 +91,23 @@ export const SRC = {
   rbi: { href: 'https://www.rbi.org.in/', label: 'Reserve Bank of India (rbi.org.in)' },
   icai: { href: 'https://www.icai.org/', label: 'Institute of Chartered Accountants of India (icai.org)' },
 };
+
+// Calculators shown beside each service page (keys from src/data/tools.json)
+export const SERVICE_TOOLS: Record<string, string[]> = {
+  '/income-tax-return-filing-chennai/': ['it', 'optimizer', 'hra', 'itrpicker', 'advtax', 'sec87a'],
+  '/income-tax-notice-reply-chennai/': ['penalty', 'sec270a', 'sec234f', 'ais', 'sec244a', 'revtax'],
+  '/capital-gains-tax-property-sale/': ['capgains', 'cii', 'sec54ec', 'sec50c', 'cgreinvest', 'sec54b'],
+  '/nri-taxation-itr-chennai/': ['nri', 'dtaa', 'ftc', 'nrirepat', 'sec195', 'schedfa'],
+  '/tds-on-property-purchase-26qb/': ['sec194ia', 'stampduty', 'sec50c', 'tdslate'],
+  '/nri-property-sale-tds-lower-tds-certificate/': ['sec195', 'nrirepat', 'capgains', 'sec54ec'],
+  '/tds-return-filing/': ['tds', 'tdslate', 'sec192', 'form16', 'tcs', 'panaadhaar'],
+  '/gst-registration-chennai/': ['gst', 'regst', 'gstcomp', 'hsn', 'invoice'],
+  '/gst-return-filing/': ['gstr9', 'gstint', 'qrmp', 'gst2b', 'gstrlf', 'rcm'],
+  '/gst-notice-reply/': ['gstint', 'gstrlf', 'gstrefund', 'rcm', 'gst2b'],
+  '/tax-audit/': ['audit', 'presumptive', 'p44ada', 'sec43bh', 'sec40a', 'depreciation'],
+  '/statutory-audit/': ['depreciation', 'mat', 'audit', 'sec43b'],
+  '/accounting-bookkeeping/': ['depreciation', 'sec43bh', 'invoice', 'bonus', 'esi'],
+  '/company-llp-registration-chennai/': ['partner', 'depreciation', 'corp115', 'sec79'],
+  '/trust-ngo-12a-80g-registration/': ['trustreg', 'trustapp', 'sec80g'],
+  '/udyam-msme-registration/': ['udyam', 'sec43bh', 'presumptive'],
+};

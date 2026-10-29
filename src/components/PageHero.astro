@@ -1,0 +1,26 @@
+---
+interface Props {
+  crumbs: { name: string; path: string }[];
+  h1: string;
+  lead?: string;
+  eyebrow?: string;
+  chips?: string[];
+}
+const { crumbs, h1, lead, eyebrow, chips = [] } = Astro.props;
+const all = [{ name: 'Home', path: '/' }, ...crumbs];
+---
+<section class="page-hero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol>
+        {all.map((c, i) => <li>{i === all.length - 1 ? <span aria-current="page">{c.name}</span> : <a href={c.path}>{c.name}</a>}</li>)}
+      </ol>
+    </nav>
+    {eyebrow && <p class="eyebrow light">{eyebrow}</p>}
+    <h1>{h1}</h1>
+    <slot name="meta" />
+    {lead && <p class="lead">{lead}</p>}
+    {chips.length > 0 && <div class="hero-chips">{chips.map((c) => <span class="chip">{c}</span>)}</div>}
+    <slot />
+  </div>
+</section>

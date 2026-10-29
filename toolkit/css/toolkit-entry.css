@@ -1,0 +1,16 @@
+.tools-hero.toolkit-entry{padding:36px 32px 28px}
+.toolkit-entry .sub{max-width:72ch}
+.toolkit-entry-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.toolkit-entry-actions a{display:inline-flex;align-items:center;gap:18px;min-height:46px;padding:10px 18px;border:1px solid #8FCAD6;border-radius:8px;color:#FFF;font-size:14px;text-decoration:none}
+.toolkit-entry-actions a:first-child{background:#8FCAD6;color:#10213F}
+.toolkit-entry-actions a:focus-visible,.toolkit-overview summary:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.toolkit-entry-actions svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;transition:transform .18s ease-out}
+.toolkit-entry-actions a:hover svg,.toolkit-entry-actions a:focus-visible svg{transform:translateX(4px)}
+.toolkit-overview{margin-top:22px;border-top:1px solid #53637C;max-width:820px}
+.toolkit-overview summary{display:flex;align-items:center;gap:12px;min-height:48px;cursor:pointer;color:#DCE4F2;font-size:14px;list-style:none}
+.toolkit-overview summary::-webkit-details-marker{display:none}
+.toolkit-overview summary::after{content:'+';font:20px/1 var(--mono);color:#8FCAD6;transition:transform .2s ease-out}
+.toolkit-overview[open] summary::after{transform:rotate(45deg)}
+.toolkit-overview p{font-size:14px;line-height:1.65;color:#C3CCDC;margin:0 0 12px}
+@media(max-width:600px){.tools-hero.toolkit-entry{padding:28px 20px 20px}.toolkit-entry h1{font-size:34px}.toolkit-entry-actions{gap:10px;margin-top:20px}.toolkit-entry-actions a{font-size:13px;padding:10px 12px;gap:10px}}
+@media(prefers-reduced-motion:reduce){.toolkit-entry-actions svg,.toolkit-overview summary::after{transition:none}}

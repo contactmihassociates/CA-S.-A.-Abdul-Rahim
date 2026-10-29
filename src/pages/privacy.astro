@@ -1,4 +1,6 @@
 ---
+import PageHero from '../components/PageHero.astro';
+import SideContact from '../components/SideContact.astro';
 import Base from '../layouts/Base.astro';
 import { NAP } from '../data/site';
 ---
@@ -8,11 +10,11 @@ import { NAP } from '../data/site';
   path="/privacy/"
   crumbs={[{ name: 'Privacy', path: '/privacy/' }]}
 >
-  <article class="narrow">
-    <h1>Privacy policy</h1>
-    <p class="lead">This website does not use advertising, tracking pixels or analytics cookies, and it has no contact forms. It does not collect your personal data.</p>
+  <PageHero crumbs={[{ name: 'Privacy', path: '/privacy/' }]} h1={"Privacy policy"} lead={"This website does not use advertising, tracking pixels or analytics cookies, and it has no contact forms. It does not collect your personal data."} />
+  <div class="wrap layout">
+  <article class="prose">
     <h2>Cookies and browser storage</h2>
-    <p>This website sets no cookies of its own and stores nothing in your browser.</p>
+    <p>This website sets no cookies of its own. The calculators save the figures you enter, and any scenarios you save, in your own browser (local storage) so that they are still there when you come back. This data stays on your device, is never sent to the office or any server, and can be removed with the Reset button in a calculator or by clearing your browser's site data. A calculator link you choose to share carries the figures in the link itself.</p>
     <h2>Google Maps</h2>
     <p>The contact, home and areas pages show an embedded Google Map. When the map loads, Google may set cookies and receive your IP address under Google's own privacy policy. You can avoid this by using the address shown in text instead.</p>
     <h2>Phone, WhatsApp and email</h2>
@@ -25,4 +27,6 @@ import { NAP } from '../data/site';
     <p>{NAP.name}, {NAP.addressLine}. Phone <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a>.</p>
     <p class="meta">Last reviewed: <time datetime="2026-10-29">29 October 2026</time>. Source: <a href="https://www.meity.gov.in/" rel="noopener">Ministry of Electronics and Information Technology (meity.gov.in)</a>.</p>
   </article>
+  <div class="sidebar"><SideContact /></div>
+  </div>
 </Base>

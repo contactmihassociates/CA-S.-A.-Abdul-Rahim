@@ -1,0 +1,12 @@
+.tool-loading{min-height:360px;padding:32px;display:flex;align-items:flex-start;gap:20px}
+.tool-loading h2{margin:0 0 12px;font:500 28px/1.2 var(--serif)}
+.tool-loading p{margin:0 0 16px;max-width:40ch}
+.tool-loading svg{flex:none;width:52px;height:64px;stroke:var(--accent,#1B6E7E);fill:none;stroke-width:2}
+.tool-loading .load-line{stroke-dasharray:32;stroke-dashoffset:0;animation:tool-line-in .65s ease-out 1}
+.tool-loading button{min-height:44px;padding:10px 20px;border:1px solid currentColor;border-radius:8px;background:transparent;color:inherit;cursor:pointer}
+.tool-loading button:focus-visible{outline:3px solid var(--accent,#1B6E7E);outline-offset:3px}
+@keyframes tool-line-in{from{stroke-dashoffset:32}to{stroke-dashoffset:0}}
+@media(max-width:600px){.tool-loading{padding:24px 18px;gap:14px}.tool-loading h2{font-size:24px}}
+@media(prefers-reduced-motion:reduce){.tool-loading .load-line{animation:none}}
+
+.tool-loading[data-motion-paused="true"] .load-line{animation-play-state:paused}

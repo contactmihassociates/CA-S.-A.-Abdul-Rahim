@@ -1,0 +1,26 @@
+/* Transfer ledger and finite comparison motion; all figures stay readable. */
+.vda-panel .grid-2col{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+.vda-ledger-head,.vda-trade-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.vda-trade{min-width:0;margin:16px 0;padding:16px;border:1px solid var(--line-soft);border-radius:14px;background:var(--bg-raised,var(--bg));color:var(--fg)}
+.vda-trade legend{font:600 13px/1.5 var(--sans);padding:0 8px;color:var(--fg)}
+.vda-field{display:flex;flex-direction:column;gap:6px;min-width:0;margin-bottom:12px;font:500 12px/1.5 var(--sans);color:var(--fg-dim)}
+.vda-field input{width:100%;min-width:0;border:1px solid var(--line-soft);border-radius:8px;padding:11px 12px;background:var(--bg-input,var(--bg));color:var(--fg);font:400 14px/1.4 var(--sans)}
+.vda-field input:focus-visible,.vda-review summary:focus-visible{outline:3px solid var(--accent,#1f7a8c);outline-offset:3px}
+.vda-trade-top .vda-field{flex:1;margin:0}.vda-trade .btn{min-height:44px}
+.vda-trade-note{padding:10px 12px;border-left:3px solid #1f7a8c;background:var(--bg);font-size:12px;line-height:1.6;color:var(--fg)}
+.vda-trade-note.loss{border-color:#ac5f35}
+.vda-review{padding:14px;border:1px solid var(--line-soft);border-radius:12px;margin:16px 0;font-size:13px;line-height:1.7;color:var(--fg-dim)}
+.vda-review summary{font-weight:600;cursor:pointer;color:var(--fg)}
+.vda-review p{margin:12px 0}
+.vda-summary>p{font-size:13px;line-height:1.6;margin:12px 0}
+.vda-credit{display:grid;gap:8px;border-top:1px solid currentColor;margin-top:16px;padding-top:16px;font-size:13px}.vda-credit b{font:600 24px var(--mono)}.vda-credit small{font-size:12px;line-height:1.6}
+.vda-flow{border:1px solid var(--line-soft);border-radius:14px;padding:20px;margin:18px 0;background:var(--bg);color:var(--fg)}
+.vda-flow h3{font:500 18px/1.3 var(--sans);margin:0 0 20px}.vda-flow ol{list-style:none;margin:0;padding:0;counter-reset:flow}
+.vda-flow li{display:grid;grid-template-columns:1fr auto;gap:8px;margin:16px 0;font-size:12px}.vda-flow li>span:before{counter-increment:flow;content:counter(flow) " · ";color:var(--fg-soft)}
+.vda-flow b{font-family:var(--mono)}.vda-flow p{font-size:12px;line-height:1.6;color:var(--fg-dim);margin:16px 0 0}
+.vda-meter{grid-column:1/-1;height:8px;overflow:hidden;border-radius:9px;background:var(--line-soft)}
+.vda-meter i{display:block;width:100%;height:100%;background:#1f7a8c;transform-origin:left;transition:transform .25s ease}
+.vda-meter .loss{background:#ad714c}.vda-meter .tax{background:#476ca0}.vda-meter .cess{background:#76939a}
+@media(max-width:600px){.vda-trade .field-row{display:grid;grid-template-columns:1fr}.vda-flow{padding:16px}.vda-panel .grid-2col{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.vda-meter i{transition:none!important}}
+@media print{.vda-meter{display:none}.vda-trade{break-inside:avoid}}

@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
-import { NAP, SITE_URL, REVIEWED_TEXT, SERVICES } from '../data/site';
+import Icon from '../components/Icon.astro';
+import { NAP, SITE_URL, REVIEWED_TEXT, SERVICES, GUIDES } from '../data/site';
 import { accountingService, person, breadcrumb } from '../data/schema';
 
 interface Props {
@@ -18,14 +19,14 @@ const graph = {
   '@context': 'https://schema.org',
   '@graph': [accountingService, person, breadcrumb(allCrumbs), ...schema],
 };
+const groups = [...new Set(SERVICES.map((s) => s.group))];
 const nav = [
-  { href: '/', label: 'Home' },
-  { href: '/about/', label: 'About' },
-  { href: '/#services', label: 'Services' },
+  { href: '/tools/', label: 'Calculators' },
   { href: '/guides/', label: 'Guides' },
-  { href: '/areas/', label: 'Areas' },
+  { href: '/about/', label: 'About' },
   { href: '/contact/', label: 'Contact' },
 ];
+const current = (href: string) => (path === href || (href !== '/' && path.startsWith(href)) ? 'page' : undefined);
 const year = 2026;
 ---
 <!doctype html>
@@ -37,7 +38,7 @@ const year = 2026;
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-  <meta name="theme-color" content="#1b2a4a" />
+  <meta name="theme-color" content="#0c1a36" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="/fonts/source-sans-400.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/source-serif-600.woff2" as="font" type="font/woff2" crossorigin />
@@ -57,69 +58,122 @@ const year = 2026;
   <meta name="twitter:image" content={`${SITE_URL}/og-image.png`} />
   <script type="application/ld+json" set:html={JSON.stringify(graph)} />
   <script src="/js/site.js" defer></script>
+  <slot name="head" />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="topline">
+    <div class="wrap">
+      <span><Icon name="clock" /> {NAP.hoursText}</span>
+      <span class="tl-right">
+        <a href={`tel:${NAP.phoneTel}`}><Icon name="phone" /> {NAP.phone}</a>
+        <a href={`mailto:${NAP.email}`}><Icon name="mail" /> {NAP.email}</a>
+      </span>
+    </div>
+  </div>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="/">{NAP.name}<small>{NAP.designation} · Adyar, Chennai · Since {NAP.sinceYear}</small></a>
+      <a class="brand" href="/"><strong>{NAP.name}</strong><small>{NAP.designation} · Adyar, Chennai</small></a>
       <nav class="nav" aria-label="Main">
         <ul>
-          {nav.map((n) => <li><a href={n.href} aria-current={n.href === path ? 'page' : undefined}>{n.label}</a></li>)}
+          <li class="has-mega">
+            <a href="/#services" aria-current={path === '/' ? undefined : SERVICES.some((s) => s.href === path) ? 'page' : undefined}>Services</a>
+            <div class="mega">
+              {groups.map((g) => (
+                <div>
+                  <h3>{g}</h3>
+                  <ul>{SERVICES.filter((s) => s.group === g).map((s) => <li><a href={s.href}>{s.label}</a></li>)}</ul>
+                </div>
+              ))}
+              <div>
+                <h3>Guides</h3>
+                <ul>{GUIDES.slice(0, 3).map((g) => <li><a href={g.href}>{g.title}</a></li>)}</ul>
+              </div>
+              <div class="mega-foot">
+                <span>Office in Shastri Nagar, Adyar. {NAP.hoursText}</span>
+                <a class="link-arrow" href="/areas/">Areas and directions</a>
+              </div>
+            </div>
+          </li>
+          {nav.map((n) => <li><a href={n.href} aria-current={current(n.href)}>{n.label}</a></li>)}
         </ul>
+        <div class="header-cta">
+          <a class="btn small" href={`tel:${NAP.phoneTel}`}><Icon name="phone" /> {NAP.phone}</a>
+        </div>
       </nav>
+      <details class="m-nav">
+        <summary>Menu</summary>
+        <div class="m-panel">
+          <ul>
+            <li><a href="/">Home</a></li>
+            {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+            <li><a href="/areas/">Areas and directions</a></li>
+          </ul>
+          {groups.map((g) => (
+            <>
+              <h3>{g}</h3>
+              <ul>{SERVICES.filter((s) => s.group === g).map((s) => <li><a href={s.href}>{s.label}</a></li>)}</ul>
+            </>
+          ))}
+          <div class="btn-row">
+            <a class="btn" href={`tel:${NAP.phoneTel}`}>Call {NAP.phone}</a>
+            <a class="btn alt" href={NAP.whatsappLink} rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </details>
     </div>
   </header>
 
-  {allCrumbs.length > 1 && (
-    <nav class="wrap crumbs" aria-label="Breadcrumb">
-      <ol>
-        {allCrumbs.map((c, i) => (
-          <li>{i === allCrumbs.length - 1 ? <span aria-current="page">{c.name}</span> : <a href={c.path}>{c.name}</a>}</li>
-        ))}
-      </ol>
-    </nav>
-  )}
-
-  <main id="main" class="wrap">
+  <main id="main">
     <slot />
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
       <div class="foot-grid">
-        <div>
-          <h2>{NAP.name}</h2>
-          <p class="nap">{NAP.designation}<br /><span class="nap-address">{NAP.addressLine}</span></p>
-          <p>Phone: <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a><br />
-          Other phone: <a href={`tel:${NAP.phone2Tel}`}>{NAP.phone2}</a><br />
-          WhatsApp: <a href={NAP.whatsappLink} rel="noopener">{NAP.whatsapp}</a><br />
-          Email: <a href={`mailto:${NAP.email}`}>{NAP.email}</a></p>
-          <p>{NAP.hoursText}</p>
+        <div class="foot-brand">
+          <strong>{NAP.name}</strong>
+          <small>{NAP.designation} · Since {NAP.sinceYear}</small>
+          <ul class="info-list">
+            <li><Icon name="pin" /><span class="nap-address">{NAP.addressLine}</span></li>
+            <li><Icon name="phone" /><span><a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> · <a href={`tel:${NAP.phone2Tel}`}>{NAP.phone2}</a></span></li>
+            <li><Icon name="chat" /><span>WhatsApp: <a href={NAP.whatsappLink} rel="noopener">{NAP.whatsapp}</a></span></li>
+            <li><Icon name="mail" /><span>Email: <a href={`mailto:${NAP.email}`}>{NAP.email}</a></span></li>
+            <li><Icon name="clock" /><span>{NAP.hoursText}</span></li>
+          </ul>
         </div>
         <div>
-          <h2>Services</h2>
-          <ul>{SERVICES.slice(0, 8).map((s) => <li><a href={s.href}>{s.label}</a></li>)}</ul>
+          <h2>Tax and TDS</h2>
+          <ul>{SERVICES.slice(0, 7).map((s) => <li><a href={s.href}>{s.label}</a></li>)}</ul>
         </div>
         <div>
-          <h2>More</h2>
+          <h2>GST, audit and registrations</h2>
+          <ul>{SERVICES.slice(7).map((s) => <li><a href={s.href}>{s.label}</a></li>)}</ul>
+        </div>
+        <div>
+          <h2>Resources</h2>
           <ul>
-            {SERVICES.slice(8).map((s) => <li><a href={s.href}>{s.label}</a></li>)}
+            <li><a href="/tools/">Tax and finance calculators</a></li>
             <li><a href="/guides/">Guides</a></li>
+            <li><a href="/about/">About</a></li>
             <li><a href="/areas/">Areas and directions</a></li>
-            <li><a href="/disclaimer/">Disclaimer</a></li>
-            <li><a href="/privacy/">Privacy</a></li>
+            <li><a href="/contact/">Contact</a></li>
           </ul>
         </div>
       </div>
-      <p class="disclaimer-line">General information only. Not professional advice. Content reviewed on {REVIEWED_TEXT}.<br />© {year} {NAP.name}. This website follows the guidelines of the Institute of Chartered Accountants of India for members' websites.</p>
+      <div class="foot-bottom">
+        <p class="disclaimer-line">General information only. Not professional advice. Content reviewed on {REVIEWED_TEXT}.<br />© {year} {NAP.name}. This website follows the guidelines of the Institute of Chartered Accountants of India for members' websites.</p>
+        <ul>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+          <li><a href="/privacy/">Privacy</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 
   <div class="action-bar" aria-label="Quick contact">
-    <a class="btn" href={`tel:${NAP.phoneTel}`}>Call</a>
-    <a class="btn alt" href={NAP.whatsappLink} rel="noopener">WhatsApp</a>
+    <a class="btn" href={`tel:${NAP.phoneTel}`}><Icon name="phone" /> Call</a>
+    <a class="btn alt" href={NAP.whatsappLink} rel="noopener"><Icon name="chat" /> WhatsApp</a>
   </div>
-
 </body>
 </html>

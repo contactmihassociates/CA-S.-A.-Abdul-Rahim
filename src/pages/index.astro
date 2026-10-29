@@ -1,73 +1,207 @@
 ---
 import Base from '../layouts/Base.astro';
-import Map from '../components/Map.astro';
+import Icon from '../components/Icon.astro';
 import { NAP, AREAS, SERVICES, GUIDES } from '../data/site';
+import { TOOLS, CATEGORIES } from '../data/tools';
+
 const groups = [...new Set(SERVICES.map((s) => s.group))];
+const groupIcon: Record<string, 'doc' | 'receipt' | 'percent' | 'audit' | 'building'> = {
+  'Income tax': 'doc', TDS: 'receipt', GST: 'percent', 'Audit and accounts': 'audit', Registrations: 'building',
+};
+const popular = ['it', 'hra', 'capgains', 'sec194ia', 'advtax', 'gst', 'emi', 'gratuity', 'tds', 'rentreceipt']
+  .map((k) => TOOLS.find((t) => t.key === k)!).filter(Boolean);
+const years = 2026 - NAP.sinceYear;
 ---
 <Base
   title="CA S. A. Abdul Rahim, Chartered Accountant in Adyar"
   description="Chartered Accountant in Adyar, Chennai, in practice since 1985. Income tax, TDS, GST, audit, accounts and registrations. Office in Shastri Nagar."
   path="/"
 >
-  <section class="narrow">
-    <h1>CA S. A. Abdul Rahim, Chartered Accountant in Adyar, Chennai</h1>
-    <p class="lead">CA S. A. Abdul Rahim is a Chartered Accountant (CA) in practice in Adyar, Chennai, since 1985. The office at 14/2, 15th Cross Street, Shastri Nagar, Adyar, handles income tax returns, TDS, GST, tax audit, statutory audit, accounting and business registrations for individuals, families, businesses and trusts.</p>
-    <p>People searching for a CA in Adyar, a chartered accountant or an auditor in Adyar usually need help with one specific task: filing a return, replying to a notice, deducting TDS on a property purchase, registering for GST or getting accounts audited. This website explains each of these tasks in plain language, with links to the official government sources, so you can understand what is involved before you call or visit.</p>
-    <dl class="facts">
-      <dt>Name</dt><dd>{NAP.name}</dd>
-      <dt>Designation</dt><dd>{NAP.designation}</dd>
-      <dt>In practice since</dt><dd>{NAP.sinceYear}</dd>
-      <dt>Address</dt><dd>{NAP.addressLine}</dd>
-      <dt>Phone</dt><dd><a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> · <a href={`tel:${NAP.phone2Tel}`}>{NAP.phone2}</a></dd>
-      <dt>WhatsApp</dt><dd><a href={NAP.whatsappLink} rel="noopener">{NAP.whatsapp}</a></dd>
-      <dt>Email</dt><dd><a href={`mailto:${NAP.email}`}>{NAP.email}</a></dd>
-      <dt>Hours</dt><dd>{NAP.hoursText}</dd>
-      <dt>Languages</dt><dd>{NAP.languages.join(', ')}</dd>
-    </dl>
-  </section>
-
-  <section id="services" aria-labelledby="services-h">
-    <h2 id="services-h">Services of the CA office in Adyar</h2>
-    <p class="narrow">Each page below explains who needs the service, the documents usually needed, how the work is done and the key dates, with links to the official portals.</p>
-    {groups.map((g) => (
-      <>
-        <h3>{g}</h3>
-        <div class="grid">
-          {SERVICES.filter((s) => s.group === g).map((s) => (
-            <div class="card"><h3><a href={s.href}>{s.label}</a></h3><p>{s.blurb}</p></div>
-          ))}
+  <section class="hero on-dark">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Chartered Accountant · Adyar, Chennai · Since {NAP.sinceYear}</p>
+        <h1>CA S. A. Abdul Rahim, <em>Chartered Accountant</em> in Adyar, Chennai</h1>
+        <p class="lead-hero">CA S. A. Abdul Rahim is a Chartered Accountant (CA) in practice in Adyar, Chennai, since 1985. The office at 14/2, 15th Cross Street, Shastri Nagar, Adyar, handles income tax returns, TDS, GST, tax audit, statutory audit, accounting and business registrations for individuals, families, businesses and trusts.</p>
+        <div class="btn-row">
+          <a class="btn gold" href={`tel:${NAP.phoneTel}`}><Icon name="phone" /> Call {NAP.phone}</a>
+          <a class="btn ghost-light" href={NAP.whatsappLink} rel="noopener"><Icon name="chat" /> WhatsApp</a>
+          <a class="btn ghost-light" href="/tools/"><Icon name="calc" /> Calculators</a>
         </div>
-      </>
-    ))}
+      </div>
+      <aside class="hero-card" aria-labelledby="office-h">
+        <h2 id="office-h">The office <span class="status" data-open-status>Mon to Sat</span></h2>
+        <dl>
+          <div><dt><Icon name="pin" /></dt><dd><small>Address</small>{NAP.addressLine}</dd></div>
+          <div><dt><Icon name="clock" /></dt><dd><small>Hours</small>{NAP.hoursText}</dd></div>
+          <div><dt><Icon name="phone" /></dt><dd><small>Phone</small><a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> · <a href={`tel:${NAP.phone2Tel}`}>{NAP.phone2}</a></dd></div>
+          <div><dt><Icon name="mail" /></dt><dd><small>Email</small><a href={`mailto:${NAP.email}`}>{NAP.email}</a></dd></div>
+          <div><dt><Icon name="language" /></dt><dd><small>Languages</small>{NAP.languages.join(', ')}</dd></div>
+        </dl>
+        <div class="btn-row">
+          <a class="btn ghost-light small" href={NAP.directionsUrl} data-directions rel="noopener"><Icon name="directions" /> Directions</a>
+          <a class="btn ghost-light small" href="/contact/">Contact page</a>
+        </div>
+      </aside>
+    </div>
   </section>
 
-  <section class="narrow" aria-labelledby="who-h">
-    <h2 id="who-h">Who the office works with</h2>
-    <p>The practice works with salaried employees and pensioners filing their income tax returns, senior citizens, people buying or selling a house, flat or land, non-resident Indians (NRIs) with property or income in Chennai, shopkeepers, traders and service businesses registered under GST, professionals such as doctors, lawyers and consultants, private limited companies and LLPs that need a statutory audit and annual filings with the Registrar of Companies, and charitable trusts and societies that need registration, returns and audit.</p>
-    <p>Work is explained in Tamil, English or Hindi. Documents can be brought to the office or shared on WhatsApp or by email after a phone call.</p>
+  <div class="wrap facts-strip">
+    <ul>
+      <li><b>{NAP.sinceYear}</b><span>In practice since 12 April 1985</span></li>
+      <li><b>{years} years</b><span>Of practice in Adyar, Chennai</span></li>
+      <li><b>{TOOLS.length}</b><span>Tax and finance calculators</span></li>
+      <li><b>3 languages</b><span>Tamil, English and Hindi</span></li>
+    </ul>
+  </div>
+
+  <section class="section" id="services" aria-labelledby="services-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Services</p>
+          <h2 id="services-h">Services of the CA office in Adyar</h2>
+          <p>Each page explains who needs the service, the documents usually needed, how the work is done and the key dates, with links to the official portals.</p>
+        </div>
+      </div>
+      {groups.map((g) => (
+        <div class="service-group">
+          <h3>{g}</h3>
+          <div class="cards">
+            {SERVICES.filter((s) => s.group === g).map((s) => (
+              <a class="card reveal" href={s.href}>
+                <span class="card-icon"><Icon name={groupIcon[g] ?? 'doc'} /></span>
+                <h3>{s.label}</h3>
+                <p>{s.blurb}</p>
+                <span class="more">Read more</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
   </section>
 
-  <section class="narrow" aria-labelledby="areas-h">
-    <h2 id="areas-h">Areas near the Adyar office</h2>
-    <p>The office is in Shastri Nagar, Adyar, close to Besant Nagar, Thiruvanmiyur and Indira Nagar. People also visit from these nearby areas of Chennai:</p>
-    <p>{AREAS.join(' · ')}</p>
-    <p>For directions from each area, see <a href="/areas/">areas and how to reach the office</a>.</p>
+  <section class="section dark" aria-labelledby="tools-h">
+    <div class="wrap tools-band">
+      <div>
+        <p class="eyebrow">Calculators</p>
+        <h2 id="tools-h">{TOOLS.length} calculators for income tax, GST, TDS and more</h2>
+        <p>Work out income tax under both regimes, HRA, capital gains, TDS on property, advance tax interest, GST, EMI, gratuity and more. Each calculator shows its working and the year it applies to. Results are estimates for the figures you enter.</p>
+        <div class="pills">{popular.map((t) => <a href={`/tools/${t.key}/`}>{t.copy.h1}</a>)}</div>
+        <a class="btn gold" href="/tools/"><Icon name="search" /> Browse all calculators</a>
+      </div>
+      <div class="tool-cats">
+        {CATEGORIES.map((c) => <a href={`/tools/#${c.k}`}>{c.label}<span>{c.tools.length}</span></a>)}
+      </div>
+    </div>
   </section>
 
-  <section class="narrow" aria-labelledby="map-h">
-    <h2 id="map-h">Office location and hours</h2>
-    <p>{NAP.addressLine}. {NAP.hoursText}</p>
-    <Map />
+  <section class="section" aria-labelledby="who-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Who the office works with</p>
+          <h2 id="who-h">Individuals, families, businesses and trusts</h2>
+          <p>Work is explained in Tamil, English or Hindi. Documents can be brought to the office or shared on WhatsApp or by email after a phone call.</p>
+        </div>
+      </div>
+      <div class="audience">
+        <div class="reveal"><h3><Icon name="user" /> Salaried and pensioners</h3><p>Salaried employees, pensioners and senior citizens filing their income tax returns.</p></div>
+        <div class="reveal"><h3><Icon name="home" /> Property buyers and sellers</h3><p>People buying or selling a house, flat or land, including TDS and capital gains.</p></div>
+        <div class="reveal"><h3><Icon name="globe" /> Non-resident Indians</h3><p>NRIs with property or income in Chennai, including lower TDS certificates.</p></div>
+        <div class="reveal"><h3><Icon name="briefcase" /> Shops, traders and professionals</h3><p>Shopkeepers, traders and service businesses under GST, and professionals such as doctors, lawyers and consultants.</p></div>
+        <div class="reveal"><h3><Icon name="building" /> Companies and LLPs</h3><p>Private limited companies and LLPs that need a statutory audit and annual filings with the Registrar of Companies.</p></div>
+        <div class="reveal"><h3><Icon name="heart" /> Trusts and societies</h3><p>Charitable trusts and societies that need registration, returns and audit.</p></div>
+      </div>
+    </div>
   </section>
 
-  <section class="narrow" aria-labelledby="guides-h">
-    <h2 id="guides-h">Guides</h2>
-    <ul>{GUIDES.map((g) => <li><a href={g.href}>{g.title}</a></li>)}</ul>
+  <section class="section tint" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">How work is done</p>
+          <h2 id="how-h">From the first call to filing</h2>
+          <p>People searching for a CA in Adyar, a chartered accountant or an auditor in Adyar usually need help with one specific task: filing a return, replying to a notice, deducting TDS on a property purchase, registering for GST or getting accounts audited.</p>
+        </div>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><h3>Call or WhatsApp</h3><p>Explain the task in a short call. The office tells you which documents to bring or send.</p></li>
+        <li class="reveal"><h3>Share documents</h3><p>Bring them to Shastri Nagar, Adyar, or share them on WhatsApp or by email.</p></li>
+        <li class="reveal"><h3>Working and checks</h3><p>Figures are worked out and checked against the portal data, such as AIS and Form 26AS.</p></li>
+        <li class="reveal"><h3>Filing and records</h3><p>The return or form is filed and the acknowledgement and working are shared with you.</p></li>
+      </ol>
+    </div>
   </section>
 
-  <section class="narrow" aria-labelledby="contact-h">
-    <h2 id="contact-h">Contact</h2>
-    <p>Phone <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> or <a href={`tel:${NAP.phone2Tel}`}>{NAP.phone2}</a>. WhatsApp <a href={NAP.whatsappLink} rel="noopener">{NAP.whatsapp}</a>. Email <a href={`mailto:${NAP.email}`}>{NAP.email}</a>. Full details and directions are on the <a href="/contact/">contact page</a>.</p>
-    <p class="meta">Last reviewed: <time datetime="2026-10-29">29 October 2026</time>. Official sources: <a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a>, <a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a>, <a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a>.</p>
+  <section class="section" aria-labelledby="guides-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Guides</p>
+          <h2 id="guides-h">Plain-language guides</h2>
+          <p>This website explains each task in plain language, with links to the official government sources, so you can understand what is involved before you call or visit.</p>
+        </div>
+        <a class="link-arrow" href="/guides/">All guides</a>
+      </div>
+      <div class="cards cards-3">
+        {GUIDES.map((g) => (
+          <a class="card reveal" href={g.href}>
+            <span class="card-icon"><Icon name="book" /></span>
+            <h3>{g.title}</h3>
+            <span class="more">Read the guide</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section tint" aria-labelledby="map-h">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Visit</p>
+          <h2 id="map-h">Office location and hours</h2>
+          <p>The office is in Shastri Nagar, Adyar, close to Besant Nagar, Thiruvanmiyur and Indira Nagar. People also visit from these nearby areas of Chennai.</p>
+        </div>
+        <a class="link-arrow" href="/areas/">Areas and how to reach the office</a>
+      </div>
+      <div class="visit">
+        <iframe class="map" src={NAP.mapEmbed} title="Map showing the office of CA S. A. Abdul Rahim in Shastri Nagar, Adyar, Chennai" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="360"></iframe>
+        <div class="info-card">
+          <h3>{NAP.name}</h3>
+          <ul class="info-list">
+            <li><Icon name="pin" /><span><small>Address</small>{NAP.addressLine}</span></li>
+            <li><Icon name="clock" /><span><small>Hours</small>{NAP.hoursText}</span></li>
+            <li><Icon name="phone" /><span><small>Phone</small><a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> · <a href={`tel:${NAP.phone2Tel}`}>{NAP.phone2}</a></span></li>
+            <li><Icon name="chat" /><span><small>WhatsApp</small><a href={NAP.whatsappLink} rel="noopener">{NAP.whatsapp}</a></span></li>
+            <li><Icon name="mail" /><span><small>Email</small><a href={`mailto:${NAP.email}`}>{NAP.email}</a></span></li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn" href={NAP.directionsUrl} data-directions rel="noopener"><Icon name="directions" /> Get directions</a>
+            <a class="btn alt" href={NAP.mapsUrl} rel="noopener">Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+      <h3 class="sr-only">Areas near the Adyar office</h3>
+      <ul class="area-chips spaced">{AREAS.map((a) => <li>{a}</li>)}</ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h2 id="contact-h">Contact</h2>
+          <p>Phone <a href={`tel:${NAP.phoneTel}`}>{NAP.phone}</a> or <a href={`tel:${NAP.phone2Tel}`}>{NAP.phone2}</a>. WhatsApp <a href={NAP.whatsappLink} rel="noopener">{NAP.whatsapp}</a>. Email <a href={`mailto:${NAP.email}`}>{NAP.email}</a>. Full details and directions are on the <a href="/contact/">contact page</a>.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn gold" href={`tel:${NAP.phoneTel}`}><Icon name="phone" /> Call</a>
+          <a class="btn ghost-light" href={NAP.whatsappLink} rel="noopener"><Icon name="chat" /> WhatsApp</a>
+        </div>
+      </div>
+      <p class="meta spaced">Last reviewed: <time datetime="2026-10-29">29 October 2026</time>. Official sources: <a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a>, <a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a>, <a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a>.</p>
+    </div>
   </section>
 </Base>

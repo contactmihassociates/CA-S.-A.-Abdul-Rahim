@@ -1,10 +1,12 @@
 import { SITE_URL, SERVICES, GUIDES, REVIEWED_ISO } from '../data/site';
+import { TOOLS } from '../data/tools';
 
 const paths = [
   '/', '/about/',
   ...SERVICES.map((s) => s.href),
   '/areas/', '/guides/',
   ...GUIDES.map((g) => g.href),
+  '/tools/', ...TOOLS.map((t) => `/tools/${t.key}/`),
   '/contact/', '/disclaimer/', '/privacy/',
 ];
 
