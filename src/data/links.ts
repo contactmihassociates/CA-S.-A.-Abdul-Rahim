@@ -37,3 +37,23 @@ export const TOOL_GUIDES: Record<string, string[]> = {
   audit: [g('tax-audit-who-needs-it-what-to-prepare')],
   penalty: [g('income-tax-notice-first-steps')],
 };
+
+// Guides that share a service page with this guide, most shared first (used as "Related guides" on guide pages).
+export function relatedGuides(path: string, max = 3): string[] {
+  const score = new Map<string, number>();
+  for (const list of Object.values(SERVICE_GUIDES)) {
+    if (!list.includes(path)) continue;
+    for (const h of list) if (h !== path) score.set(h, (score.get(h) ?? 0) + 1);
+  }
+  return [...score.entries()].sort((a, b) => b[1] - a[1]).slice(0, max).map(([h]) => h);
+}
+
+// Guides shown in the site footer on every page.
+export const FOOTER_GUIDES = [
+  g('tds-on-property-purchase-50-lakh-step-by-step'),
+  g('nri-selling-property-chennai-tds-lower-certificate'),
+  g('documents-for-itr-filing-salaried-pensioners'),
+  g('capital-gains-exemption-new-house-cgas'),
+  g('advance-tax-due-dates-interest'),
+  g('income-tax-notice-first-steps'),
+];

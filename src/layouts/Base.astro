@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Icon from '../components/Icon.astro';
 import { NAP, SITE_URL, REVIEWED_TEXT, SERVICES, GUIDES } from '../data/site';
 import { accountingService, person, website, breadcrumb } from '../data/schema';
+import { FOOTER_GUIDES } from '../data/links';
 
 interface Props {
   title: string;
@@ -96,6 +97,7 @@ const year = 2026;
               </div>
               <div class="mega-foot">
                 <span>Office in Shastri Nagar, Adyar. {NAP.hoursText}</span>
+                <a class="link-arrow" href="/tools/income-tax-calculator/">Income tax calculator</a>
                 <a class="link-arrow" href="/areas/">Areas and directions</a>
               </div>
             </div>
@@ -112,6 +114,7 @@ const year = 2026;
           <ul>
             <li><a href="/">Home</a></li>
             {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+            <li><a href="/tools/income-tax-calculator/">Income tax calculator</a></li>
             <li><a href="/areas/">Areas and directions</a></li>
           </ul>
           {groups.map((g) => (
@@ -159,6 +162,7 @@ const year = 2026;
         <div>
           <h2>Resources</h2>
           <ul>
+            <li><a href="/tools/income-tax-calculator/">Income tax calculator, old vs new</a></li>
             <li><a href="/tools/">Tax and finance calculators</a></li>
             <li><a href="/guides/">Guides</a></li>
             <li><a href="/about/">About</a></li>
@@ -166,6 +170,10 @@ const year = 2026;
             <li><a href="/contact/">Contact</a></li>
             <li><a href={NAP.linkedin} rel="noopener me">LinkedIn</a></li>
           </ul>
+        </div>
+        <div>
+          <h2>Popular guides</h2>
+          <ul>{FOOTER_GUIDES.map((h) => GUIDES.find((x) => x.href === h)).filter(Boolean).map((gd) => <li><a href={gd!.href}>{gd!.title}</a></li>)}</ul>
         </div>
       </div>
       <div class="foot-bottom">
