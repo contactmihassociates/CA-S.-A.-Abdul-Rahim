@@ -41,6 +41,6 @@ Static website for CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai. B
 ## Deployment (Vercel)
 
 - `vercel.json` sets the build (`npm run build`, output `dist`), trailing slashes, security headers (CSP, HSTS, X-Frame-Options and others), cache rules and the `www` to apex redirect.
-- Node.js version: 22.x, set by `engines` in `package.json`.
+- Node.js version: Vercel default (24.x).
 - Custom domains: `casaabdulrahim.in` (primary) and `www.casaabdulrahim.in`. At GoDaddy, add the A and CNAME records Vercel shows under Project Settings, Domains.
 - Every push to `main` deploys automatically.
