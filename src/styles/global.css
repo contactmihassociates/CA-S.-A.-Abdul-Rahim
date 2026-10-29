@@ -377,3 +377,8 @@ dl.facts dd { margin: 0; }
   .facts-strip li { padding: 1.1rem 1.15rem; }
 }
 .side-card.dark .btn.gold, .side-card.dark .btn.gold:hover { color: var(--ink); }
+.brand { flex-direction: row; align-items: center; gap: 0.75rem; }
+.brand > span { display: flex; flex-direction: column; }
+.brand-logo { width: 4rem; height: auto; flex: none; }
+.foot-logo { display: block; width: 6rem; height: auto; margin-bottom: 1rem; padding: 0.4rem; background: #fff; border-radius: 10px; }
+@media (max-width: 767px) { .brand-logo { width: 3rem; } }

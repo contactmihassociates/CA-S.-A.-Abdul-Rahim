@@ -39,7 +39,9 @@ const year = 2026;
   <link rel="canonical" href={canonical} />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <meta name="theme-color" content="#0c1a36" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="preload" href="/fonts/source-sans-400.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/source-serif-600.woff2" as="font" type="font/woff2" crossorigin />
   <meta property="og:type" content={ogType} />
@@ -73,7 +75,7 @@ const year = 2026;
   </div>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="/"><strong>{NAP.name}</strong><small>{NAP.designation} · Adyar, Chennai</small></a>
+      <a class="brand" href="/"><img class="brand-logo" src="/ca-logo-header.png" alt="CA India logo" width="240" height="186" /><span><strong>{NAP.name}</strong><small>{NAP.designation} · Adyar, Chennai</small></span></a>
       <nav class="nav" aria-label="Main">
         <ul>
           <li class="has-mega">
@@ -132,6 +134,7 @@ const year = 2026;
     <div class="wrap">
       <div class="foot-grid">
         <div class="foot-brand">
+          <img class="foot-logo" src="/ca-logo-header.png" alt="CA India logo" width="240" height="186" loading="lazy" />
           <strong>{NAP.name}</strong>
           <small>{NAP.designation} · Since {NAP.sinceYear}</small>
           <ul class="info-list">
