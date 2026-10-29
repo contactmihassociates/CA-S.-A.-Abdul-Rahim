@@ -131,10 +131,6 @@ dl.facts dd { margin: 0; }
   .nav a { padding: 0.5rem 0.5rem; }
 }
 
-/* Disclaimer dialog */
-dialog.disclaimer { max-width: 34rem; width: calc(100% - 2rem); border: 0; border-top: 5px solid var(--gold); border-radius: var(--radius); padding: 1.5rem; background: var(--paper); color: var(--text); }
-dialog.disclaimer::backdrop { background: rgba(27, 42, 74, 0.82); }
-dialog.disclaimer h2 { margin-top: 0; }
 
 @media print { .site-header .nav, .action-bar, .map { display: none; } }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
