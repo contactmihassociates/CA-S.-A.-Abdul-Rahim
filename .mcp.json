@@ -4,6 +4,7 @@
       "type": "stdio",
       "command": "node",
       "args": [
+        "--env-file-if-exists=C:/Users/HP/Desktop/seo-tools/.env",
         "C:/Users/HP/Desktop/seo-tools/node_modules/search-console-mcp/dist/index.js"
       ],
       "env": {}
