@@ -3,7 +3,7 @@ const g = (slug: string) => `/guides/${slug}/`;
 
 export const SERVICE_GUIDES: Record<string, string[]> = {
   '/income-tax-return-filing-chennai/': [g('documents-for-itr-filing-salaried-pensioners'), g('advance-tax-due-dates-interest'), g('rental-income-tax-let-out-property'), g('income-tax-notice-first-steps')],
-  '/income-tax-notice-reply-chennai/': [g('income-tax-notice-first-steps'), g('advance-tax-due-dates-interest')],
+  '/income-tax-notice-reply-chennai/': [g('income-tax-notice-land-property-purchase'), g('income-tax-notice-first-steps'), g('advance-tax-due-dates-interest')],
   '/capital-gains-tax-property-sale/': [g('capital-gains-exemption-new-house-cgas'), g('nri-selling-property-chennai-tds-lower-certificate'), g('tds-on-property-purchase-50-lakh-step-by-step')],
   '/nri-taxation-itr-chennai/': [g('nri-selling-property-chennai-tds-lower-certificate'), g('buying-property-from-nri-tds-tan-rates')],
   '/tds-on-property-purchase-26qb/': [g('tds-on-property-purchase-50-lakh-step-by-step'), g('late-tds-on-property-interest-late-fee'), g('correct-mistake-tds-on-property-form-141-26qb'), g('joint-buyers-sellers-tds-on-property'), g('tds-property-seller-no-pan-inoperative-pan'), g('buying-property-from-nri-tds-tan-rates')],

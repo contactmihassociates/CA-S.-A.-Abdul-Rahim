@@ -1,0 +1,80 @@
+---
+import Service from '../../layouts/Service.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'Why did I get an income tax notice after buying land?', a: 'When you register a purchase of Rs 30 lakh or more, the Sub-Registrar reports it to the Income Tax Department. If your returns do not show income or savings that explain the payment, or you did not file a return, the system flags the purchase and asks you to explain the source of the money.' },
+  { q: 'Is a notice for land purchase a demand for tax?', a: 'Not always. Many such notices are requests for information or e-verification, asking you to confirm the transaction and the source of funds. Tax is demanded only if the explanation is not accepted, for example where the payment is treated as unexplained investment. A clear reply with documents usually closes the matter.' },
+  { q: 'How much time do I get to reply to the notice?', a: 'The time is stated in the notice, often between 7 and 30 days. Replies are filed online in the e-Proceedings or Compliance section of incometax.gov.in. If you need more time to collect documents, you can usually request an adjournment online before the due date, giving a reason.' },
+  { q: 'What if the guideline value is higher than the amount I paid?', a: 'If the stamp duty value is more than 110 percent of the amount you paid, the difference can be taxed as your income as a buyer. The seller is also taxed on capital gains using the stamp duty value. A valuation by the Valuation Officer can be requested if you dispute the guideline value.' },
+];
+const pub = '2026-11-01';
+---
+<Service
+  title="Income Tax Notice for Land or Property Purchase"
+  description="Income tax notice after buying land or a flat? Why it comes, the common notice types, documents to show the source of funds, and how to reply online."
+  path="/guides/income-tax-notice-land-property-purchase/"
+  h1="Income tax notice for land or property purchase: what to do"
+  name="Income tax notice for property purchase"
+  topic="your reply to a property purchase notice"
+  lead="Buying a plot, house or flat worth Rs 30 lakh or more is reported to the Income Tax Department by the Sub-Registrar. If the department cannot match the purchase with your income tax returns, it sends a notice or an e-verification request asking where the money came from. The notice is common, and in most cases it can be closed with a clear reply and the right documents."
+  faqs={faqs}
+  related={['/income-tax-notice-reply-chennai/', '/guides/income-tax-notice-first-steps/', '/tds-on-property-purchase-26qb/', '/capital-gains-tax-property-sale/']}
+  sources={[SRC.itPortal, SRC.itIndia, SRC.tnreginet]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>Why property purchases lead to notices</h2>
+  <p>The Sub-Registrar files a Statement of Financial Transactions (SFT) for every purchase or sale of immovable property where the value or the guideline value is Rs 30 lakh or more. The details then appear in the buyer's and seller's Annual Information Statement (AIS) on <a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a>. The department's systems compare this with the returns filed. A notice usually follows in one of these situations:</p>
+  <ul>
+    <li>The buyer did not file an income tax return for that year, or for the years before it.</li>
+    <li>The income shown in the returns looks too low to explain the payment.</li>
+    <li>The payment was made partly in cash, or the source is not visible from bank accounts.</li>
+    <li>The consideration in the deed is lower than the guideline value by more than 10 percent.</li>
+    <li>TDS on property purchase was not deducted or was deducted short, which leads to a separate TDS default notice.</li>
+  </ul>
+
+  <h2>Common types of notice</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th scope="col">What you receive</th><th scope="col">What it means</th><th scope="col">Usual reply</th></tr></thead>
+    <tbody>
+      <tr><td>e-Verification or "significant transaction" message in the Compliance portal</td><td>The department wants you to confirm the transaction and its source</td><td>Confirm the details online and give the source of funds</td></tr>
+      <tr><td>Notice asking for information (section 133(6) of the 1961 Act)</td><td>A request for documents, not an assessment</td><td>Upload the sale deed, bank statements and a short explanation</td></tr>
+      <tr><td>Notice for non-filing of return</td><td>No ITR was filed though a high-value transaction exists</td><td>File the return, or explain why it was not required</td></tr>
+      <tr><td>Show cause notice before reopening (section 148A of the 1961 Act)</td><td>The officer thinks income has escaped assessment</td><td>Reply within the time with documents; this decides whether the case is reopened</td></tr>
+      <tr><td>Notice from TRACES for TDS default</td><td>TDS on property purchase was missed or short</td><td>Pay TDS with interest and file Form 141 or Form 26QB; see <a href="/guides/late-tds-on-property-interest-late-fee/">late TDS on property</a></td></tr>
+    </tbody>
+  </table></div>
+  <p>From 1 April 2026, the Income-tax Act, 2025 replaced the Income-tax Act, 1961, and section numbers have changed. Notices for earlier years may still cite the old sections. Read the section and the year printed on the notice before replying.</p>
+
+  <h2>Step by step: replying to the notice</h2>
+  <ol>
+    <li><strong>Check it is genuine.</strong> Log in to incometax.gov.in and look under Pending Actions, e-Proceedings or Compliance. Every genuine notice has a Document Identification Number (DIN). Do not reply to messages that ask you to pay through a link.</li>
+    <li><strong>Note the year and the question.</strong> The notice names the financial year and what it wants: confirmation, documents or an explanation.</li>
+    <li><strong>Collect the documents.</strong> Keep the list below ready before you start the online reply.</li>
+    <li><strong>Prepare a short written reply.</strong> State the property, the date, the amount paid, and a table of how each rupee was paid and where it came from.</li>
+    <li><strong>Upload and submit</strong> before the due date, and download the acknowledgement. If you need more time, request an adjournment online before the date.</li>
+    <li><strong>Follow up.</strong> Watch the portal and your email for any further question or the closure of the proceeding.</li>
+  </ol>
+
+  <h2>Documents that show the source of funds</h2>
+  <ul class="checklist">
+    <li>Sale deed and sale agreement, with the guideline value statement from the Sub-Registrar</li>
+    <li>Bank statements showing each payment to the seller and the money coming into your account</li>
+    <li>Home loan sanction letter and disbursement statement, if a loan was taken</li>
+    <li>Income tax returns and Form 16 for the past few years, showing your income and savings</li>
+    <li>Proof of sale of earlier property, shares, gold or fixed deposits used for the purchase</li>
+    <li>Gift deed and the donor's bank statement, for money received from a relative</li>
+    <li>Challan and Form 16B or its new equivalent, showing TDS paid on the purchase</li>
+  </ul>
+
+  <h2>When the guideline value is higher than the amount paid</h2>
+  <p>Where the stamp duty value of the property exceeds the amount paid by more than 10 percent, the difference can be taxed in the buyer's hands as income from other sources, and the seller computes capital gains using the stamp duty value. If the guideline value is higher than the market value, for example because the plot has no proper access, you can ask for the property to be referred to the Valuation Officer. The registration records and guideline values are on <a href="https://tnreginet.gov.in/" rel="noopener">tnreginet.gov.in</a>.</p>
+
+  <h2>Common mistakes</h2>
+  <ul>
+    <li>Ignoring the e-verification message because it does not look like a formal notice. An unanswered request can lead to a reopening notice later.</li>
+    <li>Explaining the source only in words without bank statements.</li>
+    <li>Showing cash given by relatives without a gift deed or their bank withdrawals.</li>
+    <li>Forgetting that TDS on property purchase is a separate obligation, which leads to a second notice.</li>
+  </ul>
+  <p>For help with a reply, see <a href="/income-tax-notice-reply-chennai/">income tax notice reply</a>. For general first steps on any notice, see <a href="/guides/income-tax-notice-first-steps/">received an income tax notice</a>.</p>
+</Service>
