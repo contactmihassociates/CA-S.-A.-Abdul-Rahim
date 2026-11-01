@@ -1,0 +1,88 @@
+---
+import Service from '../../layouts/Service.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'Who pays professional tax in Chennai?', a: 'Salaried employees whose half-yearly salary is above Rs 21,000 pay professional tax, which the employer deducts and remits to the Greater Chennai Corporation. Professionals, traders, companies and firms carrying on business in the Corporation area are also assessed. Each local body in Tamil Nadu sets and collects its own professional tax.' },
+  { q: 'What is the maximum professional tax a person pays in a year?', a: 'The Constitution of India caps professional tax at Rs 2,500 per person per year. In Chennai this works out to a maximum of Rs 1,250 for each half-year, which applies to employees whose half-yearly salary is above Rs 75,000 under the slabs revised by the Greater Chennai Corporation.' },
+  { q: 'Can I claim professional tax as a deduction in my income tax return?', a: 'Under the old tax regime, professional tax actually paid is deducted from salary income, so it reduces taxable salary. Under the new tax regime, which is the default, this deduction is not available. A business or professional can generally claim professional tax paid as an expense of the business.' },
+  { q: 'What if my employer deducted professional tax but did not pay it?', a: 'The employer is responsible for paying the professional tax it deducts from salaries to the Corporation by the due date, and interest and penalty for delay fall on the employer. Ask the employer for the payment receipt, and keep your payslips showing the deduction as proof that it was deducted.' },
+];
+const pub = '2026-11-01';
+---
+<Service
+  title="Professional Tax in Chennai: Rates, Due Dates"
+  description="Professional tax in Chennai: Greater Chennai Corporation half-yearly slabs, who pays, due dates of 30 September and 31 March, and how to pay online."
+  path="/guides/professional-tax-chennai-rates-due-dates/"
+  h1="Professional tax in Chennai: rates, due dates and how to pay"
+  name="Professional tax in Chennai guide"
+  topic="professional tax"
+  lead="Professional tax in Chennai is a tax on salaries, professions and trades collected by the Greater Chennai Corporation every half-year. Employees with a half-yearly salary above Rs 21,000 pay between Rs 180 and Rs 1,250 per half-year, deducted by the employer. Payment for April to September is due by 30 September, and for October to March by 31 March. The total cannot exceed Rs 2,500 a year."
+  faqs={faqs}
+  related={['/income-tax-return-filing-chennai/', '/accounting-bookkeeping/', '/tools/it/']}
+  sources={[SRC.itPortal, SRC.itIndia]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>What professional tax is</h2>
+  <p>Professional tax is a small tax that the Constitution allows states and local bodies to levy on professions, trades, callings and employment. In Tamil Nadu it is collected by the local body where the person works or carries on business, under the Tamil Nadu Urban Local Bodies Act, 1998, as amended in 2022. In Chennai that body is the Greater Chennai Corporation. Other corporations and municipalities in Tamil Nadu set their own rates, so the figures below apply only to the Chennai Corporation area.</p>
+  <p>The Constitution caps professional tax at <strong>Rs 2,500 per person per year</strong>. Professional tax is separate from income tax: it is paid to the Corporation, not to the Income Tax Department.</p>
+
+  <h2>Chennai professional tax slabs (per half-year)</h2>
+  <p>The Greater Chennai Corporation revised the slabs from the half-year beginning October 2024, by its circular dated 20 January 2025. The tax is worked out on the salary or income for the half-year.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Half-yearly salary or income</th><th scope="col">Professional tax per half-year</th></tr></thead>
+      <tbody>
+        <tr><td>Up to Rs 21,000</td><td>Nil</td></tr>
+        <tr><td>Rs 21,001 to Rs 30,000</td><td>Rs 180</td></tr>
+        <tr><td>Rs 30,001 to Rs 45,000</td><td>Rs 425</td></tr>
+        <tr><td>Rs 45,001 to Rs 60,000</td><td>Rs 930</td></tr>
+        <tr><td>Rs 60,001 to Rs 75,000</td><td>Rs 1,025</td></tr>
+        <tr><td>Above Rs 75,000</td><td>Rs 1,250</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>Example.</strong> An employee earning Rs 40,000 a month has a half-yearly salary of Rs 2,40,000, which is above Rs 75,000. The professional tax is Rs 1,250 for each half-year, or Rs 2,500 a year, the maximum. An employee earning Rs 6,000 a month has a half-yearly salary of Rs 36,000 and pays Rs 425 per half-year.</p>
+  <p>Rates are revised from time to time by the Corporation council. Always check the latest demand notice or the Corporation's website before paying.</p>
+
+  <h2>Who has to pay</h2>
+  <ul class="checklist">
+    <li><strong>Salaried employees</strong> working in Chennai whose half-yearly salary is above Rs 21,000. The employer deducts the tax from salary and pays it to the Corporation.</li>
+    <li><strong>Employers</strong> with employees in Chennai must enrol with the Corporation, deduct professional tax from salaries and pay it on time.</li>
+    <li><strong>Companies, firms and other businesses</strong> carrying on business in the Corporation area are assessed on their own account.</li>
+    <li><strong>Self-employed professionals and traders</strong>, such as doctors, lawyers, consultants and shop owners, are also assessed by the Corporation.</li>
+  </ul>
+
+  <h2>Due dates</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">Half-year</th><th scope="col">Due date</th></tr></thead>
+      <tbody>
+        <tr><td>1 April to 30 September</td><td>By 30 September</td></tr>
+        <tr><td>1 October to 31 March</td><td>By 31 March</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Employers usually deduct the tax from salary during the half-year and pay it in one amount before the due date. Late payment attracts interest and penalty, which the employer bears where the tax was deducted from employees but not paid.</p>
+
+  <h2>How to pay professional tax in Chennai online</h2>
+  <ol>
+    <li>Go to the Greater Chennai Corporation website, chennaicorporation.gov.in, and open the professional tax section.</li>
+    <li>Enter the professional tax assessment or registration number of the employer, business or individual.</li>
+    <li>Check the half-year and the amount shown.</li>
+    <li>Pay by net banking, debit card or credit card.</li>
+    <li>Download and keep the receipt. Employers should keep a list of employees and the amount deducted from each for the half-year.</li>
+  </ol>
+  <p>New employers and businesses must first enrol with the Corporation to get an assessment number. Keep your trade licence, PAN and address proof ready.</p>
+
+  <h2>Professional tax and your income tax return</h2>
+  <p>Under the <strong>old tax regime</strong>, professional tax paid is deducted from salary income before working out taxable salary. Under the <strong>new tax regime</strong>, which is the default for individuals, this deduction is not available. Your Form 16 shows the professional tax deducted by your employer. Self-employed persons and businesses can generally claim professional tax paid as an expense. Compare both regimes using the <a href="/tools/it/">income tax calculator</a>.</p>
+
+  <h2>Common mistakes</h2>
+  <ul>
+    <li>Deducting professional tax at old rates after the October 2024 revision.</li>
+    <li>Not enrolling as an employer when hiring the first employee in Chennai.</li>
+    <li>Deducting from employees but paying late, which brings interest and penalty for the employer.</li>
+    <li>Applying Chennai rates to staff working in another municipality, which has its own rates.</li>
+  </ul>
+  <p>For help with payroll compliance and returns, see <a href="/accounting-bookkeeping/">accounting and bookkeeping</a> and <a href="/income-tax-return-filing-chennai/">income tax return filing</a>.</p>
+</Service>

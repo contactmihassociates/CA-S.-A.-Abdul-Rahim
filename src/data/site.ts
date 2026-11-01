@@ -85,6 +85,7 @@ export const GUIDES = [
   { href: '/guides/rental-income-tax-let-out-property/', title: 'Tax on rental income from a let-out house', published: '2026-10-29' },
   { href: '/guides/tds-property-seller-no-pan-inoperative-pan/', title: 'TDS on property when the seller has no PAN or an inoperative PAN', published: '2026-10-29' },
   { href: '/guides/buying-property-from-nri-tds-tan-rates/', title: 'Buying property from an NRI: TDS, TAN, rates and returns', published: '2026-10-29' },
+  { href: '/guides/professional-tax-chennai-rates-due-dates/', title: 'Professional tax in Chennai: rates, due dates and how to pay', published: '2026-11-01' },
 ];
 
 // Official sources used across pages
