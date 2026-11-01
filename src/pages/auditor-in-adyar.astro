@@ -1,0 +1,50 @@
+---
+import Service from '../layouts/Service.astro';
+import { SRC, NAP } from '../data/site';
+const faqs = [
+  { q: 'Who needs an auditor for tax filing?', a: 'A business needs a tax audit by a Chartered Accountant if its turnover crosses Rs 1 crore, or Rs 10 crore where cash transactions are within 5 percent. A professional needs one above Rs 50 lakh of receipts, or Rs 75 lakh in some cases. Below these limits, an auditor is still helpful for ITR filing.' },
+  { q: 'What is the due date for tax audit for AY 2026-27?', a: 'For the financial year 2025-26, CBDT Circular 7 of 2026 extended the tax audit report due date from 30 September to 21 October 2026, and the ITR of audited taxpayers to 21 November 2026. If the audit date was missed, the report can still be filed late, but a penalty may apply.' },
+  { q: 'Is an auditor the same as a chartered accountant?', a: 'In Chennai, the word auditor is commonly used for a Chartered Accountant. Only a practising Chartered Accountant who is a member of ICAI can sign a tax audit report under the Income-tax Act or a statutory audit report of a company. So an auditor office for these audits is a CA office.' },
+  { q: 'Does a private limited company need an audit even with no business?', a: 'Yes. Every company registered under the Companies Act, 2013 must have its accounts audited by a Chartered Accountant each year, even if it had no turnover. The audited financial statements are then filed with the Registrar of Companies in AOC-4, and the annual return in MGT-7 or MGT-7A.' },
+  { q: 'Which documents does the auditor need for a tax audit?', a: 'Usually the books of account in Tally or another software, bank statements, GST returns, the TDS details, fixed asset bills, loan statements, stock details at year end and the previous year return. The auditor checks these, prepares Form 3CD and signs Form 3CA or 3CB before the due date.' },
+];
+---
+<Service
+  title="Auditor in Adyar, Chennai: Tax Audit and Company Audit"
+  description="Auditor office in Shastri Nagar, Adyar: tax audit, company statutory audit, trust audit, and help with tax filing and GST. CA in practice since 1985."
+  path="/auditor-in-adyar/"
+  h1="Auditor in Adyar, Chennai"
+  name="Auditor in Adyar"
+  topic="your audit work in Adyar"
+  lead="In Chennai, a Chartered Accountant is often called an auditor. The auditor office of CA S. A. Abdul Rahim in Shastri Nagar, Adyar, handles tax audit under the Income-tax Act, statutory audit of private limited companies, audit of trusts and societies, and the yearly tax filing and GST work that usually goes with an audit."
+  faqs={faqs}
+  related={['/tax-audit/', '/statutory-audit/', '/trust-ngo-12a-80g-registration/', '/accounting-bookkeeping/', '/chartered-accountant-in-adyar/']}
+  sources={[SRC.itPortal, SRC.mca, SRC.icai]}
+>
+  <h2>Audits handled by the office</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th scope="col">Audit</th><th scope="col">Who needs it</th><th scope="col">Main due date</th></tr></thead>
+    <tbody>
+      <tr><td><a href="/tax-audit/">Tax audit</a> (Form 3CA or 3CB with 3CD)</td><td>Businesses above Rs 1 crore turnover (Rs 10 crore with low cash), professionals above Rs 50 lakh receipts, and some presumptive cases</td><td>30 September after the year end</td></tr>
+      <tr><td><a href="/statutory-audit/">Statutory audit of a company</a></td><td>Every private limited company, whatever its turnover</td><td>Before the annual general meeting, usually by 30 September</td></tr>
+      <tr><td>Audit of a trust or NGO</td><td>Trusts and institutions registered under the Income-tax Act whose income crosses the exemption limit</td><td>Audit report one month before the ITR-7 due date</td></tr>
+      <tr><td>LLP audit</td><td>LLPs with turnover above Rs 40 lakh or contribution above Rs 25 lakh</td><td>Before filing Form 8 by 30 October</td></tr>
+      <tr><td>GST reconciliation (GSTR-9C)</td><td>GST-registered businesses with turnover above Rs 5 crore</td><td>31 December after the year end</td></tr>
+    </tbody>
+  </table></div>
+  <p>Limits and dates are for the financial year 2025-26 under the Income-tax Act, 1961, the Companies Act, 2013 and the LLP Act, 2008. From the financial year 2026-27, the Income-tax Act, 2025 applies and some form numbers change; the office checks the current rule before each audit.</p>
+
+  <h2>Auditor for tax filing</h2>
+  <p>Many people search for an auditor when they simply need their income tax filed. You do not need an audit to file a salary, pension, rent or interest return. The office files these as ordinary ITR work; see <a href="/income-tax-return-filing-chennai/">ITR filing</a>. An audit is needed only when the limits above are crossed, or when you declare business profit lower than the presumptive rate and your income is above the basic exemption limit.</p>
+
+  <h2>How an audit is carried out</h2>
+  <ol>
+    <li><strong>Books.</strong> The accounts for the year are completed and closed, in Tally or another software. Where books are not maintained, the office can help with <a href="/accounting-bookkeeping/">accounting and bookkeeping</a>.</li>
+    <li><strong>Checks.</strong> The auditor checks sales, purchases, expenses, bank, cash, stock, GST and TDS against the records.</li>
+    <li><strong>Report.</strong> For a tax audit, Form 3CD is prepared and the report is uploaded on <a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a>; you accept it from your login. For a company, the signed audit report goes with the financial statements to the board and then to <a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a>.</li>
+    <li><strong>Return.</strong> The ITR is filed on the basis of the audited accounts.</li>
+  </ol>
+
+  <h2>Office location</h2>
+  <p>{NAP.addressLine}. The office is near Adyar signal and Indira Nagar, and serves clients from Besant Nagar, Thiruvanmiyur, Kotturpuram, Mylapore and Velachery. {NAP.hoursText} See <a href="/areas/">areas and directions</a> and <a href="/chartered-accountant-in-adyar/">chartered accountant in Adyar</a>.</p>
+</Service>

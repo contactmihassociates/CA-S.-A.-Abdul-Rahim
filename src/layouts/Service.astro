@@ -35,7 +35,7 @@ const tools = toolKeys.map((k) => toolData.tools.find((t) => t.key === k)).filte
 ---
 <Base title={title} description={description} path={path} crumbs={crumbs} schema={schema} ogType={isGuide ? 'article' : 'website'}>
   <PageHero crumbs={crumbs} h1={h1} eyebrow={isGuide ? 'Guide' : group ? `Services · ${group}` : 'Services'}>
-    {isGuide && <p class="meta" slot="meta">By CA S. A. Abdul Rahim, Chartered Accountant · Published <time datetime={guide!.published}>29 October 2026</time> · Last reviewed <time datetime={guide!.modified}>{REVIEWED_TEXT}</time></p>}
+    {isGuide && <p class="meta" slot="meta">By CA S. A. Abdul Rahim, Chartered Accountant · Published <time datetime={guide!.published}>{new Date(guide!.published).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</time> · Last reviewed <time datetime={guide!.modified}>{REVIEWED_TEXT}</time></p>}
     <p class="lead">{lead}</p>
   </PageHero>
 

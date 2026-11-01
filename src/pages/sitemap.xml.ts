@@ -4,7 +4,7 @@ import { TOOLS } from '../data/tools';
 const paths = [
   '/', '/about/',
   ...SERVICES.map((s) => s.href),
-  '/areas/', '/guides/',
+  '/areas/', '/chartered-accountant-in-adyar/', '/auditor-in-adyar/', '/guides/',
   ...GUIDES.map((g) => g.href),
   '/tools/', '/tools/income-tax-calculator/', ...TOOLS.map((t) => `/tools/${t.key}/`),
   '/contact/', '/disclaimer/', '/privacy/',
