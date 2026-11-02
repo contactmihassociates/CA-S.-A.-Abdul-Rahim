@@ -36,6 +36,7 @@ export const NAP = {
   gbpUrl: 'https://g.page/r/CUFSYkXAj4fiEBM',
   linkedin: 'https://www.linkedin.com/in/casaabdulrahim',
   blog: 'https://casaabdulrahim-notes.blogspot.com/',
+  facebook: 'https://www.facebook.com/profile.php?id=61596088802908',
   foundingDate: '1985-04-12',
   sinceYear: 1985,
   languages: ['Tamil', 'English', 'Hindi'],
