@@ -53,7 +53,7 @@ export const accountingService = {
     name: 'Areas of practice',
     itemListElement: SERVICES.map((sv) => ({ '@type': 'Service', name: sv.label, url: `${SITE_URL}${sv.href}` })),
   },
-  sameAs: [NAP.mapsUrl, NAP.gbpUrl, NAP.linkedin, NAP.blog, NAP.facebook],
+  sameAs: [NAP.mapsUrl, NAP.gbpUrl, NAP.linkedin, NAP.blog, NAP.facebook, NAP.sulekha],
 };
 
 export const person = {

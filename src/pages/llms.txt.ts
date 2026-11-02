@@ -31,6 +31,7 @@ ${CATEGORIES.map((c) => `\n### ${c.label}\n` + c.tools.map((k) => TOOLS.find((t)
 - [LinkedIn profile](${NAP.linkedin})
 - [Notes blog](${NAP.blog})
 - [Privacy](${SITE_URL}/privacy/)
+- [Full text of all service pages and guides](${SITE_URL}/llms-full.txt)
 
 ## Facts for citation
 - Name: ${NAP.name}, ${NAP.designation}
