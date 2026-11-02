@@ -54,7 +54,8 @@ export interface ServiceLink { href: string; label: string; group: string; blurb
 
 export const SERVICES: ServiceLink[] = [
   { group: 'Income tax', href: '/income-tax-return-filing-chennai/', label: 'Income tax return (ITR) filing', blurb: 'Salaried, pensioners, senior citizens, business, professionals, rental income and refunds.' },
-  { group: 'Income tax', href: '/income-tax-notice-reply-chennai/', label: 'Income tax notice reply and appeals', blurb: 'Replies to notices and demands, appeals before CIT(A), updated returns.' },
+  { group: 'Income tax', href: '/income-tax-notice-reply-chennai/', label: 'Income tax notice reply', blurb: 'Replies to notices, intimations and demands, rectification and updated returns.' },
+  { group: 'Income tax', href: '/income-tax-appeal-chennai/', label: 'Income tax appeal (CIT(A), Form 35)', blurb: 'Appeals against assessment, penalty and TDS orders before CIT(A), stay of demand.' },
   { group: 'Income tax', href: '/capital-gains-tax-property-sale/', label: 'Capital gains on property sale', blurb: 'Tax on sale of a house, flat or land, exemptions and reporting.' },
   { group: 'Income tax', href: '/nri-taxation-itr-chennai/', label: 'NRI income tax and ITR', blurb: 'Residential status, Indian income of NRIs and return filing.' },
   { group: 'TDS', href: '/tds-on-property-purchase-26qb/', label: 'TDS on property purchase (Form 141, earlier 26QB)', blurb: 'TDS when you buy a property of Rs 50 lakh or more, including from an NRI.' },
@@ -113,6 +114,7 @@ export const SRC = {
 // Calculators shown beside each service page (keys from src/data/tools.json)
 export const SERVICE_TOOLS: Record<string, string[]> = {
   '/income-tax-return-filing-chennai/': ['it', 'optimizer', 'hra', 'itrpicker', 'advtax', 'sec87a'],
+  '/income-tax-appeal-chennai/': ['penalty', 'sec270a', 'sec244a', 'ais'],
   '/income-tax-notice-reply-chennai/': ['penalty', 'sec270a', 'sec234f', 'ais', 'sec244a', 'revtax'],
   '/capital-gains-tax-property-sale/': ['capgains', 'cii', 'sec54ec', 'sec50c', 'cgreinvest', 'sec54b'],
   '/nri-taxation-itr-chennai/': ['nri', 'dtaa', 'ftc', 'nrirepat', 'sec195', 'schedfa'],
