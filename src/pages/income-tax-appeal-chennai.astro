@@ -1,0 +1,69 @@
+---
+import Service from '../layouts/Service.astro';
+import { SRC } from '../data/site';
+const faqs = [
+  { q: 'What is the time limit to file an income tax appeal?', a: 'An appeal to the Commissioner of Income-tax (Appeals) is filed within 30 days from the date the order or demand notice is served. The official appeals help page states that this limitation period is unchanged under the Income-tax Act, 2025. A late appeal can be filed with a request for condonation of delay, giving the reason.' },
+  { q: 'What is the government fee for filing an appeal?', a: 'For appeals filed in Form 35, the fee depends on the total income assessed: Rs 250 up to Rs 1 lakh, Rs 500 above Rs 1 lakh up to Rs 2 lakh, and Rs 1,000 above Rs 2 lakh. Appeals on any other matter carry Rs 250. The fee is paid online and the challan is attached to the form.' },
+  { q: 'Do I have to pay the demand while the appeal is pending?', a: 'Filing an appeal does not by itself stop recovery of the demand. A separate request for stay of demand is made to the Assessing Officer. Under instructions issued under the earlier law, a stay was generally considered on payment of 20 percent of the disputed demand. Check the current instructions for your case.' },
+  { q: 'Can I file an appeal without visiting the tax office?', a: 'Yes. Appeals are filed online on the e-filing portal and are heard under the faceless appeal scheme, where written submissions and documents are uploaded on the portal. A personal hearing by video conference can be requested where the law allows. A Chartered Accountant can file and argue the appeal as your authorised representative.' },
+];
+---
+<Service
+  title="Income Tax Appeal in Chennai: CIT(A) and Form 35"
+  description="Filing an income tax appeal before CIT(A) in Chennai: time limit, Form 35, government fee, grounds of appeal, stay of demand and the documents needed."
+  path="/income-tax-appeal-chennai/"
+  h1="Income tax appeal before CIT(A) in Chennai"
+  name="Income tax appeal"
+  topic="an income tax appeal"
+  lead="An income tax appeal is a request to the Commissioner of Income-tax (Appeals), or CIT(A), to set aside or change an order of the Assessing Officer that you do not agree with, such as an addition to income, a disallowance, a penalty or a demand. The CA office in Adyar, Chennai, prepares the grounds of appeal and statement of facts, files the appeal online and represents you until the appeal is decided."
+  faqs={faqs}
+  related={['/income-tax-notice-reply-chennai/', '/guides/income-tax-notice-first-steps/', '/gst-notice-reply/', '/income-tax-return-filing-chennai/']}
+  sources={[SRC.itPortal, SRC.itIndia]}
+>
+  <h2>Who needs this</h2>
+  <p>An appeal is usually considered when an order raises tax that you believe is not payable. Common situations are:</p>
+  <ul>
+    <li><strong>Assessment orders with additions</strong>, for example where a cash deposit, a property purchase or a loan was treated as unexplained income.</li>
+    <li><strong>Disallowances</strong> of expenses, deductions or exemptions claimed in the return, such as a capital gains exemption on a new house.</li>
+    <li><strong>Reassessment orders</strong> for earlier years where income was held to have escaped assessment.</li>
+    <li><strong>Penalty orders</strong> for under-reported income, late filing or other defaults.</li>
+    <li><strong>Intimations and rectification orders</strong> where a demand arises and a rectification request has not resolved it.</li>
+    <li><strong>TDS orders</strong> treating a deductor as in default, including orders after TDS on property was deducted short.</li>
+  </ul>
+  <p>Before filing an appeal, check whether a simpler route fits. A mistake apparent from the record, such as a TDS credit not given, can often be corrected by a rectification request. An appeal suits disputes on facts or on how the law applies.</p>
+
+  <h2>Documents usually needed</h2>
+  <ul class="checklist">
+    <li>The assessment, penalty or other order appealed against, with its DIN</li>
+    <li>The demand notice and the date on which the order was received</li>
+    <li>The notices issued during the proceedings and every reply filed</li>
+    <li>The return, computation and acknowledgement for the year</li>
+    <li>Evidence for each point disputed: bank statements, sale or purchase deeds, loan papers, confirmations, invoices or investment proofs</li>
+    <li>Proof of payment of the appeal fee</li>
+  </ul>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>Share the order by WhatsApp or bring it to the office. The first task is to note the date of service, because the 30-day time limit runs from it.</li>
+    <li>The order is read with the assessment record to separate the additions you dispute from those you accept.</li>
+    <li>The grounds of appeal are drafted, one ground for each disputed addition, together with a statement of facts that sets out the background in plain terms.</li>
+    <li>The appeal fee is paid online and the appeal is filed in the form notified for the order (Form 35 for orders under the 1961 Act) on the e-filing portal.</li>
+    <li>If the demand is large, a request for stay of demand is filed with the Assessing Officer, with any part payment made.</li>
+    <li>When the CIT(A) issues notices, written submissions and evidence are uploaded on the portal. A hearing by video conference is requested where needed.</li>
+    <li>After the appeal order, the effect on the demand is checked. If the order is still not acceptable, a further appeal to the Income Tax Appellate Tribunal (ITAT), which has benches in Chennai, is considered.</li>
+  </ol>
+
+  <h2>Key dates and fees</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What</th><th>Rule</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Appeal before CIT(A)</td><td>30 days from service of the order or demand notice; delay can be condoned for sufficient reason</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>Appeal fee</td><td>Rs 250 (assessed income up to Rs 1 lakh), Rs 500 (above Rs 1 lakh up to Rs 2 lakh), Rs 1,000 (above Rs 2 lakh); Rs 250 for other matters</td><td><a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a></td></tr>
+      <tr><td>Form</td><td>Form 35 for orders under the 1961 Act; for orders under the Income-tax Act, 2025, use the form named in the order or on the portal</td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+      <tr><td>Further appeal to ITAT</td><td>Against the CIT(A) order, within the time limit stated in the law for the year concerned</td><td><a href="https://www.incometaxindia.gov.in/" rel="noopener">incometaxindia.gov.in</a></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Points to keep in mind</h2>
+  <p>Write grounds that are specific to the order, not general statements. Raise every addition you dispute in the appeal itself, because new grounds later need permission. Keep copies of the filed appeal, the fee challan and every submission. Check the portal regularly, because notices in appeal proceedings are issued online and have their own reply dates. If the order relates to an earlier year started under the 1961 Act, the appeal refers to the old section numbers stated in the order.</p>
+</Service>
