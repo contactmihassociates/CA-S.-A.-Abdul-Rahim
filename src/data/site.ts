@@ -102,6 +102,7 @@ export const SRC = {
   cbic: { href: 'https://cbic-gst.gov.in/', label: 'CBIC GST (cbic-gst.gov.in)' },
   mca: { href: 'https://www.mca.gov.in/', label: 'Ministry of Corporate Affairs (mca.gov.in)' },
   udyam: { href: 'https://udyamregistration.gov.in/', label: 'Udyam Registration portal (udyamregistration.gov.in)' },
+  gcc: { href: 'https://chennaicorporation.gov.in/', label: 'Greater Chennai Corporation (chennaicorporation.gov.in)' },
   tnreginet: { href: 'https://tnreginet.gov.in/', label: 'Registration Department, Tamil Nadu (tnreginet.gov.in)' },
   rbi: { href: 'https://www.rbi.org.in/', label: 'Reserve Bank of India (rbi.org.in)' },
   icai: { href: 'https://www.icai.org/', label: 'Institute of Chartered Accountants of India (icai.org)' },
