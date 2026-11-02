@@ -1,6 +1,6 @@
 // On-page SEO and ICAI checks: title/description length, one H1, canonical, last reviewed, official source, word counts, FAQ length, open placeholders.
 import { htmlFiles, read, urlOf, title, meta, mainText, visibleText } from './lib.mjs';
-const OFFICIAL = /href="https:\/\/(www\.)?(incometax\.gov\.in|incometaxindia\.gov\.in|gst\.gov\.in|reg\.gst\.gov\.in|cbic-gst\.gov\.in|mca\.gov\.in|tnreginet\.gov\.in|udyamregistration\.gov\.in|tdscpc\.gov\.in|rbi\.org\.in|icai\.org|meity\.gov\.in)/;
+const OFFICIAL = /href="https:\/\/(www\.)?(incometax\.gov\.in|incometaxindia\.gov\.in|gst\.gov\.in|reg\.gst\.gov\.in|cbic-gst\.gov\.in|mca\.gov\.in|tnreginet\.gov\.in|udyamregistration\.gov\.in|tdscpc\.gov\.in|rbi\.org\.in|icai\.org|meity\.gov\.in|chennaicorporation\.gov\.in)/;
 let fail = 0;
 const placeholders = [];
 const titles = new Set();
