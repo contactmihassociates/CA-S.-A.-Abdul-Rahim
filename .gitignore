@@ -8,3 +8,6 @@ dist/
 reports/lighthouse-*.json
 public/toolkit/
 reports/check-tools.json
+
+# Separate private project (lead data); never publish
+ca_leadgen/
