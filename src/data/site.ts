@@ -38,6 +38,8 @@ export const NAP = {
   blog: 'https://casaabdulrahim-notes.blogspot.com/',
   facebook: 'https://www.facebook.com/profile.php?id=61596088802908',
   sulekha: 'https://www.sulekha.com/ca-s-a-abdul-rahim-adyar-chennai-contact-address',
+  taxguru: 'https://taxguru.in/author/enquiry_8603/',
+  taxguruArticle: 'https://taxguru.in/income-tax/tds-property-purchase-1-april-2026-changed-form-141-replaced-form-26qb.html',
   foundingDate: '1985-04-12',
   sinceYear: 1985,
   languages: ['Tamil', 'English', 'Hindi'],

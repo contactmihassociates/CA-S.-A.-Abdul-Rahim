@@ -53,7 +53,7 @@ export const accountingService = {
     name: 'Areas of practice',
     itemListElement: SERVICES.map((sv) => ({ '@type': 'Service', name: sv.label, url: `${SITE_URL}${sv.href}` })),
   },
-  sameAs: [NAP.mapsUrl, NAP.gbpUrl, NAP.linkedin, NAP.blog, NAP.facebook, NAP.sulekha],
+  sameAs: [NAP.mapsUrl, NAP.gbpUrl, NAP.linkedin, NAP.blog, NAP.facebook, NAP.sulekha, NAP.taxguru],
 };
 
 export const person = {
@@ -64,7 +64,7 @@ export const person = {
   worksFor: { '@id': ORG_ID },
   knowsLanguage: NAP.languages,
   url: `${SITE_URL}/about/`,
-  sameAs: [NAP.linkedin],
+  sameAs: [NAP.linkedin, NAP.taxguru],
   hasOccupation: { '@type': 'Occupation', name: 'Chartered Accountant' },
   memberOf: { '@type': 'Organization', name: 'The Institute of Chartered Accountants of India', url: 'https://www.icai.org/' },
   knowsAbout: ['Income tax return filing', 'TDS on property purchase', 'NRI taxation', 'Capital gains on property', 'Goods and Services Tax (GST)', 'Tax audit', 'Statutory audit', 'Company and LLP registration'],
