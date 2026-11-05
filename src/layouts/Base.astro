@@ -85,7 +85,7 @@ const year = 2026;
       <nav class="nav" aria-label="Main">
         <ul>
           <li class="has-mega">
-            <a href="/#services" aria-current={path === '/' ? undefined : SERVICES.some((s) => s.href === path) ? 'page' : undefined}>Services</a>
+            <a href="/services/" aria-current={path === '/services/' || SERVICES.some((s) => s.href === path) ? 'page' : undefined}>Services</a>
             <div class="mega">
               {groups.map((g) => (
                 <div>
@@ -165,6 +165,7 @@ const year = 2026;
           <h2>Resources</h2>
           <ul>
             <li><a href="/tools/income-tax-calculator/">Income tax calculator, old vs new</a></li>
+            <li><a href="/services/">All services</a></li>
             <li><a href="/tools/">Tax and finance calculators</a></li>
             <li><a href="/guides/">Guides</a></li>
             <li><a href="/about/">About</a></li>
