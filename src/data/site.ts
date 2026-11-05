@@ -2,6 +2,8 @@
 // These strings must match the Google Business Profile exactly.
 
 export const SITE_URL = 'https://casaabdulrahim.in';
+// Google Analytics 4 measurement ID. Empty = analytics and the consent banner are off.
+export const GA_ID = 'G-B8SKQ9HHPZ';
 
 export const REVIEWED_ISO = '2026-10-29';
 export const REVIEWED_TEXT = '29 October 2026';
