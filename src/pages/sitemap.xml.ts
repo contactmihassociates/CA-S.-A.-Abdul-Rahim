@@ -2,7 +2,7 @@ import { SITE_URL, SERVICES, GUIDES, REVIEWED_ISO } from '../data/site';
 import { TOOLS } from '../data/tools';
 
 const paths = [
-  '/', '/about/',
+  '/', '/about/', '/services/',
   ...SERVICES.map((s) => s.href),
   '/areas/', '/chartered-accountant-in-adyar/', '/auditor-in-adyar/', '/guides/',
   ...GUIDES.map((g) => g.href),

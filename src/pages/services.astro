@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import SideContact from '../components/SideContact.astro';
+import { SERVICES, NAP, REVIEWED_TEXT, REVIEWED_ISO } from '../data/site';
+const crumbs = [{ name: 'Services', path: '/services/' }];
+const groups = [...new Set(SERVICES.map((s) => s.group))];
+const list = {
+  '@type': 'ItemList',
+  name: 'Areas of practice',
+  itemListElement: SERVICES.map((s, i) => ({ '@type': 'ListItem', position: i + 1, name: s.label, url: `https://casaabdulrahim.in${s.href}` })),
+};
+---
+<Base
+  title="Services: Income Tax, TDS, GST and Audit in Adyar, Chennai"
+  description="All areas of practice of CA S. A. Abdul Rahim, Chartered Accountant, Adyar, Chennai: income tax, TDS, GST, audit, accounts and registrations."
+  path="/services/"
+  crumbs={crumbs}
+  schema={[list]}
+>
+  <PageHero crumbs={crumbs} eyebrow="Services" h1="Services of the CA office in Adyar, Chennai" lead={`The office of ${NAP.name}, Chartered Accountant, at Shastri Nagar, Adyar, handles income tax, TDS, GST, audit, accounts and registrations for individuals, NRIs, professionals, trusts, firms and companies. Each area of work has its own page, listed below, explaining who needs it, the documents usually required and how the work is done.`} />
+  <div class="wrap layout">
+    <article class="prose">
+      {groups.map((g) => (
+        <section>
+          <h2>{g}</h2>
+          <ul class="checklist">
+            {SERVICES.filter((s) => s.group === g).map((s) => (
+              <li><a href={s.href}><strong>{s.label}</strong></a>. {s.blurb}</li>
+            ))}
+          </ul>
+        </section>
+      ))}
+
+      <h2>How the office works</h2>
+      <p>Most work starts with the documents for the year or the matter in question: the notice or order, the AIS and Form 26AS, bank statements, sale or purchase deeds, invoices or the books of account. The office goes through them, explains what is required and the time limit that applies, and then prepares and files the return, reply, form or audit report on the relevant government portal. Statutory audits and tax audits are carried out under the Chartered Accountants Act and the applicable standards on auditing.</p>
+      <p>Meetings are at the Adyar office, Monday to Saturday, 8:00 am to 8:00 pm, in Tamil, English or Hindi. Documents can also be shared by email for work that does not need a meeting.</p>
+
+      <h2>Guides and calculators</h2>
+      <p>For step-by-step explanations of common tasks, see the <a href="/guides/">tax and compliance guides</a>. For quick working, the <a href="/tools/">tax and finance calculators</a> include an <a href="/tools/income-tax-calculator/">income tax calculator comparing the old and new regimes</a>.</p>
+
+      <p class="meta">Reviewed by {NAP.name}, Chartered Accountant. Last reviewed: <time datetime={REVIEWED_ISO}>{REVIEWED_TEXT}</time>. General information only. Official sources: <a href="https://www.incometax.gov.in/" rel="noopener">incometax.gov.in</a>, <a href="https://www.gst.gov.in/" rel="noopener">gst.gov.in</a>, <a href="https://www.mca.gov.in/" rel="noopener">mca.gov.in</a>.</p>
+    </article>
+    <div class="sidebar"><SideContact /></div>
+  </div>
+</Base>
