@@ -41,6 +41,7 @@ export const NAP = {
   facebook: 'https://www.facebook.com/profile.php?id=61596088802908',
   sulekha: 'https://www.sulekha.com/ca-s-a-abdul-rahim-adyar-chennai-contact-address',
   taxguru: 'https://taxguru.in/author/enquiry_8603/',
+  justdial: 'https://www.justdial.com/Chennai/CA-S-A-Abdul-Rahim-Adyar/044PXX44-XX44-251124215307-Z8R6_BZDET',
   taxguruArticle: 'https://taxguru.in/income-tax/tds-property-purchase-1-april-2026-changed-form-141-replaced-form-26qb.html',
   foundingDate: '1985-04-12',
   sinceYear: 1985,
