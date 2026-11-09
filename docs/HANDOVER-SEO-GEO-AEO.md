@@ -105,7 +105,7 @@ Points the specialist must understand about this check:
 | Name | CA S. A. Abdul Rahim |
 | Person name in schema | S. A. Abdul Rahim |
 | Address | 14/2, 15th Cross Street, Shastri Nagar, Adyar, Chennai, Tamil Nadu 600020 |
-| Primary phone | 07397 283 223 (`+917397283223`) |
+| Primary phone | 099402 78603 (`+919940278603`), primary from 9 Nov 2026; 07397 283 223 is now the second number |
 | Other phone | 099402 78603 (`+919940278603`) |
 | WhatsApp | +91 99402 78603 |
 | Email | enquiry@casaabdulrahim.in |
@@ -324,7 +324,7 @@ One `<script type="application/ld+json">` per page containing a single `@graph`.
 
 | Type | Where | Key properties |
 |---|---|---|
-| `AccountingService` (`@id` `https://casaabdulrahim.in/#accountingservice`) | every page | name, url, telephone `+917397283223`, email, image (`/og-image.png`), `PostalAddress`, `GeoCoordinates`, `hasMap` (Google Maps CID link), `openingHoursSpecification` (Mon to Sat, 08:00 to 20:00), `areaServed` (20 `Place` entries), `knowsLanguage`, `foundingDate` 1985-04-12, `founder` (the Person), `sameAs` (Maps listing and the Blogger site) |
+| `AccountingService` (`@id` `https://casaabdulrahim.in/#accountingservice`) | every page | name, url, telephone `+919940278603`, email, image (`/og-image.png`), `PostalAddress`, `GeoCoordinates`, `hasMap` (Google Maps CID link), `openingHoursSpecification` (Mon to Sat, 08:00 to 20:00), `areaServed` (20 `Place` entries), `knowsLanguage`, `foundingDate` 1985-04-12, `founder` (the Person), `sameAs` (Maps listing and the Blogger site) |
 | `Person` (`#person`) | every page | name "S. A. Abdul Rahim", jobTitle "Chartered Accountant", `worksFor`, `knowsLanguage`, url `/about/`. No `sameAs`, no credentials |
 | `BreadcrumbList` | every page | Home, then page crumbs. Services: Home > service name. Guides: Home > Guides > guide. Calculators: Home > Calculators > calculator |
 | `Service` | 16 service pages | name, serviceType, url, description, `provider` (by `@id`), `areaServed` City Chennai |
