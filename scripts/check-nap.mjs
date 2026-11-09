@@ -4,7 +4,7 @@ import { join } from 'node:path';
 import { htmlFiles, read, urlOf, visibleText, jsonld } from './lib.mjs';
 const NAME = 'CA S. A. Abdul Rahim';
 const ADDR = '14/2, 15th Cross Street, Shastri Nagar, Adyar, Chennai, Tamil Nadu 600020';
-const PHONE = '07397 283 223';
+const PHONE = '099402 78603';
 const NEVER = [/94447\s?97222/]; // 095510 78603 is a confirmed office number (owner, 30 Oct 2026)
 let bad = 0;
 const files = htmlFiles();
@@ -14,7 +14,7 @@ for (const f of files) {
   if (!t.includes(NAME)) miss.push('name');
   if (!t.includes(ADDR)) miss.push('address');
   if (!t.includes(PHONE)) miss.push('phone');
-  if (!ld.includes('"name":"CA S. A. Abdul Rahim"') || !ld.includes('"telephone":"+917397283223"') || !ld.includes('"streetAddress":"14/2, 15th Cross Street, Shastri Nagar"') || !ld.includes('"postalCode":"600020"')) miss.push('schema NAP');
+  if (!ld.includes('"name":"CA S. A. Abdul Rahim"') || !ld.includes('"telephone":"+919940278603"') || !ld.includes('"streetAddress":"14/2, 15th Cross Street, Shastri Nagar"') || !ld.includes('"postalCode":"600020"')) miss.push('schema NAP');
   if (miss.length) { bad++; console.log(`FAIL ${urlOf(f)}: missing ${miss.join(', ')}`); }
   else console.log(`ok   ${urlOf(f)}`);
 }
