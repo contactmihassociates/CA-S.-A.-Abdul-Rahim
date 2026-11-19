@@ -433,3 +433,5 @@ dl.facts dd { margin: 0; }
 .consent .btn{min-height:42px;padding:.5rem 1.1rem}
 .consent .btn.ghost{background:transparent;color:var(--navy)}
 @media (min-width:900px){.consent{bottom:24px}}
+.pref-source { display: grid; gap: 0.75rem; justify-items: start; }
+.pref-source p { margin: 0; }

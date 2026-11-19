@@ -3,7 +3,7 @@ import Base from './Base.astro';
 import PageHero from '../components/PageHero.astro';
 import SideContact from '../components/SideContact.astro';
 import ContactBlock from '../components/ContactBlock.astro';
-import { SERVICES, GUIDES, REVIEWED_TEXT, SERVICE_TOOLS } from '../data/site';
+import { NAP, SERVICES, GUIDES, REVIEWED_TEXT, SERVICE_TOOLS } from '../data/site';
 import { faqPage, service, article } from '../data/schema';
 import toolData from '../data/tools.json';
 import { SERVICE_GUIDES, relatedGuides } from '../data/links';
@@ -59,6 +59,7 @@ const tools = toolKeys.map((k) => toolData.tools.find((t) => t.key === k)).filte
         <ul>{sources.map((s) => <li><a href={s.href} rel="noopener">{s.label}</a></li>)}</ul>
         <p class="meta">Reviewed by CA S. A. Abdul Rahim, Chartered Accountant. Last reviewed: <time datetime="2026-10-29">{REVIEWED_TEXT}</time>. Tax law and portal forms change often. Check the official source or speak to a Chartered Accountant before acting on any of this information.</p>
       </section>
+
     </article>
 
     <div class="sidebar">
@@ -77,6 +78,12 @@ const tools = toolKeys.map((k) => toolData.tools.find((t) => t.key === k)).filte
           <h2 id="side-guides-h">{isGuide ? 'Related guides' : 'Guides on this topic'}</h2>
           <ul>{topicGuides.map((gd) => <li><a href={gd.href}>{gd.title}</a></li>)}</ul>
         </nav>
+      )}
+      {isGuide && (
+        <aside class="side-card pref-source" aria-labelledby="pref-h">
+          <h2 id="pref-h">Google Search</h2>
+          <a class="btn alt" href={NAP.preferredSource} rel="noopener">Add as a preferred source on Google</a>
+        </aside>
       )}
       <nav class="side-card" aria-labelledby="rel-h">
         <h2 id="rel-h">Related pages</h2>
