@@ -1,5 +1,6 @@
 import { SITE_URL, SERVICES, GUIDES, REVIEWED_ISO } from '../data/site';
 import { TOOLS } from '../data/tools';
+import LASTMOD from '../data/lastmod.json';
 
 const paths = [
   '/', '/about/', '/services/',
@@ -13,7 +14,7 @@ const paths = [
 export function GET() {
   const body = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${paths.map((p) => `  <url><loc>${SITE_URL}${p}</loc><lastmod>${REVIEWED_ISO}</lastmod></url>`).join('\n')}
+${paths.map((p) => `  <url><loc>${SITE_URL}${p}</loc><lastmod>${(LASTMOD as Record<string, string>)[p] || REVIEWED_ISO}</lastmod></url>`).join('\n')}
 </urlset>
 `;
   return new Response(body, { headers: { 'Content-Type': 'application/xml; charset=utf-8' } });
