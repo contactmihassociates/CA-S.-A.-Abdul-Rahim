@@ -33,7 +33,7 @@ export const NAP = {
   lat: 13.0003461,
   lng: 80.2571196,
   mapsUrl: 'https://www.google.com/maps/place/?cid=16323173430388216385',
-  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=13.0003461%2C80.2571196',
+  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=CA+S.+A.+Abdul+Rahim%2C+Shastri+Nagar%2C+Adyar%2C+Chennai&destination_place_id=ChIJaRjomLBnUjoRQVJiRcCPh-I',
   mapEmbed: 'https://www.google.com/maps?q=13.0003461,80.2571196&z=16&output=embed',
   gbpUrl: 'https://g.page/r/CUFSYkXAj4fiEBM',
   linkedin: 'https://www.linkedin.com/in/casaabdulrahim',
