@@ -96,6 +96,7 @@ export const GUIDES = [
   { href: '/guides/buying-property-from-nri-tds-tan-rates/', title: 'TDS on property purchase from an NRI: rates, TAN and returns', published: '2026-10-29' },
   { href: '/guides/income-tax-notice-land-property-purchase/', title: 'Income tax notice for land or property purchase: what to do', published: '2026-11-01' },
   { href: '/guides/professional-tax-chennai-rates-due-dates/', title: 'Professional tax in Chennai: rates, due dates and how to pay', published: '2026-11-01' },
+  { href: '/guides/msme-45-days-payment-rule-43bh/', title: 'MSME 45 days payment rule: section 43B(h) and section 37(2)(g)', published: '2026-11-20' },
 ];
 
 // Official sources used across pages
@@ -111,6 +112,7 @@ export const SRC = {
   cbic: { href: 'https://cbic-gst.gov.in/', label: 'CBIC GST (cbic-gst.gov.in)' },
   mca: { href: 'https://www.mca.gov.in/', label: 'Ministry of Corporate Affairs (mca.gov.in)' },
   udyam: { href: 'https://udyamregistration.gov.in/', label: 'Udyam Registration portal (udyamregistration.gov.in)' },
+  msmed: { href: 'https://samadhaan.msme.gov.in/WriteReadData/DocumentFile/MSMED2006act.pdf', label: 'Micro, Small and Medium Enterprises Development Act, 2006 (msme.gov.in)' },
   gcc: { href: 'https://chennaicorporation.gov.in/', label: 'Greater Chennai Corporation (chennaicorporation.gov.in)' },
   tnreginet: { href: 'https://tnreginet.gov.in/', label: 'Registration Department, Tamil Nadu (tnreginet.gov.in)' },
   rbi: { href: 'https://www.rbi.org.in/', label: 'Reserve Bank of India (rbi.org.in)' },

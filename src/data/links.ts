@@ -13,9 +13,9 @@ export const SERVICE_GUIDES: Record<string, string[]> = {
   '/gst-registration-chennai/': [g('gst-registration-documents-process')],
   '/gst-return-filing/': [g('gstr-9-annual-return-who-files-due-date')],
   '/gst-notice-reply/': [g('gstr-9-annual-return-who-files-due-date')],
-  '/tax-audit/': [g('tax-audit-who-needs-it-what-to-prepare'), g('advance-tax-due-dates-interest')],
+  '/tax-audit/': [g('tax-audit-who-needs-it-what-to-prepare'), g('advance-tax-due-dates-interest'), g('msme-45-days-payment-rule-43bh')],
   '/statutory-audit/': [g('tax-audit-who-needs-it-what-to-prepare')],
-  '/accounting-bookkeeping/': [g('gstr-9-annual-return-who-files-due-date'), g('tax-audit-who-needs-it-what-to-prepare')],
+  '/accounting-bookkeeping/': [g('gstr-9-annual-return-who-files-due-date'), g('tax-audit-who-needs-it-what-to-prepare'), g('msme-45-days-payment-rule-43bh')],
 };
 
 export const TOOL_GUIDES: Record<string, string[]> = {

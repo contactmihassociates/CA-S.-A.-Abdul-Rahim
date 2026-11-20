@@ -1,0 +1,64 @@
+---
+import Service from '../../layouts/Service.astro';
+import { SRC } from '../../data/site';
+const faqs = [
+  { q: 'What is the MSME 45 days payment rule?', a: 'A buyer must pay a micro or small enterprise within the period agreed in writing, which cannot exceed 45 days from acceptance of the goods or services, or within 15 days if there is no written agreement. If the buyer pays later, the expense is allowed for income tax only in the year it is actually paid.' },
+  { q: 'Does the rule apply to purchases from medium enterprises?', a: 'No. The income tax provision covers amounts payable to a micro or small enterprise only. Purchases from a medium enterprise, or from a supplier that is not registered under the MSME law, are not affected by this rule, although the supplier can still pursue delayed payment under its contract.' },
+  { q: 'If I pay before filing my return, is the expense still allowed?', a: 'Not for this item. For most expenses covered by the same section, payment before the due date of the return saves the deduction for that year. The law expressly excludes amounts payable to micro and small enterprises from that relief, so payment after the allowed period moves the deduction to the year of payment.' },
+  { q: 'What is the new section number under the Income-tax Act, 2025?', a: 'Under the Income-tax Act, 1961 the rule was section 43B(h). From the tax year 2026-27, the Income-tax Act, 2025 applies, and the same rule is in section 37(2)(g), read with section 37(1) and the exclusion in section 37(3). The substance of the rule is unchanged.' },
+];
+const pub = '2026-11-20';
+---
+<Service
+  title="MSME 45 Days Payment Rule: Section 43B(h) and 37(2)(g)"
+  description="MSME 45 days payment rule: when late payment to a micro or small supplier is disallowed under section 43B(h), now section 37(2)(g) of the 2025 Act."
+  path="/guides/msme-45-days-payment-rule-43bh/"
+  h1="MSME 45 days payment rule: section 43B(h) and the new section 37(2)(g)"
+  name="MSME 45 days payment rule guide"
+  topic="the MSME payment rule"
+  lead="If you buy goods or services from a micro or small enterprise, you must pay within the period agreed in writing, which cannot be more than 45 days, or within 15 days if there is no agreement. If you pay later, the purchase or expense is not allowed in your income tax computation for that year. It is allowed only in the year you actually pay. The rule was section 43B(h) of the Income-tax Act, 1961 and is now section 37(2)(g) of the Income-tax Act, 2025."
+  faqs={faqs}
+  related={['/tax-audit/', '/accounting-bookkeeping/', '/udyam-msme-registration/', '/tools/sec43bh/']}
+  sources={[SRC.itIndia, SRC.msmed, SRC.udyam, SRC.itPortal]}
+  guide={{ published: pub, modified: pub }}
+>
+  <h2>Where the rule comes from</h2>
+  <p>The time limit itself is in the Micro, Small and Medium Enterprises Development Act, 2006 (the MSMED Act). Section 15 of that Act requires a buyer to pay a micro or small supplier on or before the date agreed in writing, and the agreed period cannot be more than 45 days from the day the buyer accepts the goods or services, or is treated as having accepted them. Where there is no written agreement, payment is due within 15 days of acceptance.</p>
+  <p>The income tax consequence was added by the Finance Act, 2023 as clause (h) of section 43B of the Income-tax Act, 1961, applying from the assessment year 2024-25. From 1 April 2026 the Income-tax Act, 2025 applies, and the Income Tax Department's text of that Act places the same rule in section 37(2)(g): an amount payable by the assessee to a micro or small enterprise beyond the time limit in section 15 of the MSMED Act is allowed as a deduction only in the tax year in which it is actually paid.</p>
+
+  <h2>The one difference from other section 43B items</h2>
+  <p>Section 43B (now section 37) covers several kinds of expense, such as taxes, the employer's provident fund contribution and interest to banks. For those items, payment before the due date of filing the return saves the deduction for the year in which the liability arose. For amounts payable to micro and small enterprises this relief does not apply. Section 37(3) of the 2025 Act expressly excludes clause (g). So an amount paid late to a micro or small supplier is allowed only in the year of payment, even if it is paid a few days after the year ends.</p>
+
+  <h2>Who is affected</h2>
+  <ul class="checklist">
+    <li><strong>Buyers who compute business income on actual figures.</strong> The rule disallows an expense, so it matters to businesses and professionals who claim purchases and expenses in their accounts, including those whose accounts are audited.</li>
+    <li><strong>Only purchases from micro and small enterprises.</strong> Payments to medium enterprises are outside the rule.</li>
+    <li><strong>Only suppliers registered under the MSME law.</strong> The supplier's Udyam registration certificate shows whether it is classified as micro, small or medium, and whether it is registered for manufacturing or services.</li>
+  </ul>
+  <p>Retail and wholesale traders can register on the Udyam portal, but the Ministry of MSME allowed their registration for priority sector lending. Whether a trader-supplier is covered by the delayed payment provisions should be checked against the supplier's Udyam certificate and the Ministry's notifications before treating the amount as disallowed. Buyers who declare income on a presumptive basis do not claim individual expenses, so the rule generally does not change their computation.</p>
+
+  <h2>A worked example</h2>
+  <p>A manufacturer in Chennai buys raw material of Rs 4,00,000 from a small enterprise registered on Udyam. The goods are accepted on 10 January 2026. The written agreement allows 45 days, so payment is due by 24 February 2026.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">When the buyer pays</th><th scope="col">Effect for the financial year 2025-26</th><th scope="col">When the expense is allowed</th></tr></thead>
+      <tbody>
+        <tr><td>By 24 February 2026</td><td>Allowed</td><td>Financial year 2025-26</td></tr>
+        <tr><td>On 20 March 2026</td><td>Allowed, because it was paid within the same year</td><td>Financial year 2025-26</td></tr>
+        <tr><td>On 20 April 2026</td><td>Rs 4,00,000 disallowed</td><td>Tax year 2026-27, when paid</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>If there were no written agreement, payment would have been due by 25 January 2026, fifteen days after acceptance. A payment made late but still before 31 March 2026 is allowed in the same year, because the deduction is allowed in the year of actual payment. The disallowance bites when the amount is still unpaid, beyond the allowed period, at the end of the year.</p>
+
+  <h2>How to manage it before the year end</h2>
+  <ol>
+    <li><strong>Mark MSME suppliers in the books.</strong> Collect each supplier's Udyam registration number and classification, and record it in the supplier ledger.</li>
+    <li><strong>Record the agreed credit period.</strong> Keep the written terms on the purchase order or agreement. Without them, the 15-day limit applies.</li>
+    <li><strong>Check dues before 31 March.</strong> List bills from micro and small suppliers that are unpaid and past their due date, and decide what can be paid before the year ends.</li>
+    <li><strong>Work out the disallowance.</strong> Add back the unpaid amounts that are past the allowed period in the income tax computation for the year, and claim them in the year they are paid.</li>
+    <li><strong>Keep the working for the tax audit.</strong> The tax audit report asks for the amounts covered by this provision, so keep the supplier-wise list with invoice dates, acceptance dates, due dates and payment dates.</li>
+  </ol>
+  <p>Interest that a buyer pays to a micro or small supplier for late payment under the MSMED Act is not allowed as a deduction under section 23 of that Act, so it should also be added back.</p>
+  <p>To check a single bill, use the <a href="/tools/sec43bh/">MSME 45-day payment calculator</a>. For the audit side, see <a href="/guides/tax-audit-who-needs-it-what-to-prepare/">tax audit: who needs it and what to prepare</a>.</p>
+</Service>
