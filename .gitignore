@@ -11,9 +11,4 @@ reports/check-tools.json
 
 # Separate private project (lead data); never publish
 ca_leadgen/
-
-# Local working notes and tool settings; keep off the public repo
 docs/
-.claude/
-.agents/
-.codex/

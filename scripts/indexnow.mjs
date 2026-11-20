@@ -1,4 +1,4 @@
-// Submit URLs to IndexNow (Bing, Yandex, Seznam, Naver; Bing shares with ChatGPT/Copilot search).
+// Submit URLs to IndexNow (Bing, Yandex, Seznam, Naver).
 // Usage: node scripts/indexnow.mjs            -> every URL in the live sitemap
 //        node scripts/indexnow.mjs /path/ ...   -> only these paths
 // The key file public/<key>.txt must be live on the site first.
