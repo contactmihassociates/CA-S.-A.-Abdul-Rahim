@@ -3,7 +3,7 @@ import Base from './Base.astro';
 import PageHero from '../components/PageHero.astro';
 import SideContact from '../components/SideContact.astro';
 import ContactBlock from '../components/ContactBlock.astro';
-import { NAP, SERVICES, GUIDES, REVIEWED_TEXT, SERVICE_TOOLS } from '../data/site';
+import { NAP, SERVICES, GUIDES, REVIEWED_TEXT, REVIEWED_ISO, SERVICE_TOOLS } from '../data/site';
 import { faqPage, service, article } from '../data/schema';
 import toolData from '../data/tools.json';
 import { SERVICE_GUIDES, relatedGuides } from '../data/links';
@@ -31,11 +31,13 @@ const crumbs = isGuide ? [{ name: 'Guides', path: '/guides/' }, { name, path }] 
 const group = SERVICES.find((s) => s.href === path)?.group;
 const toolKeys = SERVICE_TOOLS[path] ?? (isGuide ? SERVICE_TOOLS[related.find((r) => SERVICE_TOOLS[r]) ?? ''] ?? [] : []);
 const topicGuides = (isGuide ? relatedGuides(path) : SERVICE_GUIDES[path] ?? []).map((h) => GUIDES.find((x) => x.href === h)).filter(Boolean) as { href: string; title: string }[];
+const reviewedIso = isGuide && guide!.modified > REVIEWED_ISO ? guide!.modified : REVIEWED_ISO;
+const reviewedText = reviewedIso === REVIEWED_ISO ? REVIEWED_TEXT : new Date(reviewedIso).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
 const tools = toolKeys.map((k) => toolData.tools.find((t) => t.key === k)).filter(Boolean) as { key: string; label: string }[];
 ---
 <Base title={title} description={description} path={path} crumbs={crumbs} schema={schema} ogType={isGuide ? 'article' : 'website'}>
   <PageHero crumbs={crumbs} h1={h1} eyebrow={isGuide ? 'Guide' : group ? `Services · ${group}` : 'Services'}>
-    {isGuide && <p class="meta" slot="meta">By CA S. A. Abdul Rahim, Chartered Accountant · Published <time datetime={guide!.published}>{new Date(guide!.published).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</time> · Last reviewed <time datetime={guide!.modified}>{REVIEWED_TEXT}</time></p>}
+    {isGuide && <p class="meta" slot="meta">By CA S. A. Abdul Rahim, Chartered Accountant · Published <time datetime={guide!.published}>{new Date(guide!.published).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</time> · Last reviewed <time datetime={reviewedIso}>{reviewedText}</time></p>}
     <p class="lead">{lead}</p>
   </PageHero>
 
@@ -57,7 +59,7 @@ const tools = toolKeys.map((k) => toolData.tools.find((t) => t.key === k)).filte
       <section class="sources" aria-labelledby="src-h">
         <h2 id="src-h">Sources</h2>
         <ul>{sources.map((s) => <li><a href={s.href} rel="noopener">{s.label}</a></li>)}</ul>
-        <p class="meta">Reviewed by CA S. A. Abdul Rahim, Chartered Accountant. Last reviewed: <time datetime="2026-10-29">{REVIEWED_TEXT}</time>. Tax law and portal forms change often. Check the official source or speak to a Chartered Accountant before acting on any of this information.</p>
+        <p class="meta">Reviewed by CA S. A. Abdul Rahim, Chartered Accountant. Last reviewed: <time datetime={reviewedIso}>{reviewedText}</time>. Tax law and portal forms change often. Check the official source or speak to a Chartered Accountant before acting on any of this information.</p>
       </section>
 
     </article>
